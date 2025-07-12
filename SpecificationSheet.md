@@ -1,189 +1,234 @@
 # Specification Sheet
 
-Hey, please help me write a detailed and structured specification sheet for a web application project named: (application-name)
+## Kingdom Movement / KNGDM MVMNT
+
+---
 
 ## Project Overview
 
-Provide a concise, high-level summary of the application's purpose and goals. This should answer the following:
+**Purpose & Goals:**
 
-- Who are the target users?
-- What is the desired user experience and outcome?
-- What is the core problem this application solves?
+Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym and community brand. The site will serve as a digital hub showcasing memberships, class schedules, nutrition services, events, and collaborations, aiming to attract new members and keep current members engaged.
+
+**Target Users:**
+
+- Local individuals interested in CrossFit, community events, nutrition, and fitness.
+- Existing gym members looking to view schedules, menu items, and upcoming activities.
+- Prospective members evaluating the gym’s offerings.
+
+**Desired User Experience & Outcome:**
+
+- Easily explore gym services, memberships, schedules, and nutrition offerings.
+- Seamlessly navigate on desktop, tablet, and mobile devices.
+- Engage visually with high-energy branding that matches the gym’s culture.
+- Quickly find calls to action for inquiries, sign-ups, or visits.
+
+**Core Problem Solved:**
+
+- Provide a centralized, attractive, informative online presence for KNGDM MVMNT that replaces manual explanations, drives memberships, and fosters community engagement.
+
+---
 
 ## Technical Stack
 
-Please include or suggest the technologies used in the following areas:
+- **APIs:**
 
-- APIs: RESTful or GraphQL
-- Deployment: Render, Netlify, or Vercel
-- Frontend: HTML, CSS, Bootstrap/Tailwind, JavaScript/TypeScript, and React
-- Dev Tools: Vite, ESLint, Prettier, Cypress for testing, and GitHub Actions for CI/CD
-- Backend: JavaScript with Node.js and Express.js
-- Authentication: JWT-based, Auth0, Auth.js, or Passport.js
-- Security: Basic checklist including HTTPS, .env usage, rate limiting, and auth protection
-- Database: PostgreSQL with Sequelize ORM or for an unstructured database MongoDB with Mongoose
+  - None (static JSON files for data)
+
+- **Deployment:**
+
+  - Render with custom domain
+
+- **Frontend:**
+
+  - HTML, CSS, JavaScript, React
+  - No/Minimal Bootstrap/Tailwind
+  - Custom CSS using Grid & Flexbox
+
+- **Dev Tools:**
+
+  - Vite for scaffolding and development
+  - ESLint & Prettier for code consistency
+
+- **Backend:**
+
+  - None (JSON files to store data like schedules, menu items, membership tiers)
+
+- **Authentication:**
+
+  - None
+
+- **Security:**
+
+  - Basic HTTPS via hosting
+  - Contact form will include CAPTCHA
+
+- **Database:**
+
+  - None (JSON serves as simple data layer)
+
+---
 
 ## UI/UX Design Guidelines
 
-### Layout and Responsiveness
+### Layout & Responsiveness
 
-- Grid/Flexbox Layout: CSS Grid or Flexbox with 12-column layout
-- Responsive Design with 3 defined breakpoints for small, medium, and large screens
+- CSS Grid and Flexbox
+- Three key breakpoints:
+  - **480px:** Mobile
+  - **768px:** Tablet
+  - **1200px:** Desktop
 
 ### Typography
 
-- Font Family: Arial, sans-serif
-- Font Sizes: Heading 1: 32px, Body: 16px
-- Font Weights: Light 300, Regular 400, Bold 700
+- **Font Family:** Sans-serif for both headings and body
+- **Font Weights:**
+  - Body: 400
+  - Highlighted / Bold Text: 500
+  - Headings / Critical Highlights: 700
+- **Font Styling:** Headings large and bold, possible texture or distressed effect.
 
 ### Colors
 
-- Accent: `#...`
-- Primary: `#...`
-- Secondary: `#...`
-- Background: `#...`
-- Button States: normal, hover, active, and disabled
+- **Dark/Light Mode Toggle**
+- Color Palette:
 
-### Images and Icons
+### Images & Icons
 
-- Alt tags for accessibility
-- Format: JPEG, PNG, SVG, and/or WebP
-- Compression: TinyPNG, ImageOptim, or Squoosh
+- Formats: JPEG, PNG, SVG, WebP
+- Accessibility: All images will include `alt` tags
+- Optimized/compressed with TinyPNG, ImageOptim, or Squoosh.
 
 ### Text Content
 
-- Homepage headings, CTA text, button text, descriptive text, etc
-- Use tone consistent with audience: professional, formal, technical, or friendly
+- Tone: Bold, energetic, modern, slightly edgy to fit CrossFit and lifestyle brand
 
-## User Roles and Permissions
+---
 
-Define user types, access levels, and permissions clearly:
+## User Roles & Permissions
 
-- Visitor: Can browse public pages
-- Admin: Can manage all users, content, and configurations
-- Authenticated User: Can view dashboard, update profile, interact with content
+- **Visitor:** Can view all pages, explore memberships, menu, schedules, events, and submit contact form.
+- No user accounts or authentication required.
+- No admin dashboard on this site.
 
-## Core Features and User Flows
+---
 
-Break down major functionality and describe how a user navigates through them. Include authentication flows, protected routes, and session behavior
+## Core Features & User Flows
 
-#### Example Sections
+### Pages & Content
 
-- File Uploads
-- Dashboard Overview
-- Search and Filtering
-- Forms and Validation
-- Sign Up/Login/Logout
-- Notifications/Toasts/Modals
-- CRUD operations (Create, Read, Update, and Delete)
+- **Header/Footer:**
 
-## Data Flow and Architecture
+  - Logo, Navigation, CTA Button, social links, essential contact info, legal text.
 
-- Describe the data flow between the frontend, backend, and the database
-- Highlight how state is managed: Frontend, APIs, Backend Database, or Authentication State
-- Indicate where API calls occur: Frontend and Backend API Calls, or Server-Side-Rendering (SSR)
+- **Home Page:**
+
+  - Overview of memberships, kitchen menu, schedules, collaborations, CTA Button.
+  - CTAs linking to dedicated pages.
+
+- **Membership Page:**
+
+  - Lists different membership tiers with benefits.
+
+  - **Individual Membership Page:**
+
+  - Click into a tier for details, sign-up instructions, and contact links.
+
+- **Food Menu Page:**
+
+  - Full menu with details (price, calories, variations).
+
+- **Schedule Page:**
+
+  - Weekly class schedule.
+  - Links to view workouts, sign-up interest forms, see who’s attending.
+
+- **Contact Page:**
+
+  - Form to reach out, includes CAPTCHA for spam prevention.
+
+- **Privacy Policy:**
+
+  - Standard legal page.
+
+  **Terms of Service:**
+
+  - Standard legal page.
+
+### Interactions & UI Components
+
+- Responsive navigation bar.
+- Hover/active/disabled button states.
+- Modal or toast feedback on contact form submission.
+
+---
+
+## Data Flow & Architecture
+
+- JSON files hold structured data (menu items, schedules, memberships).
+- React components load this data client-side to render views.
+- No database or backend logic beyond reading local JSON.
+- Global state managed in React (useState or useContext as needed).
+
+---
 
 ## API Endpoints
 
-#### Specify expected endpoints, their methods, route paths, and purpose
+- **None.**
+  All data is local via static JSON. No server-side API, no REST or GraphQL.
 
-- GET /api/users → Get all users
-- POST /api/auth/login → Login with email/password
-- PUT /api/profile → Update logged-in user profile
-- DELETE /api/posts/:id → Delete a post by ID
-
-#### Include
-
-- Response format (success/error)
-- Middleware or auth checks needed
-- Rate limiting and protection where applicable
+---
 
 ## Database Schema
 
-List the main tables/collections with their fields, types, and relationships
+- **Not applicable.**  
+  Using JSON to mimic a simple data layer. Example:
 
-#### Example for SQL Database using PostgreSQL
-
-```
-Users:
-- id (UUID)
-- name (String)
-- passwordHash (String)
-- email (Unique, String)
-- role (Enum: "user", "admin")
-```
-
-#### Example for NoSQL Database using MongoDB
-
-```
-User {
-  _id: ObjectId,
-  name: String,
-  email: String,
-  passwordHash: String,
-  role: "user" | "admin"
+```json
+{
+  "memberships": [
+    {
+      "id": "basic",
+      "name": "Basic Membership",
+      "price": 50,
+      "benefits": ["Access to AM classes", "2 guest passes per month"]
+    }
+  ],
+  "menu": [
+    {
+      "id": "acai",
+      "name": "Acai Bowl",
+      "price": 8.99,
+      "calories": 350,
+      "variations": ["Granola", "Peanut Butter", "Banana"]
+    }
+  ]
 }
 ```
 
 ## Basic Website Security Checklist
 
-#### Rate Limiting & Abuse Protection
-
-- Add CAPTCHAs on critical forms to block bots
-- Implement IP- or user-based rate limiting on all API endpoints
-
-#### Environment & Secrets
-
-- Never expose secrets or config data in client-side code
-- Keep all sensitive environment variables server-side and include .env files in .gitignore
-
-#### Data Handling
-
-- Use HTTPS to encrypt data in transit
-- Validate and sanitize inputs to prevent attacks
-- Hash passwords securely (e.g., bcrypt) before storing
-
-#### Authentication & Authorization
-
-- Use trusted auth providers (e.g., Clerk, Auth0) instead of building your own
-- Protect API endpoints and user routes with proper authentication and access control
-
-#### Testing & Monitoring
-
-- Write tests for critical features like auth and payments
-- Avoid logging sensitive data or debug info in production
-- Use monitoring tools to track errors and suspicious activity
+- CAPTCHA: On contact form to block spam.
+- HTTPS: Enforced via Render.
+- .env: Will be ignored in git even if minimal use.
+- Inputs: Minimal inputs, but validate/sanitize if needed.
+- No credentials: No passwords, no stored sensitive data.
 
 ## Deployment & CI/CD
 
-- Hosting Platform: Render, Netlify, or Vercel
-- Add preview environments for PRs if possible
-- Pipeline:
-  - Pre-deploy lint/test checks
-  - Auto-deploy on `main` or `production` branch
-  - Rollback strategies for failed deploys
+- Hosting: Render
+- Domain: Purchased and configured when ready.
+- CI/CD: Manual deploy pipeline for now (no GitHub Actions or Cypress tests at this stage).
 
-## Testing Strategy (Optional)
+## Testing Strategy
 
-- End-to-end testing with Cypress
-- Use test IDs and accessibility-friendly selectors
-- Unit testing for components, functions (Cypress, Jest, or Vitest)
-- Ensure test coverage for:
-  - CRUD functionality
-  - Authentication flows
-  - API routes with mocked responses
+- None initially.
+- Focus is on rapid delivery. May add lightweight unit tests with Vitest/Jest later.
 
-## Missing Information
+## Missing or TBD
 
-If any of the following are unclear, please ask:
-
-- Key user personas
-- Target devices and browsers
-- Any third-party integrations
-- Application name and purpose
-- Whether authentication is required
-- Brand assets (logos, colors, fonts)
-
----
-
-If you identify any missing information or need clarification on any aspect to create a complete and accurate specification, please ask follow-up questions. The goal is to have a clear, comprehensive roadmap before coding begins so development is efficient, consistent, and aligned with best practices. Please make this list in Markdown (.md) format since I will include it in my project for reference
+- Exact fonts & text styles: Will choose with client.
+- Color palette: Dark/light theme colors to be selected.
+- Imagery: Brand photos, logos, textures to integrate.
+- Content copy: Collaborating with client to finalize all page text.
+- Detailed feature expansion: e.g., if future scheduling tools or online payments are needed.
