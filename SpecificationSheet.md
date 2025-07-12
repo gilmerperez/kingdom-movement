@@ -1,8 +1,4 @@
-# Specification Sheet
-
-## Kingdom Movement / KNGDM MVMNT
-
----
+# Kingdom Movement / KNGDM MVMNT
 
 ## Project Overview
 
@@ -26,8 +22,6 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 **Core Problem Solved:**
 
 - Provide a centralized, attractive, informative online presence for KNGDM MVMNT that replaces manual explanations, drives memberships, and fosters community engagement.
-
----
 
 ## Technical Stack
 
@@ -67,8 +61,6 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
   - None (JSON serves as simple data layer)
 
----
-
 ## UI/UX Design Guidelines
 
 ### Layout & Responsiveness
@@ -103,15 +95,11 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
 - Tone: Bold, energetic, modern, slightly edgy to fit CrossFit and lifestyle brand
 
----
-
 ## User Roles & Permissions
 
 - **Visitor:** Can view all pages, explore memberships, menu, schedules, events, and submit contact form.
 - No user accounts or authentication required.
 - No admin dashboard on this site.
-
----
 
 ## Core Features & User Flows
 
@@ -155,13 +143,11 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
   - Standard legal page.
 
-### Interactions & UI Components
+## Interactions & UI Components
 
 - Responsive navigation bar.
 - Hover/active/disabled button states.
 - Modal or toast feedback on contact form submission.
-
----
 
 ## Data Flow & Architecture
 
@@ -170,14 +156,10 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 - No database or backend logic beyond reading local JSON.
 - Global state managed in React (useState or useContext as needed).
 
----
-
 ## API Endpoints
 
 - **None.**
   All data is local via static JSON. No server-side API, no REST or GraphQL.
-
----
 
 ## Database Schema
 
@@ -232,3 +214,16 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 - Imagery: Brand photos, logos, textures to integrate.
 - Content copy: Collaborating with client to finalize all page text.
 - Detailed feature expansion: e.g., if future scheduling tools or online payments are needed.
+
+## Important Links
+
+- Instagram: https://www.instagram.com/kngdm.mvmnt/
+- Facebook: https://www.facebook.com/profile.php?id=61573390319325
+- Free Class: https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue
+- Location: https://www.google.com/maps/place/Rangers+Kingdom+LLC/@28.4598745,-81.4403449,17z/data=!4m6!3m5!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!8m2!3d28.4598745!4d-81.43777!16s%2Fg%2F11rdz8gr7f?authuser=1&entry=tts&g_ep=EgoyMDI1MDIxMC4wIPu8ASoASAFQAw%3D%3D
+- Leave a Review: https://www.google.com/maps/place//data=!4m3!3m2!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!12e1?source=g.page.m._&laa=merchant-review-solicitation
+
+## Important Info
+
+- Location: 6881 Kingspointe Pkwy STE 4Orlando, FL 32819
+- Classes: 7AM | 8:15AM | 9:30AM | 4:45PM | 6PM | 7:15PM | 8:30PM
