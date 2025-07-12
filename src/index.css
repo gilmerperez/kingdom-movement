@@ -10,26 +10,24 @@
 /* Roboto Condensed */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Dark Mode */
-html[data-theme="dark"] {
-  --primary: hsl(0, 0%, 0%);
-  --bg-color: hsl(0, 0%, 0%);
-  --text-primary: hsl(0, 0%, 0%);
-  --primary-dark: hsl(0, 0%, 0%);
-  --primary-light: hsl(0, 0%, 0%);
-  --text-secondary: hsl(0, 0%, 0%);
-  --header-footer-bg-color: hsl(0, 0%, 0%);
-}
-
 /* Light Mode */
 html[data-theme="light"] {
-  --primary: hsl(0, 0%, 0%);
-  --bg-color: hsl(0, 0%, 0%);
+  --header-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 95%);
   --text-primary: hsl(0, 0%, 0%);
-  --primary-dark: hsl(0, 0%, 0%);
-  --primary-light: hsl(0, 0%, 0%);
-  --text-secondary: hsl(0, 0%, 0%);
-  --header-footer-bg-color: hsl(0, 0%, 0%);
+  --text-secondary: hsl(0, 0%, 20%);
+  --primary: hsl(1, 82%, 19%);
+  --footer-bg-color: hsl(0, 0%, 100%);
+}
+
+/* Dark Mode */
+html[data-theme="dark"] {
+  --header-bg-color: hsl(0, 0%, 10%);
+  --bg-color: hsl(0, 0%, 12%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(0, 0%, 80%);
+  --primary: hsl(1, 82%, 19%);
+  --footer-bg-color: hsl(0, 0%, 10%);
 }
 
 /* Custom Highlighted Text */
@@ -102,7 +100,7 @@ body {
   overflow-x: hidden; /* Prevents horizontal scroll */
   flex-direction: column; /* Stacks header, main, and footer vertically */
   color: var(--text-primary); /* Sets a default text color */
-  font-family: Arial, sans-serif; /* Modern system font stack */
+  font-family: "Roboto", sans-serif; /* Modern system font stack */
   background-color: var(--bg-color); /* Sets a default background color */
   -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS Firefox */
   -webkit-font-smoothing: antialiased; /* Better font rendering on WebKit browsers */
@@ -112,21 +110,21 @@ body {
 header {
   width: 100%; /* Ensures full-width layout across viewport */
   padding: 1.5rem 2rem; /* Provides consistent spacing inside header */
-  background-color: var(--header-footer-bg-color); /* Applies theme background color from CSS variables */
+  background-color: var(--header-bg-color); /* Applies theme background color from CSS variables */
 }
 
 /* MAIN - Base layout for page content */
 main {
   width: 100%; /* Ensures content stretches to full container width */
   padding: 2rem; /* Adds breathing room around main content */
-  background-color: var(---bg-color); /* Matches the background of header/footer for visual cohesion */
+  background-color: var(--bg-color); /* Matches the background of header/footer for visual cohesion */
 }
 
 /* FOOTER - Shared structural styling */
 footer {
   width: 100%; /* Ensures full-width layout across viewport */
   padding: 2rem; /* Provides consistent spacing inside footer */
-  background-color: var(--header-footer-bg-color); /* Applies theme background color from CSS variables */
+  background-color: var(--footer-bg-color); /* Applies theme background color from CSS variables */
 }
 
 .headerContainer {

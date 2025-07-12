@@ -86,13 +86,12 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
 ```css
 html[data-theme="light"] {
-  --header-bg-color: hsl(0, 0%, 0%);
-  --bg-color: hsl(0, 0%, 0%);
+  --header-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 95%);
   --text-primary: hsl(0, 0%, 0%);
-  --text-secondary: hsl(0, 0%, 0%);
-  --accent-primary: hsl(0, 0%, 0%);
-  --accent-secondary: hsl(0, 0%, 0%);
-  --footer-bg-color: hsl(0, 0%, 0%);
+  --text-secondary: hsl(0, 0%, 20%);
+  --primary: hsl(1, 82%, 19%);
+  --footer-bg-color: hsl(0, 0%, 100%);
 }
 ```
 
@@ -100,17 +99,16 @@ html[data-theme="light"] {
 
 ```css
 html[data-theme="dark"] {
-  --header-bg-color: hsl(0, 0%, 0%);
-  --bg-color: hsl(0, 0%, 0%);
-  --text-primary: hsl(0, 0%, 0%);
-  --text-secondary: hsl(0, 0%, 0%);
-  --accent-primary: hsl(0, 0%, 0%);
-  --accent-secondary: hsl(0, 0%, 0%);
-  --footer-bg-color: hsl(0, 0%, 0%);
+  --header-bg-color: hsl(0, 0%, 10%);
+  --bg-color: hsl(0, 0%, 12%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(0, 0%, 80%);
+  --primary: hsl(1, 82%, 19%);
+  --footer-bg-color: hsl(0, 0%, 10%);
 }
 ```
 
-- **Dark/Light Mode Toggle**
+- Light / Dark Mode Toggle
 
 ### Images & Icons
 
