@@ -82,8 +82,35 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
 ### Colors
 
+- Light Mode
+
+```css
+html[data-theme="light"] {
+  --header-bg-color: hsl(0, 0%, 0%);
+  --bg-color: hsl(0, 0%, 0%);
+  --text-primary: hsl(0, 0%, 0%);
+  --text-secondary: hsl(0, 0%, 0%);
+  --accent-primary: hsl(0, 0%, 0%);
+  --accent-secondary: hsl(0, 0%, 0%);
+  --footer-bg-color: hsl(0, 0%, 0%);
+}
+```
+
+- Dark Mode
+
+```css
+html[data-theme="dark"] {
+  --header-bg-color: hsl(0, 0%, 0%);
+  --bg-color: hsl(0, 0%, 0%);
+  --text-primary: hsl(0, 0%, 0%);
+  --text-secondary: hsl(0, 0%, 0%);
+  --accent-primary: hsl(0, 0%, 0%);
+  --accent-secondary: hsl(0, 0%, 0%);
+  --footer-bg-color: hsl(0, 0%, 0%);
+}
+```
+
 - **Dark/Light Mode Toggle**
-- Color Palette:
 
 ### Images & Icons
 
