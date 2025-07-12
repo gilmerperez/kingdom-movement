@@ -1,5 +1,14 @@
-/* Google Fonts Import */
-@import url("");
+/* Racing Sans One */
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+/* Permanent Marker */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Roboto Condensed */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Dark Mode */
 html[data-theme="dark"] {
