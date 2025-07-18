@@ -12,12 +12,12 @@
 
 /* Light Mode */
 html[data-theme="light"] {
-  --header-bg-color: hsl(0, 0%, 100%);
+  --header-bg-color: hsl(0, 0%, 97.25%);
   --bg-color: hsl(0, 0%, 95%);
   --text-primary: hsl(0, 0%, 0%);
   --text-secondary: hsl(0, 0%, 20%);
   --primary: hsl(1, 82%, 19%);
-  --footer-bg-color: hsl(0, 0%, 100%);
+  --footer-bg-color: hsl(0, 0%, 97.25%);
 }
 
 /* Dark Mode */
@@ -25,7 +25,7 @@ html[data-theme="dark"] {
   --header-bg-color: hsl(0, 0%, 10%);
   --bg-color: hsl(0, 0%, 12%);
   --text-primary: hsl(0, 0%, 100%);
-  --text-secondary: hsl(0, 0%, 80%);
+  --text-secondary: hsl(0, 0%, 75%);
   --primary: hsl(1, 82%, 19%);
   --footer-bg-color: hsl(0, 0%, 10%);
 }
@@ -100,10 +100,10 @@ body {
   overflow-x: hidden; /* Prevents horizontal scroll */
   flex-direction: column; /* Stacks header, main, and footer vertically */
   color: var(--text-primary); /* Sets a default text color */
-  font-family: "Roboto", sans-serif; /* Modern system font stack */
   background-color: var(--bg-color); /* Sets a default background color */
   -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS Firefox */
   -webkit-font-smoothing: antialiased; /* Better font rendering on WebKit browsers */
+  font-family: "Roboto", "Roboto Condensed", Arial, sans-serif; /* Modern system font stack */
 }
 
 /* HEADER - Shared structural styling */
@@ -125,37 +125,4 @@ footer {
   width: 100%; /* Ensures full-width layout across viewport */
   padding: 2rem; /* Provides consistent spacing inside footer */
   background-color: var(--footer-bg-color); /* Applies theme background color from CSS variables */
-}
-
-.headerContainer {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.mainContainer {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footerContainer {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
