@@ -8,3 +8,130 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.kngdm,
+.mvmnt {
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+
+.kngdm {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 0.75;
+}
+
+.mvmnt {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.25rem;
+  transition: 0.3s ease-in;
+}
+
+.navLinks a {
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+
+.navLinks a:hover {
+  color: var(--text-secondary);
+}
+
+.ctaButton {
+  font-size: 1.25rem;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+  background-color: transparent;
+  border: 3px solid var(--text-secondary);
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  background-color: var(--primary);
+  border: 3px solid var(--primary);
+}
+
+@media (max-width: 840px) {
+  .kngdm {
+    font-size: 1.75rem;
+  }
+
+  .mvmnt {
+    font-size: 1.15rem;
+  }
+
+  .navContainer {
+    gap: 0.85rem;
+  }
+
+  .navLinks {
+    gap: 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  .ctaButton {
+    font-size: 1.15rem;
+    border-radius: 3px;
+    padding: 0.45rem 0.65rem;
+    border: 2px solid var(--text-secondary);
+  }
+
+  .ctaButton:hover {
+    border: 2px solid var(--primary);
+  }
+}
+
+@media (max-width: 720px) {
+  .kngdm {
+    font-size: 1.5rem;
+  }
+
+  .mvmnt {
+    font-size: 1rem;
+  }
+
+  .navContainer {
+    gap: 0.75rem;
+  }
+
+  .navLinks {
+    gap: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 0.35rem 0.55rem;
+    border: 2px solid var(--text-secondary);
+  }
+
+  .ctaButton:hover {
+    border: 2px solid var(--primary);
+  }
+}
