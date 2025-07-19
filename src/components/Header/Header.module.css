@@ -135,3 +135,102 @@
     border: 2px solid var(--primary);
   }
 }
+
+@media (max-width: 640px) {
+  .kngdm {
+    font-size: 1.25rem;
+  }
+
+  .mvmnt {
+    font-size: 0.75rem;
+  }
+
+  .navContainer {
+    gap: 0.75rem;
+  }
+
+  .navLinks {
+    gap: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    font-size: 0.95rem;
+    padding: 0.25rem 0.45rem;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  color: var(--text-primary);
+}
+
+.hamburger.open {
+  transition: 0.3s ease;
+  transform: rotate(180deg);
+}
+
+/* Mobile Dropdown: visible in flow, collapsible */
+.mobileMenu {
+  gap: 0.5rem;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: max-height 0.5s ease;
+}
+
+.mobileMenu a {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.mobileMenu a:hover {
+  color: var(--text-secondary);
+}
+
+.mobileCTA {
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  color: var(--text-primary);
+  background-color: var(--primary);
+}
+
+.mobileCTA:hover {
+  color: var(--text-secondary);
+}
+
+.mobileMenu.show {
+  padding: 1rem;
+  max-height: 500px;
+}
+
+/* Hamburger Breakpoint */
+@media (max-width: 570px) {
+  .kngdm {
+    font-size: 1.75rem;
+  }
+
+  .mvmnt {
+    font-size: 1.15rem;
+  }
+
+  .navContainer {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}

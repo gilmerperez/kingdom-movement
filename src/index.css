@@ -22,12 +22,12 @@ html[data-theme="light"] {
 
 /* Dark Mode */
 html[data-theme="dark"] {
-  --header-bg-color: hsl(0, 0%, 10%);
-  --bg-color: hsl(0, 0%, 12%);
+  --header-bg-color: hsl(0, 0%, 5%);
+  --bg-color: hsl(0, 0%, 10%);
   --text-primary: hsl(0, 0%, 100%);
   --text-secondary: hsl(0, 0%, 75%);
   --primary: hsl(1, 82%, 19%);
-  --footer-bg-color: hsl(0, 0%, 10%);
+  --footer-bg-color: hsl(0, 0%, 5%);
 }
 
 /* Custom Highlighted Text */
