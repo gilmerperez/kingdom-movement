@@ -19,19 +19,20 @@
 .kngdm,
 .mvmnt {
   width: 100%;
+  font-family: "Roboto";
   transition: 0.3s ease-in;
 }
 
 .kngdm {
-  font-size: 2rem;
   font-weight: 700;
   line-height: 0.75;
+  font-size: 2.5rem;
 }
 
 .mvmnt {
+  line-height: 1;
   font-weight: 300;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
+  font-size: 1.75rem;
 }
 
 .navContainer {
@@ -42,35 +43,34 @@
 }
 
 .navLinks {
-  gap: 1rem;
+  gap: 0.75rem;
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in;
 }
 
 .navLinks a {
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   display: inline-block;
   transition: 0.3s ease-in;
   color: var(--text-primary);
-  transition: color 0.3s ease-in;
 }
 
-/* Underline animation on hover and active */
+/* Underline on hover and active */
 .navLinks a::after {
   left: 50%;
   width: 100%;
   height: 2px;
   content: "";
-  bottom: -2px;
+  bottom: -3px;
   position: absolute;
   transform-origin: center;
+  transition: 0.3s ease-in-out;
   background-color: var(--primary);
   transform: translateX(-50%) scaleX(0);
-  transition: transform 0.3s ease-in-out;
 }
 
 /* Show underline on hover */
@@ -78,104 +78,165 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Show underline on active route */
+/* Show underline active */
 .activeLink::after {
   transform: translateX(-50%) scaleX(1);
 }
 
+.seperator {
+  font-size: 1.5rem;
+  transition: 0.3s ease-in;
+}
+
+.functionalButton {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+}
+
+.themeButton {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  background-color: var(--header-bg-color);
+}
+
+.themeButton:hover {
+  color: var(--text-secondary);
+}
+
 .freeClassButton {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border-radius: 5px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.5rem;
   transition: 0.3s ease-in;
   color: var(--text-primary);
-  border: 3px solid var(--primary);
+  border: 2px solid var(--primary);
   background-color: var(--header-bg-color);
 }
 
 .freeClassButton:hover {
+  color: hsl(0, 0%, 100%);
   background-color: var(--primary);
 }
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
+  .kngdm {
+    font-size: 2rem;
+  }
+
+  .mvmnt {
+    font-size: 1.5rem;
+  }
+
+  .navContainer {
+    gap: 0.75rem;
+  }
+
+  .navLinks {
+    font-size: 1.25rem;
+  }
+
+  .seperator {
+    font-size: 1.25rem;
+  }
+
+  .functionalButton {
+    font-size: 1.25rem;
+  }
+
+  .freeClassButton {
+    font-size: 1.25rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+@media (max-width: 800px) {
   .kngdm {
     font-size: 1.75rem;
   }
 
   .mvmnt {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   .navContainer {
-    gap: 0.85rem;
+    gap: 0.5rem;
   }
 
   .navLinks {
-    gap: 0.85rem;
+    gap: 0.5rem;
+    font-size: 1.15rem;
+  }
+
+  .seperator {
+    font-size: 1.15rem;
+  }
+
+  .functionalButton {
     font-size: 1.15rem;
   }
 
   .freeClassButton {
     font-size: 1.15rem;
-    padding: 0.45rem 0.65rem;
+    padding: 0.15rem 0.35rem;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .kngdm {
     font-size: 1.5rem;
   }
 
   .mvmnt {
-    font-size: 1rem;
-  }
-
-  .navContainer {
-    gap: 0.75rem;
+    font-size: 1.15rem;
   }
 
   .navLinks {
-    gap: 0.75rem;
     font-size: 1rem;
+  }
+
+  .seperator {
+    font-size: 1rem;
+  }
+
+  .functionalButton {
+    font-size: 1rem;
+  }
+
+  /* Get rid of theme icon */
+  .themeButton:not(.sidebarThemeButton) p {
+    display: none;
   }
 
   .freeClassButton {
     font-size: 1rem;
-    padding: 0.35rem 0.55rem;
   }
 }
 
-@media (max-width: 640px) {
-  .kngdm {
-    font-size: 1.25rem;
+/* Only show navigation */
+@media (max-width: 600px) {
+  .functionalButton {
+    display: none;
   }
+}
 
-  .mvmnt {
-    font-size: 0.85rem;
-  }
-
-  .navContainer {
-    gap: 0.5rem;
-  }
-
-  .navLinks {
-    gap: 0.5rem;
-    font-size: 0.95rem;
-  }
-
-  .navLinks a {
-    font-weight: 400;
+@media (max-width: 550px) {
+  .seperator {
+    display: none;
   }
 
   .freeClassButton {
-    font-weight: 400;
-    font-size: 0.95rem;
-    padding: 0.25rem 0.45rem;
+    display: none;
   }
 }
 
-/* Hamburger Menu Icon */
+/* Hamburger Icon */
 .hamburger {
   display: none;
   color: var(--text-primary);
@@ -188,7 +249,7 @@
 
 /* Mobile Dropdown */
 .mobileMenu {
-  gap: 0.25rem;
+  gap: 0.5rem;
   display: flex;
   max-height: 0;
   overflow: hidden;
@@ -199,44 +260,40 @@
 }
 
 .mobileMenu.show {
-  padding: 1rem;
+  padding: 0.5rem;
   max-height: 500px;
 }
 
 .mobileMenu a {
   width: 100%;
+  padding: 0.25rem;
   font-size: 1.25rem;
   text-align: center;
-  padding: 0.5rem 0.75rem;
-}
-
-.mobileMenu a:hover {
-  color: var(--text-secondary);
 }
 
 .mobileFreeClassButton {
-  width: 100%;
-  font-size: 1.25rem;
+  font-weight: 500;
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
   transition: 0.3s ease-in;
   color: var(--text-primary);
-  border: 3px solid var(--primary);
+  border: 2px solid var(--primary);
   background-color: var(--header-bg-color);
 }
 
 .mobileFreeClassButton:hover {
+  color: hsl(0, 0%, 100%);
   background-color: var(--primary);
 }
 
 /* Hamburger Breakpoint */
-@media (max-width: 570px) {
+@media (max-width: 480px) {
   .kngdm {
     font-size: 1.75rem;
   }
 
   .mvmnt {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   .navContainer {

@@ -1,9 +1,3 @@
-/* Racing Sans One */
-@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
-
-/* Permanent Marker */
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-
 /* Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -103,13 +97,13 @@ body {
   background-color: var(--bg-color); /* Sets a default background color */
   -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS Firefox */
   -webkit-font-smoothing: antialiased; /* Better font rendering on WebKit browsers */
-  font-family: "Roboto", "Roboto Condensed", Arial, sans-serif; /* Modern system font stack */
+  font-family: "Roboto Condensed", Arial, sans-serif; /* Modern system font stack */
 }
 
 /* HEADER - Shared structural styling */
 header {
   width: 100%; /* Ensures full-width layout across viewport */
-  padding: 1.5rem 2rem; /* Provides consistent spacing inside header */
+  padding: 1rem 2rem; /* Provides consistent spacing inside header */
   background-color: var(--header-bg-color); /* Applies theme background color from CSS variables */
 }
 

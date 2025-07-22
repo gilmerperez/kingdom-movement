@@ -1,11 +1,46 @@
 import styles from "./Header.module.css";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Header() {
   // Mobile Menu Toggle
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  // Theme Switch
+  const [theme, setTheme] = useState("dark");
+
+  // Make theme be set in DOM
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+  }, []);
+
+  // Save theme to localStorage
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // Toggle handler
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
+  // Make media theme switch on phone's user settings
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (e) => {
+      setTheme(e.matches ? "dark" : "light");
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   return (
     <>
@@ -33,6 +68,19 @@ function Header() {
                 NUTRITION
               </NavLink>
             </nav>
+
+            {/* Seperate Navigation and Functional Buttons */}
+            <span className={styles.seperator}>|</span>
+
+            {/* Functional Button */}
+            <section className={styles.functionalButton}>
+              {/* Theme Button */}
+              <button className={styles.themeButton} onClick={toggleTheme}>
+                <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
+                <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
+              </button>
+            </section>
+
             {/* Free Class Button */}
             <button className={styles.freeClassButton}>
               <a
