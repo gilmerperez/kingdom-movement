@@ -4,93 +4,38 @@
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-/* Big Footer */
 .bigFooter {
-  gap: 3rem;
   width: 100%;
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  transition: 0.3s ease-in;
-}
-
-.logoColumn {
-  gap: 0.5rem;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.logoContainer {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  white-space: nowrap;
-  font-family: "Roboto";
-  flex-direction: column;
-  justify-content: center;
-}
-
-.kngdm,
-.mvmnt {
-  width: 100%;
-  font-family: "Roboto";
-  transition: 0.3s ease-in;
-}
-
-.kngdm {
-  font-weight: 700;
-  line-height: 0.75;
-  font-size: 2.5rem;
-}
-
-.mvmnt {
-  line-height: 1;
-  font-weight: 300;
-  font-size: 1.75rem;
-}
-
-.logoColumn .copyright {
-  width: 100%;
-  font-size: 1rem;
-  text-align: center;
-  color: var(--text-primary);
+  justify-content: space-evenly;
 }
 
 .footerColumn {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .navHeader {
-  width: 100%;
-  text-align: left;
   font-weight: 500;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
+  margin-bottom: 0.25rem;
 }
 
 .footerNav {
-  width: 100%;
   gap: 0.35rem;
   display: flex;
-  font-weight: 400;
-  text-align: left;
   flex-direction: column;
 }
 
 .footerNav a {
-  font-size: 1rem;
+  font-size: 1.15rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
 }
@@ -99,52 +44,91 @@
   color: var(--primary);
 }
 
-/* Small Footer */
-.smallFooter {
+/* Social Icons */
+.socialIcons {
+  gap: 0.75rem;
   display: flex;
-  text-align: center;
+  font-size: 1.25rem;
+}
+
+.socialIcons a {
+  transition: 0.3s ease-in;
+  color: var(--text-secondary);
+}
+
+.socialIcons a:hover {
+  color: var(--primary);
+}
+
+/* Logo Section */
+.logoContainer {
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.footerLinks {
-  gap: 1rem;
+.kngdm {
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.mvmnt {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+/* Legal & Copy */
+.bottomFooter {
+  gap: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
-  font-size: 1.25rem;
+  max-width: 750px;
+  margin-top: 2rem;
+  text-align: center;
   align-items: center;
-  margin-bottom: 0.5rem;
-  justify-content: center;
-}
-
-.footerLinks a {
-  transition: 0.3s ease-in-out;
-}
-
-.footerLinks a:hover {
-  color: var(--primary);
+  flex-direction: column;
 }
 
 .legalDisclaimer {
   font-size: 1rem;
-  max-width: 800px;
-  margin-bottom: 0.5rem;
   color: var(--text-secondary);
 }
 
 .copyright {
-  font-size: 1rem;
-  color: var(--text-primary);
+  font-size: 1.15rem;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
   .bigFooter {
+    flex-direction: column;
     gap: 2rem;
+    align-items: center;
+    text-align: center;
   }
 
-  .logoColumn {
-    gap: 0.75rem;
+  .footerColumn {
+    align-items: center;
+  }
+
+  .navHeader {
+    font-size: 1.1rem;
+  }
+
+  .footerNav a {
+    font-size: 0.95rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .legalDisclaimer,
+  .copyright {
+    font-size: 0.85rem;
+    padding: 0 1rem;
   }
 
   .kngdm {
@@ -152,65 +136,29 @@
   }
 
   .mvmnt {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
+}
 
-  .copyright {
+@media (max-width: 480px) {
+  .footerNav a {
     font-size: 0.85rem;
   }
 
   .navHeader {
-    font-size: 1.15rem;
-    margin-bottom: 0.35rem;
-  }
-
-  .footerNav {
-    gap: 0.35rem;
-  }
-
-  .footerNav a {
-    font-size: 0.95rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .bigFooter {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .smallFooter {
-    display: none;
-  }
-}
-
-/* Tablet Responsiveness */
-@media (max-width: 768px) {
-  .footerLinks {
     font-size: 1rem;
   }
 
   .legalDisclaimer {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   .copyright {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
-}
 
-/* Mobile Responsiveness */
-@media (max-width: 480px) {
-  .footerLinks {
+  .socialIcons {
+    font-size: 1.25rem;
     gap: 0.75rem;
-    font-size: 0.85rem;
-  }
-
-  .legalDisclaimer {
-    font-size: 0.75rem;
-  }
-
-  .copyright {
-    font-size: 0.75rem;
   }
 }
