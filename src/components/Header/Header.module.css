@@ -29,34 +29,58 @@
 }
 
 .mvmnt {
-  font-size: 1.25rem;
   font-weight: 300;
+  font-size: 1.25rem;
   letter-spacing: 1px;
 }
 
 .navContainer {
+  gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .navLinks {
+  gap: 1rem;
   display: flex;
+  font-size: 1.25rem;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  font-size: 1.25rem;
   transition: 0.3s ease-in;
 }
 
 .navLinks a {
   font-weight: 500;
+  position: relative;
+  display: inline-block;
   transition: 0.3s ease-in;
+  color: var(--text-primary);
+  transition: color 0.3s ease-in;
 }
 
-.navLinks a:hover {
-  color: var(--text-secondary);
+/* Underline animation on hover and active */
+.navLinks a::after {
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  content: "";
+  bottom: -2px;
+  position: absolute;
+  transform-origin: center;
+  background-color: var(--primary);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show underline on hover */
+.navLinks a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Show underline on active route */
+.activeLink::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .freeClassButton {

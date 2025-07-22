@@ -20,10 +20,27 @@ function Header() {
           {/* Navigation */}
           <div className={styles.navContainer}>
             <nav className={styles.navLinks}>
-              <NavLink to="/">HOME</NavLink>
-              <NavLink to="/pricing">PRICING</NavLink>
-              <NavLink to="/schedule">SCHEDULE</NavLink>
-              <NavLink to="/nutrition">NUTRITION</NavLink>
+              <NavLink to="/" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}>
+                HOME
+              </NavLink>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
+                PRICING
+              </NavLink>
+              <NavLink
+                to="/schedule"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
+                SCHEDULE
+              </NavLink>
+              <NavLink
+                to="/nutrition"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
+                NUTRITION
+              </NavLink>
             </nav>
             {/* Free Class Button */}
             <button className={styles.freeClassButton}>
