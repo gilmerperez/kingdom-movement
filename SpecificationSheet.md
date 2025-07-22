@@ -258,3 +258,7 @@ html[data-theme="dark"] {
 - https://dejavugym.com/
 - https://fyfitnessclub.com/
 - https://crossfitorlando.com/
+
+## Additional Pages
+
+- Include all other services that the place offers: Esthetiticain services, nails, physical therapy

@@ -12,12 +12,12 @@ function Footer() {
             <section className={styles.logoColumn}>
               {/* Logo */}
               <NavLink to="/" className={styles.logoContainer}>
-                <span className={styles.moonstar}>MOONSTAR</span>
-                <span className={styles.esthetics}>ESTHETICS</span>
+                <span className={styles.kngdm}>KNGDM</span>
+                <span className={styles.mvmnt}>MVMNT</span>
               </NavLink>
               {/* Copyright */}
               <p className={styles.copyright}>
-                &copy; {new Date().getFullYear()} Moonstar Esthetics. <br /> All rights reserved.
+                &copy; {new Date().getFullYear()} Kingdom Movement. <br /> All rights reserved.
               </p>
             </section>
 
@@ -26,9 +26,9 @@ function Footer() {
               <h5 className={styles.navHeader}>Navigation</h5>
               <nav className={styles.footerNav}>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="/reviews">Reviews</NavLink>
-                <NavLink to="/information">Information</NavLink>
+                <NavLink to="/pricing">Pricing</NavLink>
+                <NavLink to="/schedule">Schedule</NavLink>
+                <NavLink to="/nutrition">Nutrition</NavLink>
               </nav>
             </section>
 
@@ -46,19 +46,19 @@ function Footer() {
             <section className={styles.footerColumn}>
               <h5 className={styles.navHeader}>Contact</h5>
               <div className={styles.footerNav}>
-                <a href="tel:3213520639">
-                  <p>(321) 352-0639</p>
+                <a href="tel:3213375193">
+                  <p>(321) 337-5193</p>
                 </a>
-                <a href="mailto:moonstaresthetics@gmail.com">
-                  <p>moonstaresthetics@gmail.com</p>
+                <a href="mailto:email@address.com">
+                  <p>email@address.com</p>
                 </a>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Moonstar+Esthetics+6881+Kingspointe+Pkwy+Suite+4+Orlando+FL+32819"
+                  href="https://www.google.com/maps/place/rangers+kingdom/data=!4m2!3m1!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9?sa=X&ved=1t:242&ictx=111"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <p>
-                    6881 Kingspointe Pkwy Suite 4 <br /> Orlando, Florida 32819
+                    6881 Kingspointe Pkwy <br /> Suite #4 Orlando, FL 32819
                   </p>
                 </a>
               </div>
@@ -76,15 +76,14 @@ function Footer() {
 
             {/* Legal Disclaimer */}
             <p className={styles.legalDisclaimer}>
-              Moonstar Esthetics provides professional skincare and wellness services. This website is for informational
-              purposes only and does not offer medical advice, diagnosis, or treatment. All services are by appointment
-              only. Please consult a licensed professional for personalized care.
+              Kingdom Movement offers fitness training and wellness guidance for educational and informational purposes
+              only. This site does not provide medical advice, diagnosis, or treatment. Participation in classes is at
+              your own risk. Always consult with a licensed medical professional before beginning any new exercise
+              program.
             </p>
 
             {/* Copyright */}
-            <p className={styles.copyright}>
-              &copy; {new Date().getFullYear()} Moonstar Esthetics. All rights reserved.
-            </p>
+            <p className={styles.copyright}>&copy; {new Date().getFullYear()} Kingdom Movement. All rights reserved.</p>
           </section>
         </section>
       </footer>
