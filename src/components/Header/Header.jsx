@@ -12,14 +12,10 @@ function Header() {
       <header>
         <section className={styles.headerContainer}>
           {/* Logo */}
-          <div className={styles.logoContainer}>
-            <span className={styles.kngdm}>
-              <NavLink to="/">KNGDM</NavLink>
-            </span>
-            <span className={styles.mvmnt}>
-              <NavLink to="/">MVMNT</NavLink>
-            </span>
-          </div>
+          <NavLink to="/" className={styles.logoContainer}>
+            <span className={styles.kngdm}>KNGDM</span>
+            <span className={styles.mvmnt}>MVMNT</span>
+          </NavLink>
 
           {/* Navigation */}
           <div className={styles.navContainer}>
@@ -29,10 +25,19 @@ function Header() {
               <NavLink to="/schedule">SCHEDULE</NavLink>
               <NavLink to="/nutrition">NUTRITION</NavLink>
             </nav>
-            <button className={styles.ctaButton}>FREE CLASS</button>
+            {/* Free Class Button */}
+            <button className={styles.freeClassButton}>
+              <a
+                href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FREE CLASS
+              </a>
+            </button>
           </div>
 
-          {/* Hamburger Menu */}
+          {/* Mobile Hamburger Menu */}
           <button
             className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
             onClick={toggleMenu}
@@ -56,7 +61,16 @@ function Header() {
           <NavLink to="/nutrition" onClick={toggleMenu}>
             NUTRITION
           </NavLink>
-          <button className={styles.mobileCTA}>FREE CLASS</button>
+          {/* Free Class Button */}
+          <button className={styles.mobileFreeClassButton}>
+            <a
+              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              FREE CLASS
+            </a>
+          </button>
         </div>
       </header>
     </>
