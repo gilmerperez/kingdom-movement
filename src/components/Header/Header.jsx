@@ -3,8 +3,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
+  // Mobile Menu Toggle
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
@@ -20,25 +20,16 @@ function Header() {
           {/* Navigation */}
           <div className={styles.navContainer}>
             <nav className={styles.navLinks}>
-              <NavLink to="/" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}>
+              <NavLink to="/" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
                 HOME
               </NavLink>
-              <NavLink
-                to="/pricing"
-                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
-              >
+              <NavLink to="/pricing" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
                 PRICING
               </NavLink>
-              <NavLink
-                to="/schedule"
-                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
-              >
+              <NavLink to="/schedule" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
                 SCHEDULE
               </NavLink>
-              <NavLink
-                to="/nutrition"
-                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
-              >
+              <NavLink to="/nutrition" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
                 NUTRITION
               </NavLink>
             </nav>
