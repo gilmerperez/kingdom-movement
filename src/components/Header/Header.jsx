@@ -73,13 +73,13 @@ function Header() {
             <span className={styles.seperator}>|</span>
 
             {/* Functional Button */}
-            <section className={styles.functionalButton}>
+
               {/* Theme Button */}
               <button className={styles.themeButton} onClick={toggleTheme}>
                 <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
                 <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
               </button>
-            </section>
+       
 
             {/* Free Class Button */}
             <button className={styles.freeClassButton}>
