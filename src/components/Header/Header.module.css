@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .logoContainer {
@@ -19,7 +20,6 @@
 .kngdm,
 .mvmnt {
   width: 100%;
-  font-family: "Roboto";
   transition: 0.3s ease-in;
 }
 

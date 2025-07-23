@@ -8,7 +8,7 @@
 html[data-theme="light"] {
   --header-bg-color: hsl(0, 0%, 97.25%);
   --bg-color: hsl(0, 0%, 95%);
-  --text-primary: hsl(0, 0%, 0%);
+  --text-primary: hsl(0, 0%, 10%);
   --text-secondary: hsl(0, 0%, 20%);
   --primary: hsl(1, 82%, 19%);
   --footer-bg-color: hsl(0, 0%, 97.25%);
@@ -19,7 +19,7 @@ html[data-theme="dark"] {
   --header-bg-color: hsl(0, 0%, 5%);
   --bg-color: hsl(0, 0%, 10%);
   --text-primary: hsl(0, 0%, 100%);
-  --text-secondary: hsl(0, 0%, 75%);
+  --text-secondary: hsl(0, 0%, 80%);
   --primary: hsl(1, 82%, 19%);
   --footer-bg-color: hsl(0, 0%, 5%);
 }
@@ -97,7 +97,7 @@ body {
   background-color: var(--bg-color); /* Sets a default background color */
   -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS Firefox */
   -webkit-font-smoothing: antialiased; /* Better font rendering on WebKit browsers */
-  font-family: "Roboto Condensed", Arial, sans-serif; /* Modern system font stack */
+  font-family: "Roboto", Arial, sans-serif; /* Modern system font stack */
 }
 
 /* HEADER - Shared structural styling */
