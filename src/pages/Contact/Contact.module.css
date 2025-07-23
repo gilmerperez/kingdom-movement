@@ -2,9 +2,172 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
   text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  transition: 0.3s ease-in;
+  font-family: "Libre Baskerville", serif;
+}
+
+.introduction {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.formContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.15);
+  background-color: var(--header-footer-bg-color);
+}
+
+form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-primary);
+}
+
+.formGroup {
+  gap: 0.5rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.formControl {
+  width: 100%;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+  padding: 1.75rem 1rem 0.75rem;
+  border: 2px solid var(--lavender);
+  background-color: var(--bg-color);
+}
+
+textarea.formControl {
+  height: 200px;
+  resize: vertical;
+}
+
+label {
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-weight: 500;
+  position: absolute;
+  font-size: 1.25rem;
+  pointer-events: none;
+  color: var(--text-primary);
+  transition: 0.3s ease-in-out;
+}
+
+.formControl:focus ~ label,
+.formControl:not(:placeholder-shown) ~ label {
+  opacity: 0.95;
+  color: var(--text-secondary);
+  transform: scale(0.85) translateX(-0.5rem) translateY(-0.6rem);
+}
+
+.formControl:focus {
+  outline: none;
+  border-color: var(--lavender);
+}
+
+.formControl::placeholder {
+  opacity: 0;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  caret-color: var(--text-primary);
+  transition: background-color 9999s ease-out 0s;
+  box-shadow: 0 0 0 30px var(--bg-color) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+}
+
+.submitBtn {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  padding: 0.75rem 0.75rem;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+  border: 2px solid var(--lavender);
+  background-color: var(--header-footer-bg-color);
+}
+
+.submitBtn:hover {
+  color: var(--bg-color);
+  background-color: var(--lavender);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.submitBtn i {
+  margin-left: 0.5rem;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+}
+
+.submitBtn:hover i {
+  color: var(--bg-color);
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .introduction {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    font-size: 1rem;
+  }
+
+  .formContainer {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .formControl {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  textarea.formControl {
+    height: 150px;
+  }
+
+  .submitBtn {
+    font-size: 1.25rem;
+  }
 }
