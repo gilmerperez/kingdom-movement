@@ -85,7 +85,7 @@ function Footer() {
               aria-label="Facebook"
               rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i className="fa-brands fa-facebook fa-xl"></i>
             </a>
           </div>
         </section>

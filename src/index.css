@@ -10,7 +10,7 @@ html[data-theme="light"] {
   --bg-color: hsl(0, 0%, 95%);
   --text-primary: hsl(0, 0%, 10%);
   --text-secondary: hsl(0, 0%, 20%);
-  --primary: hsl(1, 82%, 19%);
+  --primary: hsl(0, 100%, 25%);
   --footer-bg-color: hsl(0, 0%, 97.25%);
 }
 
@@ -20,7 +20,7 @@ html[data-theme="dark"] {
   --bg-color: hsl(0, 0%, 10%);
   --text-primary: hsl(0, 0%, 100%);
   --text-secondary: hsl(0, 0%, 80%);
-  --primary: hsl(1, 82%, 19%);
+  --primary: hsl(0, 100%, 25%);
   --footer-bg-color: hsl(0, 0%, 5%);
 }
 
