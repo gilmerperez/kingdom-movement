@@ -6,27 +6,6 @@ function Footer() {
     <footer>
       <section className={styles.footerContainer}>
         <section className={styles.bigFooter}>
-          {/* Social Icons */}
-          <section className={styles.footerColumn}>
-            <h5 className={styles.navHeader}>Connect</h5>
-            <div className={styles.socialIcons}>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.google.com/maps/place/rangers+kingdom"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Google Maps"
-              >
-                <i className="fa-solid fa-location-dot"></i>
-              </a>
-            </div>
-          </section>
-
           {/* Navigation */}
           <section className={styles.footerColumn}>
             <h5 className={styles.navHeader}>Navigation</h5>
@@ -63,7 +42,7 @@ function Footer() {
           </section>
         </section>
 
-        {/* Footer Bottom Section */}
+        {/* Logo & Legal Text */}
         <section className={styles.bottomFooter}>
           <div className={styles.logoContainer}>
             <span className={styles.kngdm}>KNGDM</span>
@@ -75,6 +54,40 @@ function Footer() {
             risk. Always consult with a licensed medical professional before beginning any new exercise program.
           </p>
           <p className={styles.copyright}>&copy; {new Date().getFullYear()} Kingdom Movement. All rights reserved.</p>
+        </section>
+
+        {/* Social Icons */}
+        <section className={styles.footerColumn}>
+          <h5 className={styles.navHeader}>Connect</h5>
+          <div className={styles.socialIcons}>
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/kngdm.mvmnt/?locale=zh_CN&hl=am-et"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            {/* Google Maps */}
+            <a
+              href="https://www.google.com/search?q=Rangers+Kingdom+&sca_esv=2dc8bb8b89129ca2&rlz=1C1RXQR_enUS1087US1087&biw=1745&bih=828&ei=eQCAaPGbBayUwbkPlL-26QU&ved=0ahUKEwixvN65stGOAxUsSjABHZSfLV0Q4dUDCBA&uact=5&oq=Rangers+Kingdom+&gs_lp=Egxnd3Mtd2l6LXNlcnAiEFJhbmdlcnMgS2luZ2RvbSAyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKUGUM4DWM4DcAF4AJABAJgBXqABogGqAQEyuAEDyAEA-AEBmAICoAJlwgILEAAYsAMYogQYiQXCAggQABiwAxjvBZgDAIgGAZAGBJIHATKgB44JsgcBMbgHYcIHBTAuMS4xyAcF&sclient=gws-wiz-serp"
+              target="_blank"
+              aria-label="Google Maps"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-solid fa-location-dot fa-xl"></i>
+            </a>
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/profile.php?id=61554804519847&ref=_ig_profile_ac"
+              target="_blank"
+              aria-label="Facebook"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+          </div>
         </section>
       </section>
     </footer>
