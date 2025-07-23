@@ -55,16 +55,25 @@ function Header() {
           {/* Navigation */}
           <div className={styles.navContainer}>
             <nav className={styles.navLinks}>
-              <NavLink to="/" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
+              <NavLink to="/" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}>
                 HOME
               </NavLink>
-              <NavLink to="/pricing" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
                 PRICING
               </NavLink>
-              <NavLink to="/schedule" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
+              <NavLink
+                to="/schedule"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
                 SCHEDULE
               </NavLink>
-              <NavLink to="/nutrition" className={({ isActive }) => `${isActive ? styles.activeLink : ""}`}>
+              <NavLink
+                to="/nutrition"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
                 NUTRITION
               </NavLink>
             </nav>
@@ -74,12 +83,11 @@ function Header() {
 
             {/* Functional Button */}
 
-              {/* Theme Button */}
-              <button className={styles.themeButton} onClick={toggleTheme}>
-                <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
-                <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
-              </button>
-       
+            {/* Theme Button */}
+            <button className={styles.themeButton} onClick={toggleTheme}>
+              <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
+              <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
+            </button>
 
             {/* Free Class Button */}
             <button className={styles.freeClassButton}>

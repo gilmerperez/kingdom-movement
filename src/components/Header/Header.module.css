@@ -51,6 +51,15 @@
   transition: 0.3s ease-in;
 }
 
+.navLink {
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
 .navLinks a {
   font-weight: 400;
   position: relative;
@@ -60,7 +69,7 @@
 }
 
 /* Underline on hover and active */
-.navLinks a::after {
+.navLink::after {
   left: 50%;
   width: 100%;
   height: 2px;
@@ -74,11 +83,11 @@
 }
 
 /* Show underline on hover */
-.navLinks a:hover::after {
+.navLink:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Show underline active */
+/* Show underline on active page */
 .activeLink::after {
   transform: translateX(-50%) scaleX(1);
 }
