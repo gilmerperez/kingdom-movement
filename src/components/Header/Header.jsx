@@ -65,16 +65,16 @@ function Header() {
                 PRICING
               </NavLink>
               <NavLink
-                to="/schedule"
-                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
-              >
-                SCHEDULE
-              </NavLink>
-              <NavLink
                 to="/nutrition"
                 className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
               >
                 NUTRITION
+              </NavLink>
+              <NavLink
+                to="/schedule"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
+                SCHEDULE
               </NavLink>
             </nav>
 

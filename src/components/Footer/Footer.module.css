@@ -12,9 +12,9 @@
 .navContainer {
   width: 100%;
   display: flex;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navigationSection,
@@ -32,7 +32,7 @@
 }
 
 .footerNav {
-  gap: 0.25rem;
+  gap: 0.15rem;
   display: flex;
   font-weight: 400;
   flex-direction: column;
@@ -116,6 +116,7 @@
 @media (max-width: 768px) {
   .navContainer {
     align-items: center;
+    margin-bottom: 1.5rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -136,9 +137,11 @@
 
   .navHeader {
     font-size: 1.75rem;
+    margin-bottom: 0rem;
   }
 
   .footerNav a {
+    gap: 0.1rem;
     font-size: 1.5rem;
   }
 
