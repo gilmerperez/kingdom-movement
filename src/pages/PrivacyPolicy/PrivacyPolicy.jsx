@@ -70,19 +70,12 @@ function PrivacyPolicy() {
               browsing behavior or device usage.
             </p>
 
-            {/* Booking Platform */}
-            <p className={styles.policyHeading}>Third-Party Booking Services</p>
+            {/* Pricing and Scheduling Disclaimer */}
+            <p className={styles.policyHeading}>Pricing and Scheduling Disclaimer</p>
             <p className={styles.policyText}>
-              Class sign-ups and trial bookings are managed via our trusted third-party platform,{" "}
-              <a href="https://setmore.com" target="_blank" rel="noopener noreferrer">
-                Setmore
-              </a>
-              . When reserving a class, you may be required to provide your name and contact information. Please consult
-              Setmore's{" "}
-              <a href="https://www.setmore.com/privacy" target="_blank" rel="noopener noreferrer">
-                Privacy Policy
-              </a>{" "}
-              for information on how your data is managed.
+              Membership pricing, class schedules, and food menu offerings are subject to change without prior notice.
+              While we strive to keep all information up-to-date, availability and pricing may vary. Please contact our
+              team directly for the most current details.
             </p>
           </section>
         </section>
