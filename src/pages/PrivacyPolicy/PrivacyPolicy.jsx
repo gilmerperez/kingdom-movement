@@ -69,14 +69,6 @@ function PrivacyPolicy() {
               This website does not use cookies, tracking pixels, or third-party analytics tools. We do not track your
               browsing behavior or device usage.
             </p>
-
-            {/* Pricing and Scheduling Disclaimer */}
-            <p className={styles.policyHeading}>Pricing and Scheduling Disclaimer</p>
-            <p className={styles.policyText}>
-              Membership pricing, class schedules, and food menu offerings are subject to change without prior notice.
-              While we strive to keep all information up-to-date, availability and pricing may vary. Please contact our
-              team directly for the most current details.
-            </p>
           </section>
         </section>
       </main>

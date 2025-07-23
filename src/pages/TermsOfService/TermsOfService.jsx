@@ -4,7 +4,7 @@ import styles from "./TermsOfService.module.css";
 function TermsOfService() {
   // Set Page Title
   useEffect(() => {
-    document.title = "Moonstar Esthetics | Terms of Service";
+    document.title = "Kingdom Movement | Terms of Service";
   }, []);
 
   const monthNames = [
@@ -36,60 +36,37 @@ function TermsOfService() {
           <section className={styles.terms}>
             {/* Introduction */}
             <p className={styles.introduction}>
-              These Terms of Service govern your use of the Moonstar Esthetics website. By visiting or using this site,
-              you agree to comply with and be bound by these terms. If you do not agree, please refrain from using the
-              site.
+              By accessing this website, you agree to comply with the following terms and conditions. Please read these
+              terms carefully before using our services.
             </p>
 
-            {/* Acceptable Use */}
-            <p className={styles.termsHeading}>Acceptable Use</p>
+            {/* Site Usage */}
+            <p className={styles.termsHeading}>Site Usage</p>
             <p className={styles.termsText}>
-              You agree to use this website for lawful, informational purposes only. You must not interfere with the
-              operation of the site, attempt unauthorized access, or misuse any of its content or functionality.
+              This website is intended for general informational purposes related to our CrossFit studio. All content is
+              subject to change without notice. Unauthorized use of this site may give rise to a claim for damages.
             </p>
 
-            {/* No User Accounts */}
-            <p className={styles.termsHeading}>No User Accounts</p>
+            {/* No Liability */}
+            <p className={styles.termsHeading}>No Liability</p>
             <p className={styles.termsText}>
-              This website does not require account creation or login. You may access and browse all public content
-              without registering or providing personal information.
+              We are not responsible for any loss or damage that may occur from using this website. All information is
+              provided “as is,” without any warranties of any kind.
             </p>
 
-            {/* Service Disclaimer */}
-            <p className={styles.termsHeading}>Service Disclaimer</p>
+            {/* Modifications */}
+            <p className={styles.termsHeading}>Modifications</p>
             <p className={styles.termsText}>
-              Information on this site is provided for general reference and promotional purposes only. While we strive
-              for accuracy, Moonstar Esthetics does not guarantee the completeness or reliability of any content and
-              reserves the right to update or remove information at any time.
+              We may revise these terms at any time. By using this website, you agree to be bound by the current version
+              of these terms. Last updated: {month} {year}.
             </p>
 
-            {/* Content Ownership */}
-            <p className={styles.termsHeading}>Intellectual Property</p>
+            {/* Pricing and Scheduling Disclaimer */}
+            <p className={styles.termsHeading}>Pricing and Scheduling Disclaimer</p>
             <p className={styles.termsText}>
-              All content on this website, including logos, text, graphics, and styling, is the property of Moonstar
-              Esthetics unless otherwise stated. You may not reproduce, modify, or distribute any materials without
-              written permission.
-            </p>
-
-            {/* Changes to Terms */}
-            <p className={styles.termsHeading}>Changes to These Terms</p>
-            <p className={styles.termsText}>
-              These Terms of Service may be updated periodically. Continued use of the website after changes have been
-              made constitutes acceptance of the revised terms. Last updated: {month} {year}.
-            </p>
-
-            {/* Appointment Booking */}
-            <p className={styles.termsHeading}>Appointment Scheduling</p>
-            <p className={styles.termsText}>
-              Appointment bookings are processed through{" "}
-              <a href="https://setmore.com" target="_blank" rel="noopener noreferrer">
-                Setmore
-              </a>
-              , a third-party scheduling platform. Any information submitted through Setmore is subject to their own{" "}
-              <a href="https://www.setmore.com/privacy" target="_blank" rel="noopener noreferrer">
-                Terms of Service
-              </a>{" "}
-              and privacy policies.
+              Membership pricing, class schedules, and food menu offerings are subject to change without prior notice.
+              While we strive to keep all information up-to-date, availability and pricing may vary. Please contact our
+              team directly for the most current details.
             </p>
           </section>
         </section>

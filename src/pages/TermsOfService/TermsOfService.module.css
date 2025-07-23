@@ -7,15 +7,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .heading {
+  width: 100%;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
   transition: 0.3s ease-in;
-  font-family: "Libre Baskerville", serif;
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--primary);
 }
 
 .terms {
@@ -23,38 +25,55 @@
 }
 
 .introduction {
+  margin: 0 auto;
+  padding: 1rem;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
   text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  background-color: var(--bg-color);
+  border: 3px solid var(--text-secondary);
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .termsHeading {
+  line-height: 1.5;
   font-weight: 500;
   font-size: 1.25rem;
-  margin-bottom: 0.1rem;
+  display: inline-block;
+  margin-bottom: 0.15rem;
+  border-bottom: 3px solid var(--primary);
 }
 
 .termsText {
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .termsText:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
   .heading {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   .introduction {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .termsHeading {
     font-size: 1.15rem;
-    margin-bottom: 1.25rem;
+  }
+
+  .termsText {
+    font-size: 1.05rem;
   }
 }
 
@@ -62,19 +81,21 @@
 @media (max-width: 480px) {
   .heading {
     font-size: 2.25rem;
+    border-bottom: 2px solid var(--primary);
   }
 
   .introduction {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border: 2px solid var(--text-secondary);
   }
 
   .termsHeading {
-    font-size: 1rem;
-    margin-bottom: 0.05rem;
+    line-height: 1.25;
+    font-size: 1.15rem;
+    border-bottom: 2px solid var(--primary);
   }
 
   .termsText {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
