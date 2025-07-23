@@ -68,7 +68,7 @@
   color: var(--text-primary);
 }
 
-/* Underline on hover and active */
+/* Underline Effect */
 .navLink::after {
   left: 50%;
   width: 100%;
@@ -82,12 +82,12 @@
   transform: translateX(-50%) scaleX(0);
 }
 
-/* Show underline on hover */
+/* Underline on hover */
 .navLink:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Show underline on active page */
+/* Underline on active page */
 .activeLink::after {
   transform: translateX(-50%) scaleX(1);
 }

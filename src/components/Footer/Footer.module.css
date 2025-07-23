@@ -26,28 +26,47 @@
 }
 
 .navHeader {
-  width: 100%;
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
 }
 
 .footerNav {
-  width: 100%;
-  gap: 0.15rem;
+  gap: 0.25rem;
   display: flex;
   font-weight: 400;
   flex-direction: column;
 }
 
 .footerNav a {
+  position: relative;
   font-size: 1.25rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
 }
 
+/* Underline Effect */
+.footerNav a::after {
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  content: "";
+  bottom: -3px;
+  position: absolute;
+  transform-origin: center;
+  transition: 0.3s ease-in-out;
+  background-color: var(--primary);
+  transform: translateX(-50%) scaleX(0);
+}
+
+/* Underline on hover */
 .footerNav a:hover {
   color: var(--text-primary);
+}
+
+/* Underline on active page */
+.footerNav a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .legalContainer {
