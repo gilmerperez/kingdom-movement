@@ -7,38 +7,34 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .heading {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   transition: 0.3s ease-in;
-  font-family: "Libre Baskerville", serif;
+  border-bottom: 5px solid var(--primary);
 }
 
 .introduction {
-  font-weight: 500;
-  font-size: 1.25rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .formContainer {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
+  background-color: var(--header-bg-color);
   box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.15);
-  background-color: var(--header-footer-bg-color);
 }
 
 form {
   gap: 1rem;
   display: flex;
   flex-direction: column;
-  color: var(--text-primary);
 }
 
 .formGroup {
@@ -50,18 +46,28 @@ form {
 
 .formControl {
   width: 100%;
-  font-size: 1.15rem;
-  border-radius: 5px;
+  font-size: 1.25rem;
+  border-radius: 8px;
   transition: 0.3s ease-in;
   color: var(--text-primary);
-  padding: 1.75rem 1rem 0.75rem;
-  border: 2px solid var(--lavender);
+  padding: 2rem 1rem 0.75rem;
+  border: 2px solid var(--bg-color);
   background-color: var(--bg-color);
+  font-family: "Roboto", Arial, sans-serif;
+  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.15);
+}
+
+.formControl::placeholder {
+  opacity: 0;
 }
 
 textarea.formControl {
   height: 200px;
   resize: vertical;
+}
+
+.formControl:focus {
+  border: 2px solid var(--primary);
 }
 
 label {
@@ -79,17 +85,7 @@ label {
 .formControl:focus ~ label,
 .formControl:not(:placeholder-shown) ~ label {
   opacity: 0.95;
-  color: var(--text-secondary);
   transform: scale(0.85) translateX(-0.5rem) translateY(-0.6rem);
-}
-
-.formControl:focus {
-  outline: none;
-  border-color: var(--lavender);
-}
-
-.formControl::placeholder {
-  opacity: 0;
 }
 
 input:-webkit-autofill,
@@ -101,22 +97,19 @@ textarea:-webkit-autofill {
 }
 
 .submitBtn {
-  border: none;
-  cursor: pointer;
+  padding: 0.75rem;
   font-weight: 500;
   font-size: 1.75rem;
-  border-radius: 5px;
-  padding: 0.75rem 0.75rem;
+  border-radius: 8px;
   transition: 0.3s ease-in;
   color: var(--text-primary);
-  border: 2px solid var(--lavender);
-  background-color: var(--header-footer-bg-color);
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
 }
 
 .submitBtn:hover {
-  color: var(--bg-color);
-  background-color: var(--lavender);
-  box-shadow: 0 0 10px var(--primary);
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
 }
 
 .submitBtn i {
@@ -126,48 +119,58 @@ textarea:-webkit-autofill {
 }
 
 .submitBtn:hover i {
-  color: var(--bg-color);
+  color: hsl(0, 0%, 100%);
 }
 
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
   .heading {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 
   .introduction {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 480px) {
   .heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    border-bottom: 4px solid var(--primary);
   }
 
   .introduction {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .formContainer {
-    padding: 1rem;
-  }
-
-  label {
-    font-size: 1rem;
+    border-radius: 8px;
   }
 
   .formControl {
-    font-size: 1rem;
-    padding-top: 1.5rem;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    padding: 1.5rem 0.75rem 0.75rem;
+    border: 1px solid var(--bg-color);
   }
 
   textarea.formControl {
     height: 150px;
   }
 
+  .formControl:focus {
+    border: 1px solid var(--primary);
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
   .submitBtn {
+    padding: 0.65rem;
     font-size: 1.25rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
   }
 }

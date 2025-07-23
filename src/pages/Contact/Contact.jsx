@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function Contact() {
   // Set Page Title
   useEffect(() => {
-    document.title = "Moonstar Esthetics | Contact";
+    document.title = "Kingdom Movement | Contact";
   }, []);
 
   const [subject, setSubject] = useState("");
@@ -13,7 +13,7 @@ function Contact() {
   // Send Email
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = "moonstaresthetics@gmail.com";
+    const email = "email@address.com";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
   };
@@ -26,8 +26,9 @@ function Contact() {
 
         {/* Introduction */}
         <p className={styles.introduction}>
-          We'd love to hear from you. Whether you have a question about our services, want to request a consultation, or
-          simply want to say hello — feel free to reach out below.
+          Interested in collaborating with Kingdom Movement? Whether you're exploring business opportunities, potential
+          sponsorships, community partnerships, or simply have questions about our programs — we'd love to connect with
+          you. Reach out below and a member of our team will follow up shortly.
         </p>
 
         {/* Form */}
@@ -44,7 +45,7 @@ function Contact() {
                 onChange={(e) => setSubject(e.target.value)}
                 className={styles.formControl}
               />
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">SUBJECT</label>
             </div>
 
             {/* Message */}
@@ -57,12 +58,12 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 className={styles.formControl}
               ></textarea>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">MESSAGE</label>
             </div>
 
             {/* Submit */}
             <button type="submit" className={styles.submitBtn}>
-              Send Message <i className="fa-solid fa-paper-plane"></i>
+              SEND MESSAGE <i className="fa-solid fa-paper-plane"></i>
             </button>
           </form>
         </section>
