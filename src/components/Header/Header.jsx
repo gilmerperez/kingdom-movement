@@ -19,6 +19,21 @@ function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, [menuOpen]);
 
+  // Sticky header logic
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setIsScrollingUp(currentScrollY < lastScrollY || currentScrollY < 10);
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   // Theme switch
   const [theme, setTheme] = useState("dark");
 
@@ -56,7 +71,7 @@ function Header() {
 
   return (
     <>
-      <header>
+      <header className={`${styles.stickyHeader} ${isScrollingUp ? styles.visible : styles.hidden}`}>
         <section className={styles.headerContainer}>
           {/* Logo */}
           <NavLink to="/" className={styles.logoContainer}>

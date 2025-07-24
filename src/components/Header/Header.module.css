@@ -1,3 +1,24 @@
+/* Sticky Header Container */
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--header-bg-color);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Show on scroll-up */
+.visible {
+  transform: translateY(0%);
+}
+
+/* Hide on scroll-down */
+.hidden {
+  transform: translateY(-100%);
+}
+
 .headerContainer {
   width: 100%;
   display: flex;
