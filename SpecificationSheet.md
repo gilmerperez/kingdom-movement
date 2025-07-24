@@ -262,3 +262,5 @@ html[data-theme="dark"] {
 ## Additional Pages
 
 - Include all other services that the place offers: Esthetiticain services, nails, physical therapy
+
+THIS IS MORE THAN A GYM — IT'S A MOVEMENT

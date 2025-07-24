@@ -8,3 +8,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.mainContainer {
+  padding: 0 2rem;
+}
