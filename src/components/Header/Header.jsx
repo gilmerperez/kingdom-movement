@@ -71,7 +71,7 @@ function Header() {
 
   return (
     <>
-      <header className={`${styles.stickyHeader} ${isScrollingUp ? styles.visible : styles.hidden}`}>
+      <header className={`${isScrollingUp ? styles.visible : styles.hidden}`}>
         <section className={styles.headerContainer}>
           {/* Logo */}
           <NavLink to="/" className={styles.logoContainer}>
