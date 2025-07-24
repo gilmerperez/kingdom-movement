@@ -295,17 +295,12 @@
 }
 
 /* Underline on hover */
-.mobileMenu a:hover::after {
+.mobileMenu a:not(:last-child):hover::after {
   width: 100%;
   left: 0;
 }
 
-.mobileMenu a.active::after {
-  width: 100%;
-  left: 0;
-}
-
-/* Active route underline */
+/* Underline on active page */
 .mobileMenu :global(.active)::after {
   width: 100%;
   left: 0;
