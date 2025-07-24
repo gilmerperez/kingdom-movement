@@ -9,10 +9,52 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.legalContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kngdm,
+.mvmnt {
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+
+.kngdm {
+  font-weight: 700;
+  line-height: 0.75;
+  font-size: 2.75rem;
+}
+
+.mvmnt {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.legalDisclaimer {
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.copyright {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
 .navContainer {
   width: 100%;
   display: flex;
-  margin-bottom: 2rem;
   align-items: flex-start;
   justify-content: space-evenly;
 }
@@ -69,54 +111,14 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-.legalContainer {
-  text-align: center;
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.25rem;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.kngdm,
-.mvmnt {
-  width: 100%;
-  transition: 0.3s ease-in;
-}
-
-.kngdm {
-  font-weight: 700;
-  line-height: 0.75;
-  font-size: 2.75rem;
-}
-
-.mvmnt {
-  line-height: 1;
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.legalDisclaimer {
-  margin: 0 auto;
-  max-width: 800px;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-}
-
-.copyright {
-  font-size: 1.15rem;
-  color: var(--text-primary);
-}
-
 /* Tablet Breakpoint */
 @media (max-width: 768px) {
+  .legalDisclaimer {
+    max-width: 500px;
+  }
+
   .navContainer {
     align-items: center;
-    margin-bottom: 1.5rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -144,33 +146,10 @@
     gap: 0.1rem;
     font-size: 1.5rem;
   }
-
-  .legalDisclaimer {
-    max-width: 500px;
-  }
 }
 
 /* Mobile Breakpoint */
 @media (max-width: 480px) {
-  .navContainer {
-    margin-bottom: 1rem;
-  }
-
-  .navigationSection:not(:last-child),
-  .contactSection:not(:last-child),
-  .legalSection:not(:last-child),
-  .socialSection:not(:last-child) {
-    margin-bottom: 0.75rem;
-  }
-
-  .navHeader {
-    font-size: 1.5rem;
-  }
-
-  .footerNav a {
-    font-size: 1.25rem;
-  }
-
   .kngdm {
     font-size: 2.5rem;
   }
@@ -188,5 +167,20 @@
   .copyright {
     font-size: 1rem;
     color: var(--text-primary);
+  }
+
+  .navigationSection:not(:last-child),
+  .contactSection:not(:last-child),
+  .legalSection:not(:last-child),
+  .socialSection:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  .navHeader {
+    font-size: 1.5rem;
+  }
+
+  .footerNav a {
+    font-size: 1.25rem;
   }
 }

@@ -5,6 +5,23 @@ function Footer() {
   return (
     <footer>
       <div className={styles.footerContainer}>
+        <div className={styles.legalContainer}>
+          {/* Logo */}
+          <div className={styles.logoContainer}>
+            <span className={styles.kngdm}>KNGDM</span>
+            <span className={styles.mvmnt}>MVMNT</span>
+          </div>
+          {/* Legal Text */}
+          <p className={styles.legalDisclaimer}>
+            Kingdom Movement offers fitness training and wellness guidance for educational and informational purposes
+            only. This site does not provide medical advice, diagnosis, or treatment. Participation in classes is at
+            your own risk. Always consult with a licensed medical professional before beginning any new exercise
+            program.
+          </p>
+          {/* Copyright */}
+          <p className={styles.copyright}>&copy; {new Date().getFullYear()} Kingdom Movement. All rights reserved.</p>
+        </div>
+
         <div className={styles.navContainer}>
           {/* Legal Pages */}
           <section className={styles.legalSection}>
@@ -71,23 +88,6 @@ function Footer() {
               </a>
             </nav>
           </section>
-        </div>
-
-        <div className={styles.legalContainer}>
-          {/* Logo */}
-          <div className={styles.logoContainer}>
-            <span className={styles.kngdm}>KNGDM</span>
-            <span className={styles.mvmnt}>MVMNT</span>
-          </div>
-          {/* Legal Text */}
-          <p className={styles.legalDisclaimer}>
-            Kingdom Movement offers fitness training and wellness guidance for educational and informational purposes
-            only. This site does not provide medical advice, diagnosis, or treatment. Participation in classes is at
-            your own risk. Always consult with a licensed medical professional before beginning any new exercise
-            program.
-          </p>
-          {/* Copyright */}
-          <p className={styles.copyright}>&copy; {new Date().getFullYear()} Kingdom Movement. All rights reserved.</p>
         </div>
       </div>
     </footer>
