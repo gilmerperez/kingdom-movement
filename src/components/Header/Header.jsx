@@ -140,6 +140,13 @@ function Header() {
 
         {/* Dropdown Menu */}
         <div className={`${styles.mobileMenu} ${menuOpen ? styles.show : ""}`}>
+          {/* Theme Button */}
+          <button className={`${styles.themeButton} ${styles.sidebarThemeButton}`} onClick={toggleTheme}>
+            <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
+            <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
+          </button>
+
+          {/* Navigation */}
           <NavLink to="/" onClick={toggleMenu}>
             HOME
           </NavLink>
@@ -152,6 +159,7 @@ function Header() {
           <NavLink to="/nutrition" onClick={toggleMenu}>
             NUTRITION
           </NavLink>
+
           {/* Free Class Button */}
           <button className={styles.mobileFreeClassButton}>
             <a

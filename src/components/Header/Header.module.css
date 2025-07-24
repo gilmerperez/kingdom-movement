@@ -305,12 +305,12 @@
 
 /* Underline Effect */
 .mobileMenu a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
   left: 50%;
   width: 0%;
+  bottom: 0;
   height: 2px;
+  content: "";
+  position: absolute;
   background-color: var(--primary);
   transition: width 0.3s ease, left 0.3s ease;
 }
@@ -325,6 +325,22 @@
 .mobileMenu :global(.active)::after {
   width: 100%;
   left: 0;
+}
+
+/* Mobile Menu Theme Button */
+.sidebarThemeButton {
+  gap: 0.5rem;
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+  background-color: var(--header-bg-color);
+}
+
+.sidebarThemeButton:hover {
+  color: var(--text-secondary);
 }
 
 .mobileFreeClassButton {
