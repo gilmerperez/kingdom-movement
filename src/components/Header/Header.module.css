@@ -274,10 +274,41 @@
 }
 
 .mobileMenu a {
-  width: 100%;
   padding: 0.25rem;
+  position: relative;
   font-size: 1.25rem;
   text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Underline Effect */
+.mobileMenu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Underline on hover */
+.mobileMenu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.mobileMenu a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active route underline */
+.mobileMenu :global(.active)::after {
+  width: 100%;
+  left: 0;
 }
 
 .mobileFreeClassButton {
