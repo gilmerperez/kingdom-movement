@@ -3,11 +3,23 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Header() {
-  // Mobile Menu Toggle
+  // Mobile menu toggle
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  // Theme Switch
+  // Make mobile menu & hamburger icon disappear after 480px
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 480 && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuOpen]);
+
+  // Theme switch
   const [theme, setTheme] = useState("dark");
 
   // Make theme be set in DOM
