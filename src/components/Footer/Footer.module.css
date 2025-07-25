@@ -10,7 +10,6 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .legalContainer {
@@ -20,28 +19,26 @@ footer {
 
 .logoContainer {
   display: flex;
-  margin-bottom: 0.25rem;
   align-items: center;
+  margin-bottom: 0.25rem;
   flex-direction: column;
   justify-content: center;
 }
 
-.kngdm,
-.mvmnt {
-  width: 100%;
-  transition: 0.3s ease-in;
-}
-
 .kngdm {
+  width: 100%;
   font-weight: 700;
   line-height: 0.75;
   font-size: 2.75rem;
+  transition: 0.3s ease-in;
 }
 
 .mvmnt {
+  width: 100%;
   line-height: 1;
   font-weight: 300;
   font-size: 2rem;
+  transition: 0.3s ease-in;
 }
 
 .legalDisclaimer {
@@ -135,10 +132,10 @@ footer {
     text-align: center;
   }
 
-  .navigationSection:not(:last-child),
-  .contactSection:not(:last-child),
   .legalSection:not(:last-child),
-  .socialSection:not(:last-child) {
+  .socialSection:not(:last-child),
+  .navigationSection:not(:last-child),
+  .contactSection:not(:last-child) {
     margin-bottom: 1rem;
   }
 
@@ -174,10 +171,10 @@ footer {
     color: var(--text-primary);
   }
 
-  .navigationSection:not(:last-child),
-  .contactSection:not(:last-child),
   .legalSection:not(:last-child),
-  .socialSection:not(:last-child) {
+  .socialSection:not(:last-child),
+  .navigationSection:not(:last-child),
+  .contactSection:not(:last-child) {
     margin-bottom: 0.75rem;
   }
 

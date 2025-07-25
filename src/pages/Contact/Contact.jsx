@@ -26,9 +26,9 @@ function Contact() {
 
         {/* Introduction */}
         <p className={styles.introduction}>
-          Interested in collaborating with Kingdom Movement? Whether you're exploring business opportunities, potential
-          sponsorships, community partnerships, or simply have questions about our programs — we'd love to connect with
-          you. Reach out below and a member of our team will follow up shortly.
+          Whether you're exploring business opportunities, potential sponsorships, community partnerships, or simply
+          have questions about our programs — we'd love to connect with you. Reach out below and a member of our team
+          will follow up shortly.
         </p>
 
         {/* Form */}

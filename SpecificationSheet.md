@@ -86,12 +86,12 @@ Develop a modern, responsive website for **KNGDM MVMNT**, a growing CrossFit gym
 
 ```css
 html[data-theme="light"] {
-  --header-bg-color: hsl(0, 0%, 100%);
+  --header-bg-color: hsl(0, 0%, 97.25%);
   --bg-color: hsl(0, 0%, 95%);
-  --text-primary: hsl(0, 0%, 0%);
+  --text-primary: hsl(0, 0%, 10%);
   --text-secondary: hsl(0, 0%, 20%);
-  --primary: hsl(1, 82%, 19%);
-  --footer-bg-color: hsl(0, 0%, 100%);
+  --primary: hsl(0, 100%, 25%);
+  --footer-bg-color: hsl(0, 0%, 97.25%);
 }
 ```
 
@@ -99,12 +99,12 @@ html[data-theme="light"] {
 
 ```css
 html[data-theme="dark"] {
-  --header-bg-color: hsl(0, 0%, 10%);
-  --bg-color: hsl(0, 0%, 12%);
+  --header-bg-color: hsl(0, 0%, 5%);
+  --bg-color: hsl(0, 0%, 10%);
   --text-primary: hsl(0, 0%, 100%);
   --text-secondary: hsl(0, 0%, 80%);
-  --primary: hsl(1, 82%, 19%);
-  --footer-bg-color: hsl(0, 0%, 10%);
+  --primary: hsl(0, 100%, 25%);
+  --footer-bg-color: hsl(0, 0%, 5%);
 }
 ```
 
@@ -130,29 +130,50 @@ html[data-theme="dark"] {
 
 ### Pages & Content
 
-- **Header/Footer:**
+- **Header:**
 
-  - Logo, Navigation, CTA Button, social links, essential contact info, legal text.
+  - Logo, Navigation, CTA Button
+
+  - **Footer:**
+
+  - Logo, legal text, copyright, legal pages, social links, site navigation, contact info
 
 - **Home Page:**
 
-  - Overview of memberships, kitchen menu, schedules, collaborations, CTA Button.
-  - CTAs linking to dedicated pages.
+  - Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
 
 - **Membership Page:**
 
   - Lists different membership tiers with benefits.
+  - For each membership I will need:
+  - - id
+  - - name/tier of membership
+  - - price
+  - - features/benefits: Ex: access to which classes?, guest passes?
+  - - description
 
   - **Individual Membership Page:**
 
-  - Click into a tier for details, sign-up instructions, and contact links.
+  - Click into a membership for more details, sign-up instructions, and contact links.
+  - Big motivational picture at the top that fades to be more dark at the bottom then show the details
 
 - **Food Menu Page:**
 
-  - Full menu with details (price, calories, variations).
+  - Full menu with details
+  - Categories for protein shakes, teas, waffles, acai bowls
+  - Any promotions that you would like to advertise right away?
+  - For each menu item I will need:
+  - - id (For me)
+  - - name of menu item
+  - - price
+  - - calories (?)
+  - - description (I can generate)
+  - - variations and/or toppings (If any)
+  - - picture (if not I will get one from the internet)
 
 - **Schedule Page:**
 
+  - CSS Grid Format
   - Weekly class schedule.
   - Links to view workouts, sign-up interest forms, see who’s attending.
 
@@ -250,7 +271,6 @@ html[data-theme="dark"] {
 
 ## Important Info
 
-- Location: 6881 Kingspointe Pkwy STE 4Orlando, FL 32819
 - Classes: 7AM | 8:15AM | 9:30AM | 4:45PM | 6PM | 7:15PM | 8:30PM
 
 ## Websites For Inspiration
@@ -263,4 +283,7 @@ html[data-theme="dark"] {
 
 - Include all other services that the place offers: Esthetiticain services, nails, physical therapy
 
-THIS IS MORE THAN A GYM — IT'S A MOVEMENT
+## Quotes
+
+- MORE THAN A GYM — IT'S A MOVEMENT
+- BUILT FOR GLORY, BORN TO MOVE

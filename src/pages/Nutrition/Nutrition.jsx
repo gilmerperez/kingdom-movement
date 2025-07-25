@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import styles from "./Nutrition.module.css";
 
 function Nutrition() {
+  // Set Page Title
+  useEffect(() => {
+    document.title = "Kingdom Movement | Nutrition";
+  }, []);
+
   return (
     <>
       <main>

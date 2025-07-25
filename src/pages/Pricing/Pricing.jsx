@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import styles from "./Pricing.module.css";
 
 function Pricing() {
+  // Set Page Title
+  useEffect(() => {
+    document.title = "Kingdom Movement | Pricing";
+  }, []);
+
   return (
     <>
       <main>
