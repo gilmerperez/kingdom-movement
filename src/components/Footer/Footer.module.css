@@ -54,6 +54,15 @@ footer {
   color: var(--text-primary);
 }
 
+.seperator {
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  background-color: var(--text-primary);
+}
+
 .navContainer {
   width: 100%;
   display: flex;
@@ -169,6 +178,10 @@ footer {
   .copyright {
     font-size: 1rem;
     color: var(--text-primary);
+  }
+
+  .seperator {
+    height: 1px;
   }
 
   .legalSection:not(:last-child),

@@ -22,6 +22,9 @@ function Footer() {
           <p className={styles.copyright}>&copy; {new Date().getFullYear()} Kingdom Movement. All rights reserved.</p>
         </div>
 
+        {/* Seperator */}
+        <hr className={styles.seperator} />
+
         <div className={styles.navContainer}>
           {/* Legal Pages */}
           <section className={styles.legalSection}>
