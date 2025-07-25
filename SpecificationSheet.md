@@ -142,6 +142,23 @@ html[data-theme="dark"] {
 
   - Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
 
+  - WHO WE ARE (Component):
+  - - Description that talks about how KNGDM MVMNT isn't just a gym, its a community where people can come and get trained by certified and high level coaches whose only motive is to make you the best athlete possible. Talk about access to our ammenities, like wodify a state of the art training library; journal, planner and daily workout tracker that does everything from recording your workout results to helping you keep track of your nutrition. First side by side, on smaller screens they stack
+
+  - WHY CHOOSE US (Component):
+  - - Picture with dark and blurred as background
+  - - Each card is a reason why to join us, it shows a heading, then quick text description
+  - - Why crossfit
+  - - Elite level coaches
+  - - Personal training
+  - - Nutrition services
+  - - Weightlifting and open gym
+  - - Fun environment
+
+  - Skinny banner with cool black and white picture
+  - BUILT FOR GLORY — BORN TO MOVE
+  - Cool animation as you scroll up and down?
+
 - **Membership Page:**
 
   - Lists different membership tiers with benefits.
@@ -174,8 +191,8 @@ html[data-theme="dark"] {
 - **Schedule Page:**
 
   - CSS Grid Format
-  - Weekly class schedule.
-  - Links to view workouts, sign-up interest forms, see who’s attending.
+  - Table that has a bar at the top with all 7 days of the week, when you click each day the table updates to show all available training times: Including scheduled classes and open gym sessions
+  - Links to view workouts, see who’s attending.
 
 - **Contact Page:**
 
@@ -286,4 +303,3 @@ html[data-theme="dark"] {
 ## Quotes
 
 - MORE THAN A GYM — IT'S A MOVEMENT
-- BUILT FOR GLORY, BORN TO MOVE

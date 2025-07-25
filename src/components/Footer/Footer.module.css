@@ -59,8 +59,8 @@ footer {
   height: 2px;
   border: none;
   margin-bottom: 0.75rem;
-  color: var(--text-primary);
-  background-color: var(--text-primary);
+  color: var(--text-secondary);
+  background-color: var(--text-secondary);
 }
 
 .navContainer {
@@ -155,7 +155,7 @@ footer {
 
   .footerNav a {
     gap: 0.1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -196,6 +196,6 @@ footer {
   }
 
   .footerNav a {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }
