@@ -11,10 +11,9 @@ function Home() {
   return (
     <>
       <main className={styles.mainContainer}>
-        <section className={styles.homeContainer}>
-          <HomeCTA />
-        </section>
+        <section className={styles.homeContainer}>Home</section>
       </main>
+      <HomeCTA />
     </>
   );
 }
