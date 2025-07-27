@@ -1,0 +1,61 @@
+{
+  "memberships": [
+    {
+      "id": "foundation",
+      "name": "FOUNDATION",
+      "price": 99,
+      "frequency": "2x per week",
+      "description": "Perfect for beginners starting their fitness journey",
+      "features": [
+        "Access to all CrossFit classes",
+        "Basic fitness assessment",
+        "Nutrition consultation (1x)",
+        "Access to training library",
+        "Saturday classes included"
+      ],
+      "classAccess": "Morning & Evening",
+      "guestPasses": 1,
+      "isPopular": false,
+      "ctaText": "START YOUR JOURNEY"
+    },
+    {
+      "id": "elite",
+      "name": "ELITE",
+      "price": 140,
+      "frequency": "5x per week",
+      "description": "Our most comprehensive membership for serious athletes",
+      "features": [
+        "Unlimited CrossFit classes",
+        "Personal training sessions (2x/month)",
+        "Advanced nutrition coaching",
+        "Priority class booking",
+        "Exclusive Saturday sessions",
+        "Weightlifting & Open Gym access",
+        "Progress tracking & analytics"
+      ],
+      "classAccess": "All Classes + Priority Booking",
+      "guestPasses": 3,
+      "isPopular": true,
+      "ctaText": "BECOME ELITE"
+    },
+    {
+      "id": "performance",
+      "name": "PERFORMANCE",
+      "price": 129,
+      "frequency": "3x per week",
+      "description": "For athletes ready to take their training to the next level",
+      "features": [
+        "Access to all CrossFit classes",
+        "Personal training session (1x/month)",
+        "Nutrition consultation (2x)",
+        "Weightlifting & Open Gym access",
+        "Saturday classes included",
+        "Progress tracking"
+      ],
+      "classAccess": "All classes + Open Gym",
+      "guestPasses": 2,
+      "isPopular": false,
+      "ctaText": "LEVEL UP"
+    }
+  ]
+}

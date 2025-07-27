@@ -140,63 +140,74 @@ html[data-theme="dark"] {
 
 - **Home Page:**
 
-  - Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
+- Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
 
-  - WHO WE ARE (Component):
-  - - Description that talks about how KNGDM MVMNT isn't just a gym, its a community where people can come and get trained by certified and high level coaches whose only motive is to make you the best athlete possible. Talk about access to our ammenities, like wodify a state of the art training library; journal, planner and daily workout tracker that does everything from recording your workout results to helping you keep track of your nutrition. First side by side, on smaller screens they stack
+- WHO WE ARE (Component)
+  Description that talks about how KNGDM MVMNT isn't just a gym, it's a community where people can come and get trained by certified and high level coaches whose only motive is to make you the best athlete possible. Talk about access to our amenities, like a state of the art training library; journal, planner and daily workout tracker that does everything from recording your workout results to helping you keep track of your nutrition. First side by side, on smaller screens they stack
 
-  - WHY CHOOSE US (Component):
-  - - Picture with dark and blurred as background
-  - - Each card is a reason why to join us, it shows a heading, then quick text description
-  - - Why crossfit
-  - - Elite level coaches
-  - - Personal training
-  - - Nutrition services
-  - - Weightlifting and open gym
-  - - Fun environment
+- WHY CHOOSE US (Component)
+  Picture with dark and blurred as background
+  Each card is a reason why to join us, it shows a heading, then quick text description
+  Why crossfit
+  Elite level coaches
+  Personal training
+  Nutrition services
+  Weightlifting and open gym
+  Fun environment
 
-  - Skinny banner with cool black and white picture
-  - BUILT FOR GLORY — BORN TO MOVE
-  - Cool animation as you scroll up and down?
+- Skinny banner with cool black and white picture (Component)
+  BUILT FOR GLORY — BORN TO MOVE
+  Cool animation as you scroll up and down?
 
-- **Membership Page:**
+- **Pricing Page:**
 
-  - Lists different membership tiers with benefits.
-  - For each membership I will need:
-  - - id
-  - - name/tier of membership
-  - - price
-  - - features/benefits: Ex: access to which classes?, guest passes?
-  - - description
+- Lists different membership tiers with benefits.
+- For each membership I will need:
+  ID
+  Name
+  Price
+  Features/Benefits:
+  Access to what classes?
+  Guest passes?
+  Description?
+  Additional Info
 
-  - **Individual Membership Page:**
+- **Individual Pricing (Membership) Page:**
 
-  - Click into a membership for more details, sign-up instructions, and contact links.
-  - Big motivational picture at the top that fades to be more dark at the bottom then show the details
+- Link to sign up
+- What extra details can we show here that are not on the main Pricing Page?
+- Click into a membership for more details.
+- A big motivational picture at the top that fades to be more dark at the bottom then shows the details.
 
-- **Food Menu Page:**
+- **Nutrition Page:**
 
-  - Full menu with details
-  - Categories for protein shakes, teas, waffles, acai bowls
-  - Any promotions that you would like to advertise right away?
-  - For each menu item I will need:
-  - - id (For me)
-  - - name of menu item
-  - - price
-  - - calories (?)
-  - - description (I can generate)
-  - - variations and/or toppings (If any)
-  - - picture (if not I will get one from the internet)
+- Full menu with details.
+- Categories for:
+  Protein Shakes
+  Teas
+  Waffles
+  Acai Bowls
+- Any promotions that you would like to advertise right away at the top/bottom of the page?
+- For each menu item I will need:
+  ID (for me)
+  Name
+  Price
+  Calorie count
+  Description (I can make unless you want to use something specific)
+  Variations/Toppings with calorie count (if any)
+  Picture (if not I will get one from the internet)
 
 - **Schedule Page:**
 
-  - CSS Grid Format
-  - Table that has a bar at the top with all 7 days of the week, when you click each day the table updates to show all available training times: Including scheduled classes and open gym sessions
-  - Links to view workouts, see who’s attending.
+- CSS Grid Format.
+- Table that has a bar at the top with all 7 days of the week. When you click each day the table updates to show all available training times: Including scheduled classes and open gym sessions.
+- Link to Wodify to view workouts and to see who’s attending (if possible).
 
 - **Contact Page:**
 
-  - Form to reach out, includes CAPTCHA for spam prevention.
+- Form to reach out.
+- Includes subject and message field.
+- Includes CAPTCHA for spam prevention.
 
 - **Privacy Policy:**
 
