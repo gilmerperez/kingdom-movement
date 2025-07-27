@@ -297,6 +297,37 @@
   background-color: hsl(0, 0%, 80%);
 }
 
+/* Additional Info */
+.additionalInfoContainer {
+  width: 100vw;
+  padding: 2rem 3rem;
+  display: flex;
+  margin-top: 3.5rem;
+  align-items: center;
+  margin-bottom: -2rem;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(0, 0%, 95%);
+  background-color: var(--primary);
+}
+
+.additionalInfoContent {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.additionalInfoTitle {
+  font-size: 3rem;
+}
+
+.additionalInfoList li {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  border-bottom: 3px solid hsl(0, 0%, 95%);
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .pricingCards {
@@ -324,6 +355,20 @@
   .pricingCard {
     padding: 1.75rem;
     border-radius: 6px;
+  }
+
+  /* Additional Info */
+  .additionalInfoContainer {
+    margin-top: 3rem;
+  }
+
+  .additionalInfoTitle {
+    font-size: 2.75rem;
+  }
+
+  .additionalInfoList li {
+    font-size: 1.15rem;
+    border-bottom: 2 solid hsl(0, 0%, 100%);
   }
 }
 
@@ -457,5 +502,18 @@
     padding: 0.75rem;
     font-size: 1.15rem;
     border-radius: 4px;
+  }
+
+  /* Additional Info */
+  .additionalInfoContainer {
+    margin-top: 2rem;
+  }
+
+  .additionalInfoTitle {
+    font-size: 2.5rem;
+  }
+
+  .additionalInfoList li {
+    font-size: 1.1rem;
   }
 }

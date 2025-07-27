@@ -86,6 +86,36 @@ function Pricing() {
               </div>
             ))}
           </div>
+
+          {/* Additional Info */}
+          <div className={styles.additionalInfoContainer}>
+            <div className={styles.additionalInfoContent}>
+              <h2 className={styles.additionalInfoTitle}>ADDITIONAL INFO</h2>
+              <ul className={styles.additionalInfoList}>
+                <li>Must be age 18 years or older to enroll.</li>
+                <br />
+                <li>All membership types are non-transferable, non-assignable, and non-saleable.</li>
+                <br />
+                <li>Prepaid memberships and sessions agreements are not subject to any hold options.</li>
+                <br />
+                <li>
+                  For a complete list of Kingdom Movement Crossfit policies, rules, and regulations, feel free to
+                  contact us at email@address.com
+                </li>
+                <br />
+                <li>
+                  Month-to-Month membership holds may be placed two times per calendar year, up to three consecutive
+                  months each time. Must be 30 days in duration at minimum.
+                </li>
+                <br />
+                <li>
+                  Month-to-Month membership cancellations without penalty require fifteen days advance written notice.
+                  Prepaid memberships and sessions memberships are not subject to any early termination options with
+                  exception of death or disability.
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </>
