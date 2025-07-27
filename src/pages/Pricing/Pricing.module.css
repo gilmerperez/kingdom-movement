@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.header {
+.heading {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -23,11 +23,15 @@
   margin-bottom: 3rem;
 }
 
+.pricingCards > * {
+  transition: 0.3s ease-in;
+}
+
 .pricingCards {
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .pricingCard {
@@ -36,7 +40,6 @@
   position: relative;
   border-radius: 8px;
   flex-direction: column;
-  transition: 0.3s ease-in;
   background-color: var(--header-bg-color);
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
 }
@@ -57,8 +60,8 @@
 }
 
 .frequency {
-  font-size: 1rem;
   font-weight: 400;
+  font-size: 1.25rem;
   color: var(--text-secondary);
 }
 
@@ -70,7 +73,7 @@
 }
 
 .currency {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -141,12 +144,12 @@
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: var(--grey);
 }
 
 .commonBenefit p {
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--grey-text);
 }
 
 .signUpButton {
@@ -155,7 +158,6 @@
   font-weight: 700;
   font-size: 1.25rem;
   border-radius: 8px;
-  transition: 0.3s ease-in;
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
 }
@@ -167,6 +169,20 @@
 }
 
 /* Individual styles for popular card */
+.pricingCard.popular > * {
+  transition: 0.3s ease-in;
+}
+
+.pricingCard.popular {
+  transform: scale(1.05);
+  background-color: var(--primary);
+}
+
+.pricingCard.popular:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
+}
+
 .popularBadge {
   left: 50%;
   top: -12px;
@@ -180,16 +196,6 @@
   background-color: hsl(0, 0%, 100%);
 }
 
-.pricingCard.popular {
-  transform: scale(1.05);
-  background-color: var(--primary);
-}
-
-.pricingCard.popular:hover {
-  transform: scale(1.05) translateY(-3px);
-  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
-}
-
 .pricingCard.popular .membershipName {
   font-weight: 700;
   font-size: 2.5rem;
@@ -197,13 +203,13 @@
 }
 
 .pricingCard.popular .frequency {
-  font-size: 1rem;
   font-weight: 400;
-  color: var(--text-secondary);
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 80%);
 }
 
 .pricingCard.popular .currency {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
 }
@@ -216,7 +222,7 @@
 
 .pricingCard.popular .period {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: hsl(0, 0%, 80%);
 }
 
 .pricingCard.popular .separator {
@@ -240,7 +246,7 @@
   position: relative;
   font-size: 1.15rem;
   padding-left: 1.5rem;
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 100%);
 }
 
 .pricingCard.popular .featureItem::before {
@@ -283,7 +289,6 @@
   font-size: 1.25rem;
   border-radius: 8px;
   color: var(--primary);
-  transition: 0.3s ease-in;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -295,69 +300,162 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
   .pricingCards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
-  .pricingContainer {
-    padding: 1rem;
-  }
-
-  .mainTitle {
+  .heading {
     font-size: 2.5rem;
   }
 
-  .subtitle {
-    font-size: 1rem;
+  .introduction {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .pricingCards {
+    gap: 3rem;
+    max-width: 450px;
     grid-template-columns: 1fr;
-    max-width: 400px;
   }
 
-  .pricingCard.popular {
-    transform: none;
-  }
-
-  .pricingCard.popular:hover {
-    transform: translateY(-4px);
-  }
-
-  .price {
-    font-size: 3rem;
-  }
-
-  .membershipName {
-    font-size: 1.8rem;
+  .pricingCard {
+    padding: 1.75rem;
+    border-radius: 6px;
   }
 }
 
 @media (max-width: 480px) {
-  .pricingContainer {
-    padding: 0.5rem;
+  .heading {
+    font-size: 2.25rem;
   }
 
-  .mainTitle {
-    font-size: 2rem;
+  .introduction {
+    font-size: 1.15rem;
   }
 
   .pricingCard {
     padding: 1.5rem;
+    border-radius: 4px;
+  }
+
+  .membershipName {
+    font-size: 2.25rem;
+  }
+
+  .currency {
+    font-size: 2.5rem;
   }
 
   .price {
     font-size: 2.5rem;
   }
 
-  .membershipName {
-    font-size: 1.5rem;
+  .period {
+    font-size: 1rem;
+  }
+
+  .separator {
+    margin: 0.75rem 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featuresTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .featureItem {
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+  }
+
+  .additionalInfo {
+    font-size: 1.1rem;
+  }
+
+  .additionalInfo p {
+    font-size: 1.15rem;
+  }
+
+  .additionalInfo strong {
+    font-size: 1.15rem;
+  }
+
+  .commonBenefit {
+    padding: 0.75rem;
+    border-radius: 4px;
   }
 
   .signUpButton {
-    padding: 0.875rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    border-radius: 4px;
+  }
+
+  /* Individual styles for popular card */
+  .popularBadge {
+    top: -15px;
+    font-size: 1.15rem;
+    border-radius: 4px;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .pricingCard.popular .membershipName {
+    font-size: 2.25rem;
+  }
+
+  .pricingCard.popular .currency {
+    font-size: 2.5rem;
+  }
+
+  .pricingCard.popular .price {
+    font-size: 2.5rem;
+  }
+
+  .pricingCard.popular .period {
+    font-size: 1rem;
+  }
+
+  .pricingCard.popular .separator {
+    margin: 0.75rem 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricingCard.popular .featuresTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .pricingCard.popular .featureItem {
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+  }
+
+  .pricingCard.popular .additionalInfo {
+    font-size: 1.1rem;
+  }
+
+  .pricingCard.popular .additionalInfo p {
+    font-size: 1.15rem;
+  }
+
+  .pricingCard.popular .additionalInfo strong {
+    font-size: 1.15rem;
+  }
+
+  .pricingCard.popular .commonBenefit {
+    padding: 0.75rem;
+    border-radius: 4px;
+  }
+
+  .pricingCard.popular .signUpButton {
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    border-radius: 4px;
   }
 }

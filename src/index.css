@@ -9,6 +9,8 @@ html[data-theme="light"] {
   --text-secondary: hsl(0, 0%, 10%);
   --primary: hsl(0, 100%, 25%);
   --footer-bg-color: hsl(0, 0%, 97.25%);
+  --grey: hsl(0, 0%, 90%);
+  --grey-text: hsl(0, 0%, 20%);
 }
 
 /* Dark Mode */
@@ -19,6 +21,8 @@ html[data-theme="dark"] {
   --text-secondary: hsl(0, 0%, 80%);
   --primary: hsl(0, 100%, 25%);
   --footer-bg-color: hsl(0, 0%, 5%);
+  --grey: hsl(0, 0%, 10%);
+  --grey-text: hsl(0, 0%, 80%);
 }
 
 /* Custom Highlighted Text */

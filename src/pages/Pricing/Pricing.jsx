@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import styles from "./Pricing.module.css";
+import { useEffect, useState } from "react";
 import pricingData from "../../data/pricing.json";
 
 function Pricing() {
@@ -16,7 +16,7 @@ function Pricing() {
       <main>
         <section className={styles.pricingContainer}>
           {/* Heading */}
-          <h1 className={styles.header}>MEMBERSHIP TIERS</h1>
+          <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
 
           {/* Introduction */}
           <p className={styles.introduction}>

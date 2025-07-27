@@ -4,16 +4,16 @@
       "id": "foundation",
       "name": "FOUNDATION",
       "price": 99,
-      "frequency": "2x per week",
+      "frequency": "2x / week",
       "description": "Perfect for beginners starting their fitness journey",
       "features": [
         "Access to all CrossFit classes",
+        "Saturday classes included",
+        "Nutrition consultation 1 / month",
         "Basic fitness assessment",
-        "Nutrition consultation (1x)",
-        "Access to training library",
-        "Saturday classes included"
+        "Access to training library"
       ],
-      "classAccess": "Morning & Evening",
+      "classAccess": "All Classes",
       "guestPasses": 1,
       "isPopular": false,
       "ctaText": "START YOUR JOURNEY"
@@ -22,18 +22,18 @@
       "id": "elite",
       "name": "ELITE",
       "price": 140,
-      "frequency": "5x per week",
+      "frequency": "5x / week",
       "description": "Our most comprehensive membership for serious athletes",
       "features": [
         "Unlimited CrossFit classes",
-        "Personal training sessions (2x/month)",
-        "Advanced nutrition coaching",
-        "Priority class booking",
         "Exclusive Saturday sessions",
+        "Advanced nutrition coaching",
+        "Progress tracking & analytics",
+        "Personal training sessions 2 / month",
         "Weightlifting & Open Gym access",
-        "Progress tracking & analytics"
+        "Priority class booking"
       ],
-      "classAccess": "All Classes + Priority Booking",
+      "classAccess": "All Classes + Open Gym + Priority Booking",
       "guestPasses": 3,
       "isPopular": true,
       "ctaText": "BECOME ELITE"
@@ -42,15 +42,15 @@
       "id": "performance",
       "name": "PERFORMANCE",
       "price": 129,
-      "frequency": "3x per week",
+      "frequency": "3x / week",
       "description": "For athletes ready to take their training to the next level",
       "features": [
         "Access to all CrossFit classes",
-        "Personal training session (1x/month)",
-        "Nutrition consultation (2x)",
-        "Weightlifting & Open Gym access",
         "Saturday classes included",
-        "Progress tracking"
+        "Nutrition consultation 2 / month",
+        "Progress tracking",
+        "Personal training session 1 / month",
+        "Weightlifting & Open Gym access"
       ],
       "classAccess": "All classes + Open Gym",
       "guestPasses": 2,
