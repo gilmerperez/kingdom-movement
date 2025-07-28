@@ -40,8 +40,8 @@
   position: relative;
   border-radius: 8px;
   flex-direction: column;
-  background-color: var(--header-bg-color);
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+  background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
 
 .pricingCard:hover {
@@ -175,7 +175,7 @@
 
 .pricingCard.popular {
   transform: scale(1.05);
-  background-color: var(--primary);
+  background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
 }
 
 .pricingCard.popular:hover {
@@ -190,10 +190,11 @@
   position: absolute;
   font-size: 1.25rem;
   border-radius: 8px;
-  color: hsl(0, 0%, 0%);
   padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
   transform: translateX(-50%);
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
 }
 
 .pricingCard.popular .membershipName {
@@ -300,15 +301,15 @@
 /* Additional Info */
 .additionalInfoContainer {
   width: 100vw;
-  padding: 2rem 3rem;
   display: flex;
+  padding: 2rem 3rem;
   margin-top: 3.5rem;
   align-items: center;
   margin-bottom: -2rem;
   flex-direction: column;
   justify-content: center;
-  color: hsl(0, 0%, 95%);
-  background-color: var(--primary);
+  color: var(--text-primary);
+  background: linear-gradient(to top, var(--footer-bg-color), var(--bg-color));
 }
 
 .additionalInfoContent {
@@ -325,7 +326,7 @@
   font-size: 1.25rem;
   display: inline-block;
   margin-bottom: 0.25rem;
-  border-bottom: 3px solid hsl(0, 0%, 95%);
+  border-bottom: 2px solid var(--text-secondary);
 }
 
 /* Responsive Design */

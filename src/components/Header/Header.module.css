@@ -130,7 +130,7 @@ header {
 .freeClassButton {
   font-weight: 500;
   font-size: 1.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 0.25rem 0.5rem;
   transition: 0.3s ease-in;
   border: 2px solid var(--primary);
