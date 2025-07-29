@@ -140,6 +140,8 @@ html[data-theme="dark"] {
 
 - **Home Page:**
 
+- MORE THAN A GYM — IT'S A MOVEMENT
+
 - Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
 
 - WHO WE ARE (Component)
@@ -301,10 +303,6 @@ html[data-theme="dark"] {
 - Location: https://www.google.com/maps/place/Rangers+Kingdom+LLC/@28.4598745,-81.4403449,17z/data=!4m6!3m5!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!8m2!3d28.4598745!4d-81.43777!16s%2Fg%2F11rdz8gr7f?authuser=1&entry=tts&g_ep=EgoyMDI1MDIxMC4wIPu8ASoASAFQAw%3D%3D
 - Leave a Review: https://www.google.com/maps/place//data=!4m3!3m2!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!12e1?source=g.page.m._&laa=merchant-review-solicitation
 
-## Important Info
-
-- Classes: 7AM | 8:15AM | 9:30AM | 4:45PM | 6PM | 7:15PM | 8:30PM
-
 ## Websites For Inspiration
 
 - https://dejavugym.com/
@@ -314,7 +312,3 @@ html[data-theme="dark"] {
 ## Additional Pages
 
 - Include all other services that the place offers: Esthetiticain services, nails, physical therapy
-
-## Quotes
-
-- MORE THAN A GYM — IT'S A MOVEMENT
