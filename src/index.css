@@ -3,12 +3,12 @@
 
 /* Light Mode */
 html[data-theme="light"] {
-  --header-bg-color: hsl(0, 0%, 97.25%);
-  --bg-color: hsl(0, 0%, 95%);
+  --header-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 90%);
   --text-primary: hsl(0, 0%, 0%);
   --text-secondary: hsl(0, 0%, 10%);
   --primary: hsl(0, 100%, 35%);
-  --footer-bg-color: hsl(0, 0%, 97.25%);
+  --footer-bg-color: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 90%);
   --grey-text: hsl(0, 0%, 20%);
   --button-color: hsl(0, 0%, 0%);
