@@ -1,14 +1,3 @@
-.scheduleContainer {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .heroBanner {
   width: 100%;
   overflow: hidden;
@@ -47,6 +36,9 @@
 .heroContent {
   z-index: 2;
   padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
   color: hsl(0, 0%, 100%);
 }
 
@@ -61,6 +53,17 @@
   font-size: 1.75rem;
 }
 
+.scheduleContainer {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .heroImage {
     padding-bottom: 125%;
@@ -72,32 +75,21 @@
 
   .heroContent h1 {
     font-size: 2.25rem;
-    margin-bottom: 0.75rem;
   }
   .heroContent p {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .heroContent h1 {
-    font-size: 2rem;
-  }
-
-  .heroContent p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .heroContent {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .heroContent h1 {
     font-size: 1.75rem;
   }
   .heroContent p {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 }
