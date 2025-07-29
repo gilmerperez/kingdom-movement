@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: center;
   color: hsl(0, 0%, 100%);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   background: linear-gradient(to top, var(--footer-bg-color), var(--primary));
 }
 
