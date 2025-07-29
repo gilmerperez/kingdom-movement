@@ -1,0 +1,319 @@
+{
+  "schedule": {
+    "monday": {
+      "day": "Monday",
+      "activities": [
+        {
+          "time": "6:30 AM - 7:00 AM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "7:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:15 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "9:30 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "10:30 AM - 12:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "1:00 PM - 4:00 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "5:15 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "7:45 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:30 PM - 9:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        }
+      ]
+    },
+    "tuesday": {
+      "day": "Tuesday",
+      "activities": [
+        {
+          "time": "6:30 AM - 7:00 AM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "7:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:15 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "9:30 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "10:30 AM - 12:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "1:00 PM - 4:00 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "5:15 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "7:45 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:30 PM - 9:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        }
+      ]
+    },
+    "wednesday": {
+      "day": "Wednesday",
+      "activities": [
+        {
+          "time": "6:30 AM - 7:00 AM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "7:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:15 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "9:30 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "10:30 AM - 12:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "1:00 PM - 4:00 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "5:15 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "7:45 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:30 PM - 9:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        }
+      ]
+    },
+    "thursday": {
+      "day": "Thursday",
+      "activities": [
+        {
+          "time": "6:30 AM - 7:00 AM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "7:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:15 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "9:30 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "10:30 AM - 12:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "1:00 PM - 4:00 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "5:15 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "7:45 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:30 PM - 9:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        }
+      ]
+    },
+    "friday": {
+      "day": "Friday",
+      "activities": [
+        {
+          "time": "6:30 AM - 7:00 AM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "7:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:15 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "9:30 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "10:30 AM - 12:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "1:00 PM - 4:00 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "5:15 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "7:45 PM",
+          "type": "Class",
+          "description": "Group fitness class"
+        },
+        {
+          "time": "8:30 PM - 9:30 PM",
+          "type": "Open Gym",
+          "description": "Open gym session"
+        }
+      ]
+    },
+    "saturday": {
+      "day": "Saturday",
+      "activities": [
+        {
+          "time": "9:00 AM",
+          "type": "Class",
+          "description": "Group fitness class"
+        }
+      ]
+    },
+    "sunday": {
+      "day": "Sunday",
+      "activities": [],
+      "status": "Closed"
+    }
+  }
+}
