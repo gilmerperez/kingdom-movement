@@ -1,0 +1,298 @@
+{
+  "categories": [
+    {
+      "id": "protein-shakes",
+      "name": "Protein Shakes",
+      "description": "Premium protein shakes to fuel your workout and recovery"
+    },
+    {
+      "id": "teas",
+      "name": "Teas",
+      "description": "Refreshing and energizing teas for hydration and wellness"
+    },
+    {
+      "id": "waffles",
+      "name": "Waffles",
+      "description": "Delicious protein-packed waffles for pre or post-workout fuel"
+    },
+    {
+      "id": "acai-bowls",
+      "name": "Acai Bowls",
+      "description": "Nutritious acai bowls packed with antioxidants and energy"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "chocolate-protein-shake",
+      "name": "Chocolate Protein Shake",
+      "category": "protein-shakes",
+      "price": 8.99,
+      "calories": 320,
+      "description": "Rich chocolate protein shake made with premium whey protein, almond milk, and natural cocoa. Perfect for post-workout recovery.",
+      "variations": [
+        {
+          "name": "Add Banana",
+          "calories": 105,
+          "price": 1.50
+        },
+        {
+          "name": "Add Peanut Butter",
+          "calories": 95,
+          "price": 1.00
+        },
+        {
+          "name": "Add Spinach",
+          "calories": 7,
+          "price": 0.50
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/chocolate-protein-shake.jpg"
+    },
+    {
+      "id": "vanilla-protein-shake",
+      "name": "Vanilla Protein Shake",
+      "category": "protein-shakes",
+      "price": 8.49,
+      "calories": 290,
+      "description": "Smooth vanilla protein shake with clean ingredients. Made with grass-fed whey protein and organic vanilla extract.",
+      "variations": [
+        {
+          "name": "Add Berries",
+          "calories": 85,
+          "price": 1.25
+        },
+        {
+          "name": "Add Honey",
+          "calories": 64,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/vanilla-protein-shake.jpg"
+    },
+    {
+      "id": "strawberry-protein-shake",
+      "name": "Strawberry Protein Shake",
+      "category": "protein-shakes",
+      "price": 9.49,
+      "calories": 310,
+      "description": "Fresh strawberry protein shake with real fruit and premium protein. Sweet, refreshing, and packed with nutrients.",
+      "variations": [
+        {
+          "name": "Add Greek Yogurt",
+          "calories": 130,
+          "price": 1.75
+        },
+        {
+          "name": "Add Chia Seeds",
+          "calories": 60,
+          "price": 0.50
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/strawberry-protein-shake.jpg"
+    },
+    {
+      "id": "green-tea",
+      "name": "Green Tea",
+      "category": "teas",
+      "price": 4.99,
+      "calories": 0,
+      "description": "Premium organic green tea with antioxidants. Light, refreshing, and perfect for hydration during workouts.",
+      "variations": [
+        {
+          "name": "Add Honey",
+          "calories": 64,
+          "price": 0.75
+        },
+        {
+          "name": "Add Lemon",
+          "calories": 6,
+          "price": 0.25
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/green-tea.jpg"
+    },
+    {
+      "id": "chai-tea",
+      "name": "Chai Tea",
+      "category": "teas",
+      "price": 5.49,
+      "calories": 45,
+      "description": "Spiced chai tea with warming cinnamon, ginger, and cardamom. Served with your choice of milk.",
+      "variations": [
+        {
+          "name": "Almond Milk",
+          "calories": 30,
+          "price": 0.50
+        },
+        {
+          "name": "Oat Milk",
+          "calories": 25,
+          "price": 0.50
+        },
+        {
+          "name": "Extra Spice",
+          "calories": 5,
+          "price": 0.25
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/chai-tea.jpg"
+    },
+    {
+      "id": "herbal-tea",
+      "name": "Herbal Tea Blend",
+      "category": "teas",
+      "price": 4.49,
+      "calories": 0,
+      "description": "Custom herbal blend with chamomile, peppermint, and lavender. Calming and perfect for post-workout relaxation.",
+      "variations": [
+        {
+          "name": "Add Ginger",
+          "calories": 2,
+          "price": 0.25
+        },
+        {
+          "name": "Add Honey",
+          "calories": 64,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/herbal-tea.jpg"
+    },
+    {
+      "id": "protein-waffle",
+      "name": "Protein Waffle",
+      "category": "waffles",
+      "price": 7.99,
+      "calories": 280,
+      "description": "Fluffy protein waffle made with whey protein and whole grain flour. Crispy on the outside, soft on the inside.",
+      "variations": [
+        {
+          "name": "Add Berries",
+          "calories": 85,
+          "price": 1.25
+        },
+        {
+          "name": "Add Nut Butter",
+          "calories": 95,
+          "price": 1.00
+        },
+        {
+          "name": "Add Maple Syrup",
+          "calories": 52,
+          "price": 0.50
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/protein-waffle.jpg"
+    },
+    {
+      "id": "banana-waffle",
+      "name": "Banana Protein Waffle",
+      "category": "waffles",
+      "price": 8.49,
+      "calories": 320,
+      "description": "Delicious banana protein waffle with real banana and cinnamon. Naturally sweetened and packed with potassium.",
+      "variations": [
+        {
+          "name": "Add Walnuts",
+          "calories": 185,
+          "price": 1.50
+        },
+        {
+          "name": "Add Chocolate Chips",
+          "calories": 70,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/banana-waffle.jpg"
+    },
+    {
+      "id": "blueberry-waffle",
+      "name": "Blueberry Protein Waffle",
+      "category": "waffles",
+      "price": 8.99,
+      "calories": 295,
+      "description": "Fresh blueberry protein waffle bursting with antioxidants. Made with real blueberries and premium protein powder.",
+      "variations": [
+        {
+          "name": "Add Greek Yogurt",
+          "calories": 130,
+          "price": 1.75
+        },
+        {
+          "name": "Add Honey",
+          "calories": 64,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/blueberry-waffle.jpg"
+    },
+    {
+      "id": "classic-acai-bowl",
+      "name": "Classic Acai Bowl",
+      "category": "acai-bowls",
+      "price": 12.99,
+      "calories": 420,
+      "description": "Traditional acai bowl with granola, banana, and honey. Rich in antioxidants and perfect for pre-workout energy.",
+      "variations": [
+        {
+          "name": "Add Strawberries",
+          "calories": 85,
+          "price": 1.25
+        },
+        {
+          "name": "Add Chia Seeds",
+          "calories": 60,
+          "price": 0.50
+        },
+        {
+          "name": "Add Coconut Flakes",
+          "calories": 45,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/classic-acai-bowl.jpg"
+    },
+    {
+      "id": "tropical-acai-bowl",
+      "name": "Tropical Acai Bowl",
+      "category": "acai-bowls",
+      "price": 13.99,
+      "calories": 450,
+      "description": "Tropical acai bowl with mango, pineapple, and coconut. Refreshing and packed with vitamin C and electrolytes.",
+      "variations": [
+        {
+          "name": "Add Kiwi",
+          "calories": 42,
+          "price": 0.75
+        },
+        {
+          "name": "Add Macadamia Nuts",
+          "calories": 200,
+          "price": 1.50
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/tropical-acai-bowl.jpg"
+    },
+    {
+      "id": "protein-acai-bowl",
+      "name": "Protein Acai Bowl",
+      "category": "acai-bowls",
+      "price": 14.99,
+      "calories": 480,
+      "description": "High-protein acai bowl with added whey protein, almonds, and Greek yogurt. Perfect for post-workout recovery.",
+      "variations": [
+        {
+          "name": "Add Peanut Butter",
+          "calories": 95,
+          "price": 1.00
+        },
+        {
+          "name": "Add Dark Chocolate",
+          "calories": 70,
+          "price": 0.75
+        }
+      ],
+      "imagePath": "/src/assets/images/menu/protein-acai-bowl.jpg"
+    }
+  ]
+}
