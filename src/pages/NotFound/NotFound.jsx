@@ -17,7 +17,7 @@ function NotFound() {
         {/* Introduction */}
         <p className={styles.introduction}>Sorry, the page you are looking for does not exist</p>
 
-        {/* Go Back to Home Link */}
+        {/* Go back to home link */}
         <Link to="/" className={styles.homeLink}>
           BACK TO HOME PAGE
         </Link>

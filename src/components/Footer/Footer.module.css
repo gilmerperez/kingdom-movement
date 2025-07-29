@@ -6,13 +6,16 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  color: hsl(0, 0%, 100%);
 }
 
-.legalContainer {
+/* Logo, legal disclaimer, and copyright */
+.topContainer {
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/* Logo container */
 .logoContainer {
   display: flex;
   align-items: center;
@@ -37,39 +40,42 @@
   transition: 0.3s ease-in;
 }
 
+/* Legal disclaimer */
 .legalDisclaimer {
   margin: 0 auto;
   max-width: 800px;
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
-  color: var(--text-secondary);
+  color: hsl(0, 0%, 80%);
 }
 
+/* Copyright */
 .copyright {
+  font-weight: 500;
   font-size: 1.15rem;
-  color: var(--text-primary);
 }
 
+/* Seperator */
 .seperator {
   width: 100%;
   height: 2px;
   border: none;
   margin-bottom: 0.75rem;
-  color: var(--text-secondary);
-  background-color: var(--text-secondary);
+  background-color: hsl(0, 0%, 80%);
 }
 
-.navContainer {
+/* Legal pages, social links, site navigation, and contact info */
+.bottomContainer {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
 }
 
-.navigationSection,
-.contactSection,
-.legalSection,
-.socialSection {
+.siteNavigation,
+.contactInfo,
+.legalPages,
+.socialLinks {
   display: flex;
   flex-direction: column;
 }
@@ -80,67 +86,43 @@
   margin-bottom: 0.25rem;
 }
 
-.footerNav {
+.navItems {
   gap: 0.15rem;
   display: flex;
   font-weight: 400;
   flex-direction: column;
 }
 
-.footerNav a {
+.navItems a {
   position: relative;
   font-size: 1.25rem;
   transition: 0.3s ease-in;
-  color: var(--text-secondary);
+  color: hsl(0, 0%, 80%);
 }
 
-/* Underline Effect */
-.footerNav a::after {
-  left: 50%;
-  width: 100%;
-  height: 2px;
-  content: "";
-  bottom: -3px;
-  position: absolute;
-  transform-origin: center;
-  transition: 0.3s ease-in-out;
-  background-color: var(--primary);
-  transform: translateX(-50%) scaleX(0);
-}
-
-/* Underline on hover */
-.footerNav a:hover {
-  color: var(--text-primary);
-}
-
-/* Underline on active page */
-.footerNav a:hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
-/* Tablet Breakpoint */
+/* Tablet Responsiveness */
 @media (max-width: 768px) {
   .legalDisclaimer {
     max-width: 500px;
   }
 
-  .navContainer {
+  .bottomContainer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  .navigationSection,
-  .contactSection,
-  .legalSection,
-  .socialSection {
+  .siteNavigation,
+  .contactInfo,
+  .legalPages,
+  .socialLinks {
     text-align: center;
   }
 
-  .legalSection:not(:last-child),
-  .socialSection:not(:last-child),
-  .navigationSection:not(:last-child),
-  .contactSection:not(:last-child) {
+  .legalPages:not(:last-child),
+  .socialLinks:not(:last-child),
+  .siteNavigation:not(:last-child),
+  .contactInfo:not(:last-child) {
     margin-bottom: 1rem;
   }
 
@@ -149,13 +131,13 @@
     margin-bottom: 0rem;
   }
 
-  .footerNav a {
+  .navItems a {
     gap: 0.1rem;
     font-size: 1.25rem;
   }
 }
 
-/* Mobile Breakpoint */
+/* Mobile Responsiveness */
 @media (max-width: 480px) {
   .kngdm {
     font-size: 2.5rem;
@@ -168,22 +150,20 @@
   .legalDisclaimer {
     font-size: 1rem;
     margin-bottom: 0.25rem;
-    color: var(--text-secondary);
   }
 
   .copyright {
     font-size: 1rem;
-    color: var(--text-primary);
   }
 
   .seperator {
     height: 1px;
   }
 
-  .legalSection:not(:last-child),
-  .socialSection:not(:last-child),
-  .navigationSection:not(:last-child),
-  .contactSection:not(:last-child) {
+  .legalPages:not(:last-child),
+  .socialLinks:not(:last-child),
+  .siteNavigation:not(:last-child),
+  .contactInfo:not(:last-child) {
     margin-bottom: 0.75rem;
   }
 
@@ -191,7 +171,7 @@
     font-size: 1.5rem;
   }
 
-  .footerNav a {
+  .navItems a {
     font-size: 1.15rem;
   }
 }

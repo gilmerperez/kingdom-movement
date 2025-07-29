@@ -183,6 +183,7 @@
   color: var(--text-secondary);
 }
 
+/* Tablet Responsiveness */
 @media (max-width: 768px) {
   /* Hero Banner */
   .heroContent {
@@ -225,6 +226,7 @@
   }
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 480px) {
   /* Hero Banner */
   .heroContent {

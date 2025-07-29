@@ -79,8 +79,8 @@ function Header() {
             <span className={styles.mvmnt}>MVMNT</span>
           </NavLink>
 
-          {/* Navigation */}
-          <div className={styles.navContainer}>
+          {/* Site navigation */}
+          <div className={styles.siteNavigation}>
             <nav className={styles.navLinks}>
               <NavLink to="/" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}>
                 HOME
@@ -105,48 +105,46 @@ function Header() {
               </NavLink>
             </nav>
 
-            {/* Seperate Navigation and Functional Buttons */}
+            {/* Seperate site navigation and theme button */}
             <span className={styles.seperator}>|</span>
 
-            {/* Functional Button */}
-
-            {/* Theme Button */}
+            {/* Theme button */}
             <button className={styles.themeButton} onClick={toggleTheme}>
               <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
               <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
             </button>
 
-            {/* Free Class Button */}
+            {/* Free class button */}
             <button className={styles.freeClassButton}>
               <a
-                href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
                 target="_blank"
                 rel="noopener noreferrer"
+                href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
               >
                 FREE CLASS
               </a>
             </button>
           </div>
 
-          {/* Mobile Hamburger Menu */}
+          {/* Hamburger menu */}
           <button
             className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
             onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
+            aria-label="Toggle mobile menu"
           >
             <i className="fa-solid fa-bars fa-xl"></i>
           </button>
         </section>
 
-        {/* Dropdown Menu */}
+        {/* Dropdown menu */}
         <div className={`${styles.mobileMenu} ${menuOpen ? styles.show : ""}`}>
-          {/* Theme Button */}
-          <button className={`${styles.themeButton} ${styles.sidebarThemeButton}`} onClick={toggleTheme}>
+          {/* Dropdown theme button */}
+          <button className={`${styles.themeButton} ${styles.dropdownThemeButton}`} onClick={toggleTheme}>
             <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"} fa-sm`}></i>
             <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
           </button>
 
-          {/* Navigation */}
+          {/* Dropdown site navigation */}
           <NavLink to="/" onClick={toggleMenu}>
             HOME
           </NavLink>
@@ -160,12 +158,12 @@ function Header() {
             NUTRITION
           </NavLink>
 
-          {/* Free Class Button */}
-          <button className={styles.mobileFreeClassButton}>
+          {/* Dropdown free class button */}
+          <button className={styles.dropdownFreeClassButton}>
             <a
-              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
               target="_blank"
               rel="noopener noreferrer"
+              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
             >
               FREE CLASS
             </a>

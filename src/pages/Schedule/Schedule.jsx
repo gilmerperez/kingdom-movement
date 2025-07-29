@@ -35,7 +35,7 @@ function Schedule() {
     <>
       {/* Hero Banner */}
       <section className={styles.heroBanner}>
-        {/* Background Image */}
+        {/* Image */}
         <div className={styles.heroImage}>
           <img src={runningImage} alt="People running together" />
           <div className={styles.heroOverlay}>

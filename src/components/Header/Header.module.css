@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
 }
 
+/* Logo container */
 .logoContainer {
   display: flex;
   align-items: center;
@@ -54,7 +55,8 @@ header {
   font-size: 1.75rem;
 }
 
-.navContainer {
+/* Site navigation */
+.siteNavigation {
   gap: 1rem;
   display: flex;
   align-items: center;
@@ -84,7 +86,7 @@ header {
   transition: 0.3s ease-in;
 }
 
-/* Underline fffect */
+/* Underline effect */
 .navLink::after {
   left: 50%;
   width: 100%;
@@ -108,11 +110,13 @@ header {
   transform: translateX(-50%) scaleX(1);
 }
 
+/* Seperator */
 .seperator {
   font-size: 1.5rem;
   transition: 0.3s ease-in;
 }
 
+/* Theme button */
 .themeButton {
   gap: 0.5rem;
   display: flex;
@@ -127,6 +131,7 @@ header {
   color: var(--text-secondary);
 }
 
+/* Free class button */
 .freeClassButton {
   font-weight: 500;
   font-size: 1.5rem;
@@ -153,7 +158,7 @@ header {
     font-size: 1.5rem;
   }
 
-  .navContainer {
+  .siteNavigation {
     gap: 0.85rem;
   }
 
@@ -185,7 +190,7 @@ header {
     font-size: 1.25rem;
   }
 
-  .navContainer {
+  .siteNavigation {
     gap: 0.75rem;
   }
 
@@ -217,7 +222,7 @@ header {
     font-size: 1.15rem;
   }
 
-  .navContainer {
+  .siteNavigation {
     gap: 0.5rem;
   }
 
@@ -234,8 +239,8 @@ header {
     font-size: 1rem;
   }
 
-  /* Get rid of theme icon */
-  .themeButton:not(.sidebarThemeButton) p {
+  /* Get rid of theme button icon */
+  .themeButton:not(.dropdownThemeButton) p {
     display: none;
   }
 
@@ -261,7 +266,7 @@ header {
   }
 }
 
-/* Hamburger icon */
+/* Hamburger menu */
 .hamburger {
   display: none;
   color: var(--text-primary);
@@ -272,7 +277,7 @@ header {
   transform: rotate(180deg);
 }
 
-/* Mobile dropdown */
+/* Dropdown menu */
 .mobileMenu {
   gap: 0.5rem;
   display: flex;
@@ -323,7 +328,7 @@ header {
 }
 
 /* Mobile menu theme button */
-.sidebarThemeButton {
+.dropdownThemeButton {
   gap: 0.5rem;
   display: flex;
   font-size: 1.25rem;
@@ -334,11 +339,11 @@ header {
   background-color: var(--header-bg-color);
 }
 
-.sidebarThemeButton:hover {
+.dropdownThemeButton:hover {
   color: var(--text-secondary);
 }
 
-.mobileFreeClassButton {
+.dropdownFreeClassButton {
   font-weight: 500;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
@@ -348,7 +353,7 @@ header {
   background-color: var(--header-bg-color);
 }
 
-.mobileFreeClassButton:hover {
+.dropdownFreeClassButton:hover {
   transform: scale(1.05);
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
@@ -357,6 +362,11 @@ header {
 
 /* Hamburger breakpoint */
 @media (max-width: 480px) {
+  header {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
   .kngdm {
     font-size: 1.75rem;
   }
@@ -365,7 +375,7 @@ header {
     font-size: 1.25rem;
   }
 
-  .navContainer {
+  .siteNavigation {
     display: none;
   }
 

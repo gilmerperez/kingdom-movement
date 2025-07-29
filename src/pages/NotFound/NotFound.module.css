@@ -9,6 +9,7 @@
   justify-content: center;
 }
 
+/* Heading */
 .heading {
   font-size: 3rem;
   font-weight: 700;
@@ -17,12 +18,14 @@
   border-bottom: 3px solid var(--primary);
 }
 
+/* Introduction */
 .introduction {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/* Home link */
 .homeLink {
   font-weight: 500;
   font-size: 1.75rem;
@@ -40,6 +43,7 @@
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
 }
 
+/* Tablet Responsiveness */
 @media (max-width: 768px) {
   .heading {
     font-size: 2.75rem;
@@ -56,6 +60,7 @@
   }
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 480px) {
   .heading {
     font-size: 2.25rem;

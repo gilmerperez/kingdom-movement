@@ -34,34 +34,32 @@ function Contact() {
         {/* Form */}
         <section className={styles.formContainer}>
           <form onSubmit={handleSubmit}>
-            {/* Subject */}
+            {/* Subject field */}
             <div className={`${styles.formGroup} ${styles.formFloating}`}>
               <input
+                required
                 type="text"
                 id="subject"
-                placeholder="Subject"
-                required
                 value={subject}
-                onChange={(e) => setSubject(e.target.value)}
+                placeholder="Subject"
                 className={styles.formControl}
+                onChange={(e) => setSubject(e.target.value)}
               />
               <label htmlFor="subject">SUBJECT</label>
             </div>
-
-            {/* Message */}
+            {/* Message field */}
             <div className={`${styles.formGroup} ${styles.formFloating}`}>
               <textarea
-                id="message"
-                placeholder="Message"
                 required
+                id="message"
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Message"
                 className={styles.formControl}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               <label htmlFor="message">MESSAGE</label>
             </div>
-
-            {/* Submit */}
+            {/* Submit button */}
             <button type="submit" className={styles.submitBtn}>
               SEND MESSAGE <i className="fa-solid fa-paper-plane"></i>
             </button>

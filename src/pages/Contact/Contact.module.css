@@ -9,6 +9,7 @@
   justify-content: center;
 }
 
+/* Heading */
 .heading {
   font-size: 3rem;
   font-weight: 700;
@@ -17,6 +18,7 @@
   border-bottom: 3px solid var(--primary);
 }
 
+/* Introduction */
 .introduction {
   font-size: 1.5rem;
   text-align: center;
@@ -26,11 +28,12 @@
 .formContainer {
   width: 100%;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--header-bg-color);
   box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.15);
 }
 
+/* Form */
 form {
   gap: 1rem;
   display: flex;
@@ -44,6 +47,7 @@ form {
   flex-direction: column;
 }
 
+/* Subject and text area */
 .formControl {
   width: 100%;
   font-size: 1.25rem;
@@ -96,6 +100,7 @@ textarea:-webkit-autofill {
   -webkit-text-fill-color: var(--text-primary) !important;
 }
 
+/* Submit button */
 .submitBtn {
   padding: 0.75rem;
   font-weight: 500;
@@ -131,6 +136,18 @@ textarea:-webkit-autofill {
   .introduction {
     font-size: 1.25rem;
   }
+
+  .formContainer {
+    border-radius: 6px;
+  }
+
+  .formControl {
+    border-radius: 6px;
+  }
+
+  .submitBtn {
+    border-radius: 6px;
+  }
 }
 
 /* Mobile Responsiveness */
@@ -144,12 +161,12 @@ textarea:-webkit-autofill {
   }
 
   .formContainer {
-    border-radius: 8px;
+    border-radius: 4px;
   }
 
   .formControl {
     font-size: 1.15rem;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 1.5rem 0.75rem 0.75rem;
     border: 1px solid var(--bg-color);
   }
@@ -169,7 +186,6 @@ textarea:-webkit-autofill {
   .submitBtn {
     padding: 0.65rem;
     font-size: 1.25rem;
-    border-radius: 5px;
-    border: 1px solid var(--primary);
+    border-radius: 4px;
   }
 }
