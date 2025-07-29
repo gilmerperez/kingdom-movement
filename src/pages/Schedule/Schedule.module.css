@@ -180,6 +180,7 @@
 .timeText {
   font-weight: 400;
   font-size: 1.25rem;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 768px) {
