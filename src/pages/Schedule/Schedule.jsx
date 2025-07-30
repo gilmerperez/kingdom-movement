@@ -1,7 +1,7 @@
 import styles from "./Schedule.module.css";
 import { useEffect, useState } from "react";
+import Banner from "../../components/Banner/Banner";
 import scheduleData from "../../data/schedule.json";
-import runningImage from "../../assets/images/running.jpg";
 
 function Schedule() {
   // Set Page Title
@@ -33,22 +33,15 @@ function Schedule() {
 
   return (
     <>
-      {/* Hero Banner */}
-      <section className={styles.heroBanner}>
-        {/* Image */}
-        <div className={styles.heroImage}>
-          <img src={runningImage} alt="People running together" />
-          <div className={styles.heroOverlay}>
-            {/* Text Content */}
-            <div className={styles.heroContent}>
-              <h1>DISCOVER STRENGTH AND VERSATILITY AT OUR FUNCTIONAL FITNESS CENTER</h1>
-              <p>
-                Elevate your fitness journey with top-notch equipment and expert guidance in a supportive environment
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Banner */}
+      <Banner
+        text="BUILT FOR GLORY — BORN TO MOVE"
+        imageSrc="/src/assets/images/running.jpg"
+        secondaryText="Join our community and discover your true potential"
+        gradient={true}
+        gradientDirection="to bottom"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--bg-color)"]}
+      />
 
       <main>
         <section className={styles.scheduleContainer}>

@@ -94,6 +94,8 @@ function Pricing() {
             <ul className={styles.additionalInfoList}>
               <li>Must be age 18 years or older to enroll.</li>
               <br />
+              <li>The schedule is subject to change without prior notice.</li>
+              <br />
               <li>All membership types are non-transferable, non-assignable, and non-saleable.</li>
               <br />
               <li>Prepaid memberships and sessions agreements are not subject to any hold options.</li>
