@@ -36,7 +36,7 @@ function Schedule() {
       {/* Banner */}
       <Banner
         text="MORE THAN FITNESS — IT'S A MOVEMENT"
-        imageSrc="/src/assets/images/group3.jpg"
+        imageSrc="/images/group3.jpg"
         secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
         gradient={true}
         gradientDirection="to bottom"

@@ -14,7 +14,7 @@ function Home() {
       {/* Banner */}
       <Banner
         text="BUILT FOR GLORY — BORN TO MOVE"
-        imageSrc="/src/assets/images/home1.jpg"
+        imageSrc="/images/home1.jpg"
         secondaryText="EVERY PERSON IS TRAINED TO RISE — MENTALLY, PHYSICALLY, SPIRITUALLY"
         gradient={true}
         gradientDirection="to bottom"

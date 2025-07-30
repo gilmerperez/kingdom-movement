@@ -31,7 +31,7 @@ function Nutrition() {
       {/* Banner */}
       <Banner
         text="STRENGTH. SPIRIT. KINGDOM"
-        imageSrc="/src/assets/images/home2.jpg"
+        imageSrc="/images/home2.jpg"
         secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
         gradient={true}
         gradientDirection="to bottom"
