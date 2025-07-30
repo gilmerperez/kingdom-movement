@@ -201,13 +201,7 @@ html[data-theme="dark"] {
 
 - **Schedule Page:**
 
-- CSS Grid Format.
-- Table that has a bar at the top with all 7 days of the week. When you click each day the table updates to show all available training times: Including scheduled classes and open gym sessions.
 - Link to Wodify to view workouts and to see who’s attending (if possible).
-- Banner at the top will say:
-  "Discover strength and versatility at our functional fitness center,
-  featuring open gym slots. Elevate your fitness journey with top-
-  notch equipment and expert guidance in a supportive environment."
 
 - **Contact Page:**
 
