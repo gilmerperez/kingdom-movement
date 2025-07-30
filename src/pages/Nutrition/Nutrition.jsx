@@ -27,36 +27,36 @@ function Nutrition() {
 
   return (
     <>
-      <main className={styles.mainContainer}>
+      <main>
         <section className={styles.nutritionContainer}>
-          {/* Page Header */}
-          <div className={styles.pageHeader}>
-            <h1 className={styles.pageTitle}>Nutrition Menu</h1>
-            <p className={styles.pageSubtitle}>Fuel your workouts with our premium nutrition offerings</p>
-          </div>
+          {/* Heading */}
+          <h1 className={styles.heading}>NUTRITION MENU</h1>
 
-          {/* Category Filter Buttons */}
+          {/* Introduction */}
+          <p className={styles.introduction}>Fuel your workouts with our premium nutrition offerings</p>
+
+          {/* Category filters */}
           <div className={styles.categoryFilters}>
             {categories.map((category) => (
               <button
                 key={category.id}
-                className={`${styles.filterButton} ${selectedCategory === category.id ? styles.activeFilter : ""}`}
                 onClick={() => handleCategorySelect(category.id)}
+                className={`${styles.filterButton} ${selectedCategory === category.id ? styles.activeFilter : ""}`}
               >
                 {category.name}
               </button>
             ))}
           </div>
 
-          {/* Menu Items Grid */}
+          {/* Menu items */}
           <div className={styles.menuGrid}>
             {filteredMenuItems.map((item) => (
               <div key={item.id} className={styles.menuCard}>
                 {/* Food Image */}
                 <div className={styles.imageContainer}>
                   <img
-                    src={item.imagePath}
                     alt={item.name}
+                    src={item.imagePath}
                     className={styles.foodImage}
                     onError={(e) => {
                       // Fallback for missing images
@@ -69,7 +69,7 @@ function Nutrition() {
                   </div>
                 </div>
 
-                {/* Food Details */}
+                {/* Food details */}
                 <div className={styles.foodDetails}>
                   <h3 className={styles.foodName}>{item.name}</h3>
                   <div className={styles.foodInfo}>
@@ -81,7 +81,7 @@ function Nutrition() {
             ))}
           </div>
 
-          {/* Empty State */}
+          {/* If no items are found in the category */}
           {filteredMenuItems.length === 0 && (
             <div className={styles.emptyState}>
               <p>No items found in this category.</p>
