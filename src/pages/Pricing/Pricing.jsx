@@ -17,7 +17,7 @@ function Pricing() {
       {/* Banner */}
       <Banner
         text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
-        imageSrc="/images/group3.jpg"
+        imageSrc="/images/home2.jpg"
         secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
         gradient={true}
         gradientDirection="to bottom"
