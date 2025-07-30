@@ -314,3 +314,5 @@ html[data-theme="dark"] {
 - Include all other services that the place offers: Esthetiticain services, nails, physical therapy
 
 - Make a component for a wide picture with text in the middle of it. It should also have a paralax effect, as the user scrolls down the image scrolls as well. The component should only accept a link to an image and text
+
+- Pictures to use: https://drive.google.com/drive/folders/1wpll5IUQskO0xUr02mze-aSspKVztm3P

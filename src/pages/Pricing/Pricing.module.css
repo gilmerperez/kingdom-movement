@@ -190,8 +190,8 @@
   flex-direction: column;
   justify-content: center;
   color: hsl(0, 0%, 100%);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   background: linear-gradient(to top, var(--footer-bg-color), var(--primary));
 }
 
@@ -370,6 +370,8 @@
   /* Additional Info */
   .additionalInfoContainer {
     margin-top: 3rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
 
   .additionalInfoTitle {
@@ -465,6 +467,8 @@
   /* Additional info */
   .additionalInfoContainer {
     margin-top: 2rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 
   .additionalInfoTitle {

@@ -73,6 +73,7 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
+  border: 2px solid var(--primary);
   box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.15);
 }
 
