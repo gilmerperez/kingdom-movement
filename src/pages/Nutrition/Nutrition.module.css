@@ -70,14 +70,14 @@
 .menuCard {
   overflow: hidden;
   border-radius: 8px;
-  transition: 0.3s ease-in;
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .menuCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Image Container */
@@ -87,7 +87,7 @@
   overflow: hidden;
   position: relative;
   transition: 0.3s ease-in;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--bg-color);
 }
 
 .foodImage {
@@ -97,6 +97,7 @@
   transition: 0.3s ease-in;
 }
 
+/* Image of food zooms in on card hover */
 .menuCard:hover .foodImage {
   transform: scale(1.05);
 }
@@ -104,13 +105,13 @@
 .imagePlaceholder {
   width: 100%;
   height: 100%;
+  padding: 1rem;
   display: flex;
   font-weight: 500;
   font-size: 1.25rem;
   align-items: center;
   justify-content: center;
-  color: hsl(0, 0%, 0%);
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--bg-color);
 }
 
 /* Food Details */
@@ -123,8 +124,8 @@
   font-weight: 500;
   font-size: 1.35rem;
   margin-bottom: 0.5rem;
-  color: hsl(0, 0%, 0%);
   transition: 0.3s ease-in;
+  color: var(--text-primary);
 }
 
 .foodInfo {
@@ -143,13 +144,9 @@
   font-size: 1rem;
   font-weight: 500;
   border-radius: 4px;
-  color: hsl(0, 0%, 0%);
   padding: 0.25rem 0.5rem;
-  background-color: hsl(0, 0%, 95%);
-}
-
-* {
-  /* border: 1px solid red; */
+  color: var(--text-secondary);
+  background-color: var(--bg-color);
 }
 
 /* Empty State */

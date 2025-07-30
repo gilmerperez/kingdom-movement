@@ -65,7 +65,7 @@ function Nutrition() {
                     }}
                   />
                   <div className={styles.imagePlaceholder}>
-                    <span>Image Coming Soon</span>
+                    <span>{item.name} Image</span>
                   </div>
                 </div>
 
