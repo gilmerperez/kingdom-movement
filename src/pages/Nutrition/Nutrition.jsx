@@ -1,5 +1,6 @@
 import styles from "./Nutrition.module.css";
 import { useEffect, useState } from "react";
+import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
 
 function Nutrition() {
@@ -27,6 +28,16 @@ function Nutrition() {
 
   return (
     <>
+      {/* Banner */}
+      <Banner
+        text="STRENGTH. SPIRIT. KINGDOM"
+        imageSrc="/src/assets/images/home2.jpg"
+        secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
+        gradient={true}
+        gradientDirection="to bottom"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+      />
+
       <main>
         <section className={styles.nutritionContainer}>
           {/* Heading */}

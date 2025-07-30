@@ -35,12 +35,12 @@ function Schedule() {
     <>
       {/* Banner */}
       <Banner
-        text="BUILT FOR GLORY — BORN TO MOVE"
-        imageSrc="/src/assets/images/running.jpg"
-        secondaryText="Join our community and discover your true potential"
+        text="MORE THAN FITNESS — IT'S A MOVEMENT"
+        imageSrc="/src/assets/images/group3.jpg"
+        secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
         gradient={true}
         gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--bg-color)"]}
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
       />
 
       <main>

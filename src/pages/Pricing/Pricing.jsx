@@ -1,6 +1,7 @@
 import styles from "./Pricing.module.css";
 import { useEffect, useState } from "react";
 import pricingData from "../../data/pricing.json";
+import Banner from "../../components/Banner/Banner";
 
 function Pricing() {
   // Set Page Title
@@ -13,6 +14,16 @@ function Pricing() {
 
   return (
     <>
+      {/* Banner */}
+      <Banner
+        text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
+        imageSrc="/src/assets/images/group3.jpg"
+        secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
+        gradient={true}
+        gradientDirection="to bottom"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+      />
+
       <main>
         <section className={styles.pricingContainer}>
           {/* Heading */}
