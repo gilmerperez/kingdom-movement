@@ -67,7 +67,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/vanilla-protein-shake.jpg"
+      "imagePath": "public/menu/vanilla-protein-shake.webp"
     },
     {
       "id": "strawberry-protein-shake",
@@ -88,7 +88,7 @@
           "price": 0.50
         }
       ],
-      "imagePath": "/src/assets/images/menu/strawberry-protein-shake.jpg"
+      "imagePath": "public/menu/strawberry-protein-shake.jpg"
     },
     {
       "id": "green-tea",
@@ -109,7 +109,7 @@
           "price": 0.25
         }
       ],
-      "imagePath": "/src/assets/images/menu/green-tea.jpg"
+      "imagePath": "public/menu/green-tea.jpg"
     },
     {
       "id": "chai-tea",
@@ -135,7 +135,7 @@
           "price": 0.25
         }
       ],
-      "imagePath": "/src/assets/images/menu/chai-tea.jpg"
+      "imagePath": "public/menu/chai-tea.jpg"
     },
     {
       "id": "herbal-tea",
@@ -156,7 +156,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/herbal-tea.jpg"
+      "imagePath": "public/menu/herbal-tea.jpg"
     },
     {
       "id": "protein-waffle",
@@ -182,7 +182,7 @@
           "price": 0.50
         }
       ],
-      "imagePath": "/src/assets/images/menu/protein-waffle.jpg"
+      "imagePath": "public/menu/protein-waffle.jpg"
     },
     {
       "id": "banana-waffle",
@@ -203,7 +203,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/banana-waffle.jpg"
+      "imagePath": "public/menu/banana-waffle.jpg"
     },
     {
       "id": "blueberry-waffle",
@@ -224,7 +224,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/blueberry-waffle.jpg"
+      "imagePath": "public/menu/blueberry-waffle.jpg"
     },
     {
       "id": "classic-acai-bowl",
@@ -250,7 +250,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/classic-acai-bowl.jpg"
+      "imagePath": "public/menu/acai-bowl.webp"
     },
     {
       "id": "tropical-acai-bowl",
@@ -271,7 +271,7 @@
           "price": 1.50
         }
       ],
-      "imagePath": "/src/assets/images/menu/tropical-acai-bowl.jpg"
+      "imagePath": "public/menu/tropical-acai-bowl.jpg"
     },
     {
       "id": "protein-acai-bowl",
@@ -292,7 +292,7 @@
           "price": 0.75
         }
       ],
-      "imagePath": "/src/assets/images/menu/protein-acai-bowl.jpg"
+      "imagePath": "public/menu/protein-acai-bowl.jpg"
     }
   ]
 }
