@@ -46,7 +46,7 @@
           "price": 0.50
         }
       ],
-      "imagePath": "/src/assets/images/menu/chocolate-protein-shake.jpg"
+      "imagePath": "public/menu/chocolate-protein-shake.jpeg"
     },
     {
       "id": "vanilla-protein-shake",
