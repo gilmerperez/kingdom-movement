@@ -13,12 +13,12 @@ function Home() {
     <>
       {/* Banner */}
       <Banner
-        text="BUILT FOR GLORY — BORN TO MOVE"
         imageSrc="/images/home1.jpg"
+        text="BUILT FOR GLORY — BORN TO MOVE"
         secondaryText="EVERY PERSON IS TRAINED TO RISE — MENTALLY, PHYSICALLY, SPIRITUALLY"
         gradient={true}
-        gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+        gradientDirection="to top"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--header-bg-color)"]}
       />
 
       <main>

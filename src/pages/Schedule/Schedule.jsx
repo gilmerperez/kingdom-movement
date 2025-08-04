@@ -35,12 +35,12 @@ function Schedule() {
     <>
       {/* Banner */}
       <Banner
-        text="MORE THAN FITNESS — IT'S A MOVEMENT"
         imageSrc="/images/group3.jpg"
+        text="MORE THAN FITNESS — IT'S A MOVEMENT"
         secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
         gradient={true}
-        gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+        gradientDirection="to top"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--header-bg-color)"]}
       />
 
       <main>

@@ -58,12 +58,12 @@ function Nutrition() {
     <>
       {/* Banner */}
       <Banner
-        text="STRENGTH. SPIRIT. KINGDOM"
         imageSrc="/images/gym.jpg"
+        text="STRENGTH. SPIRIT. KINGDOM"
         secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
         gradient={true}
-        gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+        gradientDirection="to top"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--header-bg-color)"]}
       />
 
       <main>

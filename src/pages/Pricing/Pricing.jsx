@@ -16,12 +16,12 @@ function Pricing() {
     <>
       {/* Banner */}
       <Banner
-        text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
         imageSrc="/images/home2.jpg"
+        text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
         secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
         gradient={true}
-        gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "hsla(0, 0%, 0%, 0.80)"]}
+        gradientDirection="to top"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--header-bg-color)"]}
       />
 
       <main>
