@@ -23,514 +23,16 @@
   ],
   "menuItems": [
     {
-      "id": "iced-coffee",
-      "name": "Iced Coffee",
-      "category": "specialty-items",
-      "description": "Smooth and refreshing iced coffee made with premium beans. Perfect for that morning pick-me-up or pre-workout energy boost.",
-      "add-ons": [
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        }
-      ],
-      "imagePath": "/nutrition/iced-coffee.jpg"
-    },
-    {
-      "id": "green-detox",
-      "name": "Green Detox",
-      "category": "specialty-items",
-      "description": "Fresh green juice blend with spinach, kale, cucumber, and apple. Packed with nutrients and perfect for post-workout recovery.",
-      "add-ons": [
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        }
-      ],
-      "imagePath": "/nutrition/green-detox.jpg"
-    },
-    {
-      "id": "super-shake",
-      "name": "Super Shake",
-      "category": "specialty-items",
-      "description": "Powerful protein shake with banana, berries, and premium whey protein. Designed for maximum recovery and muscle building.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        }
-      ],
-      "imagePath": "/nutrition/super-shake.jpg"
-    },
-    {
-      "id": "parfait",
-      "name": "Parfait with Toppings",
-      "category": "specialty-items",
-      "description": "Greek yogurt parfait layered with fresh berries and granola. Light, protein-rich, and perfect for a healthy breakfast or snack.",
-      "add-ons": [
-        {
-          "name": "Add Peanuts"
-        },
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        },
-        {
-          "name": "Add Pistachio"
-        },
-        {
-          "name": "Add Snickers"
-        },
-        {
-          "name": "Add M&M's"
-        }
-      ],
-      "imagePath": "/nutrition/parfait.jpg"
-    },
-    {
-      "id": "waffles",
-      "name": "Waffles with Toppings",
-      "category": "specialty-items",
-      "description": "Fluffy protein waffles made fresh daily. Crispy on the outside, soft on the inside, and ready for your favorite toppings.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        },
-        {
-          "name": "Add Pistachio"
-        },
-        {
-          "name": "Add Snickers"
-        },
-        {
-          "name": "Add M&M's"
-        }
-      ],
-      "imagePath": "/nutrition/waffles.jpg"
-    },
-    {
-      "id": "oatmeal",
-      "name": "Oatmeal with Fruits",
-      "category": "specialty-items",
-      "description": "Steel-cut oatmeal topped with fresh seasonal fruits. Hearty, nutritious, and perfect for sustained energy throughout your workout.",
-      "add-ons": [
-        {
-          "name": "Add Peanuts"
-        },
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        },
-        {
-          "name": "Add Pistachio"
-        }
-      ],
-      "imagePath": "/nutrition/oatmeal.jpg"
-    },
-    {
-      "id": "acai-bowl",
-      "name": "Acai Bowl",
-      "category": "specialty-items",
-      "description": "Premium acai bowl with granola, banana, and honey. Rich in antioxidants and perfect for pre-workout energy or post-workout recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanuts"
-        },
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        },
-        {
-          "name": "Add Pistachio"
-        }
-      ],
-      "imagePath": "/nutrition/acai-bowl.webp"
-    },
-    {
-      "id": "fruit-bowl",
-      "name": "Fruit Bowl",
-      "category": "specialty-items",
-      "description": "Fresh seasonal fruit bowl with a variety of colorful, nutrient-rich fruits. Light, refreshing, and perfect for hydration and vitamins.",
-      "add-ons": [
-        {
-          "name": "Add Peanuts"
-        },
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Honey"
-        },
-        {
-          "name": "Add Almonds"
-        },
-        {
-          "name": "Add Granola"
-        },
-        {
-          "name": "Add Pistachio"
-        }
-      ],
-      "imagePath": "/nutrition/fruit-bowl.jpg"
-    },
-    {
-      "id": "cookies-cream-shake",
-      "name": "Cookies and Cream",
-      "category": "protein-shakes",
-      "description": "Classic cookies and cream protein shake with real cookie pieces. Rich, creamy, and perfect for satisfying your sweet tooth while fueling your muscles.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/cookies-n-cream-shake.jpg"
-    },
-    {
-      "id": "dulce-leche-shake",
-      "name": "Dulce de Leche",
-      "category": "protein-shakes",
-      "description": "Smooth dulce de leche protein shake with caramel notes. Sweet, indulgent, and packed with premium whey protein for optimal recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/dulce-de-leche-shake.jpg"
-    },
-    {
-      "id": "chicha-shake",
-      "name": "Chicha",
-      "category": "protein-shakes",
-      "description": "Venezuelan chicha protein shake with rice and cinnamon. Creamy and sweet, offering an authentic Venezuelan taste with premium protein.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/chicha-shake.jpg"
-    },
-    {
-      "id": "chocolate-shake",
-      "name": "Chocolate",
-      "category": "protein-shakes",
-      "description": "Rich chocolate protein shake made with premium cocoa and whey protein. Classic flavor that never disappoints for post-workout recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/chocolate-shake.jpeg"
-    },
-    {
-      "id": "choco-coco-shake",
-      "name": "Choco-Coco",
-      "category": "protein-shakes",
-      "description": "Chocolate and coconut protein shake with tropical notes. Perfect blend of rich chocolate and refreshing coconut for a unique flavor experience.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/choco-coco-shake.jpg"
-    },
-    {
-      "id": "banana-caramel-shake",
-      "name": "Banana Caramel",
-      "category": "protein-shakes",
-      "description": "Smooth banana caramel protein shake with real banana and caramel notes. Sweet, creamy, and perfect for satisfying cravings while fueling recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/banana-caramel-shake.jpg"
-    },
-    {
-      "id": "praline-shake",
-      "name": "Praline",
-      "category": "protein-shakes",
-      "description": "Luxurious praline protein shake with rich nutty notes and caramel undertones. Premium flavor for those who appreciate sophisticated taste profiles.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/praline-shake.webp"
-    },
-    {
-      "id": "pumpkin-spice-shake",
-      "name": "Pumpkin Spice",
-      "category": "protein-shakes",
-      "description": "Seasonal pumpkin spice protein shake with warming spices. Perfect fall flavor with cinnamon, nutmeg, and real pumpkin for a cozy post-workout treat.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/pumpkin-spice-shake.jpg"
-    },
-    {
-      "id": "strawberry-shake",
-      "name": "Strawberry",
-      "category": "protein-shakes",
-      "description": "Fresh strawberry protein shake with real fruit and premium whey protein. Sweet, refreshing, and packed with antioxidants for optimal recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/strawberry-shake.png"
-    },
-    {
-      "id": "strawberry-cheesecake-shake",
-      "name": "Strawberry Cheesecake",
-      "category": "protein-shakes",
-      "description": "Indulgent strawberry cheesecake protein shake with creamy notes and fresh strawberry flavor. Dessert-like treat that fuels your fitness goals.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/strawberry-cheesecake-shake.jpg"
-    },
-    {
-      "id": "orange-cream-shake",
-      "name": "Orange Cream",
-      "category": "protein-shakes",
-      "description": "Creamy orange cream protein shake with citrus notes and smooth vanilla undertones. Refreshing and nostalgic flavor for your workout recovery.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/orange-cream-shake.jpg"
-    },
-    {
-      "id": "cafe-latte-shake",
-      "name": "Cafe Latte",
-      "category": "protein-shakes",
-      "description": "Smooth cafe latte protein shake with premium coffee and creamy notes. Perfect for coffee lovers who want their caffeine fix with protein benefits.",
-      "add-ons": [
-        {
-          "name": "Add Peanut Butter"
-        },
-        {
-          "name": "Add Nutella"
-        },
-        {
-          "name": "Add Oatmeal"
-        },
-        {
-          "name": "Add Cinnamon"
-        },
-        {
-          "name": "Add Honey"
-        }
-      ],
-      "imagePath": "/nutrition/cafe-latte-shake.jpg"
-    },
-    {
       "id": "raspberry-tea",
       "name": "Raspberry Tea",
       "category": "teas",
       "description": "Refreshing raspberry tea with natural fruit flavor. Light, sweet, and perfect for hydration during or after your workout.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -587,12 +89,12 @@
       "name": "Lemon Tea",
       "category": "teas",
       "description": "Zesty lemon tea with natural citrus notes. Energizing and perfect for detoxification and immune support.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -649,12 +151,12 @@
       "name": "Peach Tea",
       "category": "teas",
       "description": "Smooth peach tea with natural fruit essence. Sweet, refreshing, and perfect for post-workout hydration.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -711,12 +213,12 @@
       "name": "Chai Tea",
       "category": "teas",
       "description": "Spiced chai tea with warming cinnamon, ginger, and cardamom. Served with your choice of milk for a comforting treat.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -773,12 +275,12 @@
       "name": "NRG Tea",
       "category": "teas",
       "description": "Herbalife NRG tea blend with natural energy boosters. Designed to enhance focus and provide sustained energy for your workouts.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -835,12 +337,12 @@
       "name": "Cinnamon Tea",
       "category": "teas",
       "description": "Warming cinnamon tea with natural spice notes. Perfect for metabolism support and post-workout relaxation.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -897,12 +399,12 @@
       "name": "Fruit Mega Tea",
       "category": "mega-teas",
       "description": "Premium fruit blend mega tea with enhanced supplements. Perfect pre-workout option with a variety of performance boosters available.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -959,12 +461,12 @@
       "name": "Passionfruit Mega Tea",
       "category": "mega-teas",
       "description": "Exotic passionfruit mega tea with tropical notes. Enhanced with premium supplements for maximum pre-workout performance.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -1021,12 +523,12 @@
       "name": "Lemon Mega Tea",
       "category": "mega-teas",
       "description": "Zesty lemon mega tea with enhanced energy boosters. Perfect for pre-workout focus and sustained performance during training.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -1083,12 +585,12 @@
       "name": "Grenadine Mega Tea",
       "category": "mega-teas",
       "description": "Sweet grenadine mega tea with pomegranate notes. Enhanced with premium supplements for explosive pre-workout energy.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -1145,12 +647,12 @@
       "name": "Orange Mega Tea",
       "category": "mega-teas",
       "description": "Citrus orange mega tea with vitamin C boost. Enhanced with premium supplements for optimal pre-workout performance and recovery.",
-      "add-ons": [
+      "extras": [
         {
           "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre"
+          "name": "Add Fiber"
         },
         {
           "name": "Add Probiotics"
@@ -1201,6 +703,573 @@
         }
       ],
       "imagePath": "/nutrition/orange-mega-tea.jpg"
+    },
+    {
+      "id": "cookies-cream-shake",
+      "name": "Cookies and Cream Shake",
+      "category": "protein-shakes",
+      "description": "Classic cookies and cream protein shake with real cookie pieces. Rich, creamy, and perfect for satisfying your sweet tooth while fueling your muscles.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/cookies-n-cream-shake.jpg"
+    },
+    {
+      "id": "dulce-leche-shake",
+      "name": "Dulce de Leche Shake",
+      "category": "protein-shakes",
+      "description": "Smooth dulce de leche protein shake with caramel notes. Sweet, indulgent, and packed with premium whey protein for optimal recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/dulce-de-leche-shake.jpg"
+    },
+    {
+      "id": "chicha-shake",
+      "name": "Chicha Shake",
+      "category": "protein-shakes",
+      "description": "Venezuelan chicha protein shake with rice and cinnamon. Creamy and sweet, offering an authentic Venezuelan taste with premium protein.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/chicha-shake.jpg"
+    },
+    {
+      "id": "chocolate-shake",
+      "name": "Chocolate Shake",
+      "category": "protein-shakes",
+      "description": "Rich chocolate protein shake made with premium cocoa and whey protein. Classic flavor that never disappoints for post-workout recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/chocolate-shake.jpeg"
+    },
+    {
+      "id": "choco-coco-shake",
+      "name": "Choco-Coco Shake",
+      "category": "protein-shakes",
+      "description": "Chocolate and coconut protein shake with tropical notes. Perfect blend of rich chocolate and refreshing coconut for a unique flavor experience.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/choco-coco-shake.jpg"
+    },
+    {
+      "id": "banana-caramel-shake",
+      "name": "Banana Caramel Shake",
+      "category": "protein-shakes",
+      "description": "Smooth banana caramel protein shake with real banana and caramel notes. Sweet, creamy, and perfect for satisfying cravings while fueling recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/banana-caramel-shake.jpg"
+    },
+    {
+      "id": "praline-shake",
+      "name": "Praline Shake",
+      "category": "protein-shakes",
+      "description": "Luxurious praline protein shake with rich nutty notes and caramel undertones. Premium flavor for those who appreciate sophisticated taste profiles.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/praline-shake.webp"
+    },
+    {
+      "id": "pumpkin-spice-shake",
+      "name": "Pumpkin Spice Shake",
+      "category": "protein-shakes",
+      "description": "Seasonal pumpkin spice protein shake with warming spices. Perfect fall flavor with cinnamon, nutmeg, and real pumpkin for a cozy post-workout treat.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/pumpkin-spice-shake.jpg"
+    },
+    {
+      "id": "strawberry-shake",
+      "name": "Strawberry Shake",
+      "category": "protein-shakes",
+      "description": "Fresh strawberry protein shake with real fruit and premium whey protein. Sweet, refreshing, and packed with antioxidants for optimal recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/strawberry-shake.png"
+    },
+    {
+      "id": "strawberry-cheesecake-shake",
+      "name": "Strawberry Cheesecake Shake",
+      "category": "protein-shakes",
+      "description": "Indulgent strawberry cheesecake protein shake with creamy notes and fresh strawberry flavor. Dessert-like treat that fuels your fitness goals.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/strawberry-cheesecake-shake.jpg"
+    },
+    {
+      "id": "orange-cream-shake",
+      "name": "Orange Cream Shake",
+      "category": "protein-shakes",
+      "description": "Creamy orange cream protein shake with citrus notes and smooth vanilla undertones. Refreshing and nostalgic flavor for your workout recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/orange-cream-shake.jpg"
+    },
+    {
+      "id": "cafe-latte-shake",
+      "name": "Cafe Latte Shake",
+      "category": "protein-shakes",
+      "description": "Smooth cafe latte protein shake with premium coffee and creamy notes. Perfect for coffee lovers who want their caffeine fix with protein benefits.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/cafe-latte-shake.jpg"
+    },
+    {
+      "id": "iced-coffee",
+      "name": "Iced Coffee",
+      "category": "specialty-items",
+      "description": "Smooth and refreshing iced coffee made with premium beans. Perfect for that morning pick-me-up or pre-workout energy boost.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/iced-coffee.jpg"
+    },
+    {
+      "id": "green-detox",
+      "name": "Green Detox",
+      "category": "specialty-items",
+      "description": "Fresh green juice blend with spinach, kale, cucumber, and apple. Packed with nutrients and perfect for post-workout recovery.",
+      "extras": [
+        {
+          "name": "Add Collagen"
+        },
+        {
+          "name": "Add Fiber"
+        },
+        {
+          "name": "Add Probiotics"
+        },
+        {
+          "name": "Add Vitamin C"
+        },
+        {
+          "name": "Add Immunity Shot"
+        }
+      ],
+      "imagePath": "/nutrition/green-detox.jpg"
+    },
+    {
+      "id": "mega-shake",
+      "name": "Mega Protein Shake",
+      "category": "specialty-items",
+      "description": "Powerful protein shake with banana, berries, and premium whey protein. Designed for maximum recovery and muscle building.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/super-shake.jpg"
+    },
+    {
+      "id": "parfait",
+      "name": "Parfait",
+      "category": "specialty-items",
+      "description": "Greek yogurt parfait layered with fresh berries and granola. Light, protein-rich, and perfect for a healthy breakfast or snack.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Peanuts"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Almonds"
+        },
+        {
+          "name": "Add Granola"
+        },
+        {
+          "name": "Add Pistachio"
+        },
+        {
+          "name": "Add Snickers"
+        },
+        {
+          "name": "Add M&M's"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/parfait.jpg"
+    },
+    {
+      "id": "waffles",
+      "name": "Waffles",
+      "category": "specialty-items",
+      "description": "Fluffy protein waffles made fresh daily. Crispy on the outside, soft on the inside, and ready for your favorite toppings.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Peanuts"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Almonds"
+        },
+        {
+          "name": "Add Granola"
+        },
+        {
+          "name": "Add Pistachio"
+        },
+        {
+          "name": "Add Snickers"
+        },
+        {
+          "name": "Add M&M's"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/waffles.jpg"
+    },
+    {
+      "id": "oatmeal",
+      "name": "Oatmeal",
+      "category": "specialty-items",
+      "description": "Steel-cut oatmeal topped with fresh seasonal fruits. Hearty, nutritious, and perfect for sustained energy throughout your workout.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Peanuts"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Almonds"
+        },
+        {
+          "name": "Add Granola"
+        },
+        {
+          "name": "Add Pistachio"
+        },
+        {
+          "name": "Add Snickers"
+        },
+        {
+          "name": "Add M&M's"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/oatmeal.jpg"
+    },
+    {
+      "id": "acai-bowl",
+      "name": "Acai Bowl",
+      "category": "specialty-items",
+      "description": "Premium acai bowl with granola, banana, and honey. Rich in antioxidants and perfect for pre-workout energy or post-workout recovery.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Peanuts"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Almonds"
+        },
+        {
+          "name": "Add Granola"
+        },
+        {
+          "name": "Add Pistachio"
+        },
+        {
+          "name": "Add Snickers"
+        },
+        {
+          "name": "Add M&M's"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/acai-bowl.webp"
+    },
+    {
+      "id": "fruit-bowl",
+      "name": "Fruit Bowl",
+      "category": "specialty-items",
+      "description": "Fresh seasonal fruit bowl with a variety of colorful, nutrient-rich fruits. Light, refreshing, and perfect for hydration and vitamins.",
+      "add-ons": [
+        {
+          "name": "Add Peanut Butter"
+        },
+        {
+          "name": "Add Peanuts"
+        },
+        {
+          "name": "Add Nutella"
+        },
+        {
+          "name": "Add Oatmeal"
+        },
+        {
+          "name": "Add Honey"
+        },
+        {
+          "name": "Add Almonds"
+        },
+        {
+          "name": "Add Granola"
+        },
+        {
+          "name": "Add Pistachio"
+        },
+        {
+          "name": "Add Snickers"
+        },
+        {
+          "name": "Add M&M's"
+        },
+        {
+          "name": "Add Cinnamon"
+        }
+      ],
+      "imagePath": "/nutrition/fruit-bowl.jpg"
     }
   ]
 }

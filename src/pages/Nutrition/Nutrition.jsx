@@ -13,7 +13,7 @@ function Nutrition() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   // Get all categories for filter buttons
-  const categories = [{ id: "all", name: "All" }, ...nutritionData.categories];
+  const categories = [{ id: "all", name: "All Items" }, ...nutritionData.categories];
 
   // Filter menu items based on selected category
   const filteredMenuItems =
