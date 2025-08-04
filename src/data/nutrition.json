@@ -3,22 +3,22 @@
     {
       "id": "teas",
       "name": "Teas",
-      "description": "Refreshing and energizing teas for hydration and wellness"
+      "description": "Immerse yourself in our exquisite collection of refreshing and invigorating teas, expertly crafted to not only quench your thirst but also enhance your vitality and support your overall well-being. Perfect for those seeking a harmonious blend of taste and health benefits."
     },
     {
       "id": "mega-teas",
       "name": "Mega Teas",
-      "description": "Enhanced teas with pre-workout supplements and performance boosters"
+      "description": "Discover the power of our Mega Teas, meticulously crafted with advanced pre-workout supplements and potent performance boosters. These invigorating beverages are designed to significantly elevate your energy levels, enhance your focus, and optimize your workout performance, ensuring you stay at the top of your game."
     },
     {
       "id": "protein-shakes",
       "name": "Protein Shakes",
-      "description": "Premium protein shakes to fuel your workout and recovery"
+      "description": "Experience the ultimate in workout nutrition with our premium protein shakes. Expertly crafted to provide optimal fuel for your exercise regimen, these shakes not only enhance your performance but also accelerate your recovery, ensuring you achieve your fitness goals with ease."
     },
     {
       "id": "specialty-items",
       "name": "Specialty Items",
-      "description": "Popular food items and other specialty offerings"
+      "description": "A curated collection of our most popular food items and unique specialty offerings. These items are crafted to provide a delightful culinary experience, featuring a variety of flavors and ingredients that cater to diverse tastes and preferences. Perfect for those looking to indulge in something special or explore new and exciting options."
     }
   ],
   "menuItems": [

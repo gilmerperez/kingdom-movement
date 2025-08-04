@@ -25,7 +25,7 @@ function Nutrition() {
   // Get the appropriate introduction text based on selected category
   const getIntroductionText = () => {
     if (selectedCategory === "all") {
-      return "Fuel your workouts with our premium nutrition offerings";
+      return "Elevate your fitness journey with our exceptional range of nutrition products, including invigorating teas, powerful mega-teas, premium protein shakes, and unique specialty items, all designed to fuel your body and enhance your performance.";
     }
 
     const selectedCategoryData = nutritionData.categories.find((category) => category.id === selectedCategory);
