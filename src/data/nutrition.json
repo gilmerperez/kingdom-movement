@@ -254,7 +254,7 @@
           "name": "Add Honey"
         }
       ],
-      "imagePath": "/nutrition/cookies-cream-shake.jpg"
+      "imagePath": "/nutrition/cookies-n-cream-shake.jpg"
     },
     {
       "id": "dulce-leche-shake",
@@ -278,7 +278,7 @@
           "name": "Add Honey"
         }
       ],
-      "imagePath": "/nutrition/dulce-leche-shake.jpg"
+      "imagePath": "/nutrition/dulce-de-leche-shake.jpg"
     },
     {
       "id": "chicha-shake",
@@ -326,7 +326,7 @@
           "name": "Add Honey"
         }
       ],
-      "imagePath": "/nutrition/chocolate-protein-shake.jpeg"
+      "imagePath": "/nutrition/chocolate-shake.jpeg"
     },
     {
       "id": "choco-coco-shake",
@@ -398,7 +398,7 @@
           "name": "Add Honey"
         }
       ],
-      "imagePath": "/nutrition/praline-shake.jpg"
+      "imagePath": "/nutrition/praline-shake.webp"
     },
     {
       "id": "pumpkin-spice-shake",
@@ -446,7 +446,7 @@
           "name": "Add Honey"
         }
       ],
-      "imagePath": "/nutrition/strawberry-protein-shake.jpg"
+      "imagePath": "/nutrition/strawberry-shake.png"
     },
     {
       "id": "strawberry-cheesecake-shake",
@@ -890,7 +890,7 @@
           "name": "Upgrade to Pineapple Kiwi"
         }
       ],
-      "imagePath": "/nutrition/cinnamon-tea.jpg"
+      "imagePath": "/nutrition/cinnamon-tea.webp"
     },
     {
       "id": "fruit-mega-tea",
@@ -952,7 +952,7 @@
           "name": "Upgrade to Pineapple Kiwi"
         }
       ],
-      "imagePath": "/nutrition/fruit-mega-tea.jpg"
+      "imagePath": "/nutrition/fruit-mega-tea.webp"
     },
     {
       "id": "passionfruit-mega-tea",
@@ -1138,7 +1138,7 @@
           "name": "Upgrade to Pineapple Kiwi"
         }
       ],
-      "imagePath": "/nutrition/grenadine-mega-tea.jpg"
+      "imagePath": "/nutrition/grenadine-mega-tea.webp"
     },
     {
       "id": "orange-mega-tea",
