@@ -21,6 +21,19 @@ function Nutrition() {
       ? nutritionData.menuItems
       : nutritionData.menuItems.filter((item) => item.category === selectedCategory);
 
+  // Get the appropriate introduction text based on selected category
+  const getIntroductionText = () => {
+    if (selectedCategory === "all") {
+      return "Fuel your workouts with our premium nutrition offerings";
+    }
+
+    const selectedCategoryData = nutritionData.categories.find((category) => category.id === selectedCategory);
+
+    return selectedCategoryData
+      ? selectedCategoryData.description
+      : "Fuel your workouts with our premium nutrition offerings";
+  };
+
   // Handle category filter selection
   const handleCategorySelect = (categoryId) => {
     setSelectedCategory(categoryId);
@@ -44,7 +57,7 @@ function Nutrition() {
           <h1 className={styles.heading}>NUTRITION MENU</h1>
 
           {/* Introduction */}
-          <p className={styles.introduction}>Fuel your workouts with our premium nutrition offerings</p>
+          <p className={styles.introduction}>{getIntroductionText()}</p>
 
           {/* Category filters */}
           <div className={styles.categoryFilters}>
