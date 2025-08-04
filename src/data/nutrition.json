@@ -26,29 +26,13 @@
       "id": "iced-coffee",
       "name": "Iced Coffee",
       "category": "specialty-items",
-      "price": 4.99,
-      "calories": 5,
       "description": "Smooth and refreshing iced coffee made with premium beans. Perfect for that morning pick-me-up or pre-workout energy boost.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         },
         {
-          "name": "Add Nutella",
-          "calories": 160,
-          "price": 1.50
-        },
-        {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Almonds"
         }
       ],
       "imagePath": "/nutrition/iced-coffee.jpg"
@@ -57,34 +41,13 @@
       "id": "green-detox",
       "name": "Green Detox",
       "category": "specialty-items",
-      "price": 6.99,
-      "calories": 85,
       "description": "Fresh green juice blend with spinach, kale, cucumber, and apple. Packed with nutrients and perfect for post-workout recovery.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Honey"
         },
         {
-          "name": "Add Fiber",
-          "calories": 0,
-          "price": 1.00
-        },
-        {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
-        },
-        {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
-        },
-        {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Almonds"
         }
       ],
       "imagePath": "/nutrition/green-detox.jpg"
@@ -93,34 +56,19 @@
       "id": "super-shake",
       "name": "Super Shake",
       "category": "specialty-items",
-      "price": 8.99,
-      "calories": 320,
       "description": "Powerful protein shake with banana, berries, and premium whey protein. Designed for maximum recovery and muscle building.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Honey",
-          "calories": 120,
-          "price": 1.25
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Granola"
         }
       ],
       "imagePath": "/nutrition/super-shake.jpg"
@@ -129,64 +77,34 @@
       "id": "parfait",
       "name": "Parfait with Toppings",
       "category": "specialty-items",
-      "price": 7.99,
-      "calories": 280,
       "description": "Greek yogurt parfait layered with fresh berries and granola. Light, protein-rich, and perfect for a healthy breakfast or snack.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 160,
-          "price": 1.00
+          "name": "Add Peanuts"
         },
         {
-          "name": "Add Peanuts",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         },
         {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Almonds",
-          "calories": 120,
-          "price": 1.25
+          "name": "Add Granola"
         },
         {
-          "name": "Add Granola",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Pistachio"
         },
         {
-          "name": "Add Pistachio",
-          "calories": 250,
-          "price": 1.75
+          "name": "Add Snickers"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
-        },
-        {
-          "name": "Add Snickers",
-          "calories": 240,
-          "price": 1.50
-        },
-        {
-          "name": "Add M&M's",
-          "calories": 240,
-          "price": 1.50
+          "name": "Add M&M's"
         }
       ],
       "imagePath": "/nutrition/parfait.jpg"
@@ -195,64 +113,31 @@
       "id": "waffles",
       "name": "Waffles with Toppings",
       "category": "specialty-items",
-      "price": 8.49,
-      "calories": 320,
       "description": "Fluffy protein waffles made fresh daily. Crispy on the outside, soft on the inside, and ready for your favorite toppings.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 160,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Peanuts",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Honey"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Granola"
         },
         {
-          "name": "Add Almonds",
-          "calories": 120,
-          "price": 1.25
+          "name": "Add Pistachio"
         },
         {
-          "name": "Add Granola",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Snickers"
         },
         {
-          "name": "Add Pistachio",
-          "calories": 250,
-          "price": 1.75
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
-        },
-        {
-          "name": "Add Snickers",
-          "calories": 240,
-          "price": 1.50
-        },
-        {
-          "name": "Add M&M's",
-          "calories": 240,
-          "price": 1.50
+          "name": "Add M&M's"
         }
       ],
       "imagePath": "/nutrition/waffles.jpg"
@@ -261,59 +146,28 @@
       "id": "oatmeal",
       "name": "Oatmeal with Fruits",
       "category": "specialty-items",
-      "price": 6.99,
-      "calories": 250,
       "description": "Steel-cut oatmeal topped with fresh seasonal fruits. Hearty, nutritious, and perfect for sustained energy throughout your workout.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 160,
-          "price": 1.00
+          "name": "Add Peanuts"
         },
         {
-          "name": "Add Peanuts",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Honey"
         },
         {
-          "name": "Add Almonds",
-          "calories": 120,
-          "price": 1.25
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Granola",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Granola"
         },
         {
-          "name": "Add Pistachio",
-          "calories": 250,
-          "price": 1.75
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
-        },
-        {
-          "name": "Add Snickers",
-          "calories": 240,
-          "price": 1.50
-        },
-        {
-          "name": "Add M&M's",
-          "calories": 240,
-          "price": 1.50
+          "name": "Add Pistachio"
         }
       ],
       "imagePath": "/nutrition/oatmeal.jpg"
@@ -322,64 +176,28 @@
       "id": "acai-bowl",
       "name": "Acai Bowl",
       "category": "specialty-items",
-      "price": 12.99,
-      "calories": 420,
       "description": "Premium acai bowl with granola, banana, and honey. Rich in antioxidants and perfect for pre-workout energy or post-workout recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 160,
-          "price": 1.00
+          "name": "Add Peanuts"
         },
         {
-          "name": "Add Peanuts",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         },
         {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Almonds",
-          "calories": 120,
-          "price": 1.25
+          "name": "Add Granola"
         },
         {
-          "name": "Add Granola",
-          "calories": 160,
-          "price": 1.50
-        },
-        {
-          "name": "Add Pistachio",
-          "calories": 250,
-          "price": 1.75
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
-        },
-        {
-          "name": "Add Snickers",
-          "calories": 240,
-          "price": 1.50
-        },
-        {
-          "name": "Add M&M's",
-          "calories": 240,
-          "price": 1.50
+          "name": "Add Pistachio"
         }
       ],
       "imagePath": "/nutrition/acai-bowl.webp"
@@ -388,64 +206,28 @@
       "id": "fruit-bowl",
       "name": "Fruit Bowl",
       "category": "specialty-items",
-      "price": 9.99,
-      "calories": 180,
       "description": "Fresh seasonal fruit bowl with a variety of colorful, nutrient-rich fruits. Light, refreshing, and perfect for hydration and vitamins.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 160,
-          "price": 1.00
+          "name": "Add Peanuts"
         },
         {
-          "name": "Add Peanut",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         },
         {
-          "name": "Add Honey",
-          "calories": 160,
-          "price": 1.50
+          "name": "Add Almonds"
         },
         {
-          "name": "Add Almonds",
-          "calories": 120,
-          "price": 1.25
+          "name": "Add Granola"
         },
         {
-          "name": "Add Granola",
-          "calories": 160,
-          "price": 1.50
-        },
-        {
-          "name": "Add Pistachio",
-          "calories": 250,
-          "price": 1.75
-        },
-        {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
-        },
-        {
-          "name": "Add Snickers",
-          "calories": 240,
-          "price": 1.50
-        },
-        {
-          "name": "Add M&M's",
-          "calories": 240,
-          "price": 1.50
+          "name": "Add Pistachio"
         }
       ],
       "imagePath": "/nutrition/fruit-bowl.jpg"
@@ -454,34 +236,22 @@
       "id": "cookies-cream-shake",
       "name": "Cookies and Cream",
       "category": "protein-shakes",
-      "price": 9.99,
-      "calories": 350,
       "description": "Classic cookies and cream protein shake with real cookie pieces. Rich, creamy, and perfect for satisfying your sweet tooth while fueling your muscles.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/cookies-cream-shake.jpg"
@@ -490,34 +260,22 @@
       "id": "dulce-leche-shake",
       "name": "Dulce de Leche",
       "category": "protein-shakes",
-      "price": 10.49,
-      "calories": 380,
       "description": "Smooth dulce de leche protein shake with caramel notes. Sweet, indulgent, and packed with premium whey protein for optimal recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/dulce-leche-shake.jpg"
@@ -526,34 +284,22 @@
       "id": "chicha-shake",
       "name": "Chicha",
       "category": "protein-shakes",
-      "price": 9.99,
-      "calories": 320,
       "description": "Traditional chicha protein shake with purple corn and spices. Unique flavor profile with authentic Peruvian taste and premium protein.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/chicha-shake.jpg"
@@ -562,34 +308,22 @@
       "id": "chocolate-shake",
       "name": "Chocolate",
       "category": "protein-shakes",
-      "price": 9.49,
-      "calories": 340,
       "description": "Rich chocolate protein shake made with premium cocoa and whey protein. Classic flavor that never disappoints for post-workout recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/chocolate-protein-shake.jpeg"
@@ -598,34 +332,22 @@
       "id": "choco-coco-shake",
       "name": "Choco-Coco",
       "category": "protein-shakes",
-      "price": 10.99,
-      "calories": 360,
       "description": "Chocolate and coconut protein shake with tropical notes. Perfect blend of rich chocolate and refreshing coconut for a unique flavor experience.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/choco-coco-shake.jpg"
@@ -634,34 +356,22 @@
       "id": "banana-caramel-shake",
       "name": "Banana Caramel",
       "category": "protein-shakes",
-      "price": 10.49,
-      "calories": 370,
       "description": "Smooth banana caramel protein shake with real banana and caramel notes. Sweet, creamy, and perfect for satisfying cravings while fueling recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/banana-caramel-shake.jpg"
@@ -670,34 +380,22 @@
       "id": "praline-shake",
       "name": "Praline",
       "category": "protein-shakes",
-      "price": 11.49,
-      "calories": 390,
       "description": "Luxurious praline protein shake with rich nutty notes and caramel undertones. Premium flavor for those who appreciate sophisticated taste profiles.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/praline-shake.jpg"
@@ -706,34 +404,22 @@
       "id": "pumpkin-spice-shake",
       "name": "Pumpkin Spice",
       "category": "protein-shakes",
-      "price": 10.99,
-      "calories": 350,
       "description": "Seasonal pumpkin spice protein shake with warming spices. Perfect fall flavor with cinnamon, nutmeg, and real pumpkin for a cozy post-workout treat.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/pumpkin-spice-shake.jpg"
@@ -742,34 +428,22 @@
       "id": "strawberry-shake",
       "name": "Strawberry",
       "category": "protein-shakes",
-      "price": 9.99,
-      "calories": 330,
       "description": "Fresh strawberry protein shake with real fruit and premium whey protein. Sweet, refreshing, and packed with antioxidants for optimal recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/strawberry-protein-shake.jpg"
@@ -778,34 +452,22 @@
       "id": "strawberry-cheesecake-shake",
       "name": "Strawberry Cheesecake",
       "category": "protein-shakes",
-      "price": 11.99,
-      "calories": 380,
       "description": "Indulgent strawberry cheesecake protein shake with creamy notes and fresh strawberry flavor. Dessert-like treat that fuels your fitness goals.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/strawberry-cheesecake-shake.jpg"
@@ -814,34 +476,22 @@
       "id": "orange-cream-shake",
       "name": "Orange Cream",
       "category": "protein-shakes",
-      "price": 10.49,
-      "calories": 340,
       "description": "Creamy orange cream protein shake with citrus notes and smooth vanilla undertones. Refreshing and nostalgic flavor for your workout recovery.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/orange-cream-shake.jpg"
@@ -850,34 +500,22 @@
       "id": "cafe-latte-shake",
       "name": "Cafe Latte",
       "category": "protein-shakes",
-      "price": 10.99,
-      "calories": 350,
       "description": "Smooth cafe latte protein shake with premium coffee and creamy notes. Perfect for coffee lovers who want their caffeine fix with protein benefits.",
       "variations": [
         {
-          "name": "Add Peanut Butter",
-          "calories": 95,
-          "price": 1.00
+          "name": "Add Peanut Butter"
         },
         {
-          "name": "Add Nutella",
-          "calories": 80,
-          "price": 1.25
+          "name": "Add Nutella"
         },
         {
-          "name": "Add Oatmeal",
-          "calories": 150,
-          "price": 1.50
+          "name": "Add Oatmeal"
         },
         {
-          "name": "Add Cinnamon",
-          "calories": 6,
-          "price": 0.50
+          "name": "Add Cinnamon"
         },
         {
-          "name": "Add Honey",
-          "calories": 64,
-          "price": 0.75
+          "name": "Add Honey"
         }
       ],
       "imagePath": "/nutrition/cafe-latte-shake.jpg"
@@ -886,34 +524,22 @@
       "id": "raspberry-tea",
       "name": "Raspberry Tea",
       "category": "teas",
-      "price": 4.99,
-      "calories": 0,
       "description": "Refreshing raspberry tea with natural fruit flavor. Light, sweet, and perfect for hydration during or after your workout.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/raspberry-tea.jpg"
@@ -922,34 +548,22 @@
       "id": "lemon-tea",
       "name": "Lemon Tea",
       "category": "teas",
-      "price": 4.49,
-      "calories": 0,
       "description": "Zesty lemon tea with natural citrus notes. Energizing and perfect for detoxification and immune support.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/lemon-tea.jpg"
@@ -958,34 +572,22 @@
       "id": "peach-tea",
       "name": "Peach Tea",
       "category": "teas",
-      "price": 4.99,
-      "calories": 0,
       "description": "Smooth peach tea with natural fruit essence. Sweet, refreshing, and perfect for post-workout hydration.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/peach-tea.jpg"
@@ -994,34 +596,22 @@
       "id": "chai-tea",
       "name": "Chai Tea",
       "category": "teas",
-      "price": 5.49,
-      "calories": 45,
       "description": "Spiced chai tea with warming cinnamon, ginger, and cardamom. Served with your choice of milk for a comforting treat.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/chai-tea.jpg"
@@ -1030,34 +620,22 @@
       "id": "nrg-tea",
       "name": "NRG Tea",
       "category": "teas",
-      "price": 6.99,
-      "calories": 0,
       "description": "Herbalife NRG tea blend with natural energy boosters. Designed to enhance focus and provide sustained energy for your workouts.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/nrg-tea.jpg"
@@ -1066,34 +644,22 @@
       "id": "cinnamon-tea",
       "name": "Cinnamon Tea",
       "category": "teas",
-      "price": 4.99,
-      "calories": 0,
       "description": "Warming cinnamon tea with natural spice notes. Perfect for metabolism support and post-workout relaxation.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/cinnamon-tea.jpg"
@@ -1102,34 +668,22 @@
       "id": "fruit-mega-tea",
       "name": "Fruit Mega Tea",
       "category": "mega-teas",
-      "price": 8.99,
-      "calories": 0,
       "description": "Premium fruit blend mega tea with enhanced supplements. Perfect pre-workout option with a variety of performance boosters available.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/fruit-mega-tea.jpg"
@@ -1138,34 +692,22 @@
       "id": "passionfruit-mega-tea",
       "name": "Passionfruit Mega Tea",
       "category": "mega-teas",
-      "price": 9.49,
-      "calories": 0,
       "description": "Exotic passionfruit mega tea with tropical notes. Enhanced with premium supplements for maximum pre-workout performance.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/passionfruit-mega-tea.jpg"
@@ -1174,34 +716,22 @@
       "id": "lemon-mega-tea",
       "name": "Lemon Mega Tea",
       "category": "mega-teas",
-      "price": 8.99,
-      "calories": 0,
       "description": "Zesty lemon mega tea with enhanced energy boosters. Perfect for pre-workout focus and sustained performance during training.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/lemon-mega-tea.jpg"
@@ -1210,34 +740,22 @@
       "id": "grenadine-mega-tea",
       "name": "Grenadine Mega Tea",
       "category": "mega-teas",
-      "price": 9.99,
-      "calories": 0,
       "description": "Sweet grenadine mega tea with pomegranate notes. Enhanced with premium supplements for explosive pre-workout energy.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/grenadine-mega-tea.jpg"
@@ -1246,34 +764,22 @@
       "id": "orange-mega-tea",
       "name": "Orange Mega Tea",
       "category": "mega-teas",
-      "price": 8.99,
-      "calories": 0,
       "description": "Citrus orange mega tea with vitamin C boost. Enhanced with premium supplements for optimal pre-workout performance and recovery.",
       "variations": [
         {
-          "name": "Add Collagen",
-          "calories": 0,
-          "price": 1.50
+          "name": "Add Collagen"
         },
         {
-          "name": "Add Fibre",
-          "calories": 0,
-          "price": 1.00
+          "name": "Add Fibre"
         },
         {
-          "name": "Add Probiotics",
-          "calories": 0,
-          "price": 1.25
+          "name": "Add Probiotics"
         },
         {
-          "name": "Add Vitamin C",
-          "calories": 0,
-          "price": 0.75
+          "name": "Add Vitamin C"
         },
         {
-          "name": "Add Immunity Shot",
-          "calories": 0,
-          "price": 2.00
+          "name": "Add Immunity Shot"
         }
       ],
       "imagePath": "/nutrition/orange-mega-tea.jpg"
