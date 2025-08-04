@@ -36,8 +36,8 @@ function NutritionDetail() {
         imageSrc={menuItem.imagePath}
         secondaryText={menuItem.description}
         gradient={true}
-        gradientDirection="to bottom"
-        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--bg-color)"]}
+        gradientDirection="to top"
+        gradientColors={["hsla(0, 0%, 0%, 0.0)", "var(--header-bg-color)"]}
       />
 
       <div className={styles.menuItemContainer}>
