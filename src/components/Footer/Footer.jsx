@@ -37,6 +37,17 @@ function Footer() {
               </nav>
             </section>
 
+            {/* Site navigation */}
+            <section className={styles.siteNavigation}>
+              <h5 className={styles.navHeader}>Pages</h5>
+              <nav className={styles.navItems}>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/pricing">Pricing</NavLink>
+                <NavLink to="/nutrition">Nutrition</NavLink>
+                <NavLink to="/schedule">Schedule</NavLink>
+              </nav>
+            </section>
+
             {/* Social links */}
             <section className={styles.socialLinks}>
               <h5 className={styles.navHeader}>Connect</h5>
@@ -61,17 +72,6 @@ function Footer() {
                 >
                   Google Page
                 </a>
-              </nav>
-            </section>
-
-            {/* Site navigation */}
-            <section className={styles.siteNavigation}>
-              <h5 className={styles.navHeader}>Pages</h5>
-              <nav className={styles.navItems}>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/pricing">Pricing</NavLink>
-                <NavLink to="/nutrition">Nutrition</NavLink>
-                <NavLink to="/schedule">Schedule</NavLink>
               </nav>
             </section>
 

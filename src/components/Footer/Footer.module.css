@@ -72,10 +72,10 @@
   justify-content: space-evenly;
 }
 
-.siteNavigation,
-.contactInfo,
 .legalPages,
-.socialLinks {
+.siteNavigation,
+.socialLinks,
+.contactInfo {
   display: flex;
   flex-direction: column;
 }
@@ -100,6 +100,10 @@
   color: hsl(0, 0%, 80%);
 }
 
+.navItems a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
   .legalDisclaimer {
@@ -107,21 +111,12 @@
   }
 
   .bottomContainer {
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .siteNavigation,
-  .contactInfo,
-  .legalPages,
-  .socialLinks {
-    text-align: center;
   }
 
   .legalPages:not(:last-child),
-  .socialLinks:not(:last-child),
   .siteNavigation:not(:last-child),
+  .socialLinks:not(:last-child),
   .contactInfo:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -134,6 +129,10 @@
   .navItems a {
     gap: 0.1rem;
     font-size: 1.25rem;
+  }
+
+  .navItems a:hover {
+    margin-left: 0.25rem;
   }
 }
 
@@ -161,8 +160,8 @@
   }
 
   .legalPages:not(:last-child),
-  .socialLinks:not(:last-child),
   .siteNavigation:not(:last-child),
+  .socialLinks:not(:last-child),
   .contactInfo:not(:last-child) {
     margin-bottom: 0.75rem;
   }
