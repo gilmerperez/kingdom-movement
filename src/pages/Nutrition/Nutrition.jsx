@@ -46,6 +46,14 @@ function Nutrition() {
     navigate(`/nutrition/${itemId}`);
   };
 
+  // Function to truncate text with ellipsis
+  const truncateText = (text, maxLength = 80) => {
+    if (text.length <= maxLength) {
+      return text;
+    }
+    return text.slice(0, maxLength).trim() + "...";
+  };
+
   return (
     <>
       {/* Banner */}
@@ -103,7 +111,7 @@ function Nutrition() {
                 {/* Food details */}
                 <div className={styles.foodDetails}>
                   <h3 className={styles.foodName}>{item.name}</h3>
-                  <p className={styles.foodDescription}>{item.description}</p>
+                  <p className={styles.foodDescription}>{truncateText(item.description)}</p>
                 </div>
               </div>
             ))}
