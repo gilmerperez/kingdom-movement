@@ -27,7 +27,7 @@
       "name": "Iced Coffee",
       "category": "specialty-items",
       "description": "Smooth and refreshing iced coffee made with premium beans. Perfect for that morning pick-me-up or pre-workout energy boost.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Honey"
         },
@@ -42,7 +42,7 @@
       "name": "Green Detox",
       "category": "specialty-items",
       "description": "Fresh green juice blend with spinach, kale, cucumber, and apple. Packed with nutrients and perfect for post-workout recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Honey"
         },
@@ -57,7 +57,7 @@
       "name": "Super Shake",
       "category": "specialty-items",
       "description": "Powerful protein shake with banana, berries, and premium whey protein. Designed for maximum recovery and muscle building.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -78,7 +78,7 @@
       "name": "Parfait with Toppings",
       "category": "specialty-items",
       "description": "Greek yogurt parfait layered with fresh berries and granola. Light, protein-rich, and perfect for a healthy breakfast or snack.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanuts"
         },
@@ -114,7 +114,7 @@
       "name": "Waffles with Toppings",
       "category": "specialty-items",
       "description": "Fluffy protein waffles made fresh daily. Crispy on the outside, soft on the inside, and ready for your favorite toppings.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -147,7 +147,7 @@
       "name": "Oatmeal with Fruits",
       "category": "specialty-items",
       "description": "Steel-cut oatmeal topped with fresh seasonal fruits. Hearty, nutritious, and perfect for sustained energy throughout your workout.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanuts"
         },
@@ -177,7 +177,7 @@
       "name": "Acai Bowl",
       "category": "specialty-items",
       "description": "Premium acai bowl with granola, banana, and honey. Rich in antioxidants and perfect for pre-workout energy or post-workout recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanuts"
         },
@@ -207,7 +207,7 @@
       "name": "Fruit Bowl",
       "category": "specialty-items",
       "description": "Fresh seasonal fruit bowl with a variety of colorful, nutrient-rich fruits. Light, refreshing, and perfect for hydration and vitamins.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanuts"
         },
@@ -237,7 +237,7 @@
       "name": "Cookies and Cream",
       "category": "protein-shakes",
       "description": "Classic cookies and cream protein shake with real cookie pieces. Rich, creamy, and perfect for satisfying your sweet tooth while fueling your muscles.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -261,7 +261,7 @@
       "name": "Dulce de Leche",
       "category": "protein-shakes",
       "description": "Smooth dulce de leche protein shake with caramel notes. Sweet, indulgent, and packed with premium whey protein for optimal recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -284,8 +284,8 @@
       "id": "chicha-shake",
       "name": "Chicha",
       "category": "protein-shakes",
-      "description": "Traditional chicha protein shake with purple corn and spices. Unique flavor profile with authentic Peruvian taste and premium protein.",
-      "variations": [
+      "description": "Venezuelan chicha protein shake with rice and cinnamon. Creamy and sweet, offering an authentic Venezuelan taste with premium protein.",
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -309,7 +309,7 @@
       "name": "Chocolate",
       "category": "protein-shakes",
       "description": "Rich chocolate protein shake made with premium cocoa and whey protein. Classic flavor that never disappoints for post-workout recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -333,7 +333,7 @@
       "name": "Choco-Coco",
       "category": "protein-shakes",
       "description": "Chocolate and coconut protein shake with tropical notes. Perfect blend of rich chocolate and refreshing coconut for a unique flavor experience.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -357,7 +357,7 @@
       "name": "Banana Caramel",
       "category": "protein-shakes",
       "description": "Smooth banana caramel protein shake with real banana and caramel notes. Sweet, creamy, and perfect for satisfying cravings while fueling recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -381,7 +381,7 @@
       "name": "Praline",
       "category": "protein-shakes",
       "description": "Luxurious praline protein shake with rich nutty notes and caramel undertones. Premium flavor for those who appreciate sophisticated taste profiles.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -405,7 +405,7 @@
       "name": "Pumpkin Spice",
       "category": "protein-shakes",
       "description": "Seasonal pumpkin spice protein shake with warming spices. Perfect fall flavor with cinnamon, nutmeg, and real pumpkin for a cozy post-workout treat.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -429,7 +429,7 @@
       "name": "Strawberry",
       "category": "protein-shakes",
       "description": "Fresh strawberry protein shake with real fruit and premium whey protein. Sweet, refreshing, and packed with antioxidants for optimal recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -453,7 +453,7 @@
       "name": "Strawberry Cheesecake",
       "category": "protein-shakes",
       "description": "Indulgent strawberry cheesecake protein shake with creamy notes and fresh strawberry flavor. Dessert-like treat that fuels your fitness goals.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -477,7 +477,7 @@
       "name": "Orange Cream",
       "category": "protein-shakes",
       "description": "Creamy orange cream protein shake with citrus notes and smooth vanilla undertones. Refreshing and nostalgic flavor for your workout recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -501,7 +501,7 @@
       "name": "Cafe Latte",
       "category": "protein-shakes",
       "description": "Smooth cafe latte protein shake with premium coffee and creamy notes. Perfect for coffee lovers who want their caffeine fix with protein benefits.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Peanut Butter"
         },
@@ -525,7 +525,7 @@
       "name": "Raspberry Tea",
       "category": "teas",
       "description": "Refreshing raspberry tea with natural fruit flavor. Light, sweet, and perfect for hydration during or after your workout.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -540,6 +540,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/raspberry-tea.jpg"
@@ -549,7 +587,7 @@
       "name": "Lemon Tea",
       "category": "teas",
       "description": "Zesty lemon tea with natural citrus notes. Energizing and perfect for detoxification and immune support.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -564,6 +602,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/lemon-tea.jpg"
@@ -573,7 +649,7 @@
       "name": "Peach Tea",
       "category": "teas",
       "description": "Smooth peach tea with natural fruit essence. Sweet, refreshing, and perfect for post-workout hydration.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -588,6 +664,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/peach-tea.jpg"
@@ -597,7 +711,7 @@
       "name": "Chai Tea",
       "category": "teas",
       "description": "Spiced chai tea with warming cinnamon, ginger, and cardamom. Served with your choice of milk for a comforting treat.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -612,6 +726,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/chai-tea.jpg"
@@ -621,7 +773,7 @@
       "name": "NRG Tea",
       "category": "teas",
       "description": "Herbalife NRG tea blend with natural energy boosters. Designed to enhance focus and provide sustained energy for your workouts.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -636,6 +788,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/nrg-tea.jpg"
@@ -645,7 +835,7 @@
       "name": "Cinnamon Tea",
       "category": "teas",
       "description": "Warming cinnamon tea with natural spice notes. Perfect for metabolism support and post-workout relaxation.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -660,6 +850,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/cinnamon-tea.jpg"
@@ -669,7 +897,7 @@
       "name": "Fruit Mega Tea",
       "category": "mega-teas",
       "description": "Premium fruit blend mega tea with enhanced supplements. Perfect pre-workout option with a variety of performance boosters available.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -684,6 +912,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/fruit-mega-tea.jpg"
@@ -693,7 +959,7 @@
       "name": "Passionfruit Mega Tea",
       "category": "mega-teas",
       "description": "Exotic passionfruit mega tea with tropical notes. Enhanced with premium supplements for maximum pre-workout performance.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -708,6 +974,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/passionfruit-mega-tea.jpg"
@@ -717,7 +1021,7 @@
       "name": "Lemon Mega Tea",
       "category": "mega-teas",
       "description": "Zesty lemon mega tea with enhanced energy boosters. Perfect for pre-workout focus and sustained performance during training.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -732,6 +1036,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/lemon-mega-tea.jpg"
@@ -741,7 +1083,7 @@
       "name": "Grenadine Mega Tea",
       "category": "mega-teas",
       "description": "Sweet grenadine mega tea with pomegranate notes. Enhanced with premium supplements for explosive pre-workout energy.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -758,6 +1100,44 @@
           "name": "Add Immunity Shot"
         }
       ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
+        }
+      ],
       "imagePath": "/nutrition/grenadine-mega-tea.jpg"
     },
     {
@@ -765,7 +1145,7 @@
       "name": "Orange Mega Tea",
       "category": "mega-teas",
       "description": "Citrus orange mega tea with vitamin C boost. Enhanced with premium supplements for optimal pre-workout performance and recovery.",
-      "variations": [
+      "add-ons": [
         {
           "name": "Add Collagen"
         },
@@ -780,6 +1160,44 @@
         },
         {
           "name": "Add Immunity Shot"
+        }
+      ],
+      "premium-flavors": [
+        {
+          "name": "Upgrade to Strawberry Passionfruit"
+        },
+        {
+          "name": "Upgrade to Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Coconut"
+        },
+        {
+          "name": "Upgrade to Passionfruit Coconut"
+        },
+        {
+          "name": "Upgrade to Melon"
+        },
+        {
+          "name": "Upgrade to Tamarind"
+        },
+        {
+          "name": "Upgrade to Pina Colada"
+        },
+        {
+          "name": "Upgrade to Coconut"
+        },
+        {
+          "name": "Upgrade to Melon Strawberry"
+        },
+        {
+          "name": "Upgrade to Strawberry Lemon"
+        },
+        {
+          "name": "Upgrade to Mango"
+        },
+        {
+          "name": "Upgrade to Pineapple Kiwi"
         }
       ],
       "imagePath": "/nutrition/orange-mega-tea.jpg"
