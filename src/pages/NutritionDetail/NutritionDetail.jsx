@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import styles from "./MenuItemDetail.module.css";
+import styles from "./NutritionDetail.module.css";
 import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
 import { useParams, useNavigate } from "react-router-dom";
 
-function MenuItemDetail() {
+function NutritionDetail() {
   const navigate = useNavigate();
   const { itemId } = useParams();
   const [menuItem, setMenuItem] = useState(null);
@@ -41,7 +41,7 @@ function MenuItemDetail() {
       />
 
       <div className={styles.menuItemContainer}>
-        {/* Add-ons Section */}
+        {/* Add-ons section */}
         {menuItem["add-ons"] && menuItem["add-ons"].length > 0 && (
           <section className={styles.optionsSection}>
             {/* Title */}
@@ -61,7 +61,7 @@ function MenuItemDetail() {
           </section>
         )}
 
-        {/* Extras Section */}
+        {/* Extras section */}
         {menuItem.extras && menuItem.extras.length > 0 && (
           <section className={styles.optionsSection}>
             {/* Title */}
@@ -81,7 +81,7 @@ function MenuItemDetail() {
           </section>
         )}
 
-        {/* Premium Flavors Section */}
+        {/* Premium flavors section */}
         {menuItem["premium-flavors"] && menuItem["premium-flavors"].length > 0 && (
           <section className={styles.optionsSection}>
             {/* Title */}
@@ -108,4 +108,4 @@ function MenuItemDetail() {
   );
 }
 
-export default MenuItemDetail;
+export default NutritionDetail;
