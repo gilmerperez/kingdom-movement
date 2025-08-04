@@ -83,10 +83,7 @@ function Nutrition() {
                 {/* Food details */}
                 <div className={styles.foodDetails}>
                   <h3 className={styles.foodName}>{item.name}</h3>
-                  <div className={styles.foodInfo}>
-                    {/* <span className={styles.foodPrice}>${item.price.toFixed(2)}</span>
-                    <span className={styles.foodCalories}>{item.calories} cal</span> */}
-                  </div>
+                  <p className={styles.foodDescription}>{item.description}</p>
                 </div>
               </div>
             ))}

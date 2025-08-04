@@ -1,16 +1,6 @@
 {
   "categories": [
     {
-      "id": "specialty-items",
-      "name": "Specialty Items",
-      "description": "Popular food items and other specialty offerings"
-    },
-    {
-      "id": "protein-shakes",
-      "name": "Protein Shakes",
-      "description": "Premium protein shakes to fuel your workout and recovery"
-    },
-    {
       "id": "teas",
       "name": "Teas",
       "description": "Refreshing and energizing teas for hydration and wellness"
@@ -19,6 +9,16 @@
       "id": "mega-teas",
       "name": "Mega Teas",
       "description": "Enhanced teas with pre-workout supplements and performance boosters"
+    },
+    {
+      "id": "protein-shakes",
+      "name": "Protein Shakes",
+      "description": "Premium protein shakes to fuel your workout and recovery"
+    },
+    {
+      "id": "specialty-items",
+      "name": "Specialty Items",
+      "description": "Popular food items and other specialty offerings"
     }
   ],
   "menuItems": [
