@@ -44,6 +44,7 @@
   position: relative;
   border-radius: 8px;
   flex-direction: column;
+  border: 1px solid hsl(0, 0%, 50%);
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
@@ -191,8 +192,6 @@
   flex-direction: column;
   justify-content: center;
   color: hsl(0, 0%, 100%);
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
   background: linear-gradient(to top, var(--footer-bg-color), var(--primary));
 }
 
@@ -219,6 +218,7 @@
 }
 
 .membershipCard.popular {
+  border: none;
   transform: scale(1.05);
   background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
 }
@@ -380,8 +380,6 @@
   /* Additional Info */
   .additionalInfoContainer {
     margin-top: 3rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
   }
 
   .additionalInfoTitle {
@@ -477,8 +475,6 @@
   /* Additional info */
   .additionalInfoContainer {
     margin-top: 2rem;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
   }
 
   .additionalInfoTitle {
