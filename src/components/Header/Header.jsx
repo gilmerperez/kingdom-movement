@@ -149,7 +149,7 @@ function Header() {
             HOME
           </NavLink>
           <NavLink to="/pricing" onClick={toggleMenu}>
-            PRICING
+          MEMBERSHIPS
           </NavLink>
           <NavLink to="/schedule" onClick={toggleMenu}>
             SCHEDULE

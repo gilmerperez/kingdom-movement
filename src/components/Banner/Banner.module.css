@@ -5,8 +5,8 @@
   overflow: hidden;
   position: relative;
   align-items: center;
-  aspect-ratio: 21 / 9;
   justify-content: center;
+  transition: 0.3s ease-in;
 }
 
 .bannerImage {
@@ -47,6 +47,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 3.5rem;
+  transition: 0.3s ease-in;
   color: hsl(0, 0%, 100%);
   text-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
 }
@@ -57,6 +58,7 @@
   max-width: 800px;
   margin-top: 1rem;
   font-weight: 400;
+  transition: 0.3s ease-in;
   color: hsl(0, 0%, 100%);
   text-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
 }
@@ -73,21 +75,15 @@
 }
 
 /* Responsive aspect ratios */
-@media (max-width: 1200px) {
-  .bannerContainer {
-    aspect-ratio: 16 / 9;
-  }
-}
-
 @media (max-width: 768px) {
   .bannerContainer {
-    aspect-ratio: 4 / 3;
+    height: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .bannerContainer {
-    aspect-ratio: 3 / 4;
+    height: 350px;
   }
 }
 
