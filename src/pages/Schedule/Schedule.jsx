@@ -45,6 +45,15 @@ function Schedule() {
 
       <main>
         <section className={styles.scheduleContainer}>
+          {/* Heading */}
+          <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
+
+          {/* Introduction */}
+          <p className={styles.introduction}>
+            Discover the perfect schedule to elevate your fitness journey. Each day offers unique activities designed to
+            challenge and inspire you. Join us and unlock your potential through consistent movement and dedication.
+          </p>
+
           {/* Schedule */}
           <div className={styles.scheduleWrapper}>
             {/* Day Tabs */}
