@@ -1,5 +1,6 @@
 import styles from "./Nutrition.module.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
 
@@ -39,6 +40,12 @@ function Nutrition() {
     setSelectedCategory(categoryId);
   };
 
+  // Handle menu item click
+  const navigate = useNavigate();
+  const handleMenuItemClick = (itemId) => {
+    navigate(`/nutrition/${itemId}`);
+  };
+
   return (
     <>
       {/* Banner */}
@@ -75,7 +82,7 @@ function Nutrition() {
           {/* Menu items */}
           <div className={styles.menuGrid}>
             {filteredMenuItems.map((item) => (
-              <div key={item.id} className={styles.menuCard}>
+              <div key={item.id} className={styles.menuCard} onClick={() => handleMenuItemClick(item.id)}>
                 {/* Food Image */}
                 <div className={styles.imageContainer}>
                   <img
