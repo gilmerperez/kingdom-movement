@@ -9,6 +9,9 @@ function NutritionDetail() {
   const { itemId } = useParams();
   const [menuItem, setMenuItem] = useState(null);
 
+  // Find the menu item by ID
+  const item = nutritionData.menuItems.find((item) => item.id === itemId);
+
   useEffect(() => {
     // Set page title
     if (item) {
@@ -18,10 +21,7 @@ function NutritionDetail() {
       // If item not found, redirect to nutrition page
       navigate("/nutrition");
     }
-  }, [itemId, navigate]);
-
-  // Find the menu item by ID
-  const item = nutritionData.menuItems.find((item) => item.id === itemId);
+  }, [itemId, navigate, item]);
 
   // If no menu item is found, show a loading message
   if (!menuItem) {
