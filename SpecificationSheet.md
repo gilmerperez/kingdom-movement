@@ -163,16 +163,40 @@ html[data-theme="dark"] {
 
 - **Membership Page:**
 
-- Lists different membership tiers with benefits.
-- For each membership I will need:
-  ID
-  Name
-  Price
-  Features/Benefits:
-  Access to what classes?
-  Guest passes?
-  Description?
-  Additional Info
+Diamond Membership $200
+- Open Box
+- Saturday Classes
+- Unlimited Classes
+- Free Special Events
+- 4 Guest Passes Per Month
+- 1 Wellness Profile Per Month
+
+Gold Membership $150
+- Saturday Classes
+- Unlimited Classes
+- Special Events Benefits
+- 3 Guest Passes Per Month
+- 1 Wellness Profile Per Month
+
+Silver Membership $135
+- Saturday Classes
+- 3 Classes Per Week
+- Special Events Benefits
+- 2 Guest Passes Per Month
+- 1 Wellness Profile Per Month
+
+Bronze Membership $115
+- Saturday Classes
+- 2 Classes Per Week
+- Special Events Benefits
+- 1 Guest Passes Per Month
+- 1 Wellness Profile Per Month
+
+Hyrox Program $100
+- 3 Classes Per Week
+- Special Events Benefits
+- 4 Guest Passes Per Month
+- 1 Wellness Profile Per Month
 
 - **Individual Membership Page:**
 
