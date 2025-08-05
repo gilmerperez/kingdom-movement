@@ -86,12 +86,6 @@ function Header() {
                 HOME
               </NavLink>
               <NavLink
-                to="/pricing"
-                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
-              >
-                PRICING
-              </NavLink>
-              <NavLink
                 to="/nutrition"
                 className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
               >
@@ -102,6 +96,12 @@ function Header() {
                 className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
               >
                 SCHEDULE
+              </NavLink>
+              <NavLink
+                to="/membership"
+                className={({ isActive }) => `${styles.navLink} ${isActive ? styles.activeLink : ""}`}
+              >
+                MEMBERSHIP
               </NavLink>
             </nav>
 
@@ -148,14 +148,14 @@ function Header() {
           <NavLink to="/" onClick={toggleMenu}>
             HOME
           </NavLink>
-          <NavLink to="/pricing" onClick={toggleMenu}>
-            PRICING
-          </NavLink>
           <NavLink to="/schedule" onClick={toggleMenu}>
             SCHEDULE
           </NavLink>
           <NavLink to="/nutrition" onClick={toggleMenu}>
             NUTRITION
+          </NavLink>
+          <NavLink to="/membership" onClick={toggleMenu}>
+            MEMBERSHIP
           </NavLink>
 
           {/* Dropdown free class button */}

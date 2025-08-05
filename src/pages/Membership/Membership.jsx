@@ -1,13 +1,13 @@
-import styles from "./Pricing.module.css";
+import styles from "./Membership.module.css";
 import { useEffect, useState } from "react";
-import pricingData from "../../data/pricing.json";
+import membershipData from "../../data/membership.json";
 import Banner from "../../components/Banner/Banner";
 
-function Pricing() {
+function Membership() {
   // Set Page Title
   useEffect(() => {
-    document.title = "Kingdom Movement | Pricing";
-    setMemberships(pricingData.memberships);
+    document.title = "Kingdom Movement | Membership";
+    setMemberships(membershipData.memberships);
   }, []);
 
   const [memberships, setMemberships] = useState([]);
@@ -25,7 +25,7 @@ function Pricing() {
       />
 
       <main>
-        <section className={styles.pricingContainer}>
+        <section className={styles.membershipContainer}>
           {/* Heading */}
           <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
 
@@ -134,4 +134,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default Membership;

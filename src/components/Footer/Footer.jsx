@@ -42,9 +42,9 @@ function Footer() {
               <h5 className={styles.navHeader}>Pages</h5>
               <nav className={styles.navItems}>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/pricing">Pricing</NavLink>
                 <NavLink to="/nutrition">Nutrition</NavLink>
                 <NavLink to="/schedule">Schedule</NavLink>
+                <NavLink to="/membership">Membership</NavLink>
               </nav>
             </section>
 

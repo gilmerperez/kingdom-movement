@@ -161,7 +161,7 @@ html[data-theme="dark"] {
   BUILT FOR GLORY — BORN TO MOVE
   Cool animation as you scroll up and down?
 
-- **Pricing Page:**
+- **Membership Page:**
 
 - Lists different membership tiers with benefits.
 - For each membership I will need:
@@ -174,10 +174,10 @@ html[data-theme="dark"] {
   Description?
   Additional Info
 
-- **Individual Pricing (Membership) Page:**
+- **Individual Membership Page:**
 
 - Link to sign up
-- What extra details can we show here that are not on the main Pricing Page?
+- What extra details can we show here that are not on the main Membership Page?
 - Click into a membership for more details.
 - A big motivational picture at the top that fades to be more dark at the bottom then shows the details.
 

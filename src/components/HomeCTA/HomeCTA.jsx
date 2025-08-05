@@ -35,7 +35,7 @@ const HomeCTA = () => {
       </p>
 
       {/* CTA Button */}
-      <Link to="/pricing" className={styles.joinButton}>
+      <Link to="/membership" className={styles.joinButton}>
         JOIN NOW
       </Link>
     </section>
