@@ -23,7 +23,7 @@ function Banner({
   }, []);
 
   const parallaxStyle = {
-    transform: `translateY(${scrollY * 0.5}px)`,
+    transform: `translateY(${scrollY * 0.25}px)`,
   };
 
   // Handle CSS custom properties for gradient colors
