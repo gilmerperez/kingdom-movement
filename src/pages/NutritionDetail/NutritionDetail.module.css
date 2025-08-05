@@ -12,9 +12,9 @@
 
 /* Options sections */
 .optionsSection {
+  width: 100%;
   padding: 2rem;
   margin: 0 auto;
-  min-width: 100%;
   text-align: center;
   border-radius: 6px;
   border: 2px solid var(--primary);
