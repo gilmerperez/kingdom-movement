@@ -25,26 +25,27 @@
   margin-bottom: 3rem;
 }
 
-/* Membership cards */
+/* * Membership cards */
 .membershipCards > * {
   transition: 0.3s ease-in;
 }
 
 .membershipCards {
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
   display: grid;
+  max-width: 1200px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 375px));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .membershipCard {
   display: flex;
-  padding: 2rem;
+  padding: 1.75rem;
   position: relative;
   border-radius: 8px;
   flex-direction: column;
-  border: 1px solid hsl(0, 0%, 50%);
+  border: 1px solid var(--primary);
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
@@ -54,43 +55,28 @@
   box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
 }
 
-.cardHeader {
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
 /* Membership name */
 .membershipName {
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-/* Membership frequency */
-.frequency {
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-}
-
 /* Price / month */
 .priceContainer {
   display: flex;
-  text-align: center;
+  margin: 0 auto;
   align-items: baseline;
   justify-content: center;
 }
 
-.currency {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
+.currency,
 .price {
-  font-size: 3rem;
   font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .period {
+  font-weight: 500;
   font-size: 1.25rem;
   color: var(--text-secondary);
 }
@@ -99,7 +85,7 @@
 .separator {
   width: 75%;
   height: 3px;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary);
@@ -107,19 +93,20 @@
 
 /* Membership benefits */
 .featuresTitle {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .featureItem {
   padding: 0.5rem 0;
   position: relative;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   padding-left: 1.5rem;
   color: var(--text-secondary);
 }
 
+/* Checkmark */
 .featureItem::before {
   left: 0;
   content: "✓";
@@ -128,66 +115,74 @@
   color: var(--primary);
 }
 
-/* Class access and guest passes */
-.additionalInfo {
-  margin-top: 1rem;
-  font-size: 1.15rem;
-  margin-bottom: 1rem;
-  color: var(--text-secondary);
-}
-
-.additionalInfo p {
-  width: 100%;
-  font-size: 1.25rem;
-}
-
-.additionalInfo p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.additionalInfo strong {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--text-primary);
-}
-
-/* Saturday disclaimer */
-.commonBenefit {
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  background-color: var(--grey);
-}
-
-.commonBenefit p {
-  font-size: 1rem;
-  color: var(--grey-text);
-}
-
 /* Sign up button */
 .signUpButton {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
   font-weight: 700;
-  font-size: 1.25rem;
-  border-radius: 8px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+  transition: 0.3s ease-in;
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
 }
 
 .signUpButton:hover {
-  transform: translateY(-3px);
-  background-color: hsl(0, 100%, 20%);
+  background-color: hsl(0, 100%, 25%);
+}
+
+/* * Individual styles for popular card */
+.membershipCard.popular {
+  border: none;
+  background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
+}
+
+.membershipCard.popular .popularBadge {
+  left: 50%;
+  top: -20px;
+  font-weight: 700;
+  position: absolute;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
+  transform: translateX(-50%);
+  background-color: var(--header-bg-color);
   box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
 }
 
-/* Additional Info */
+.membershipCard.popular .membershipName,
+.membershipCard.popular .currency,
+.membershipCard.popular .price,
+.membershipCard.popular .separator,
+.membershipCard.popular .featuresTitle,
+.membershipCard.popular .featureItem,
+.membershipCard.popular .featureItem::before {
+  color: hsl(0, 0%, 100%);
+}
+
+.membershipCard.popular .period {
+  color: hsl(0, 0%, 80%);
+}
+
+/* Sign up button */
+.membershipCard.popular .signUpButton {
+  color: var(--primary);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.membershipCard.popular .signUpButton:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+/* * Additional Info */
 .additionalInfoContainer {
   width: 100vw;
   display: flex;
-  padding: 2rem 3rem;
-  align-items: center;
+  padding: 2rem;
   margin-top: 3.5rem;
+  align-items: center;
   margin-bottom: -2rem;
   flex-direction: column;
   justify-content: center;
@@ -195,9 +190,9 @@
   background: linear-gradient(to top, var(--footer-bg-color), var(--primary));
 }
 
-.additionalInfoContent {
+.additionalInfo {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .additionalInfoTitle {
@@ -212,147 +207,15 @@
   border-bottom: 2px solid hsl(0, 0%, 80%);
 }
 
-/* Individual styles for popular card */
-.membershipCard.popular > * {
-  transition: 0.3s ease-in;
-}
-
-.membershipCard.popular {
-  border: none;
-  transform: scale(1.05);
-  background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
-}
-
-.membershipCard.popular:hover {
-  transform: scale(1.05) translateY(-3px);
-  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
-}
-
-.popularBadge {
-  left: 50%;
-  top: -12px;
-  font-weight: 700;
-  position: absolute;
-  font-size: 1.25rem;
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
-  color: var(--text-primary);
-  transform: translateX(-50%);
-  background-color: var(--header-bg-color);
-  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
-}
-
-.membershipCard.popular .membershipName {
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .frequency {
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: hsl(0, 0%, 80%);
-}
-
-.membershipCard.popular .currency {
-  font-size: 3rem;
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .price {
-  font-size: 3rem;
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .period {
-  font-size: 1.25rem;
-  color: hsl(0, 0%, 80%);
-}
-
-.membershipCard.popular .separator {
-  width: 75%;
-  height: 3px;
-  margin: 1rem 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .featuresTitle {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .featureItem {
-  padding: 0.5rem 0;
-  position: relative;
-  font-size: 1.15rem;
-  padding-left: 1.5rem;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .featureItem::before {
-  left: 0;
-  content: "✓";
-  font-weight: bold;
-  position: absolute;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .additionalInfo {
-  margin-top: 1rem;
-  font-size: 1.15rem;
-  margin-bottom: 1rem;
-  color: hsl(0, 0%, 80%);
-}
-
-.membershipCard.popular .additionalInfo strong {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .commonBenefit {
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  background-color: hsl(0, 100%, 20%);
-}
-
-.membershipCard.popular .commonBenefit p {
-  font-size: 1rem;
-  color: hsl(0, 0%, 80%);
-}
-
-.membershipCard.popular .signUpButton {
-  width: 100%;
-  padding: 1rem;
-  font-weight: 700;
-  font-size: 1.25rem;
-  border-radius: 8px;
-  color: var(--primary);
-  background-color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .signUpButton:hover {
-  transform: translateY(-3px);
-  background-color: hsl(0, 0%, 80%);
-}
-
-/* Large screens - when cards can't fit side by side */
+/* 2 column layout */
 @media (max-width: 1270px) {
   .membershipCards {
-    gap: 3.5rem;
-    max-width: 650px;
-    grid-template-columns: 1fr;
+    max-width: 850px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Tablet Responsiveness */
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   /* Heading */
   .heading {
@@ -362,24 +225,24 @@
   /* Introduction */
   .introduction {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   /* Membership cards */
   .membershipCards {
-    gap: 3.5rem;
-    max-width: 450px;
+    gap: 2.5rem;
+    max-width: 500px;
     grid-template-columns: 1fr;
   }
 
   .membershipCard {
-    padding: 1.75rem;
+    padding: 1.5rem;
     border-radius: 6px;
   }
 
   /* Additional Info */
   .additionalInfoContainer {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   .additionalInfoTitle {
@@ -388,11 +251,11 @@
 
   .additionalInfoList li {
     font-size: 1.15rem;
-    border-bottom: 2 solid hsl(0, 0%, 100%);
+    border-bottom: 2px solid hsl(0, 0%, 80%);
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   /* Heading */
   .heading {
@@ -405,8 +268,12 @@
   }
 
   /* Membership cards */
+  .membershipCards {
+    gap: 1.75rem;
+  }
+
   .membershipCard {
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 4px;
   }
 
@@ -415,13 +282,9 @@
     font-size: 2.25rem;
   }
 
-  /* Price / month */
-  .currency {
-    font-size: 2.5rem;
-  }
-
+  .currency,
   .price {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .period {
@@ -430,7 +293,7 @@
 
   /* Seperator */
   .separator {
-    margin: 0.75rem 0;
+    margin: 0.5rem 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -438,38 +301,54 @@
   /* Membership benefits */
   .featuresTitle {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
   }
 
   .featureItem {
-    font-size: 1.1rem;
-    padding: 0.25rem 0;
-  }
-
-  /* Class access and guest passes */
-  .additionalInfo {
-    font-size: 1.1rem;
-  }
-
-  .additionalInfo p {
     font-size: 1.15rem;
-  }
-
-  .additionalInfo strong {
-    font-size: 1.15rem;
-  }
-
-  /* Saturday disclaimer */
-  .commonBenefit {
-    padding: 0.75rem;
-    border-radius: 4px;
+    padding: 0.35rem 0;
   }
 
   /* Sign up button */
   .signUpButton {
-    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  /* Individual styles for popular card */
+  .popularBadge {
+    top: -20px;
     font-size: 1.15rem;
-    border-radius: 4px;
+  }
+
+  .membershipCard.popular .membershipName {
+    font-size: 2.25rem;
+  }
+
+  .membershipCard.popular .currency,
+  .membershipCard.popular .price {
+    font-size: 2rem;
+  }
+
+  .membershipCard.popular .period {
+    font-size: 1rem;
+  }
+
+  .membershipCard.popular .separator {
+    margin: 0.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .membershipCard.popular .featuresTitle {
+    font-size: 1.25rem;
+  }
+
+  .membershipCard.popular .featureItem {
+    font-size: 1.15rem;
+    padding: 0.35rem 0;
+  }
+
+  .membershipCard.popular .signUpButton {
+    font-size: 1.25rem;
   }
 
   /* Additional info */
@@ -478,73 +357,10 @@
   }
 
   .additionalInfoTitle {
-    font-size: 2.5rem;
-  }
-
-  .additionalInfoList li {
-    font-size: 1.1rem;
-  }
-
-  /* Individual styles for popular card */
-  .popularBadge {
-    top: -15px;
-    font-size: 1.15rem;
-    border-radius: 4px;
-    padding: 0.4rem 0.65rem;
-  }
-
-  .membershipCard.popular .membershipName {
     font-size: 2.25rem;
   }
 
-  .membershipCard.popular .currency {
-    font-size: 2.5rem;
-  }
-
-  .membershipCard.popular .price {
-    font-size: 2.5rem;
-  }
-
-  .membershipCard.popular .period {
-    font-size: 1rem;
-  }
-
-  .membershipCard.popular .separator {
-    margin: 0.75rem 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .membershipCard.popular .featuresTitle {
-    font-size: 1.25rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .membershipCard.popular .featureItem {
-    font-size: 1.1rem;
-    padding: 0.25rem 0;
-  }
-
-  .membershipCard.popular .additionalInfo {
-    font-size: 1.1rem;
-  }
-
-  .membershipCard.popular .additionalInfo p {
+  .additionalInfoList li {
     font-size: 1.15rem;
-  }
-
-  .membershipCard.popular .additionalInfo strong {
-    font-size: 1.15rem;
-  }
-
-  .membershipCard.popular .commonBenefit {
-    padding: 0.75rem;
-    border-radius: 4px;
-  }
-
-  .membershipCard.popular .signUpButton {
-    padding: 0.75rem;
-    font-size: 1.15rem;
-    border-radius: 4px;
   }
 }

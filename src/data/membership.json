@@ -1,10 +1,68 @@
 {
   "memberships": [
     {
+      "id": "hyrox",
+      "name": "HYROX",
+      "price": 100,
+      "description": "Specialized program for Hyrox competition training",
+      "features": [
+        "3 Classes Per Week",
+        "Special Events Benefits",
+        "4 Guest Passes Per Month",
+        "1 Wellness Profile Per Month"
+      ],
+      "isPopular": false,
+      "ctaText": "JOIN HYROX"
+    },
+    {
+      "id": "bronze",
+      "name": "BRONZE",
+      "price": 115,
+      "description": "Great starting point for your fitness journey",
+      "features": [
+        "Saturday Classes",
+        "2 Classes Per Week",
+        "Special Events Benefits",
+        "1 Guest Pass Per Month",
+        "1 Wellness Profile Per Month"
+      ],
+      "isPopular": false,
+      "ctaText": "START BRONZE"
+    },
+    {
+      "id": "silver",
+      "name": "SILVER",
+      "price": 135,
+      "description": "Perfect for consistent training with great benefits",
+      "features": [
+        "Saturday Classes",
+        "3 Classes Per Week",
+        "Special Events Benefits",
+        "2 Guest Passes Per Month",
+        "1 Wellness Profile Per Month"
+      ],
+      "isPopular": false,
+      "ctaText": "CHOOSE SILVER"
+    },
+    {
+      "id": "gold",
+      "name": "GOLD",
+      "price": 150,
+      "description": "For dedicated athletes who want unlimited access",
+      "features": [
+        "Saturday Classes",
+        "Unlimited Classes",
+        "Special Events Benefits",
+        "3 Guest Passes Per Month",
+        "1 Wellness Profile Per Month"
+      ],
+      "isPopular": false,
+      "ctaText": "JOIN GOLD"
+    },
+    {
       "id": "diamond",
       "name": "DIAMOND",
       "price": 200,
-      "frequency": "Unlimited",
       "description": "Our premium membership for serious athletes who want it all",
       "features": [
         "Open Box",
@@ -14,81 +72,8 @@
         "4 Guest Passes Per Month",
         "1 Wellness Profile Per Month"
       ],
-      "classAccess": "Unlimited Classes + Open Box",
-      "guestPasses": 4,
       "isPopular": true,
       "ctaText": "BECOME DIAMOND"
-    },
-    {
-      "id": "gold",
-      "name": "GOLD",
-      "price": 150,
-      "frequency": "Unlimited",
-      "description": "For dedicated athletes who want unlimited access",
-      "features": [
-        "Saturday Classes",
-        "Unlimited Classes",
-        "Special Events Benefits",
-        "3 Guest Passes Per Month",
-        "1 Wellness Profile Per Month"
-      ],
-      "classAccess": "Unlimited Classes",
-      "guestPasses": 3,
-      "isPopular": false,
-      "ctaText": "JOIN GOLD"
-    },
-    {
-      "id": "silver",
-      "name": "SILVER",
-      "price": 135,
-      "frequency": "3x / week",
-      "description": "Perfect for consistent training with great benefits",
-      "features": [
-        "Saturday Classes",
-        "3 Classes Per Week",
-        "Special Events Benefits",
-        "2 Guest Passes Per Month",
-        "1 Wellness Profile Per Month"
-      ],
-      "classAccess": "3 Classes Per Week",
-      "guestPasses": 2,
-      "isPopular": false,
-      "ctaText": "CHOOSE SILVER"
-    },
-    {
-      "id": "bronze",
-      "name": "BRONZE",
-      "price": 115,
-      "frequency": "2x / week",
-      "description": "Great starting point for your fitness journey",
-      "features": [
-        "Saturday Classes",
-        "2 Classes Per Week",
-        "Special Events Benefits",
-        "1 Guest Pass Per Month",
-        "1 Wellness Profile Per Month"
-      ],
-      "classAccess": "2 Classes Per Week",
-      "guestPasses": 1,
-      "isPopular": false,
-      "ctaText": "START BRONZE"
-    },
-    {
-      "id": "hyrox",
-      "name": "HYROX PROGRAM",
-      "price": 100,
-      "frequency": "3x / week",
-      "description": "Specialized program for Hyrox competition training",
-      "features": [
-        "3 Classes Per Week",
-        "Special Events Benefits",
-        "4 Guest Passes Per Month",
-        "1 Wellness Profile Per Month"
-      ],
-      "classAccess": "3 Classes Per Week",
-      "guestPasses": 4,
-      "isPopular": false,
-      "ctaText": "JOIN HYROX"
     }
   ]
 }

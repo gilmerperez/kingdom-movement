@@ -130,19 +130,85 @@ html[data-theme="dark"] {
 
 ### Pages & Content
 
-- **Header:**
-
-  - Logo, Navigation, CTA Button
-
-  - **Footer:**
-
-  - Logo, legal text, copyright, legal pages, social links, site navigation, contact info
-
 - **Home Page:**
 
-- MORE THAN A GYM — IT'S A MOVEMENT
+- **Taglines**
 
-- Overview of memberships, kitchen menu, schedules, collaborations, CTAs linking to dedicated pages.
+1. BUILT FOR GLORY — BORN TO MOVE
+2. MOVE WITH PURPOSE. TRAIN HARD. LIVE BOLD.
+3. STRENGTH. SPIRIT. KINGDOM
+4. MORE THAN FITNESS — IT'S A MOVEMENT
+5. BUILT FOR GLORY — BORN TO MOVE
+
+- **Mission Statement**
+  To ignite a global movement of empowered
+  individuals who train with purpose, live with passion,
+  and move like champions-inside and out. We
+  transform lives through fitness, community, and
+  relentless spirit.
+
+- **Vision Statement**
+  To become a leading global CrossFit and lifestyle
+  brand known for building champions and inspiring
+  purpose-driven transformation in every life we
+  touch.
+
+- **Core Values**
+
+1. Faith-Fueled Purpose - Every movement has
+   meaning. We train with deeper purpose, for more
+   than just physical gains.
+2. Excellence & Discipline - We don't do average.
+   5/5 every week-relentless effort is our standard.
+3. Community & Brotherhood/Sisterhood - We lift
+   together. Support is strength.
+4. Transformation - Bodies, minds, and lives. We
+   change lives through challenge and consistency.
+5. Champion Mindset - Every person is trained to
+   rise-mentally, physically, spiritually.
+6. Freedom Through Fitness - We believe
+   movement unlocks potential and purpose.
+7. Spirit Over Hype - We're not just loud - we're on
+   fire with intention and heart.
+
+- **Content Pillars**
+
+1. Training & WODs - Show your 5/5 commitment;
+   share intensity + technique.
+2. Champion Stories - Testimonies of body + life
+   transformation.
+3. Events & Competitions - Capture the heart and
+   hustle of your crew.
+4. Mindset & Motivation - Share what fuels the
+   grind spiritually and mentally.
+5. Lifestyle & Culture - Style, community hangs,
+   behind the scenes, prayer, fun.
+
+- **Brand Personality**
+
+1. Bold - We go hard. Always.
+2. Purpose Driven - Every session, event, and rep
+   has meaning.
+3. Gritty & Raw - Authentic, no-fluff dedication.
+4. Inspirational - We bring energy and belief
+   wherever we go.
+5. Spiritual - There's a deeper strength behind what
+   we do.
+
+- **Brand Voice**
+  When you write, speak, post or create, make sure it
+  sounds:
+
+1. Motivating - "You were made for more."
+2. Unapologetic - "We don't skip reps. We don't skip
+   spirit."
+3. Raw & Real - "Transformation hurts. That's why it
+   works."
+4. Uplifting - "You're not alone in this. You've got a
+   team. A movement."
+5. High-Energy - "Let's ar KNGDM family!
+
+- Overview of nutrition menu, class schedule, membership tiers, collaborations, CTAs linking to dedicated pages.
 
 - WHO WE ARE (Component)
   Description that talks about how KNGDM MVMNT isn't just a gym, it's a community where people can come and get trained by certified and high level coaches whose only motive is to make you the best athlete possible. Talk about access to our amenities, like a state of the art training library; journal, planner and daily workout tracker that does everything from recording your workout results to helping you keep track of your nutrition. First side by side, on smaller screens they stack
@@ -157,71 +223,15 @@ html[data-theme="dark"] {
   Weightlifting and open gym
   Fun environment
 
-- Skinny banner with cool black and white picture (Component)
-  BUILT FOR GLORY — BORN TO MOVE
-  Cool animation as you scroll up and down?
-
-- **Membership Page:**
-
-Diamond Membership $200
-- Open Box
-- Saturday Classes
-- Unlimited Classes
-- Free Special Events
-- 4 Guest Passes Per Month
-- 1 Wellness Profile Per Month
-
-Gold Membership $150
-- Saturday Classes
-- Unlimited Classes
-- Special Events Benefits
-- 3 Guest Passes Per Month
-- 1 Wellness Profile Per Month
-
-Silver Membership $135
-- Saturday Classes
-- 3 Classes Per Week
-- Special Events Benefits
-- 2 Guest Passes Per Month
-- 1 Wellness Profile Per Month
-
-Bronze Membership $115
-- Saturday Classes
-- 2 Classes Per Week
-- Special Events Benefits
-- 1 Guest Passes Per Month
-- 1 Wellness Profile Per Month
-
-Hyrox Program $100
-- 3 Classes Per Week
-- Special Events Benefits
-- 4 Guest Passes Per Month
-- 1 Wellness Profile Per Month
-
 - **Individual Membership Page:**
 
-- Link to sign up
+- Click into a specific membership for more details.
+- Link to sign up through Wodify.
 - What extra details can we show here that are not on the main Membership Page?
-- Click into a membership for more details.
-- A big motivational picture at the top that fades to be more dark at the bottom then shows the details.
 
 - **Nutrition Page:**
 
-- Full menu with details.
-- Categories for:
-  Protein Shakes
-  Teas
-  Waffles
-  Acai Bowls
-- Any promotions that you would like to advertise right away at the top/bottom of the page?
-- For each menu item I will need:
-  ID (for me)
-  Name
-  Price
-  Calorie count
-  Description (I can make unless you want to use something specific)
-  Variations/Toppings with calorie count (if any)
-  Picture (if not I will get one from the internet)
+- Any promotions that you would like to advertise right away at the top or bottom of the page?
 
 - **Schedule Page:**
 
@@ -229,17 +239,7 @@ Hyrox Program $100
 
 - **Contact Page:**
 
-- Form to reach out.
-- Includes subject and message field.
 - Includes CAPTCHA for spam prevention.
-
-- **Privacy Policy:**
-
-  - Standard legal page.
-
-  **Terms of Service:**
-
-  - Standard legal page.
 
 ## Interactions & UI Components
 
@@ -253,38 +253,6 @@ Hyrox Program $100
 - React components load this data client-side to render views.
 - No database or backend logic beyond reading local JSON.
 - Global state managed in React (useState or useContext as needed).
-
-## API Endpoints
-
-- **None.**
-  All data is local via static JSON. No server-side API, no REST or GraphQL.
-
-## Database Schema
-
-- **Not applicable.**  
-  Using JSON to mimic a simple data layer. Example:
-
-```json
-{
-  "memberships": [
-    {
-      "id": "basic",
-      "name": "Basic Membership",
-      "price": 50,
-      "benefits": ["Access to AM classes", "2 guest passes per month"]
-    }
-  ],
-  "menu": [
-    {
-      "id": "acai",
-      "name": "Acai Bowl",
-      "price": 8.99,
-      "calories": 350,
-      "variations": ["Granola", "Peanut Butter", "Banana"]
-    }
-  ]
-}
-```
 
 ## Basic Website Security Checklist
 
@@ -313,14 +281,6 @@ Hyrox Program $100
 - Content copy: Collaborating with client to finalize all page text.
 - Detailed feature expansion: e.g., if future scheduling tools or online payments are needed.
 
-## Important Links
-
-- Instagram: https://www.instagram.com/kngdm.mvmnt/
-- Facebook: https://www.facebook.com/profile.php?id=61573390319325
-- Free Class: https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue
-- Location: https://www.google.com/maps/place/Rangers+Kingdom+LLC/@28.4598745,-81.4403449,17z/data=!4m6!3m5!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!8m2!3d28.4598745!4d-81.43777!16s%2Fg%2F11rdz8gr7f?authuser=1&entry=tts&g_ep=EgoyMDI1MDIxMC4wIPu8ASoASAFQAw%3D%3D
-- Leave a Review: https://www.google.com/maps/place//data=!4m3!3m2!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!12e1?source=g.page.m._&laa=merchant-review-solicitation
-
 ## Websites For Inspiration
 
 - https://dejavugym.com/
@@ -330,7 +290,5 @@ Hyrox Program $100
 ## Additional Pages
 
 - Include all other services that the place offers: Esthetiticain services, nails, physical therapy
-
-- Make a component for a wide picture with text in the middle of it. It should also have a paralax effect, as the user scrolls down the image scrolls as well. The component should only accept a link to an image and text
 
 - Pictures to use: https://drive.google.com/drive/folders/1wpll5IUQskO0xUr02mze-aSspKVztm3P
