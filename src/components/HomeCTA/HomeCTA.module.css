@@ -59,7 +59,7 @@
   transform: scale(1.05);
 }
 
-/* Tablet Responsiveness */
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   .kngdm {
     font-size: 3.25rem;
@@ -83,7 +83,7 @@
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   .kngdm {
     font-size: 2.75rem;

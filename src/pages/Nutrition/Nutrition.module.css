@@ -112,7 +112,6 @@
   font-size: 1.25rem;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-color);
 }
 
 /* Food Details */
@@ -130,7 +129,7 @@
 }
 
 .foodDescription {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
 }
 

@@ -1,62 +1,3 @@
-/* Hero Banner */
-.heroBanner {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.heroImage {
-  height: 0;
-  width: 100%;
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-.heroImage img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  object-position: center;
-}
-
-.heroOverlay {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.5) 50%, var(--bg-color) 100%);
-}
-
-.heroContent {
-  z-index: 2;
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  transition: 0.3s ease-in;
-  color: hsl(0, 0%, 100%);
-}
-
-.heroContent h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  transition: 0.3s ease-in;
-}
-
-.heroContent p {
-  margin: 0 auto;
-  max-width: 800px;
-  font-size: 1.75rem;
-  transition: 0.3s ease-in;
-}
-
 .scheduleContainer {
   width: 100%;
   display: flex;
@@ -200,21 +141,8 @@
   color: var(--text-secondary);
 }
 
-/* Tablet Responsiveness */
+/* Tablet responsiveness */
 @media (max-width: 768px) {
-  /* Hero Banner */
-  .heroContent {
-    padding: 1.75rem;
-  }
-
-  .heroContent h1 {
-    font-size: 2.25rem;
-  }
-
-  .heroContent p {
-    font-size: 1.5rem;
-  }
-
   /* Heading */
   .heading {
     font-size: 2.5rem;
@@ -243,7 +171,7 @@
     font-size: 1.25rem;
   }
 
-  /* Schedule Table */
+  /* Schedule table */
   .tableHeader {
     font-size: 1.25rem;
   }
@@ -254,21 +182,8 @@
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
-  /* Hero Banner */
-  .heroContent {
-    padding: 1.5rem;
-  }
-
-  .heroContent h1 {
-    font-size: 1.75rem;
-  }
-
-  .heroContent p {
-    font-size: 1.15rem;
-  }
-
   /* Heading */
   .heading {
     font-size: 2.25rem;
@@ -297,7 +212,7 @@
     font-size: 1rem;
   }
 
-  /* Schedule Table */
+  /* Schedule table */
   .tableHeader {
     font-size: 1rem;
   }

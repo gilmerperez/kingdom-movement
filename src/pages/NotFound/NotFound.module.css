@@ -34,16 +34,17 @@
   transition: 0.3s ease-in;
   border: 2px solid var(--primary);
   background-color: var(--header-bg-color);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .homeLink:hover {
   transform: scale(1.05);
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
-  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Tablet Responsiveness */
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   .heading {
     font-size: 2.75rem;
@@ -60,7 +61,7 @@
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   .heading {
     font-size: 2.25rem;

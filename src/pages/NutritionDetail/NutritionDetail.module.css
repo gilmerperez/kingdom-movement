@@ -52,12 +52,13 @@
   align-items: center;
   transition: 0.3s ease;
   justify-content: center;
-  border: 2px solid var(--bg-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
 }
 
 .optionItem:hover {
   transform: translateY(-2px);
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -70,14 +71,15 @@
   transition: 0.3s ease-in;
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .backButton:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Tablet Responsiveness */
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   .menuItemContainer {
     padding: 1.75rem;
@@ -114,7 +116,7 @@
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   .menuItemContainer {
     padding: 1.5rem;

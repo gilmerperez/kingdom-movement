@@ -25,17 +25,14 @@
   margin-bottom: 3rem;
 }
 
-/* * Membership cards */
-.membershipCards > * {
-  transition: 0.3s ease-in;
-}
-
+/* Membership cards */
 .membershipCards {
   gap: 1.5rem;
   width: 100%;
   display: grid;
   max-width: 1200px;
   justify-content: center;
+  transition: 0.3s ease-in;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -45,20 +42,23 @@
   position: relative;
   border-radius: 8px;
   flex-direction: column;
+  transition: 0.3s ease-in;
   border: 1px solid var(--primary);
-  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 3px 3px 15px hsla(0, 0%, 0%, 0.5);
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
+  background-color: var(--header-bg-color);
 }
 
 .membershipCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 5px 5px 20px hsla(0, 0%, 0%, 0.5);
 }
 
 /* Membership name */
 .membershipName {
   font-weight: 700;
   font-size: 2.5rem;
+  transition: 0.3s ease-in;
 }
 
 /* Price / month */
@@ -73,11 +73,13 @@
 .price {
   font-weight: 700;
   font-size: 2.5rem;
+  transition: 0.3s ease-in;
 }
 
 .period {
   font-weight: 500;
   font-size: 1.25rem;
+  transition: 0.3s ease-in;
   color: var(--text-secondary);
 }
 
@@ -88,6 +90,7 @@
   margin: 0.75rem 0;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.3s ease-in;
   background-color: var(--primary);
 }
 
@@ -96,6 +99,7 @@
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
+  transition: 0.3s ease-in;
 }
 
 .featureItem {
@@ -103,6 +107,7 @@
   position: relative;
   font-size: 1.25rem;
   padding-left: 1.5rem;
+  transition: 0.3s ease-in;
   color: var(--text-secondary);
 }
 
@@ -132,9 +137,10 @@
   background-color: hsl(0, 100%, 25%);
 }
 
-/* * Individual styles for popular card */
+/* Individual styles for popular card */
 .membershipCard.popular {
   border: none;
+  transition: 0.3s ease-in;
   background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
 }
 
@@ -176,7 +182,7 @@
   background-color: hsl(0, 0%, 80%);
 }
 
-/* * Additional Info */
+/* Additional Info */
 .additionalInfoContainer {
   width: 100vw;
   display: flex;

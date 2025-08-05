@@ -4,27 +4,23 @@
 /* Light Mode */
 html[data-theme="light"] {
   --header-bg-color: hsl(0, 0%, 100%);
-  --bg-color: hsl(0, 0%, 90%);
-  --text-primary: hsl(0, 0%, 0%);
-  --text-secondary: hsl(0, 0%, 10%);
+  --bg-color: hsl(0, 0%, 95%);
+  --text-primary: hsl(0, 0%, 5%);
+  --text-secondary: hsl(0, 0%, 20%);
   --primary: hsl(0, 100%, 35%);
-  --footer-bg-color: hsl(0, 0%, 5%);
-  --grey: hsl(0, 0%, 90%);
-  --grey-text: hsl(0, 0%, 20%);
-  --button-color: hsl(0, 0%, 0%);
+  --primary-dark: hsl(0, 100%, 25%);
+  --footer-bg-color: hsl(0, 0%, 2.5%);
 }
 
 /* Dark Mode */
 html[data-theme="dark"] {
-  --header-bg-color: hsl(0, 0%, 5%);
-  --bg-color: hsl(0, 0%, 10%);
+  --header-bg-color: hsl(0, 0%, 2.5%);
+  --bg-color: hsl(0, 0%, 5%);
   --text-primary: hsl(0, 0%, 100%);
   --text-secondary: hsl(0, 0%, 80%);
   --primary: hsl(0, 100%, 35%);
-  --footer-bg-color: hsl(0, 0%, 5%);
-  --grey: hsl(0, 0%, 10%);
-  --grey-text: hsl(0, 0%, 80%);
-  --button-color: hsl(0, 0%, 100%);
+  --primary-dark: hsl(0, 100%, 25%);
+  --footer-bg-color: hsl(0, 0%, 2.5%);
 }
 
 /* BUTTONS - Ensures buttons appear clickable */
