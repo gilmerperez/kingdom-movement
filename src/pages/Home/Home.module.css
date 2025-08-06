@@ -8,3 +8,9 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.missionStatements {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}

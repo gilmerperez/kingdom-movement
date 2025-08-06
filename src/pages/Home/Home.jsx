@@ -25,11 +25,13 @@ function Home() {
 
       <main>
         <section className={styles.homeContainer}>
-          {/* Who we are */}
-          <WhoWeAre />
-
-          {/* Our mission */}
-          <OurMission />
+          {/* Mission statements */}
+          <div className={styles.missionStatements}>
+            {/* Who we are */}
+            <WhoWeAre />
+            {/* Our mission */}
+            <OurMission />
+          </div>
         </section>
       </main>
 
