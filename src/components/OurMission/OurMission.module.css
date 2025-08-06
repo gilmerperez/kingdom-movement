@@ -1,4 +1,4 @@
-.whoWeAreSection {
+.ourMissionSection {
   gap: 3rem;
   width: 100%;
   display: flex;
@@ -7,19 +7,6 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-}
-
-.title {
-  font-size: 5rem;
-  font-weight: 700;
-  transition: 0.3s ease-in;
-}
-
-.seperator {
-  width: 3px;
-  height: 175px;
-  transition: 0.3s ease-in-out;
-  background-color: var(--primary);
 }
 
 .textContainer {
@@ -34,66 +21,80 @@
   color: var(--text-secondary);
 }
 
-@media (max-width: 1200px) {
-  .title {
-    font-size: 4.5rem;
-  }
+.seperator {
+  width: 3px;
+  height: 175px;
+  transition: 0.3s ease-in-out;
+  background-color: var(--primary);
+}
 
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+}
+
+@media (max-width: 1200px) {
   .text {
     font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
   }
 }
 
 @media (max-width: 1000px) {
-  .title {
-    font-size: 3.5rem;
-  }
-
   .text {
     font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
   }
 }
 
 @media (max-width: 900px) {
-  .whoWeAreSection {
+  .ourMissionSection {
     gap: 2rem;
-  }
-
-  .title {
-    font-size: 3rem;
   }
 
   .text {
     font-size: 1.15rem;
   }
+
+  .title {
+    font-size: 3rem;
+  }
 }
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .whoWeAreSection {
+  .ourMissionSection {
     gap: 1rem;
     flex-direction: column;
-  }
-
-  .seperator {
-    height: 3px;
-    width: 350px;
   }
 
   .text {
     font-size: 1.25rem;
     text-align: center;
   }
+
+  .seperator {
+    height: 3px;
+    width: 350px;
+  }
 }
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .whoWeAreSection {
+  .ourMissionSection {
     gap: 0.5rem;
   }
 
-  .title {
-    font-size: 2.5rem;
+  .text {
+    line-height: 1.25;
+    font-size: 1.15rem;
   }
 
   .seperator {
@@ -101,8 +102,7 @@
     width: 275px;
   }
 
-  .text {
-    line-height: 1.25;
-    font-size: 1.15rem;
+  .title {
+    font-size: 2.5rem;
   }
 }

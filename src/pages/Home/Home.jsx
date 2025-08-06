@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
+import OurMission from "../../components/OurMission/OurMission";
 
 function Home() {
   // Set Page Title
@@ -26,6 +27,9 @@ function Home() {
         <section className={styles.homeContainer}>
           {/* Who we are */}
           <WhoWeAre />
+
+          {/* Our mission */}
+          <OurMission />
         </section>
       </main>
 
