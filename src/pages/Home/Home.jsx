@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
+import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 
 function Home() {
   // Set Page Title
@@ -22,7 +23,10 @@ function Home() {
       />
 
       <main>
-        <section className={styles.homeContainer}></section>
+        <section className={styles.homeContainer}>
+          {/* Who we are */}
+          <WhoWeAre />
+        </section>
       </main>
 
       {/* CTA Component */}

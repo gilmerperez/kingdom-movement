@@ -140,14 +140,14 @@ html[data-theme="dark"] {
 4. MORE THAN FITNESS — IT'S A MOVEMENT
 5. BUILT FOR GLORY — BORN TO MOVE
 
-- **Mission Statement**
-  To ignite a global movement of empowered
+- **WHO WE ARE**
+  We are dedicated in igniting a global movement of empowered
   individuals who train with purpose, live with passion,
   and move like champions-inside and out. We
   transform lives through fitness, community, and
   relentless spirit.
 
-- **Vision Statement**
+- **OUR MISSION**
   To become a leading global CrossFit and lifestyle
   brand known for building champions and inspiring
   purpose-driven transformation in every life we
