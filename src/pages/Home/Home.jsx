@@ -35,7 +35,7 @@ function Home() {
         </section>
       </main>
 
-      {/* CTA Component */}
+      {/* CTA component */}
       <HomeCTA />
     </>
   );
