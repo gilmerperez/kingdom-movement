@@ -61,6 +61,10 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
+  .ctaComponent {
+    padding: 1.75rem;
+  }
+
   .kngdm {
     font-size: 3.25rem;
   }
@@ -85,6 +89,10 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
+  .ctaComponent {
+    padding: 1.5rem;
+  }
+
   .kngdm {
     font-size: 2.75rem;
   }
