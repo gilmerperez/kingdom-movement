@@ -3,29 +3,41 @@ import { useState, useEffect } from "react";
 import coachesData from "../../data/coaches.json";
 
 const Coaches = () => {
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentCoachIndex, setCurrentCoachIndex] = useState(0);
 
   // Auto-rotate carousel every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentCoachIndex((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
+      handleCoachChange((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
+  // Handle coach change with transition effect
+  const handleCoachChange = (newIndexOrFunction) => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentCoachIndex(newIndexOrFunction);
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 100);
+    }, 300);
+  };
+
   // Previous button
   const handlePrevClick = () => {
-    setCurrentCoachIndex((prevIndex) => (prevIndex === 0 ? coachesData.length - 1 : prevIndex - 1));
+    handleCoachChange((prevIndex) => (prevIndex === 0 ? coachesData.length - 1 : prevIndex - 1));
   };
 
   // Next button
   const handleNextClick = () => {
-    setCurrentCoachIndex((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
+    handleCoachChange((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
   };
 
   // Carousel dots
   const handleDotClick = (index) => {
-    setCurrentCoachIndex(index);
+    handleCoachChange(index);
   };
 
   return (
@@ -65,9 +77,9 @@ const Coaches = () => {
                 {/* Carousel image */}
                 <div className={styles.coachImageContainer}>
                   <img
-                    className={styles.coachImage}
                     alt={coachesData[currentCoachIndex].name}
                     src={coachesData[currentCoachIndex].image}
+                    className={`${styles.coachImage} ${isTransitioning ? styles.transitioning : ""}`}
                   />
                 </div>
                 <div className={styles.coachInfo}>
@@ -91,7 +103,7 @@ const Coaches = () => {
               ))}
             </div>
 
-            {/* Previous button */}
+            {/* Previous coach button */}
             <button
               onClick={handlePrevClick}
               aria-label="Previous coach"
@@ -100,10 +112,10 @@ const Coaches = () => {
               ‹
             </button>
 
-            {/* Next button */}
+            {/* Next coach button */}
             <button
-              onClick={handleNextClick}
               aria-label="Next coach"
+              onClick={handleNextClick}
               className={`${styles.carouselArrow} ${styles.nextArrow}`}
             >
               ›
