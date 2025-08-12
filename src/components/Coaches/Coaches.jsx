@@ -49,10 +49,10 @@ const Coaches = () => {
             </p>
             {/* CTA button */}
             <a
+              target="_blank"
               rel="noopener noreferrer"
               className={styles.scheduleButton}
               href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
-              target="_blank"
             >
               SCHEDULE YOUR FREE CLASS
             </a>
@@ -93,18 +93,18 @@ const Coaches = () => {
 
             {/* Previous button */}
             <button
-              className={`${styles.carouselArrow} ${styles.prevArrow}`}
               onClick={handlePrevClick}
               aria-label="Previous coach"
+              className={`${styles.carouselArrow} ${styles.prevArrow}`}
             >
               ‹
             </button>
 
             {/* Next button */}
             <button
-              className={`${styles.carouselArrow} ${styles.nextArrow}`}
               onClick={handleNextClick}
               aria-label="Next coach"
+              className={`${styles.carouselArrow} ${styles.nextArrow}`}
             >
               ›
             </button>
