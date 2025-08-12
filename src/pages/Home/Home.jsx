@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import styles from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
+import Coaches from "../../components/Coaches/Coaches";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import OurMission from "../../components/OurMission/OurMission";
 
 function Home() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Home";
   }, []);
@@ -32,6 +33,7 @@ function Home() {
             {/* Our mission */}
             <OurMission />
           </div>
+          <Coaches />
         </section>
       </main>
 
