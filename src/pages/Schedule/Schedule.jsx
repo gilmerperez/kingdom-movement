@@ -4,7 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import scheduleData from "../../data/schedule.json";
 
 function Schedule() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Schedule";
   }, []);
@@ -56,7 +56,7 @@ function Schedule() {
 
           {/* Schedule */}
           <div className={styles.scheduleWrapper}>
-            {/* Day Tabs */}
+            {/* Day tabs */}
             <div className={styles.dayTabs}>
               {days.map((day) => (
                 <button
@@ -68,10 +68,10 @@ function Schedule() {
                 </button>
               ))}
             </div>
-            {/* Schedule Content */}
+            {/* Schedule content */}
             <div className={styles.scheduleContent}>
               {selectedDayData.status === "Closed" ? (
-                // Closed Message
+                // Closed message
                 <div className={styles.closedMessage}>
                   <h2 className={styles.closedMessageTitle}>CLOSED</h2>
                   <p className={styles.closedMessageText}>
@@ -79,7 +79,7 @@ function Schedule() {
                   </p>
                 </div>
               ) : (
-                // Schedule Table
+                // Schedule table
                 <div className={styles.scheduleTable}>
                   {/* Header */}
                   <div className={styles.tableHeader}>

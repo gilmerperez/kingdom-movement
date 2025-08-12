@@ -4,7 +4,7 @@ import membershipData from "../../data/membership.json";
 import Banner from "../../components/Banner/Banner";
 
 function Membership() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Membership";
     setMemberships(membershipData.memberships);

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "./PrivacyPolicy.module.css";
 
 function PrivacyPolicy() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Privacy Policy";
   }, []);

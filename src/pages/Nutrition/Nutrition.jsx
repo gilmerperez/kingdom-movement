@@ -5,7 +5,7 @@ import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
 
 function Nutrition() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Nutrition";
   }, []);

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "./TermsOfService.module.css";
 
 function TermsOfService() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Terms of Service";
   }, []);
@@ -61,7 +61,7 @@ function TermsOfService() {
               of these terms. Last updated: {month} {year}.
             </p>
 
-            {/* Membership and scheduling disclaimers */}
+            {/* Membership and scheduling disclaimer */}
             <p className={styles.termsHeading}>Membership and Scheduling Disclaimer</p>
             <p className={styles.termsText}>
               Membership tiers, class schedules, and food menu offerings are subject to change without prior notice.

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./NotFound.module.css";
 
 function NotFound() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Page Not Found";
   }, []);
@@ -17,7 +17,7 @@ function NotFound() {
         {/* Introduction */}
         <p className={styles.introduction}>Sorry, the page you are looking for does not exist</p>
 
-        {/* Go back to home link */}
+        {/* Go back to home page link */}
         <Link to="/" className={styles.homeLink}>
           BACK TO HOME PAGE
         </Link>

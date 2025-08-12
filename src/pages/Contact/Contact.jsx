@@ -2,7 +2,7 @@ import styles from "./Contact.module.css";
 import { useEffect, useState } from "react";
 
 function Contact() {
-  // Set Page Title
+  // Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Contact";
   }, []);
@@ -10,7 +10,7 @@ function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  // Send Email
+  // Send email
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = "email@address.com";
