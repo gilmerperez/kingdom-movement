@@ -148,7 +148,7 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .kngdm {
     font-size: 2rem;
   }
@@ -212,7 +212,7 @@ header {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .kngdm {
     font-size: 1.5rem;
   }
@@ -255,7 +255,7 @@ header {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 580px) {
   .seperator {
     display: none;
   }
@@ -355,7 +355,7 @@ header {
   box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.5);
 }
 
-/* Mobile Responsiveness/Hamburger menu breakpoint */
+/* Mobile responsiveness/Hamburger menu breakpoint */
 @media (max-width: 480px) {
   .kngdm {
     font-size: 1.75rem;
