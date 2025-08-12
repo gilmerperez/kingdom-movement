@@ -10,10 +10,12 @@
 }
 
 .title {
+  opacity: 0;
   font-size: 5rem;
   font-weight: 700;
   font-style: italic;
   transition: 0.3s ease-in;
+  animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
 .seperator {
@@ -28,11 +30,13 @@
 }
 
 .text {
+  opacity: 0;
   line-height: 1.5;
   text-align: right;
   font-size: 1.35rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
+  animation: slideInFromRight 0.8s ease-out 0.3s forwards;
 }
 
 @media (max-width: 1200px) {
@@ -105,5 +109,28 @@
   .text {
     line-height: 1.25;
     font-size: 1.15rem;
+  }
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
