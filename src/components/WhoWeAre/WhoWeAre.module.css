@@ -12,6 +12,7 @@
 .title {
   font-size: 5rem;
   font-weight: 700;
+  font-style: italic;
   transition: 0.3s ease-in;
 }
 
