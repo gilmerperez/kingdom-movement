@@ -16,6 +16,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease-in;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -88,6 +89,7 @@
   height: 450px;
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease-in;
 }
 
 .coachImage {
@@ -109,6 +111,7 @@
 
 .coachInfo {
   padding: 1.25rem;
+  transition: 0.3s ease-in;
   background: var(--header-bg-color);
 }
 
@@ -118,6 +121,7 @@
   font-style: italic;
   display: inline-block;
   margin-bottom: 0.5rem;
+  transition: 0.3s ease-in;
   border-bottom: 2px solid var(--primary);
 }
 
@@ -125,6 +129,7 @@
 .coachDescription {
   line-height: 1.35;
   font-size: 1.25rem;
+  transition: 0.3s ease-in;
   color: var(--text-secondary);
 }
 
@@ -135,6 +140,7 @@
   margin-top: 1.25rem;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease-in;
 }
 
 .dot {
@@ -182,10 +188,12 @@
 
 .prevArrow {
   left: -25px;
+  transition: 0.3s ease-in;
 }
 
 .nextArrow {
   right: -25px;
+  transition: 0.3s ease-in;
 }
 
 @media (max-width: 1024px) {
