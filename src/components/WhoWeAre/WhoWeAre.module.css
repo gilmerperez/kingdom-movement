@@ -80,12 +80,18 @@
     flex-direction: column;
   }
 
+  .title {
+    margin-right: auto;
+  }
+
   .seperator {
     height: 3px;
     width: 350px;
+    margin-right: auto;
   }
 
   .text {
+    text-align: left;
     font-size: 1.25rem;
     text-align: center;
   }

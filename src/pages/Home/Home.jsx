@@ -33,10 +33,10 @@ function Home() {
             {/* Our mission */}
             <OurMission />
           </div>
+          {/* Coaches */}
           <Coaches />
         </section>
       </main>
-
       {/* CTA component */}
       <HomeCTA />
     </>
