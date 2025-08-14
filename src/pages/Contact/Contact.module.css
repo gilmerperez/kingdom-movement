@@ -125,6 +125,34 @@ textarea:-webkit-autofill {
   color: hsl(0, 0%, 100%);
 }
 
+/* CAPTCHA Styles */
+.captchaTitle {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  transition: 0.3s ease-in;
+}
+
+.captchaDescription {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  transition: 0.3s ease-in;
+  color: var(--text-secondary);
+}
+
+.captchaQuestion p {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease-in;
+}
+
+.errorMessage {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: var(--primary);
+  transition: 0.3s ease-in;
+}
+
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .heading {
@@ -145,6 +173,18 @@ textarea:-webkit-autofill {
 
   .submitBtn {
     border-radius: 6px;
+  }
+
+  .captchaTitle {
+    font-size: 2rem;
+  }
+
+  .captchaDescription {
+    font-size: 1.25rem;
+  }
+
+  .captchaQuestion p {
+    font-size: 1.5rem;
   }
 }
 
@@ -185,5 +225,17 @@ textarea:-webkit-autofill {
     padding: 0.65rem;
     font-size: 1.25rem;
     border-radius: 4px;
+  }
+
+  .captchaTitle {
+    font-size: 1.75rem;
+  }
+
+  .captchaDescription {
+    font-size: 1.15rem;
+  }
+
+  .captchaQuestion p {
+    font-size: 1.15rem;
   }
 }
