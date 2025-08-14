@@ -161,11 +161,14 @@
 .membershipCard.popular .membershipName,
 .membershipCard.popular .currency,
 .membershipCard.popular .price,
-.membershipCard.popular .separator,
 .membershipCard.popular .featuresTitle,
 .membershipCard.popular .featureItem,
 .membershipCard.popular .featureItem::before {
   color: hsl(0, 0%, 100%);
+}
+
+.membershipCard.popular .separator {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .membershipCard.popular .period {

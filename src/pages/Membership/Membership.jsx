@@ -14,13 +14,12 @@ function Membership() {
 
   // Membership order
   const reorderMemberships = (memberships) => {
-    const silver = memberships.find((m) => m.id === "silver");
     const diamond = memberships.find((m) => m.id === "diamond");
     const gold = memberships.find((m) => m.id === "gold");
+    const silver = memberships.find((m) => m.id === "silver");
     const bronze = memberships.find((m) => m.id === "bronze");
     const hyrox = memberships.find((m) => m.id === "hyrox");
-
-    return [silver, diamond, gold, bronze, hyrox].filter(Boolean);
+    return [diamond, gold, silver, bronze, hyrox].filter(Boolean);
   };
 
   return (
