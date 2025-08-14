@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "./Home.module.css";
+import WhyUs from "../../components/WhyUs/WhyUs";
 import Banner from "../../components/Banner/Banner";
 import Coaches from "../../components/Coaches/Coaches";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
@@ -35,6 +36,8 @@ function Home() {
           </div>
           {/* Coaches */}
           <Coaches />
+          {/* Why us */}
+          <WhyUs />
         </section>
       </main>
       {/* CTA component */}

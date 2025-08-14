@@ -1,9 +1,129 @@
 .whyUsSection {
   width: 100%;
-  display: flex;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.container {
+  display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+}
+
+/* Title */
+.title {
+  font-size: 3.5rem;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+/* Description */
+.description {
+  max-width: 1000px;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* Benefits grid */
+.benefitsGrid {
+  width: 100%;
+  gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Benefit cards */
+.benefitCard {
+  flex: 1;
+  padding: 1rem;
+  min-width: 500px;
+  max-width: 400px;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  border: 2px solid var(--primary);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode hover */
+html[data-theme="dark"] .benefitCard:hover {
+  background: linear-gradient(to top, var(--primary), var(--bg-color));
+}
+
+/* Card title */
+.cardTitle {
+  padding-bottom: 0.25rem;
+  font-size: 1.75rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Card text */
+.cardText {
+  line-height: 1.35;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .benefitsGrid {
+    gap: 1rem;
+  }
+
+  .benefitCard {
+    border-radius: 6px;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .cardText {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.15rem;
+  }
+
+  .benefitCard {
+    min-width: 100%;
+    border-radius: 4px;
+  }
+
+  .cardTitle {
+    font-size: 1.35rem;
+  }
+
+  .cardText {
+    font-size: 1rem;
+  }
 }
