@@ -1,0 +1,135 @@
+.nutritionComponentContainer {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Image */
+.imageContainer {
+  flex: 1;
+  display: flex;
+}
+
+.nutritionImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.nutritionImage:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Content */
+.contentContainer {
+  flex: 1;
+  gap: 1rem;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-style: italic;
+  margin-right: auto;
+}
+
+.description {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description p {
+  line-height: 1.35;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.ctaButton {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-right: auto;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: 0.3s ease-in;
+  border: 3px solid var(--primary);
+  background-color: var(--header-bg-color);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .nutritionComponentContainer {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    min-width: 100%;
+    max-height: 350px;
+  }
+
+  .nutritionImage {
+    border-radius: 6px;
+  }
+
+  .title {
+    margin: 0 auto;
+    font-size: 2.5rem;
+  }
+
+  .description p {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .ctaButton {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .nutritionComponentContainer {
+    gap: 1.5rem;
+  }
+
+  .nutritionImage {
+    border-radius: 4px;
+  }
+
+  .description {
+    gap: 0.75rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+  }
+}
