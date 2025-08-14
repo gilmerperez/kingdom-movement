@@ -28,23 +28,20 @@ function Home() {
 
       <main>
         <section className={styles.homeContainer}>
-          {/* Mission statements */}
-          <div className={styles.missionStatements}>
-            {/* Who we are */}
-            <WhoWeAre />
-            {/* Our mission */}
-            <OurMission />
-          </div>
+          {/* Who we are */}
+          <WhoWeAre />
+          {/* Our mission */}
+          <OurMission />
           {/* Coaches */}
           <Coaches />
           {/* Why us */}
           <WhyUs />
           {/* Nutrition */}
           <NutritionComponent />
+          {/* CTA component */}
+          <HomeCTA />
         </section>
       </main>
-      {/* CTA component */}
-      <HomeCTA />
     </>
   );
 }

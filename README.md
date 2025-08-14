@@ -53,6 +53,10 @@ The following images show the web application's appearance and functionality:
 
 ---
 
+![Light Mode Theme](./src/assets/screenshots/light-mode.jpg)
+
+---
+
 ![Nutrition Page](./src/assets/screenshots/nutrition.jpg)
 
 ---
@@ -66,10 +70,6 @@ The following images show the web application's appearance and functionality:
 ---
 
 ![Contact Page](./src/assets/screenshots/contact.jpg)
-
----
-
-![Light Mode Theme](./src/assets/screenshots/light-mode.jpg)
 
 ## Instructions
 

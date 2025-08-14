@@ -1,10 +1,10 @@
 .ctaComponent {
-  width: 100%;
+  width: 100vw;
   padding: 2rem;
   display: flex;
-  padding-top: 3rem;
   text-align: center;
   align-items: center;
+  margin-bottom: -2rem;
   flex-direction: column;
   justify-content: center;
   color: hsl(0, 0%, 100%);

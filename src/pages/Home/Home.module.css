@@ -1,4 +1,5 @@
 .homeContainer {
+  gap: 3rem;
   width: 100%;
   display: flex;
   margin: 0 auto;
@@ -9,8 +10,16 @@
   justify-content: center;
 }
 
-.missionStatements {
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .homeContainer {
+    gap: 2rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .homeContainer {
+    gap: 1rem;
+  }
 }

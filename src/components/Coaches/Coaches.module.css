@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  padding: 2rem 0;
   max-width: 1200px;
   text-align: center;
   align-items: center;
@@ -40,7 +39,9 @@
 .coachesTitle {
   font-size: 3.5rem;
   font-style: italic;
+  margin-bottom: 0.5rem;
   transition: 0.3s ease-in;
+  border-bottom: 3px solid var(--primary);
 }
 
 /* Description */
@@ -54,6 +55,7 @@
 
 /* CTA button */
 .scheduleButton {
+  width: 100%;
   font-weight: 500;
   font-size: 1.75rem;
   border-radius: 8px;
@@ -125,6 +127,34 @@
   transform: scale(1.05);
 }
 
+/* Carousel dots */
+.carouselDots {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  padding-top: 1.75rem;
+  justify-content: center;
+  transition: 0.3s ease-in;
+  background-color: var(--header-bg-color);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+  background-color: var(--text-secondary);
+}
+
+.dot:not(.activeDot):hover {
+  background-color: var(--text-primary);
+}
+
+.activeDot {
+  transform: scale(1.35);
+  background-color: var(--primary);
+}
+
 .coachInfo {
   padding: 1.25rem;
   transition: 0.3s ease-in;
@@ -138,7 +168,6 @@
   display: inline-block;
   margin-bottom: 0.5rem;
   transition: 0.3s ease-in;
-  border-bottom: 2px solid var(--primary);
 }
 
 /* Coach description */
@@ -147,34 +176,6 @@
   font-size: 1.25rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
-}
-
-/* Carousel dots */
-.carouselDots {
-  gap: 0.75rem;
-  display: flex;
-  margin-top: 1.25rem;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  transition: 0.3s ease-in;
-  background-color: var(--text-secondary);
-}
-
-.dot:not(.activeDot):hover {
-  transform: scale(1.15);
-  background-color: var(--text-primary);
-}
-
-.activeDot {
-  transform: scale(1.25);
-  background-color: var(--primary);
 }
 
 /* Navigation Arrows */
@@ -280,6 +281,11 @@
     padding: 0.5rem 0.75rem;
   }
 
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
   .coachInfo {
     padding: 1rem;
   }
@@ -290,15 +296,6 @@
 
   .coachDescription {
     font-size: 1rem;
-  }
-
-  .carouselDots {
-    margin-top: 1rem;
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
   }
 
   .carouselArrow {
@@ -340,10 +337,5 @@
 
   .coachDescription {
     font-size: 1.15rem;
-  }
-
-  .dot {
-    width: 8px;
-    height: 8px;
   }
 }

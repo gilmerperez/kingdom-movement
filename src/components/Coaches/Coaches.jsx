@@ -119,6 +119,17 @@ const Coaches = () => {
                     className={`${styles.coachImage} ${isTransitioning ? styles.transitioning : ""}`}
                   />
                 </div>
+                {/* Carousel dots */}
+                <div className={styles.carouselDots}>
+                  {coachesData.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleDotClick(index)}
+                      aria-label={`Go to coach ${index + 1}`}
+                      className={`${styles.dot} ${index === currentCoachIndex ? styles.activeDot : ""}`}
+                    />
+                  ))}
+                </div>
                 <div className={styles.coachInfo}>
                   {/* Coach name */}
                   <h3 className={styles.coachName}>{coachesData[currentCoachIndex].name}</h3>
@@ -126,18 +137,6 @@ const Coaches = () => {
                   <p className={styles.coachDescription}>{coachesData[currentCoachIndex].description}</p>
                 </div>
               </div>
-            </div>
-
-            {/* Carousel dots */}
-            <div className={styles.carouselDots}>
-              {coachesData.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleDotClick(index)}
-                  aria-label={`Go to coach ${index + 1}`}
-                  className={`${styles.dot} ${index === currentCoachIndex ? styles.activeDot : ""}`}
-                />
-              ))}
             </div>
 
             {/* Previous coach button */}
