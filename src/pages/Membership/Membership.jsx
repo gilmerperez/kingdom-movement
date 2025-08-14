@@ -1,7 +1,7 @@
 import styles from "./Membership.module.css";
-import { useEffect, useState } from "react";
-import membershipData from "../../data/membership.json";
 import Banner from "../../components/Banner/Banner";
+import { useEffect, useState, useRef } from "react";
+import membershipData from "../../data/membership.json";
 
 function Membership() {
   // Set page title
@@ -21,6 +21,36 @@ function Membership() {
     const hyrox = memberships.find((m) => m.id === "hyrox");
     return [diamond, gold, silver, bronze, hyrox].filter(Boolean);
   };
+
+  // Scroll animation for additional info section
+  const [isAdditionalInfoVisible, setIsAdditionalInfoVisible] = useState(false);
+  const additionalInfoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsAdditionalInfoVisible(true);
+        }
+      },
+      {
+        // Trigger when 10% of the component is visible
+        threshold: 0.1,
+        // Start animation slightly before component is fully in view
+        rootMargin: "0px 0px -50px 0px",
+      }
+    );
+
+    if (additionalInfoRef.current) {
+      observer.observe(additionalInfoRef.current);
+    }
+
+    return () => {
+      if (additionalInfoRef.current) {
+        observer.unobserve(additionalInfoRef.current);
+      }
+    };
+  }, []);
 
   return (
     <>
@@ -91,31 +121,41 @@ function Membership() {
           </div>
 
           {/* Additional info */}
-          <div className={styles.additionalInfoContainer}>
+          <div ref={additionalInfoRef} className={styles.additionalInfoContainer}>
             <div className={styles.additionalInfo}>
               {/* Heading */}
-              <h2 className={styles.additionalInfoTitle}>ADDITIONAL INFO</h2>
+              <h2 className={`${styles.additionalInfoTitle} ${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                ADDITIONAL INFO
+              </h2>
               {/* List of additional info */}
               <ul className={styles.additionalInfoList}>
-                <li>Must be age 18 years or older to enroll.</li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                  Must be age 18 years or older to enroll.
+                </li>
                 <br />
-                <li>The schedule is subject to change without prior notice.</li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                  The schedule is subject to change without prior notice.
+                </li>
                 <br />
-                <li>All membership types are non-transferable, non-assignable, and non-saleable.</li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                  All membership types are non-transferable, non-assignable, and non-saleable.
+                </li>
                 <br />
-                <li>Prepaid memberships and sessions agreements are not subject to any hold options.</li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                  Prepaid memberships and sessions agreements are not subject to any hold options.
+                </li>
                 <br />
-                <li>
-                  For a complete list of Kingdom Movement Crossfit policies, rules, and regulations, feel free to
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
+                  For a complete list of Kingdom Movement policies, rules, and regulations, feel free to
                   contact us at email@address.com
                 </li>
                 <br />
-                <li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
                   Month-to-Month membership holds may be placed two times per calendar year, up to three consecutive
                   months each time. Must be 30 days in duration at minimum.
                 </li>
                 <br />
-                <li>
+                <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
                   Month-to-Month membership cancellations without penalty require fifteen days advance written notice.
                   Prepaid memberships and sessions memberships are not subject to any early termination options with
                   exception of death or disability.
