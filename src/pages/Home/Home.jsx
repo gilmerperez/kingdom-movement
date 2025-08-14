@@ -5,6 +5,7 @@ import Banner from "../../components/Banner/Banner";
 import Coaches from "../../components/Coaches/Coaches";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
+import Nutrition from "../../components/Nutrition/Nutrition";
 import OurMission from "../../components/OurMission/OurMission";
 
 function Home() {
@@ -38,6 +39,8 @@ function Home() {
           <Coaches />
           {/* Why us */}
           <WhyUs />
+          {/* Nutrition */}
+          <Nutrition />
         </section>
       </main>
       {/* CTA component */}
