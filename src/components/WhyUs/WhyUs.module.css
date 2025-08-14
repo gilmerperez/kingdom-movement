@@ -13,17 +13,37 @@
 
 /* Title */
 .title {
+  opacity: 0;
   font-size: 3.5rem;
+  filter: blur(10px);
   font-style: italic;
   margin-bottom: 0.25rem;
+  transform: translateY(20px);
+  transition: all 1.2s ease-out;
+}
+
+.title.animateTitle {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 /* Description */
 .description {
+  opacity: 0;
+  filter: blur(10px);
   max-width: 1000px;
   font-size: 1.35rem;
   margin-bottom: 1.5rem;
+  transform: translateY(20px);
   color: var(--text-secondary);
+  transition: all 1.2s ease-out;
+}
+
+.description.animateDescription {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 /* Benefits grid */
@@ -39,14 +59,27 @@
 /* Benefit cards */
 .benefitCard {
   flex: 1;
+  opacity: 0;
   padding: 1rem;
   min-width: 500px;
   max-width: 400px;
   border-radius: 8px;
   transition: 0.3s ease-in;
+  transform: translateX(-100px);
   border: 2px solid var(--primary);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  transition: all 1s cubic-bezier(0.2, 0.45, 0.45, 0.9);
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
+}
+
+/* Alternate card animations */
+.benefitCard:nth-child(even) {
+  transform: translateX(100px);
+}
+
+.benefitCard.animateCard {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .benefitCard:hover {
