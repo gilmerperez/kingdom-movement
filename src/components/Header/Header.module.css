@@ -245,6 +245,7 @@ header {
 
   .freeClassButton {
     font-size: 1rem;
+    border-radius: 4px;
   }
 }
 
