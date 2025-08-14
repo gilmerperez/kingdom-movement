@@ -12,7 +12,8 @@ const Coaches = () => {
       handleCoachChange((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+    // Reset timer when user manually changes coach
+  }, [currentCoachIndex]);
 
   // Handle coach change with transition effect
   const handleCoachChange = (newIndexOrFunction) => {
