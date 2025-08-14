@@ -13,11 +13,19 @@
 /* Coaches content */
 .coachesContent {
   gap: 3rem;
+  opacity: 0;
   display: grid;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in;
+  transform: translateX(-100px);
   grid-template-columns: 1fr 1fr;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.coachesContent.animateCoachesContent {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Left side */
@@ -65,9 +73,17 @@
 
 /* Carousel */
 .carouselContainer {
+  opacity: 0;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  transform: translateX(100px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+
+.carouselContainer.animateCarouselContainer {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .carousel {
@@ -99,13 +115,13 @@
   filter: blur(0px);
   object-fit: cover;
   object-position: center;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Blur transition effect */
 .coachImage.transitioning {
   opacity: 0.7;
-  filter: blur(8px);
+  filter: blur(10px);
   transform: scale(1.05);
 }
 
@@ -324,5 +340,10 @@
 
   .coachDescription {
     font-size: 1.15rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
   }
 }

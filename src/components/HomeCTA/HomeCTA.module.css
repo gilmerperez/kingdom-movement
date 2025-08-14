@@ -11,10 +11,6 @@
   background: linear-gradient(to top, var(--footer-bg-color), var(--primary));
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 /* Logo container */
 .logoContainer {
   opacity: 0;

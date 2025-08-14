@@ -1,10 +1,46 @@
 import styles from "./Coaches.module.css";
-import { useState, useEffect } from "react";
 import coachesData from "../../data/coaches.json";
+import { useState, useEffect, useRef } from "react";
 
 const Coaches = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentCoachIndex, setCurrentCoachIndex] = useState(0);
+
+  // Scroll animation
+  const coachesContentRef = useRef(null);
+  const carouselContainerRef = useRef(null);
+
+  // Scroll animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Animate coaches content
+            if (entry.target === coachesContentRef.current) {
+              entry.target.classList.add(styles.animateCoachesContent);
+            }
+            // Animate carousel container
+            else if (entry.target === carouselContainerRef.current) {
+              entry.target.classList.add(styles.animateCarouselContainer);
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      }
+    );
+
+    // Observe both elements
+    if (coachesContentRef.current) observer.observe(coachesContentRef.current);
+    if (carouselContainerRef.current) observer.observe(carouselContainerRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   // Auto-rotate carousel every 5 seconds
   useEffect(() => {
@@ -45,7 +81,7 @@ const Coaches = () => {
     <>
       <section className={styles.coachesContainer}>
         {/* Coaches content */}
-        <div className={styles.coachesContent}>
+        <div ref={coachesContentRef} className={styles.coachesContent}>
           <div className={styles.coachesInfo}>
             {/* Title */}
             <h2 className={styles.coachesTitle}>
@@ -72,7 +108,7 @@ const Coaches = () => {
           </div>
 
           {/* Carousel */}
-          <div className={styles.carouselContainer}>
+          <div ref={carouselContainerRef} className={styles.carouselContainer}>
             <div className={styles.carousel}>
               <div className={styles.carouselCard}>
                 {/* Carousel image */}

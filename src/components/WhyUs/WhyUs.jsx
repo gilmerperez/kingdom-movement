@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
 import styles from "./WhyUs.module.css";
+import { useEffect, useRef } from "react";
 
 function WhyUs() {
   // Scroll animation

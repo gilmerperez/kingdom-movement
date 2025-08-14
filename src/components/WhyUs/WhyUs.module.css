@@ -18,8 +18,8 @@
   filter: blur(10px);
   font-style: italic;
   margin-bottom: 0.25rem;
-  transform: translateY(20px);
-  transition: all 1.2s ease-out;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
 }
 
 .title.animateTitle {
@@ -35,9 +35,9 @@
   max-width: 1000px;
   font-size: 1.35rem;
   margin-bottom: 1.5rem;
-  transform: translateY(20px);
+  transform: translateY(30px);
+  transition: all 1s ease-out;
   color: var(--text-secondary);
-  transition: all 1.2s ease-out;
 }
 
 .description.animateDescription {
@@ -68,7 +68,7 @@
   transform: translateX(-100px);
   border: 2px solid var(--primary);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  transition: all 1s cubic-bezier(0.2, 0.45, 0.45, 0.9);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
 
@@ -94,10 +94,10 @@ html[data-theme="dark"] .benefitCard:hover {
 
 /* Card title */
 .cardTitle {
-  padding-bottom: 0.25rem;
   font-size: 1.75rem;
   display: inline-block;
   margin-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--primary);
 }
 
