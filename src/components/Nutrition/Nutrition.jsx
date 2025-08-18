@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "./NutritionComponent.module.css";
+import styles from "./Nutrition.module.css";
 
-function NutritionComponent() {
+function Nutrition() {
   return (
     <>
       <section className={styles.nutritionComponentContainer}>
@@ -46,4 +46,4 @@ function NutritionComponent() {
   );
 }
 
-export default NutritionComponent;
+export default Nutrition;

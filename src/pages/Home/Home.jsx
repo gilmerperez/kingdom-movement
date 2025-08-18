@@ -5,8 +5,8 @@ import Banner from "../../components/Banner/Banner";
 import Coaches from "../../components/Coaches/Coaches";
 import HomeCTA from "../../components/HomeCTA/HomeCTA";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
+import Nutrition from "../../components/Nutrition/Nutrition";
 import OurMission from "../../components/OurMission/OurMission";
-import NutritionComponent from "../../components/NutritionComponent/NutritionComponent";
 
 function Home() {
   // Set page title
@@ -37,7 +37,7 @@ function Home() {
           {/* Why us */}
           <WhyUs />
           {/* Nutrition */}
-          <NutritionComponent />
+          <Nutrition />
           {/* CTA component */}
           <HomeCTA />
         </section>
