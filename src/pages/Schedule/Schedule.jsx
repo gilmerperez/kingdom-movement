@@ -43,7 +43,7 @@ function Schedule() {
           />
 
           {/* Heading */}
-          <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
+          <h1 className={styles.heading}>CLASS SCHEDULE</h1>
 
           {/* Introduction */}
           <p className={styles.introduction}>

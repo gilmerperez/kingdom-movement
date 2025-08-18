@@ -13,6 +13,7 @@
 .heading {
   font-size: 3rem;
   font-weight: 700;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   transition: 0.3s ease-in;
   border-bottom: 3px solid var(--primary);
@@ -146,6 +147,7 @@
   /* Heading */
   .heading {
     font-size: 2.5rem;
+    margin-top: 1.75rem;
   }
 
   /* Introduction */
@@ -186,6 +188,7 @@
   /* Heading */
   .heading {
     font-size: 2.25rem;
+    margin-top: 1.5rem;
   }
 
   /* Introduction */
