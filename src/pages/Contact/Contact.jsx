@@ -39,7 +39,7 @@ function Contact() {
   // Send email
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = "email@address.com";
+    const email = "kngdm.mvmnt.llc@gmail.com";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
   };
@@ -90,7 +90,7 @@ function Contact() {
           </section>
         )}
 
-        {/* Email Form - Only show after CAPTCHA is passed */}
+        {/* Email form - only show after CAPTCHA is passed */}
         {captchaPassed && (
           <section className={styles.formContainer}>
             <form onSubmit={handleSubmit}>

@@ -146,8 +146,8 @@ function Membership() {
                 </li>
                 <br />
                 <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
-                  For a complete list of Kingdom Movement policies, rules, and regulations, feel free to
-                  contact us at email@address.com
+                  For a complete list of Kingdom Movement policies, rules, and regulations, feel free to contact us at
+                  kngdm.mvmnt.llc@gmail.com
                 </li>
                 <br />
                 <li className={`${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
