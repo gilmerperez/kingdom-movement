@@ -38,8 +38,7 @@ const HomeCTA = () => {
       <section ref={componentRef} className={styles.ctaComponent}>
         {/* Logo */}
         <div className={`${styles.logoContainer} ${isVisible ? styles.fadeInElement : ""}`}>
-          <span className={styles.kngdm}>KNGDM</span>
-          <span className={styles.mvmnt}>MVMNT</span>
+          <img src="/logo/kngdm-mvmnt-white.png" alt="Kingdom Movement Logo" />
         </div>
 
         {/* Nutrition Support */}

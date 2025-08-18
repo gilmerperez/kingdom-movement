@@ -16,7 +16,7 @@
   opacity: 0;
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   flex-direction: column;
   justify-content: center;
   transform: translateY(30px);
@@ -26,19 +26,8 @@
   animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
-.kngdm {
-  width: 100%;
-  font-weight: 700;
-  line-height: 0.75;
-  font-size: 3.75rem;
-  transition: 0.3s ease-in;
-}
-
-.mvmnt {
-  width: 100%;
-  line-height: 1;
-  font-weight: 300;
-  font-size: 2.75rem;
+.logoContainer img {
+  width: 300px;
   transition: 0.3s ease-in;
 }
 
@@ -102,12 +91,8 @@
     padding: 1.75rem;
   }
 
-  .kngdm {
-    font-size: 3.25rem;
-  }
-
-  .mvmnt {
-    font-size: 2.25rem;
+  .logoContainer img {
+    width: 250px;
   }
 
   .text {
@@ -130,12 +115,8 @@
     padding: 1.5rem;
   }
 
-  .kngdm {
-    font-size: 2.75rem;
-  }
-
-  .mvmnt {
-    font-size: 1.75rem;
+  .logoContainer img {
+    width: 200px;
   }
 
   .text {

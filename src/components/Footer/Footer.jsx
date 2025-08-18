@@ -9,8 +9,7 @@ function Footer() {
           <section className={styles.topContainer}>
             {/* Logo */}
             <div className={styles.logoContainer}>
-              <span className={styles.kngdm}>KNGDM</span>
-              <span className={styles.mvmnt}>MVMNT</span>
+              <img src="/logo/kngdm-mvmnt-white.png" alt="Kingdom Movement Logo" />
             </div>
             {/* Legal text */}
             <p className={styles.legalDisclaimer}>
@@ -81,18 +80,16 @@ function Footer() {
               <nav className={styles.navItems}>
                 {/* Phone number */}
                 <a href="tel:3213375193">(321) 337-5193</a>
-                {/* Email */}
-                <a href="mailto:kngdm.mvmnt.llc@gmail.com">kngdm.mvmnt.llc@gmail.com</a>
                 {/* Address */}
                 <a
                   href="https://www.google.com/maps/place/Rangers+Kingdom+LLC/@28.4598745,-81.4403449,17z/data=!4m6!3m5!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!8m2!3d28.4598745!4d-81.43777!16s%2Fg%2F11rdz8gr7f?authuser=1&entry=tts&g_ep=EgoyMDI1MDIxMC4wIPu8ASoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  6881 Kingspointe Pkwy
-                  <br />
-                  Suite #4 Orlando, FL 32819
+                  6881 Kingspointe Parkway <br /> Suite #4 Orlando, FL 32819
                 </a>
+                {/* Email */}
+                <a href="mailto:kngdm.mvmnt.llc@gmail.com">kngdm.mvmnt.llc@gmail.com</a>
               </nav>
             </section>
           </section>
