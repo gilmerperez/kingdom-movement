@@ -56,18 +56,15 @@ function Nutrition() {
 
   return (
     <>
-      {/* Banner */}
-      <Banner
-        text="STRENGTH. SPIRIT. KINGDOM"
-        imageSrc="/images/gym.jpg"
-        secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
-        gradient={true}
-        gradientDirection="to top"
-        gradientColors={["hsla(0, 0%, 5%)", "hsl(0, 0%, 0%, 0.0)"]}
-      />
-
       <main>
         <section className={styles.nutritionContainer}>
+          {/* Banner */}
+          <Banner
+            imageSrc="/images/gym.jpg"
+            text="STRENGTH. SPIRIT. KINGDOM"
+            secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
+          />
+
           {/* Heading */}
           <h1 className={styles.heading}>NUTRITION MENU</h1>
 

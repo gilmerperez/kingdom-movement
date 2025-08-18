@@ -33,18 +33,15 @@ function Schedule() {
 
   return (
     <>
-      {/* Banner */}
-      <Banner
-        text="MORE THAN FITNESS — IT'S A MOVEMENT"
-        imageSrc="/images/group3.jpg"
-        secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
-        gradient={true}
-        gradientDirection="to top"
-        gradientColors={["hsla(0, 0%, 5%)", "hsl(0, 0%, 0%, 0.0)"]}
-      />
-
       <main>
         <section className={styles.scheduleContainer}>
+          {/* Banner */}
+          <Banner
+            imageSrc="/images/group3.jpg"
+            text="MORE THAN FITNESS — IT'S A MOVEMENT"
+            secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
+          />
+
           {/* Heading */}
           <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
 

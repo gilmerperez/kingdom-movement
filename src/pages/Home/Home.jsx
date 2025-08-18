@@ -15,34 +15,28 @@ function Home() {
   }, []);
 
   return (
-    <>
-      {/* Banner */}
-      <Banner
-        text="BUILT FOR GLORY — BORN TO MOVE"
-        imageSrc="/images/home1.jpg"
-        secondaryText="EVERY PERSON IS TRAINED TO RISE — MENTALLY, PHYSICALLY, SPIRITUALLY"
-        gradient={true}
-        gradientDirection="to top"
-        gradientColors={["hsla(0, 0%, 5%)", "hsl(0, 0%, 0%, 0.0)"]}
-      />
-
-      <main>
-        <section className={styles.homeContainer}>
-          {/* Who we are */}
-          <WhoWeAre />
-          {/* Our mission */}
-          <OurMission />
-          {/* Coaches */}
-          <Coaches />
-          {/* Why us */}
-          <WhyUs />
-          {/* Nutrition */}
-          <Nutrition />
-          {/* CTA component */}
-          <HomeCTA />
-        </section>
-      </main>
-    </>
+    <main>
+      <section className={styles.homeContainer}>
+        {/* Banner */}
+        <Banner
+          imageSrc="/images/home1.jpg"
+          text="BUILT FOR GLORY — BORN TO MOVE"
+          secondaryText="EVERY PERSON IS TRAINED TO RISE — MENTALLY, PHYSICALLY, SPIRITUALLY"
+        />
+        {/* Who we are */}
+        <WhoWeAre />
+        {/* Our mission */}
+        <OurMission />
+        {/* Coaches */}
+        <Coaches />
+        {/* Why us */}
+        <WhyUs />
+        {/* Nutrition */}
+        <Nutrition />
+        {/* CTA component */}
+        <HomeCTA />
+      </section>
+    </main>
   );
 }
 
