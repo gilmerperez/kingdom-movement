@@ -9,7 +9,7 @@ function Footer() {
           <section className={styles.topContainer}>
             {/* Logo */}
             <div className={styles.logoContainer}>
-              <img src="/logo/kngdm-mvmnt-white.png" alt="Kingdom Movement Logo" />
+              <img src="/logo-white.png" alt="Kingdom Movement Logo" />
             </div>
             {/* Legal text */}
             <p className={styles.legalDisclaimer}>

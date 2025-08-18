@@ -75,10 +75,7 @@ function Header() {
         <section className={styles.headerContainer}>
           {/* Logo */}
           <NavLink to="/" className={styles.logoContainer}>
-            <img
-              src={theme === "dark" ? "/logo/kngdm-mvmnt-white.png" : "/logo/kngdm-mvmnt-black.png"}
-              alt="Kingdom Movement Logo"
-            />
+            <img src={theme === "dark" ? "/logo-white.png" : "/logo-black.png"} alt="Kingdom Movement Logo" />
           </NavLink>
 
           {/* Site navigation */}
