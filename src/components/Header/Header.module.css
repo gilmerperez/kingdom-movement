@@ -257,14 +257,17 @@ header {
 }
 
 .mobileMenu.show {
-  padding: 0.5rem;
+  padding-top: 1rem;
   max-height: 500px;
+}
+
+* {
+  /* border: 1px solid red; */
 }
 
 .mobileMenu a {
   padding: 0.25rem;
   position: relative;
-  font-size: 1.25rem;
   text-align: center;
   text-decoration: none;
   transition: 0.3s ease;
@@ -298,7 +301,7 @@ header {
 .dropdownThemeButton {
   gap: 0.5rem;
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1rem;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in;
@@ -310,7 +313,7 @@ header {
 
 .dropdownFreeClassButton {
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 0.25rem 0.5rem;
   transition: 0.3s ease-in;
   border: 2px solid var(--primary);
