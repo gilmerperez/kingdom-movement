@@ -28,10 +28,6 @@ header {
   justify-content: space-between;
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 /* Logo */
 .logoContainer img {
   width: 175px;
