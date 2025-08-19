@@ -31,14 +31,7 @@ function NutritionDetail() {
   return (
     <>
       {/* Banner */}
-      <Banner
-        text={menuItem.name}
-        imageSrc={menuItem.imagePath}
-        secondaryText={menuItem.description}
-        gradient={true}
-        gradientDirection="to top"
-        gradientColors={["hsla(0, 0%, 5%)", "hsl(0, 0%, 0%, 0.0)"]}
-      />
+      <Banner imageSrc={menuItem.imagePath} text={menuItem.name} secondaryText={menuItem.description} />
 
       <div className={styles.menuItemContainer}>
         {/* Add-ons section */}
