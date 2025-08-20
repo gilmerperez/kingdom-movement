@@ -15,10 +15,6 @@
   margin-bottom: 1rem;
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 .logoContainer {
   display: flex;
   align-items: center;
