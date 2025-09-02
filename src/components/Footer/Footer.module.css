@@ -9,7 +9,6 @@
   color: hsl(0, 0%, 100%);
 }
 
-/* Logo, legal disclaimer, and copyright */
 .topContainer {
   text-align: center;
   margin-bottom: 1rem;
@@ -30,17 +29,18 @@
 
 /* Legal disclaimer */
 .legalDisclaimer {
-  margin: 0 auto;
   max-width: 800px;
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
   color: hsl(0, 0%, 80%);
+  transition: 0.3s ease-in;
 }
 
 /* Copyright */
 .copyright {
   font-weight: 500;
   font-size: 1.15rem;
+  transition: 0.3s ease-in;
 }
 
 /* Seperator */
@@ -52,12 +52,12 @@
   background-color: hsl(0, 0%, 50%);
 }
 
-/* Legal pages, social links, site navigation, and contact info */
 .bottomContainer {
+  gap: 1rem;
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .legalPages,
@@ -71,7 +71,7 @@
 .navHeader {
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .navItems {
@@ -90,6 +90,7 @@
 
 .navItems a:hover {
   color: hsl(0, 0%, 100%);
+  transform: translateX(5px);
 }
 
 /* Tablet responsiveness */
@@ -98,63 +99,46 @@
     width: 225px;
   }
 
-  .bottomContainer {
-    flex-direction: column;
-  }
-
-  .legalPages:not(:last-child),
-  .siteNavigation:not(:last-child),
-  .socialLinks:not(:last-child),
-  .contactInfo:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-
-  .navHeader {
-    font-size: 1.75rem;
-    margin-bottom: 0rem;
-  }
-
-  .navItems a {
-    gap: 0.1rem;
-    font-size: 1.25rem;
-  }
-
-  .navItems a:hover {
-    margin-left: 0.25rem;
-  }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 480px) {
-  .logoContainer img {
-    width: 200px;
-  }
-
   .legalDisclaimer {
     font-size: 1rem;
-    margin-bottom: 0.25rem;
   }
 
   .copyright {
     font-size: 1rem;
   }
 
-  .seperator {
-    height: 1px;
-  }
-
-  .legalPages:not(:last-child),
-  .siteNavigation:not(:last-child),
-  .socialLinks:not(:last-child),
-  .contactInfo:not(:last-child) {
-    margin-bottom: 0.75rem;
+  .bottomContainer {
+    flex-direction: column;
   }
 
   .navHeader {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .navItems a {
     font-size: 1.15rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .logoContainer img {
+    width: 175px;
+  }
+
+  .legalDisclaimer {
+    font-size: 0.95rem;
+  }
+
+  .copyright {
+    font-size: 0.95rem;
+  }
+
+  .navHeader {
+    font-size: 1.15rem;
+  }
+
+  .navItems a {
+    font-size: 1rem;
   }
 }
