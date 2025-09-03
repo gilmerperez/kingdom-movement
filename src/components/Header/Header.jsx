@@ -115,7 +115,7 @@ function Header() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
+                  href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
                 >
                   FREE CLASS
                 </a>
@@ -175,7 +175,7 @@ function Header() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
+                    href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
                   >
                     FREE CLASS
                   </a>

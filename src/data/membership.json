@@ -12,7 +12,8 @@
         "1 Wellness Profile Per Month"
       ],
       "isPopular": false,
-      "ctaText": "JOIN HYROX"
+      "ctaText": "JOIN HYROX",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D296678%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318648"
     },
     {
       "id": "bronze",
@@ -27,7 +28,8 @@
         "1 Wellness Profile Per Month"
       ],
       "isPopular": false,
-      "ctaText": "START BRONZE"
+      "ctaText": "START BRONZE",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D296677%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318643"
     },
     {
       "id": "silver",
@@ -42,7 +44,8 @@
         "1 Wellness Profile Per Month"
       ],
       "isPopular": false,
-      "ctaText": "CHOOSE SILVER"
+      "ctaText": "CHOOSE SILVER",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D295212%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318599"
     },
     {
       "id": "gold",
@@ -57,7 +60,8 @@
         "1 Wellness Profile Per Month"
       ],
       "isPopular": false,
-      "ctaText": "JOIN GOLD"
+      "ctaText": "JOIN GOLD",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D295309%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318583"
     },
     {
       "id": "diamond",
@@ -73,7 +77,8 @@
         "1 Wellness Profile Per Month"
       ],
       "isPopular": true,
-      "ctaText": "BECOME DIAMOND"
+      "ctaText": "BECOME DIAMOND",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D252558%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318554"
     }
   ]
 }

@@ -47,6 +47,7 @@ function Membership() {
 
     return () => {
       if (additionalInfoRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(additionalInfoRef.current);
       }
     };
@@ -110,7 +111,10 @@ function Membership() {
                 </ul>
 
                 {/* Sign up button */}
-                <button className={`${styles.signUpButton} ${membership.isPopular ? styles.popularButton : ""}`}>
+                <button
+                  onClick={() => window.open(membership.signupLink, "_blank")}
+                  className={`${styles.signUpButton} ${membership.isPopular ? styles.popularButton : ""}`}
+                >
                   {membership.ctaText}
                 </button>
               </div>
