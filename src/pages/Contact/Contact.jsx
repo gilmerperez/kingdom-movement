@@ -39,7 +39,7 @@ function Contact() {
   // Send email
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = "kngdm.mvmnt.llc@gmail.com";
+    const email = "KNGDM.MVMNT.LLC@gmail.com";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
   };
