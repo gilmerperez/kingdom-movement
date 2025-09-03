@@ -26,21 +26,30 @@ header {
   justify-content: space-between;
 }
 
+/* Desktop header */
+.desktopHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Logo */
 .logoContainer img {
   width: 175px;
   transition: 0.3s ease-in;
 }
 
-/* Site navigation */
-.siteNavigation {
+.navContainer {
   gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease-in;
 }
 
-.navLinks {
+/* Site navigation */
+.navItems {
   gap: 1rem;
   display: flex;
   font-size: 1.5rem;
@@ -49,20 +58,13 @@ header {
   transition: 0.3s ease-in;
 }
 
-.navLink {
+.navItems a {
   position: relative;
-  display: inline-block;
   transition: 0.3s ease-in;
 }
 
-.navLinks a {
-  position: relative;
-  display: inline-block;
-  transition: 0.3s ease-in;
-}
-
-/* Underline effect */
-.navLink::after {
+/* Hover underline effect */
+.navItems a::after {
   left: 50%;
   width: 100%;
   height: 2px;
@@ -75,14 +77,14 @@ header {
   transform: translateX(-50%) scaleX(0);
 }
 
-/* Underline on hover */
-.navLink:hover::after {
+/* Prevent hover effect on active link */
+.navItems a:hover:not(.activeLink)::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Underline on active page */
-.activeLink::after {
-  transform: translateX(-50%) scaleX(1);
+/* Active link */
+.navItems a.activeLink {
+  border-bottom: 2px solid var(--primary);
 }
 
 /* Seperator */
@@ -99,10 +101,12 @@ header {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in;
+  color: var(--text-primary);
   background-color: var(--header-bg-color);
 }
 
 .themeButton:hover {
+  transform: translateY(-3px);
   color: var(--text-secondary);
 }
 
@@ -119,8 +123,8 @@ header {
 }
 
 .freeClassButton:hover {
-  transform: scale(1.05);
   color: hsl(0, 0%, 100%);
+  transform: translateY(-3px);
   background-color: var(--primary);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -130,11 +134,11 @@ header {
     width: 150px;
   }
 
-  .siteNavigation {
+  .navContainer {
     gap: 0.85rem;
   }
 
-  .navLinks {
+  .navItems {
     gap: 0.85rem;
     font-size: 1.25rem;
   }
@@ -158,11 +162,11 @@ header {
     width: 125px;
   }
 
-  .siteNavigation {
+  .navContainer {
     gap: 0.75rem;
   }
 
-  .navLinks {
+  .navItems {
     gap: 0.75rem;
     font-size: 1.15rem;
   }
@@ -182,11 +186,11 @@ header {
 }
 
 @media (max-width: 775px) {
-  .siteNavigation {
+  .navContainer {
     gap: 0.5rem;
   }
 
-  .navLinks {
+  .navItems {
     gap: 0.5rem;
     font-size: 1rem;
   }
@@ -200,7 +204,7 @@ header {
   }
 
   /* Get rid of theme button icon */
-  .themeButton:not(.dropdownThemeButton) p {
+  .themeButton:not(.sidebarThemeButton) p {
     display: none;
   }
 
@@ -231,110 +235,230 @@ header {
   }
 }
 
-/* Hamburger menu */
-.hamburger {
+/* Mobile header */
+.mobileHeader {
+  width: 100%;
   display: none;
-}
-
-.hamburger.open {
-  transition: 0.3s ease;
-  transform: rotate(180deg);
-}
-
-/* Dropdown menu */
-.mobileMenu {
-  gap: 0.5rem;
-  display: flex;
-  max-height: 0;
-  overflow: hidden;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  transition: max-height 0.5s ease;
+  justify-content: space-between;
 }
 
-.mobileMenu.show {
-  padding-top: 1rem;
-  max-height: 500px;
-}
-
-.mobileMenu a {
-  padding: 0.25rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-/* Underline effect */
-.mobileMenu a::after {
-  left: 50%;
-  width: 0%;
-  bottom: 0;
-  height: 2px;
-  content: "";
-  position: absolute;
-  background-color: var(--primary);
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-/* Underline on hover */
-.mobileMenu a:not(:last-child):hover::after {
-  left: 0;
-  width: 100%;
-}
-
-/* Underline on active page */
-.mobileMenu :global(.active)::after {
-  left: 0;
-  width: 100%;
-}
-
-/* Mobile menu theme button */
-.dropdownThemeButton {
-  gap: 0.5rem;
-  display: flex;
-  font-size: 1rem;
-  align-items: center;
-  justify-content: center;
+/* Phone icon */
+.phoneButton {
+  display: none;
+  background: none;
+  font-size: 0.875rem;
   transition: 0.3s ease-in;
+  color: var(--text-primary);
 }
 
-.dropdownThemeButton:hover {
+.phoneButton:hover {
+  transform: scale(1.15);
   color: var(--text-secondary);
 }
 
-.dropdownFreeClassButton {
-  font-weight: 500;
-  border-radius: 4px;
-  padding: 0.25rem 0.5rem;
-  transition: 0.3s ease-in;
-  border: 2px solid var(--primary);
-  background-color: var(--header-bg-color);
+/* Logo */
+.mobileLogoContainer img {
+  width: 125px;
 }
 
-.dropdownFreeClassButton:hover {
-  transform: scale(1.05);
-  color: hsl(0, 0%, 100%);
-  background-color: var(--primary);
-  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.5);
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  transition: transform 0.2s ease-in, color 0.3s ease-in;
 }
 
-/* Mobile responsiveness/Hamburger menu breakpoint */
-@media (max-width: 480px) {
-  .logoContainer img {
-    width: 125px;
+.hamburger:hover {
+  transform: scale(1.15);
+  color: var(--text-secondary);
+}
+
+.hamburger i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger i.spin {
+  animation: hamburgerSpin 0.3s ease-in-out;
+}
+
+@keyframes hamburgerSpin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  .siteNavigation {
+/* Hide desktop layout and show mobile layout */
+@media (max-width: 480px) {
+  .desktopHeader {
     display: none;
   }
 
-  .hamburger {
+  .mobileHeader {
     display: flex;
   }
 
-  .mobileMenu {
-    display: flex;
+  .phoneButton {
+    display: block;
   }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Sidebar */
+.sidebarOverlay {
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  position: fixed;
+  background: hsla(0, 0%, 0%, 0.75);
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1.25rem;
+  max-width: 250px;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--header-bg-color);
+}
+
+/* Sidebar close button */
+.sidebarClose {
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  font-size: 1.25rem;
+  transition: 0.3s ease-in;
+  color: var(--text-primary);
+}
+
+.sidebarClose:hover {
+  transform: scale(1.15);
+  color: var(--text-secondary);
+}
+
+/* Sidebar site navigation */
+.sidebarNavItems {
+  gap: 1rem;
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 2.25rem;
+  flex-direction: column;
+}
+
+.sidebarNavItems a {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in;
+  justify-content: flex-start;
+}
+
+/* Prevent hover effect on active link */
+.sidebarNavItems a:hover:not(.activeLink) {
+  transform: translateX(5px);
+}
+
+/* Active link */
+.sidebarNavItems a.activeLink {
+  border-radius: 0.15rem;
+  padding: 0.5rem 0.75rem;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Seperator */
+.sidebarSeperator {
+  border: none;
+  height: 1.5px;
+  background-color: var(--primary-dark);
+}
+
+/* Free class button */
+.sidebarFreeClassButton {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 0.15rem;
+  padding: 0.5rem 0.75rem;
+  justify-content: center;
+  transition: 0.2s ease-in;
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Override the anchor tag hover effect inside the button */
+.sidebarFreeClassButton a:hover {
+  transform: none !important;
+}
+
+.sidebarFreeClassButton:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar footer */
+.sidebarFooter {
+  gap: 0.75rem;
+  padding: 0;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 0.3s ease-in;
+  color: var(--text-secondary);
+  background-color: var(--header-bg-color);
+}
+
+/* Theme button */
+.sidebarThemeButton {
+  gap: 0.75rem;
+  display: flex;
+  font-size: 1.15rem;
+  transition: 0.3s ease-in;
+  color: var(--text-secondary);
+}
+
+.sidebarThemeButton i {
+  color: var(--text-primary);
+}
+
+.sidebarThemeButton:hover {
+  color: var(--text-primary);
+  transform: translateX(5px);
+}
+
+/* Legal pages */
+.sidebarFooter a {
+  gap: 0.75rem;
+  display: flex;
+  font-size: 1.15rem;
+  transition: 0.3s ease-in;
+  color: var(--text-secondary);
+}
+
+.sidebarFooter a i {
+  color: var(--text-primary);
+}
+
+.sidebarFooter a:hover {
+  color: var(--text-primary);
+  transform: translateX(5px);
 }
