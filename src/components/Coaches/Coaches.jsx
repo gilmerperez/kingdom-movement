@@ -101,7 +101,7 @@ const Coaches = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.scheduleButton}
-              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26ProgramId%3D0%26LocationId%3D10458%26IsToViewScheduleOnly%3DTrue"
+              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
             >
               SCHEDULE YOUR FREE CLASS
             </a>

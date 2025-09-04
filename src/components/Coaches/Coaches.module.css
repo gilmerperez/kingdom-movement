@@ -3,7 +3,6 @@
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
-  text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -37,17 +36,18 @@
 
 /* Title */
 .coachesTitle {
+  width: 100%;
   font-size: 3.5rem;
   font-style: italic;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   transition: 0.3s ease-in;
   border-bottom: 3px solid var(--primary);
 }
 
 /* Description */
 .coachesDescription {
-  line-height: 1.35;
-  font-size: 1.35rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
@@ -71,6 +71,7 @@
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Carousel */
@@ -147,16 +148,17 @@
 }
 
 .dot:not(.activeDot):hover {
+  transform: scale(1.25);
   background-color: var(--text-primary);
 }
 
 .activeDot {
-  transform: scale(1.35);
+  transform: scale(1.5);
   background-color: var(--primary);
 }
 
 .coachInfo {
-  padding: 1.25rem;
+  padding: 1rem;
   transition: 0.3s ease-in;
   background: var(--header-bg-color);
 }
@@ -168,6 +170,7 @@
   display: inline-block;
   margin-bottom: 0.5rem;
   transition: 0.3s ease-in;
+  border-bottom: 3px solid var(--primary);
 }
 
 /* Coach description */
@@ -222,10 +225,6 @@
     font-size: 3rem;
   }
 
-  .coachesDescription {
-    font-size: 1.25rem;
-  }
-
   .scheduleButton {
     border: 2px solid var(--primary);
   }
@@ -235,7 +234,8 @@
   }
 
   .coachName {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
+    border-bottom: 2px solid var(--primary);
   }
 
   .coachDescription {
@@ -259,10 +259,6 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .coachesContainer {
-    padding: 1.75rem 0;
-  }
-
   .coachesContent {
     gap: 1.75rem;
   }
@@ -314,7 +310,7 @@
 }
 
 /* Make layout vertical on mobile */
-@media (max-width: 520px) {
+@media (max-width: 650px) {
   .coachesContent {
     grid-template-columns: 1fr;
   }
@@ -322,20 +318,16 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .coachesContainer {
-    padding: 1.5rem 0;
-  }
-
   .coachesContent {
     gap: 1.5rem;
+  }
+
+  .coachesTitle {
+    font-size: 2.25rem;
   }
 
   .scheduleButton {
     font-size: 1.25rem;
     border-radius: 4px;
-  }
-
-  .coachDescription {
-    font-size: 1.15rem;
   }
 }

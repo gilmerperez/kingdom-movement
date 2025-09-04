@@ -5,14 +5,12 @@
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
-  flex-direction: row;
   justify-content: center;
 }
 
 .title {
   opacity: 0;
   font-size: 5rem;
-  font-weight: 700;
   font-style: italic;
   transition: 0.3s ease-in;
   animation: slideInFromLeft 0.8s ease-out forwards;
@@ -20,8 +18,8 @@
 
 .seperator {
   width: 3px;
-  height: 175px;
-  transition: 0.3s ease-in-out;
+  height: 120px;
+  transition: 0.3s ease-in;
   background-color: var(--primary);
 }
 
@@ -31,9 +29,9 @@
 
 .text {
   opacity: 0;
-  line-height: 1.5;
   text-align: left;
-  font-size: 1.35rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
   transition: 0.3s ease-in;
   color: var(--text-secondary);
   animation: slideInFromRight 0.8s ease-out 0.3s forwards;
@@ -45,7 +43,7 @@
   }
 
   .text {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -55,7 +53,7 @@
   }
 
   .text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -63,20 +61,12 @@
   .whoWeAreSection {
     gap: 2rem;
   }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .text {
-    font-size: 1.15rem;
-  }
 }
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .whoWeAreSection {
-    gap: 1rem;
+    gap: 0.75rem;
     flex-direction: column;
   }
 
@@ -85,13 +75,9 @@
   }
 
   .seperator {
+    width: 50%;
     height: 3px;
-    width: 350px;
     margin-right: auto;
-  }
-
-  .text {
-    font-size: 1.25rem;
   }
 }
 
@@ -102,17 +88,16 @@
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .seperator {
-    height: 3px;
-    width: 275px;
+    width: 75%;
+    height: 2px;
   }
 
   .text {
-    line-height: 1.25;
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 }
 
