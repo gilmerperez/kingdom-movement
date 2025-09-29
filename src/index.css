@@ -62,6 +62,18 @@ picture {
   max-width: 100%; /* Keeps media from overflowing their containers */
 }
 
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  font-weight: 700;
+  font-style: italic;
+}
+
 /* UNIVERSAL RESET - Applies to all elements and pseudo-elements */
 *,
 *::before,
