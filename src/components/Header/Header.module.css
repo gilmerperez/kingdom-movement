@@ -117,6 +117,7 @@ header {
 .freeClassButton {
   font-weight: 500;
   font-size: 1.5rem;
+  font-style: italic;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
@@ -402,6 +403,7 @@ header {
   display: flex;
   font-weight: 500;
   font-size: 1.5rem;
+  font-style: italic;
   align-items: center;
   padding: 0.5rem 0rem;
   transition: 0.3s ease;
