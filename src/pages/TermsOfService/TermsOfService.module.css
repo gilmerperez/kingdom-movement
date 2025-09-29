@@ -2,43 +2,53 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  max-width: 800px;
-  text-align: center;
+  min-height: 65vh;
+  max-width: 1000px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Heading */
-.heading {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  transition: 0.3s ease-in;
-  border-bottom: 3px solid var(--primary);
-}
-
-.terms {
-  text-align: left;
-}
-
 /* Introduction */
-.introduction {
-  font-size: 1.5rem;
+.termsOfServiceIntroduction {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.termsHeading {
-  font-weight: 500;
-  font-size: 1.5rem;
+/* Title */
+.termsOfServiceTitle {
+  font-size: 3.5rem;
   display: inline-block;
-  margin-bottom: 0.25rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.75rem;
   border-bottom: 3px solid var(--primary);
 }
 
+/* Description */
+.termsOfServiceDescription {
+  line-height: 1.25;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Terms of service */
+.terms {
+  text-align: left;
+}
+
+/* Terms heading */
+.termsHeading {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 0.15rem;
+  border-bottom: 3px solid var(--primary);
+}
+
+/* Terms text */
 .termsText {
-  font-weight: 400;
+  line-height: 1.25;
   font-size: 1.25rem;
   color: var(--text-secondary);
 }
@@ -49,12 +59,12 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .heading {
+  .termsOfServiceTitle {
     font-size: 2.5rem;
   }
 
-  .introduction {
-    font-size: 1.25rem;
+  .termsOfServiceDescription {
+    font-size: 1.15rem;
   }
 
   .termsHeading {
@@ -68,16 +78,18 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .heading {
-    font-size: 2.25rem;
+  .termsOfServiceTitle {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary);
   }
 
-  .introduction {
-    font-size: 1.15rem;
+  .termsOfServiceDescription {
+    font-size: 1rem;
   }
 
   .termsHeading {
     font-size: 1.15rem;
+    border-bottom: 2px solid var(--primary);
   }
 
   .termsText {
