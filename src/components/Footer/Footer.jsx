@@ -28,7 +28,7 @@ function Footer() {
           <section className={styles.bottomContainer}>
             {/* Site navigation */}
             <section className={styles.siteNavigation}>
-              <h5 className={styles.navHeader}>Pages</h5>
+              <h5 className={styles.navHeader}>PAGES</h5>
               <nav className={styles.navItems}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/nutrition">Nutrition</NavLink>
@@ -38,7 +38,7 @@ function Footer() {
             </section>
             {/* Social links */}
             <section className={styles.socialLinks}>
-              <h5 className={styles.navHeader}>Connect</h5>
+              <h5 className={styles.navHeader}>CONNECT</h5>
               <nav className={styles.navItems}>
                 {/* Facebook */}
                 <a
@@ -64,7 +64,7 @@ function Footer() {
             </section>
             {/* Legal pages */}
             <section className={styles.legalPages}>
-              <h5 className={styles.navHeader}>Legal</h5>
+              <h5 className={styles.navHeader}>LEGAL</h5>
               <nav className={styles.navItems}>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/privacy-policy">Privacy Policy</NavLink>
@@ -73,20 +73,21 @@ function Footer() {
             </section>
             {/* Contact info */}
             <section className={styles.contactInfo}>
-              <h5 className={styles.navHeader}>Contact</h5>
+              <h5 className={styles.navHeader}>CONTACT</h5>
               <nav className={styles.navItems}>
                 {/* Phone number */}
                 <a href="tel:3213520639">(321) 352-0639</a>
+
+                {/* Email */}
+                <a href="mailto:kngdm.mvmnt.llc@gmail.com">kngdm.mvmnt.llc@gmail.com</a>
                 {/* Address */}
                 <a
                   href="https://www.google.com/maps/dir//6881+Kingspointe+Pkwy+Suit+%234,+Orlando,+FL+32819/@28.4598497,-81.5201714,27790m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!2m2!1d-81.43777!2d28.4598745?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  6881 Kingspointe Parkway <br /> Suite #4 Orlando, FL 32819
+                  6881 Kingspointe Parkway Suite #4 Orlando, FL 32819
                 </a>
-                {/* Email */}
-                <a href="mailto:KNGDM.MVMNT.LLC@gmail.com">KNGDM.MVMNT.LLC@gmail.com</a>
               </nav>
             </section>
           </section>

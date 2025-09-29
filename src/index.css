@@ -102,21 +102,9 @@ main {
   background-color: var(--bg-color); /* Matches the background of header/footer for visual cohesion */
 }
 
-/* FOOTER - Shared structural styling */
-footer {
-  width: 100%; /* Ensures full-width layout across viewport */
-  padding: 2rem; /* Provides consistent spacing inside footer */
-  transition: 0.3s ease-in; /* Smooth transition for footer */
-  background-color: var(--footer-bg-color); /* Applies theme background color from CSS variables */
-}
-
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   main {
-    padding: 1.75rem;
-  }
-
-  footer {
     padding: 1.75rem;
   }
 }
@@ -124,10 +112,6 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   main {
-    padding: 1.5rem;
-  }
-
-  footer {
     padding: 1.5rem;
   }
 }
