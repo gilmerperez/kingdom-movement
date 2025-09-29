@@ -22,26 +22,6 @@ function Header() {
   // * Custom styles for active page
   const navLinkClass = ({ isActive }) => (isActive ? styles.activeLink : undefined);
 
-  // * Mobile sidebar toggle
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isSpinning, setIsSpinning] = useState(false);
-
-  // Handle hamburger click with spin animation
-  const handleHamburgerClick = () => {
-    setIsSpinning(true);
-    setMenuOpen(true);
-
-    // Reset spinning state after animation completes
-    setTimeout(() => {
-      setIsSpinning(false);
-    }, 300);
-  };
-
-  // * Phone call handler
-  const handlePhoneClick = () => {
-    window.location.href = "tel:(321) 337-5193";
-  };
-
   // * Theme switch
   const [theme, setTheme] = useState("dark");
 
@@ -77,10 +57,29 @@ function Header() {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
+  // * Mobile sidebar toggle
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  // Handle hamburger click with spin animation
+  const handleHamburgerClick = () => {
+    setMenuOpen(true);
+    setIsSpinning(true);
+    // Reset spinning state after animation completes
+    setTimeout(() => {
+      setIsSpinning(false);
+    }, 300);
+  };
+
+  // * Phone call handler
+  const handlePhoneClick = () => {
+    window.location.href = "tel:(321) 337-5193";
+  };
+
   return (
     <>
       <header className={`${isScrollingUp ? styles.visible : styles.hidden}`}>
-        <section className={styles.headerContainer}>
+        <div className={styles.headerContainer}>
           {/* Desktop header */}
           <div className={styles.desktopHeader}>
             {/* Logo */}
@@ -108,7 +107,6 @@ function Header() {
               {/* Theme button */}
               <button className={styles.themeButton} onClick={toggleTheme}>
                 <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"}`}></i>
-                <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
               </button>
               {/* Free class button */}
               <button className={styles.freeClassButton}>
@@ -125,20 +123,20 @@ function Header() {
 
           {/* Mobile header */}
           <div className={styles.mobileHeader}>
-            {/* Phone icon */}
+            {/* Phone button */}
             <button className={styles.phoneButton} onClick={handlePhoneClick}>
-              <i className="fa-solid fa-phone fa-xl"></i>
+              <i className="fa-solid fa-phone-volume"></i>
             </button>
             {/* Logo */}
             <NavLink to="/" className={styles.mobileLogoContainer}>
               <img src={theme === "dark" ? "/logo-white.png" : "/logo-black.png"} alt="Kingdom Movement Logo" />
             </NavLink>
-            {/* Hamburger icon */}
+            {/* Hamburger button */}
             <button className={styles.hamburger} onClick={handleHamburgerClick}>
-              <i className={`fa-solid fa-bars fa-xl ${isSpinning ? styles.spin : ""}`}></i>
+              <i className={`fa-solid fa-bars ${isSpinning ? styles.spin : ""}`}></i>
             </button>
           </div>
-        </section>
+        </div>
       </header>
 
       {/* Sidebar */}
@@ -183,12 +181,12 @@ function Header() {
               </nav>
               {/* Sidebar footer */}
               <footer className={styles.sidebarFooter}>
-                {/* Theme button */}
+                {/* Sidebar theme button */}
                 <button className={`${styles.themeButton} ${styles.sidebarThemeButton}`} onClick={toggleTheme}>
                   <i className={`fa-solid ${theme === "dark" ? "fa-moon" : "fa-sun"}`}></i>
                   <p>{theme === "dark" ? "DARK" : "LIGHT"}</p>
                 </button>
-                {/* Legal pages */}
+                {/* Sidebar legal pages */}
                 <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>
                   <i className="fa-solid fa-paper-plane"></i>
                   CONTACT

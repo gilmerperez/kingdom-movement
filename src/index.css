@@ -1,26 +1,26 @@
 /* Roboto Condensed */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Light Mode */
-html[data-theme="light"] {
-  --header-bg-color: hsl(0, 0%, 100%);
-  --bg-color: hsl(0, 0%, 95%);
-  --text-primary: hsl(0, 0%, 5%);
-  --text-secondary: hsl(0, 0%, 20%);
-  --primary: hsl(0, 100%, 35%);
-  --primary-dark: hsl(0, 100%, 25%);
-  --footer-bg-color: hsl(0, 0%, 2.5%);
-}
-
 /* Dark Mode */
 html[data-theme="dark"] {
-  --header-bg-color: hsl(0, 0%, 2.5%);
   --bg-color: hsl(0, 0%, 5%);
+  --primary: hsl(0, 100%, 35%);
   --text-primary: hsl(0, 0%, 100%);
   --text-secondary: hsl(0, 0%, 80%);
-  --primary: hsl(0, 100%, 35%);
-  --primary-dark: hsl(0, 100%, 25%);
+  --header-bg-color: hsl(0, 0%, 2.5%);
   --footer-bg-color: hsl(0, 0%, 2.5%);
+  --header-shadow: 0px 5px 10px hsl(0, 0%, 100%, 0.25);
+}
+
+/* Light Mode */
+html[data-theme="light"] {
+  --bg-color: hsl(0, 0%, 95%);
+  --primary: hsl(0, 100%, 35%);
+  --text-primary: hsl(0, 0%, 5%);
+  --text-secondary: hsl(0, 0%, 10%);
+  --header-bg-color: hsl(0, 0%, 100%);
+  --footer-bg-color: hsl(0, 0%, 2.5%);
+  --header-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.25);
 }
 
 /* BUTTONS - Ensures buttons appear clickable */
@@ -94,14 +94,6 @@ body {
   font-family: "Roboto Condensed", Arial, sans-serif; /* Modern system font stack */
 }
 
-/* HEADER - Shared structural styling */
-header {
-  width: 100%; /* Ensures full-width layout across viewport */
-  padding: 1rem 2rem; /* Provides consistent spacing inside header */
-  transition: 0.3s ease-in; /* Smooth transition for header */
-  background-color: var(--header-bg-color); /* Applies theme background color from CSS variables */
-}
-
 /* MAIN - Base layout for page content */
 main {
   width: 100%; /* Ensures content stretches to full container width */
@@ -120,10 +112,6 @@ footer {
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  header {
-    padding: 0.875rem 1.75rem;
-  }
-
   main {
     padding: 1.75rem;
   }
@@ -135,10 +123,6 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  header {
-    padding: 0.875rem 1.5rem;
-  }
-
   main {
     padding: 1.5rem;
   }

@@ -1,10 +1,12 @@
-/* Sticky header */
 header {
   top: 0;
+  width: 100%;
   z-index: 999;
+  padding: 1.25rem;
   position: sticky;
   transition: 0.3s ease;
-  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.15);
+  box-shadow: var(--header-shadow);
+  background-color: var(--header-bg-color);
 }
 
 /* Show mobile header on scroll up */
@@ -21,7 +23,6 @@ header {
   width: 100%;
   display: flex;
   margin: 0 auto;
-  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
 }
@@ -37,15 +38,15 @@ header {
 /* Logo */
 .logoContainer img {
   width: 175px;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
 }
 
 .navContainer {
-  gap: 1rem;
+  gap: 0.75rem;
   display: flex;
   align-items: center;
+  transition: 0.3s ease;
   justify-content: center;
-  transition: 0.3s ease-in;
 }
 
 /* Site navigation */
@@ -54,13 +55,13 @@ header {
   display: flex;
   font-size: 1.5rem;
   align-items: center;
+  transition: 0.3s ease;
   justify-content: center;
-  transition: 0.3s ease-in;
 }
 
 .navItems a {
   position: relative;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
 }
 
 /* Hover underline effect */
@@ -71,15 +72,21 @@ header {
   content: "";
   bottom: -3px;
   position: absolute;
+  transition: 0.3s ease;
   transform-origin: center;
-  transition: 0.3s ease-in-out;
   background-color: var(--primary);
   transform: translateX(-50%) scaleX(0);
 }
 
-/* Prevent hover effect on active link */
+/* Prevent underline effect on active link */
 .navItems a:hover:not(.activeLink)::after {
   transform: translateX(-50%) scaleX(1);
+}
+
+/* Prevent hover effect on active link */
+.navItems a:hover:not(.activeLink) {
+  transform: translateY(-3px);
+  color: var(--text-secondary);
 }
 
 /* Active link */
@@ -90,23 +97,19 @@ header {
 /* Seperator */
 .seperator {
   font-size: 1.5rem;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
 }
 
 /* Theme button */
 .themeButton {
-  gap: 0.5rem;
-  display: flex;
   font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   color: var(--text-primary);
   background-color: var(--header-bg-color);
 }
 
 .themeButton:hover {
-  transform: translateY(-3px);
+  transform: scale(1.15);
   color: var(--text-secondary);
 }
 
@@ -114,32 +117,28 @@ header {
 .freeClassButton {
   font-weight: 500;
   font-size: 1.5rem;
-  border-radius: 6px;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
-  transition: 0.3s ease-in;
-  border: 2px solid var(--primary);
-  background-color: var(--header-bg-color);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 .freeClassButton:hover {
-  color: hsl(0, 0%, 100%);
-  transform: translateY(-3px);
-  background-color: var(--primary);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 925px) {
   .logoContainer img {
-    width: 150px;
-  }
-
-  .navContainer {
-    gap: 0.85rem;
+    width: 165px;
   }
 
   .navItems {
-    gap: 0.85rem;
+    gap: 0.9rem;
     font-size: 1.25rem;
   }
 
@@ -153,21 +152,20 @@ header {
 
   .freeClassButton {
     font-size: 1.25rem;
-    padding: 0.2rem 0.4rem;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 825px) {
   .logoContainer img {
-    width: 125px;
+    width: 155px;
   }
 
   .navContainer {
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .navItems {
-    gap: 0.75rem;
+    gap: 0.8rem;
     font-size: 1.15rem;
   }
 
@@ -181,17 +179,24 @@ header {
 
   .freeClassButton {
     font-size: 1.15rem;
-    padding: 0.15rem 0.35rem;
   }
 }
 
 @media (max-width: 775px) {
+  header {
+    padding: 1.15rem;
+  }
+
+  .logoContainer img {
+    width: 145px;
+  }
+
   .navContainer {
-    gap: 0.5rem;
+    gap: 0.55rem;
   }
 
   .navItems {
-    gap: 0.5rem;
+    gap: 0.7rem;
     font-size: 1rem;
   }
 
@@ -203,29 +208,28 @@ header {
     font-size: 1rem;
   }
 
-  /* Get rid of theme button icon */
-  .themeButton:not(.sidebarThemeButton) p {
-    display: none;
-  }
-
   .freeClassButton {
     font-size: 1rem;
-    border-radius: 4px;
   }
 }
 
-/* Only show navigation */
-@media (max-width: 650px) {
-  .logoContainer img {
-    width: 100px;
-  }
-
+/* Get rid of theme button */
+@media (max-width: 675px) {
   .themeButton {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
+/* Get rid of seperator and free class button */
+@media (max-width: 650px) {
+  .logoContainer img {
+    width: 150px;
+  }
+
+  .navItems {
+    font-size: 1.15rem;
+  }
+
   .seperator {
     display: none;
   }
@@ -243,12 +247,12 @@ header {
   justify-content: space-between;
 }
 
-/* Phone icon */
+/* Phone button */
 .phoneButton {
   display: none;
   background: none;
-  font-size: 0.875rem;
-  transition: 0.3s ease-in;
+  font-size: 1.15rem;
+  transition: 0.3s ease;
   color: var(--text-primary);
 }
 
@@ -262,13 +266,13 @@ header {
   width: 125px;
 }
 
-/* Hamburger icon */
+/* Hamburger button */
 .hamburger {
   display: none;
   background: none;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
   color: var(--text-primary);
-  transition: transform 0.2s ease-in, color 0.3s ease-in;
 }
 
 .hamburger:hover {
@@ -284,6 +288,7 @@ header {
   animation: hamburgerSpin 0.3s ease-in-out;
 }
 
+/* Hamburger spin animation */
 @keyframes hamburgerSpin {
   0% {
     transform: rotate(0deg);
@@ -294,7 +299,11 @@ header {
 }
 
 /* Hide desktop layout and show mobile layout */
-@media (max-width: 480px) {
+@media (max-width: 575px) {
+  header {
+    padding: 1rem;
+  }
+
   .desktopHeader {
     display: none;
   }
@@ -303,10 +312,7 @@ header {
     display: flex;
   }
 
-  .phoneButton {
-    display: block;
-  }
-
+  .phoneButton,
   .hamburger {
     display: block;
   }
@@ -329,23 +335,23 @@ header {
   max-width: 250px;
   position: relative;
   flex-direction: column;
+  box-shadow: var(--header-shadow);
   background-color: var(--header-bg-color);
 }
 
 /* Sidebar close button */
 .sidebarClose {
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
+  top: 1.25rem;
+  right: 1.25rem;
   background: none;
   position: absolute;
   font-size: 1.25rem;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   color: var(--text-primary);
 }
 
 .sidebarClose:hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
   color: var(--text-secondary);
 }
 
@@ -354,7 +360,7 @@ header {
   gap: 1rem;
   display: flex;
   font-size: 1.25rem;
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
   flex-direction: column;
 }
 
@@ -362,82 +368,84 @@ header {
   gap: 0.75rem;
   display: flex;
   align-items: center;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   justify-content: flex-start;
 }
 
 /* Prevent hover effect on active link */
 .sidebarNavItems a:hover:not(.activeLink) {
   transform: translateX(5px);
+  color: var(--text-secondary);
 }
 
 /* Active link */
 .sidebarNavItems a.activeLink {
-  border-radius: 0.15rem;
-  padding: 0.5rem 0.75rem;
+  position: relative;
+  margin-left: -1.75rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.75rem;
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 /* Seperator */
 .sidebarSeperator {
+  height: 2px;
   border: none;
-  height: 1.5px;
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
 }
 
 /* Free class button */
 .sidebarFreeClassButton {
   display: flex;
   font-weight: 500;
+  font-size: 1.5rem;
   align-items: center;
-  border-radius: 0.15rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0rem;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
   justify-content: center;
-  transition: 0.2s ease-in;
-  border: 2px solid var(--primary);
-  background-color: var(--header-bg-color);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary);
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
+}
+
+.sidebarFreeClassButton:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 }
 
 /* Override the anchor tag hover effect inside the button */
 .sidebarFreeClassButton a:hover {
   transform: none !important;
-}
-
-.sidebarFreeClassButton:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: var(--primary);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  color: hsl(0, 0%, 100%) !important;
 }
 
 /* Sidebar footer */
 .sidebarFooter {
-  gap: 0.75rem;
   padding: 0;
+  gap: 0.75rem;
   display: flex;
+  box-shadow: none;
   margin-top: auto;
   flex-direction: column;
   align-items: flex-start;
-  transition: 0.3s ease-in;
   color: var(--text-secondary);
   background-color: var(--header-bg-color);
 }
 
-/* Theme button */
+/* Sidebar theme button */
 .sidebarThemeButton {
-  gap: 0.75rem;
+  gap: 1rem;
   display: flex;
   font-size: 1.15rem;
-  transition: 0.3s ease-in;
+  align-items: center;
+  transition: 0.3s ease;
   color: var(--text-secondary);
-}
-
-.sidebarThemeButton i {
-  color: var(--text-primary);
 }
 
 .sidebarThemeButton:hover {
@@ -445,17 +453,14 @@ header {
   transform: translateX(5px);
 }
 
-/* Legal pages */
+/* Sidebar legal pages */
 .sidebarFooter a {
   gap: 0.75rem;
   display: flex;
   font-size: 1.15rem;
-  transition: 0.3s ease-in;
+  align-items: center;
+  transition: 0.3s ease;
   color: var(--text-secondary);
-}
-
-.sidebarFooter a i {
-  color: var(--text-primary);
 }
 
 .sidebarFooter a:hover {
