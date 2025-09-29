@@ -16,7 +16,7 @@ header {
 
 /* Hide mobile header on scroll down */
 .hidden {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
 }
 
 .headerContainer {
