@@ -98,8 +98,7 @@ body {
 main {
   width: 100%; /* Ensures content stretches to full container width */
   padding: 2rem; /* Adds breathing room around main content */
-  transition: 0.3s ease-in; /* Smooth transition for main */
-  background-color: var(--bg-color); /* Matches the background of header/footer for visual cohesion */
+  transition: 0.3s ease; /* Smooth transition for main */
 }
 
 /* Tablet responsiveness */

@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import styles from "./Home.module.css";
-import WhyUs from "../../components/WhyUs/WhyUs";
 import Banner from "../../components/Banner/Banner";
-import Coaches from "../../components/Coaches/Coaches";
-import HomeCTA from "../../components/HomeCTA/HomeCTA";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
-import Nutrition from "../../components/Nutrition/Nutrition";
 import OurMission from "../../components/OurMission/OurMission";
+import Coaches from "../../components/Coaches/Coaches";
+import WhyUs from "../../components/WhyUs/WhyUs";
+import Nutrition from "../../components/Nutrition/Nutrition";
+import HomeCTA from "../../components/HomeCTA/HomeCTA";
 
 function Home() {
   // Set page title
@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <main>
-      <section className={styles.homeContainer}>
+      <div className={styles.homeContainer}>
         {/* Banner */}
         <Banner
           imageSrc="/images/home1.jpg"
@@ -35,7 +35,7 @@ function Home() {
         <Nutrition />
         {/* CTA component */}
         <HomeCTA />
-      </section>
+      </div>
     </main>
   );
 }
