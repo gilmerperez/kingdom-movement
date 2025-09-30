@@ -28,6 +28,7 @@
 .termsOfServiceDescription {
   line-height: 1.25;
   font-size: 1.25rem;
+  transition: 0.3s ease;
   color: var(--text-secondary);
 }
 
