@@ -5,48 +5,49 @@ import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
 
 function Nutrition() {
-  // Set page title
+  // * Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Nutrition";
   }, []);
 
-  // State for managing selected category filter
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
-  // Get all categories for filter buttons
+  // * Get all categories for filter buttons
   const categories = [{ id: "all", name: "All Items" }, ...nutritionData.categories];
 
-  // Filter menu items based on selected category
+  // * State for managing selected category filter
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  // * Filter menu items based on selected category
   const filteredMenuItems =
     selectedCategory === "all"
       ? nutritionData.menuItems
       : nutritionData.menuItems.filter((item) => item.category === selectedCategory);
 
-  // Get the appropriate introduction text based on selected category
+  // * Get the appropriate introduction text based on selected category
   const getIntroductionText = () => {
+    // Get the appropriate introduction text
     if (selectedCategory === "all") {
       return "Elevate your fitness journey with our exceptional range of nutrition products, including invigorating teas, powerful mega-teas, premium protein shakes, and unique specialty items, all designed to fuel your body and enhance your performance.";
     }
-
+    // Get the appropriate category data
     const selectedCategoryData = nutritionData.categories.find((category) => category.id === selectedCategory);
-
+    // Return the appropriate introduction text
     return selectedCategoryData
       ? selectedCategoryData.description
       : "Fuel your workouts with our premium nutrition offerings";
   };
 
-  // Handle category filter selection
+  // * Handle category filter selection
   const handleCategorySelect = (categoryId) => {
     setSelectedCategory(categoryId);
   };
 
-  // Handle menu item click
+  // * Handle menu item click
   const navigate = useNavigate();
   const handleMenuItemClick = (itemId) => {
     navigate(`/nutrition/${itemId}`);
   };
 
-  // Function to truncate text with ellipsis
+  // * Function to truncate text with ellipsis
   const truncateText = (text, maxLength = 80) => {
     if (text.length <= maxLength) {
       return text;
@@ -57,7 +58,7 @@ function Nutrition() {
   return (
     <>
       <main>
-        <section className={styles.nutritionContainer}>
+        <div className={styles.nutritionContainer}>
           {/* Banner */}
           <Banner
             imageSrc="/images/gym.jpg"
@@ -65,11 +66,13 @@ function Nutrition() {
             secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
           />
 
-          {/* Heading */}
-          <h1 className={styles.heading}>NUTRITION MENU</h1>
-
           {/* Introduction */}
-          <p className={styles.introduction}>{getIntroductionText()}</p>
+          <section className={styles.nutritionIntroduction}>
+            {/* Title */}
+            <h1 className={styles.nutritionTitle}>NUTRITION MENU</h1>
+            {/* Description */}
+            <p className={styles.nutritionDescription}>{getIntroductionText()}</p>
+          </section>
 
           {/* Category filters */}
           <div className={styles.categoryFilters}>
@@ -87,8 +90,9 @@ function Nutrition() {
           {/* Menu items */}
           <div className={styles.menuGrid}>
             {filteredMenuItems.map((item) => (
+              // Individual menu item
               <div key={item.id} className={styles.menuCard} onClick={() => handleMenuItemClick(item.id)}>
-                {/* Food Image */}
+                {/* Food image */}
                 <div className={styles.imageContainer}>
                   <img
                     alt={item.name}
@@ -104,7 +108,6 @@ function Nutrition() {
                     <span>{item.name} Image</span>
                   </div>
                 </div>
-
                 {/* Food details */}
                 <div className={styles.foodDetails}>
                   <h3 className={styles.foodName}>{item.name}</h3>
@@ -120,7 +123,7 @@ function Nutrition() {
               <p>No items found in this category.</p>
             </div>
           )}
-        </section>
+        </div>
       </main>
     </>
   );
