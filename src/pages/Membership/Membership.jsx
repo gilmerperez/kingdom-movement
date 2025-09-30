@@ -20,7 +20,8 @@ function Membership() {
     const silver = memberships.find((m) => m.id === "silver");
     const bronze = memberships.find((m) => m.id === "bronze");
     const hyrox = memberships.find((m) => m.id === "hyrox");
-    return [diamond, gold, silver, bronze, hyrox].filter(Boolean);
+    const openbox = memberships.find((m) => m.id === "openbox");
+    return [diamond, gold, silver, bronze, hyrox, openbox].filter(Boolean);
   };
 
   // * Ref for additional info section
@@ -87,7 +88,9 @@ function Membership() {
                   membership.id === "gold" ? styles.gold : ""
                 } ${membership.id === "silver" ? styles.silver : ""} ${
                   membership.id === "bronze" ? styles.bronze : ""
-                } ${membership.id === "hyrox" ? styles.hyrox : ""}`}
+                }  ${membership.id === "hyrox" ? styles.hyrox : ""} ${
+                  membership.id === "openbox" ? styles.openbox : ""
+                }`}
               >
                 {membership.isPopular && <div className={styles.popularBadge}>MOST POPULAR</div>}
                 {/* Membership name */}
