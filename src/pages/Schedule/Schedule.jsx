@@ -4,18 +4,21 @@ import Banner from "../../components/Banner/Banner";
 import scheduleData from "../../data/schedule.json";
 
 function Schedule() {
-  // Set page title
+  // * Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Schedule";
   }, []);
 
+  // * State for managing selected day
   const [selectedDay, setSelectedDay] = useState("monday");
   const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
+  // Handle day select
   const handleDaySelect = (day) => {
     setSelectedDay(day);
   };
 
+  // Get day display name
   const getDayDisplayName = (day) => {
     const dayNames = {
       sunday: "SUNDAY",
@@ -28,13 +31,13 @@ function Schedule() {
     };
     return dayNames[day];
   };
-
+  // Get selected day data
   const selectedDayData = scheduleData.schedule[selectedDay];
 
   return (
     <>
       <main>
-        <section className={styles.scheduleContainer}>
+        <div className={styles.scheduleContainer}>
           {/* Banner */}
           <Banner
             imageSrc="/images/group3.jpg"
@@ -42,33 +45,35 @@ function Schedule() {
             secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
           />
 
-          {/* Heading */}
-          <h1 className={styles.heading}>CLASS SCHEDULE</h1>
-
           {/* Introduction */}
-          <p className={styles.introduction}>
-            Discover the perfect schedule to elevate your fitness journey. Each day offers unique activities designed to
-            challenge and inspire you. Join us and unlock your potential through consistent movement and dedication.
-          </p>
+          <section className={styles.scheduleIntroduction}>
+            {/* Title */}
+            <h1 className={styles.scheduleTitle}>CLASS SCHEDULE</h1>
+            {/* Description */}
+            <p className={styles.scheduleDescription}>
+              Discover the perfect schedule to elevate your fitness journey. Each day offers unique activities designed
+              to challenge and inspire you. Join us and unlock your potential through consistent movement and
+              dedication.
+            </p>
+          </section>
 
           {/* Schedule */}
-          <div className={styles.scheduleWrapper}>
+          <section className={styles.scheduleWrapper}>
             {/* Day tabs */}
             <div className={styles.dayTabs}>
               {days.map((day) => (
                 <button
                   key={day}
-                  className={`${styles.dayTab} ${selectedDay === day ? styles.activeTab : ""}`}
                   onClick={() => handleDaySelect(day)}
+                  className={`${styles.dayTab} ${selectedDay === day ? styles.activeTab : ""}`}
                 >
                   {getDayDisplayName(day)}
                 </button>
               ))}
             </div>
-            {/* Schedule content */}
+            {/* Closed message */}
             <div className={styles.scheduleContent}>
               {selectedDayData.status === "Closed" ? (
-                // Closed message
                 <div className={styles.closedMessage}>
                   <h2 className={styles.closedMessageTitle}>CLOSED</h2>
                   <p className={styles.closedMessageText}>
@@ -84,12 +89,14 @@ function Schedule() {
                     <div className={styles.timeHeader}>TIME</div>
                   </div>
                   <div>
-                    {/* Content */}
                     {selectedDayData.activities.map((activity, index) => (
+                      // Content
                       <div key={index} className={styles.tableRow}>
+                        {/* Activity */}
                         <div className={styles.activityCell}>
                           <span className={styles.activityType}>{activity.type}</span>
                         </div>
+                        {/* Time */}
                         <div className={styles.timeCell}>
                           <span className={styles.timeText}>{activity.time}</span>
                         </div>
@@ -99,8 +106,8 @@ function Schedule() {
                 </div>
               )}
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </>
   );
