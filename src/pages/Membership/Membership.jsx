@@ -4,15 +4,16 @@ import { useEffect, useState, useRef } from "react";
 import membershipData from "../../data/membership.json";
 
 function Membership() {
-  // Set page title
+  // * Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Membership";
     setMemberships(membershipData.memberships);
   }, []);
 
+  // * State for managing memberships
   const [memberships, setMemberships] = useState([]);
 
-  // Membership order
+  // * Membership order
   const reorderMemberships = (memberships) => {
     const diamond = memberships.find((m) => m.id === "diamond");
     const gold = memberships.find((m) => m.id === "gold");
@@ -22,10 +23,11 @@ function Membership() {
     return [diamond, gold, silver, bronze, hyrox].filter(Boolean);
   };
 
-  // Scroll animation for additional info section
-  const [isAdditionalInfoVisible, setIsAdditionalInfoVisible] = useState(false);
+  // * Ref for additional info section
   const additionalInfoRef = useRef(null);
+  const [isAdditionalInfoVisible, setIsAdditionalInfoVisible] = useState(false);
 
+  // * Scroll animation for additional info section
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -40,11 +42,11 @@ function Membership() {
         rootMargin: "0px 0px -50px 0px",
       }
     );
-
+    // Observe additional info section
     if (additionalInfoRef.current) {
       observer.observe(additionalInfoRef.current);
     }
-
+    // Clean up observer
     return () => {
       if (additionalInfoRef.current) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -56,7 +58,7 @@ function Membership() {
   return (
     <>
       <main>
-        <section className={styles.membershipContainer}>
+        <div className={styles.membershipContainer}>
           {/* Banner */}
           <Banner
             imageSrc="/images/home2.jpg"
@@ -64,18 +66,20 @@ function Membership() {
             secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
           />
 
-          {/* Heading */}
-          <h1 className={styles.heading}>MEMBERSHIP TIERS</h1>
-
           {/* Introduction */}
-          <p className={styles.introduction}>
-            Choose the plan that fits your fitness journey. Each membership tier is designed to support your goals,
-            whether you're just starting out or ready to push your limits. Join our community and transform your life
-            through movement.
-          </p>
+          <section className={styles.membershipIntroduction}>
+            {/* Title */}
+            <h1 className={styles.membershipTitle}>MEMBERSHIP TIERS</h1>
+            {/* Description */}
+            <p className={styles.membershipDescription}>
+              Choose the plan that fits your fitness journey. Each membership tier is designed to support your goals,
+              whether you're just starting out or ready to push your limits. Join our community and transform your life
+              through movement.
+            </p>
+          </section>
 
           {/* Membership cards */}
-          <div className={styles.membershipCards}>
+          <section className={styles.membershipCards}>
             {reorderMemberships(memberships).map((membership) => (
               <div
                 key={membership.id}
@@ -86,22 +90,16 @@ function Membership() {
                 } ${membership.id === "hyrox" ? styles.hyrox : ""}`}
               >
                 {membership.isPopular && <div className={styles.popularBadge}>MOST POPULAR</div>}
-
                 {/* Membership name */}
                 <h2 className={styles.membershipName}>{membership.name}</h2>
-
                 {/* Price / month */}
                 <div className={styles.priceContainer}>
-                  <span className={styles.currency}>$</span>
-                  <span className={styles.price}>{membership.price}</span>
-                  <span className={styles.period}>/month</span>
+                  <span className={styles.price}>${membership.price}/month</span>
                 </div>
-
                 {/* Seperator */}
                 <div className={styles.separator}></div>
-
                 {/* Membership benefits */}
-                <h3 className={styles.featuresTitle}>Membership Benefits</h3>
+                <span className={styles.featuresTitle}>MEMBERSHIP BENEFITS</span>
                 <ul className={styles.featuresList}>
                   {membership.features.map((feature, index) => (
                     <li key={index} className={styles.featureItem}>
@@ -109,7 +107,6 @@ function Membership() {
                     </li>
                   ))}
                 </ul>
-
                 {/* Sign up button */}
                 <button
                   onClick={() => window.open(membership.signupLink, "_blank")}
@@ -119,10 +116,10 @@ function Membership() {
                 </button>
               </div>
             ))}
-          </div>
+          </section>
 
           {/* Additional info */}
-          <div ref={additionalInfoRef} className={styles.additionalInfoContainer}>
+          <section ref={additionalInfoRef} className={styles.additionalInfoContainer}>
             <div className={styles.additionalInfo}>
               {/* Heading */}
               <h2 className={`${styles.additionalInfoTitle} ${isAdditionalInfoVisible ? styles.fadeInElement : ""}`}>
@@ -163,8 +160,8 @@ function Membership() {
                 </li>
               </ul>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </>
   );

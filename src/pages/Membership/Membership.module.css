@@ -3,95 +3,89 @@
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
-  text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Heading */
-.heading {
-  font-size: 3rem;
-  font-weight: 700;
+/* Introduction */
+.membershipIntroduction {
   margin-top: 2rem;
+  text-align: center;
   margin-bottom: 1rem;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
+}
+
+/* Title */
+.membershipTitle {
+  font-size: 3.5rem;
+  display: inline-block;
+  transition: 0.3s ease;
+  margin-bottom: 0.75rem;
   border-bottom: 3px solid var(--primary);
 }
 
-/* Introduction */
-.introduction {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
+/* Description */
+.membershipDescription {
+  line-height: 1.25;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  color: var(--text-secondary);
 }
 
 /* Membership cards */
 .membershipCards {
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
   display: grid;
-  max-width: 1200px;
-  justify-content: center;
-  transition: 0.3s ease-in;
-  grid-template-columns: repeat(3, 1fr);
+  transition: 0.3s ease;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .membershipCard {
   display: flex;
-  padding: 1.75rem;
+  padding: 1.25rem;
   position: relative;
-  border-radius: 8px;
+  align-items: center;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
   flex-direction: column;
-  transition: 0.3s ease-in;
+  justify-content: center;
   border: 1px solid var(--primary);
-  box-shadow: 3px 3px 15px hsla(0, 0%, 0%, 0.5);
-  background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
   background-color: var(--header-bg-color);
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
 }
 
 .membershipCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 5px 5px 20px hsla(0, 0%, 0%, 0.5);
+  transform: translateY(-5px);
 }
 
 /* Membership name */
 .membershipName {
-  font-weight: 700;
-  font-size: 2.5rem;
-  transition: 0.3s ease-in;
+  font-size: 3rem;
+  transition: 0.3s ease;
 }
 
 /* Price / month */
 .priceContainer {
   display: flex;
-  margin: 0 auto;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
 }
 
-.currency,
 .price {
-  font-weight: 700;
-  font-size: 2.5rem;
-  transition: 0.3s ease-in;
-}
-
-.period {
-  font-weight: 500;
-  font-size: 1.25rem;
-  transition: 0.3s ease-in;
+  font-size: 1.5rem;
+  font-style: italic;
+  transition: 0.3s ease;
   color: var(--text-secondary);
 }
 
 /* Seperator */
 .separator {
-  width: 75%;
-  height: 3px;
-  margin: 0.75rem 0;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.3s ease-in;
+  width: 100%;
+  height: 2px;
+  margin: 0.75rem;
+  transition: 0.3s ease;
   background-color: var(--primary);
 }
 
@@ -99,91 +93,78 @@
 .featuresTitle {
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 0.25rem;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
 }
 
 .featureItem {
-  padding: 0.5rem 0;
-  position: relative;
+  padding: 0.25rem;
   font-size: 1.25rem;
-  padding-left: 1.5rem;
-  transition: 0.3s ease-in;
+  text-align: center;
+  transition: 0.3s ease;
   color: var(--text-secondary);
-}
-
-/* Checkmark */
-.featureItem::before {
-  left: 0;
-  content: "✓";
-  font-weight: bold;
-  position: absolute;
-  color: var(--primary);
 }
 
 /* Sign up button */
 .signUpButton {
   width: 100%;
   padding: 0.75rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  border-radius: 4px;
-  margin-top: 0.75rem;
-  transition: 0.3s ease-in;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
   background-color: var(--primary);
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 .signUpButton:hover {
-  background-color: hsl(0, 100%, 25%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 }
 
 /* Individual styles for popular card */
 .membershipCard.popular {
   border: none;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
 }
 
 .membershipCard.popular .popularBadge {
   left: 50%;
-  top: -20px;
-  font-weight: 700;
+  top: -30px;
+  font-weight: 600;
   position: absolute;
   font-size: 1.25rem;
-  border-radius: 4px;
+  text-align: center;
+  border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
-  color: var(--text-primary);
   transform: translateX(-50%);
   background-color: var(--header-bg-color);
-  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
 }
 
 .membershipCard.popular .membershipName,
-.membershipCard.popular .currency,
-.membershipCard.popular .price,
-.membershipCard.popular .featuresTitle,
-.membershipCard.popular .featureItem,
-.membershipCard.popular .featureItem::before {
+.membershipCard.popular .featuresTitle {
   color: hsl(0, 0%, 100%);
+}
+
+.membershipCard.popular .price,
+.membershipCard.popular .featureItem {
+  color: hsl(0, 0%, 90%);
 }
 
 .membershipCard.popular .separator {
   background-color: hsl(0, 0%, 100%);
 }
 
-.membershipCard.popular .period {
-  color: hsl(0, 0%, 80%);
-}
-
-/* Sign up button */
 .membershipCard.popular .signUpButton {
-  color: var(--primary);
+  text-shadow: none;
+  color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 100%);
-}
-
-.membershipCard.popular .signUpButton:hover {
-  background-color: hsl(0, 0%, 80%);
 }
 
 /* Additional Info */
@@ -191,7 +172,8 @@
   width: 100vw;
   display: flex;
   padding: 2rem;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
   align-items: center;
   margin-bottom: -2rem;
   flex-direction: column;
@@ -202,31 +184,31 @@
 
 .additionalInfo {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .additionalInfoTitle {
   opacity: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
   transform: translateY(30px);
-}
-
-.additionalInfoTitle.fadeInElement {
-  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  border-bottom: 3px solid hsl(0, 0%, 100%);
 }
 
 .additionalInfoList li {
   opacity: 0;
-  padding: 0.5rem 0;
   font-size: 1.25rem;
-  display: inline-block;
-  margin-bottom: 0.25rem;
   transform: translateY(30px);
-  border-bottom: 2px solid hsl(0, 0%, 80%);
+}
+
+/* Animations */
+.additionalInfoTitle.fadeInElement {
+  animation: fadeInUp 0.8s ease-out 0s forwards;
 }
 
 .additionalInfoList li.fadeInElement {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
 /* Delayed animations for list items */
@@ -258,165 +240,6 @@
   animation-delay: 1.6s;
 }
 
-/* 2 column layout */
-@media (max-width: 1270px) {
-  .membershipCards {
-    max-width: 850px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Tablet responsiveness */
-@media (max-width: 768px) {
-  /* Heading */
-  .heading {
-    font-size: 2.5rem;
-    margin-top: 1.75rem;
-  }
-
-  /* Introduction */
-  .introduction {
-    font-size: 1.25rem;
-  }
-
-  /* Membership cards */
-  .membershipCards {
-    gap: 2.5rem;
-    max-width: 500px;
-    grid-template-columns: 1fr;
-  }
-
-  .membershipCard {
-    padding: 1.5rem;
-    border-radius: 6px;
-  }
-
-  /* Additional Info */
-  .additionalInfoContainer {
-    margin-top: 2.5rem;
-  }
-
-  .additionalInfoTitle {
-    font-size: 2.75rem;
-  }
-
-  .additionalInfoList li {
-    font-size: 1.15rem;
-    border-bottom: 2px solid hsl(0, 0%, 80%);
-  }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 480px) {
-  /* Heading */
-  .heading {
-    font-size: 2.25rem;
-    margin-top: 1.5rem;
-  }
-
-  /* Introduction */
-  .introduction {
-    font-size: 1.15rem;
-  }
-
-  /* Membership cards */
-  .membershipCards {
-    gap: 1.75rem;
-  }
-
-  .membershipCard {
-    padding: 1.25rem;
-    border-radius: 4px;
-  }
-
-  /* Membership name */
-  .membershipName {
-    font-size: 2.25rem;
-  }
-
-  .currency,
-  .price {
-    font-size: 2rem;
-  }
-
-  .period {
-    font-size: 1rem;
-  }
-
-  /* Seperator */
-  .separator {
-    margin: 0.5rem 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Membership benefits */
-  .featuresTitle {
-    font-size: 1.25rem;
-  }
-
-  .featureItem {
-    font-size: 1.15rem;
-    padding: 0.35rem 0;
-  }
-
-  /* Sign up button */
-  .signUpButton {
-    font-size: 1.25rem;
-  }
-
-  /* Individual styles for popular card */
-  .popularBadge {
-    top: -20px;
-    font-size: 1.15rem;
-  }
-
-  .membershipCard.popular .membershipName {
-    font-size: 2.25rem;
-  }
-
-  .membershipCard.popular .currency,
-  .membershipCard.popular .price {
-    font-size: 2rem;
-  }
-
-  .membershipCard.popular .period {
-    font-size: 1rem;
-  }
-
-  .membershipCard.popular .separator {
-    margin: 0.5rem 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .membershipCard.popular .featuresTitle {
-    font-size: 1.25rem;
-  }
-
-  .membershipCard.popular .featureItem {
-    font-size: 1.15rem;
-    padding: 0.35rem 0;
-  }
-
-  .membershipCard.popular .signUpButton {
-    font-size: 1.25rem;
-  }
-
-  /* Additional info */
-  .additionalInfoContainer {
-    margin-top: 2rem;
-  }
-
-  .additionalInfoTitle {
-    font-size: 2.25rem;
-  }
-
-  .additionalInfoList li {
-    font-size: 1.15rem;
-  }
-}
-
 /* Fade in and up animation */
 @keyframes fadeInUp {
   0% {
@@ -427,5 +250,96 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .membershipIntroduction {
+    margin-top: 1.75rem;
+  }
+
+  .membershipTitle {
+    font-size: 2.5rem;
+  }
+
+  .membershipDescription {
+    font-size: 1.15rem;
+  }
+
+  .membershipName {
+    font-size: 2.75rem;
+  }
+
+  .signUpButton {
+    font-size: 1.5rem;
+  }
+
+  .additionalInfoContainer {
+    padding: 1.75rem;
+  }
+
+  .additionalInfoTitle {
+    font-size: 2.5rem;
+  }
+
+  .additionalInfoList li {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .membershipIntroduction {
+    margin-top: 1.5rem;
+  }
+
+  .membershipTitle {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .membershipDescription {
+    font-size: 1rem;
+  }
+
+  .membershipCard {
+    padding: 1rem;
+  }
+
+  .membershipName {
+    font-size: 2rem;
+  }
+
+  .price {
+    font-size: 1.25rem;
+  }
+
+  .featuresTitle {
+    font-size: 1.25rem;
+  }
+
+  .featureItem {
+    font-size: 1.15rem;
+  }
+
+  .signUpButton {
+    font-size: 1.25rem;
+  }
+
+  .membershipCard.popular .popularBadge {
+    font-size: 1rem;
+  }
+
+  .additionalInfoContainer {
+    padding: 1.5rem;
+  }
+
+  .additionalInfoTitle {
+    font-size: 2rem;
+  }
+
+  .additionalInfoList li {
+    font-size: 1rem;
   }
 }
