@@ -12,8 +12,8 @@
 .membershipIntroduction {
   margin-top: 2rem;
   text-align: center;
-  margin-bottom: 1rem;
   transition: 0.3s ease;
+  margin-bottom: 2.5rem;
 }
 
 /* Title */
@@ -38,7 +38,6 @@
   gap: 1rem;
   width: 100%;
   display: grid;
-  transition: 0.3s ease;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
@@ -85,7 +84,6 @@
   width: 100%;
   height: 2px;
   margin: 0.75rem;
-  transition: 0.3s ease;
   background-color: var(--primary);
 }
 
@@ -129,7 +127,6 @@
 /* Individual styles for popular card */
 .membershipCard.popular {
   border: none;
-  transition: 0.3s ease;
   background: linear-gradient(to top, hsl(0, 100%, 25%), hsl(0, 100%, 35%));
 }
 
@@ -140,6 +137,7 @@
   position: absolute;
   font-size: 1.25rem;
   text-align: center;
+  transition: 0.3s ease;
   border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
   transform: translateX(-50%);
@@ -176,6 +174,7 @@
   text-align: center;
   align-items: center;
   margin-bottom: -2rem;
+  transition: 0.3s ease;
   flex-direction: column;
   justify-content: center;
   color: hsl(0, 0%, 100%);
@@ -192,6 +191,7 @@
   font-size: 3.5rem;
   margin-bottom: 1rem;
   display: inline-block;
+  transition: 0.3s ease;
   transform: translateY(30px);
   border-bottom: 3px solid hsl(0, 0%, 100%);
 }
@@ -199,6 +199,7 @@
 .additionalInfoList li {
   opacity: 0;
   font-size: 1.25rem;
+  transition: 0.3s ease;
   transform: translateY(30px);
 }
 
@@ -337,6 +338,7 @@
 
   .additionalInfoTitle {
     font-size: 2rem;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
   }
 
   .additionalInfoList li {
