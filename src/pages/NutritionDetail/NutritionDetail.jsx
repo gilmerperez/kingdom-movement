@@ -19,8 +19,8 @@ function NutritionDetail() {
       setMenuItem(item);
       document.title = `Kingdom Movement | ${item.name}`;
     } else {
-      // If item not found, redirect to nutrition page
-      navigate("/nutrition");
+      // If item not found, redirect to not found page
+      navigate("/not-found");
     }
   }, [itemId, navigate, item]);
   // If no menu item is found, show a loading message
