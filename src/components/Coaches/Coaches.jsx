@@ -1,16 +1,14 @@
+import { Link } from "react-router-dom";
 import styles from "./Coaches.module.css";
 import coachesData from "../../data/coaches.json";
-import { useState, useEffect, useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const Coaches = () => {
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const [currentCoachIndex, setCurrentCoachIndex] = useState(0);
-
-  // Scroll animation
+  // * Scroll animation refs
   const coachesContentRef = useRef(null);
   const carouselContainerRef = useRef(null);
 
-  // Scroll animation
+  // * Scroll animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,17 +30,20 @@ const Coaches = () => {
         rootMargin: "0px 0px -50px 0px",
       }
     );
-
     // Observe both elements
     if (coachesContentRef.current) observer.observe(coachesContentRef.current);
     if (carouselContainerRef.current) observer.observe(carouselContainerRef.current);
-
+    // Cleanup
     return () => {
       observer.disconnect();
     };
   }, []);
 
-  // Auto-rotate carousel every 5 seconds
+  // * State
+  const [currentCoachIndex, setCurrentCoachIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // * Auto-rotate carousel every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       handleCoachChange((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
@@ -51,7 +52,7 @@ const Coaches = () => {
     // Reset timer when user manually changes coach
   }, [currentCoachIndex]);
 
-  // Handle coach change with transition effect
+  // * Handle coach change with transition effect
   const handleCoachChange = (newIndexOrFunction) => {
     setIsTransitioning(true);
     setTimeout(() => {
@@ -62,19 +63,19 @@ const Coaches = () => {
     }, 300);
   };
 
-  // Previous button
+  // * Carousel dots
+  const handleDotClick = (index) => {
+    handleCoachChange(index);
+  };
+
+  // * Previous button
   const handlePrevClick = () => {
     handleCoachChange((prevIndex) => (prevIndex === 0 ? coachesData.length - 1 : prevIndex - 1));
   };
 
-  // Next button
+  // * Next button
   const handleNextClick = () => {
     handleCoachChange((prevIndex) => (prevIndex === coachesData.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  // Carousel dots
-  const handleDotClick = (index) => {
-    handleCoachChange(index);
   };
 
   return (
@@ -97,14 +98,9 @@ const Coaches = () => {
               is movement leadership.
             </p>
             {/* CTA button */}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.scheduleButton}
-              href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
-            >
-              SCHEDULE YOUR FREE CLASS
-            </a>
+            <Link to="/schedule" className={styles.scheduleButton}>
+              VIEW OUR SCHEDULE
+            </Link>
           </div>
 
           {/* Carousel */}
@@ -138,23 +134,21 @@ const Coaches = () => {
                 </div>
               </div>
             </div>
-
-            {/* Previous coach button */}
+            {/* Previous button */}
             <button
               onClick={handlePrevClick}
               aria-label="Previous coach"
               className={`${styles.carouselArrow} ${styles.prevArrow}`}
             >
-              ‹
+              <i className="fa-solid fa-arrow-left"></i>
             </button>
-
-            {/* Next coach button */}
+            {/* Next button */}
             <button
               aria-label="Next coach"
               onClick={handleNextClick}
               className={`${styles.carouselArrow} ${styles.nextArrow}`}
             >
-              ›
+              <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
