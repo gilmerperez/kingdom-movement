@@ -51,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   box-shadow: var(--shadow-small);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
 

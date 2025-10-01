@@ -13,12 +13,12 @@ function Schedule() {
   const [selectedDay, setSelectedDay] = useState("monday");
   const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
-  // Handle day select
+  // * Handle day select
   const handleDaySelect = (day) => {
     setSelectedDay(day);
   };
 
-  // Get day display name
+  // * Get day display name
   const getDayDisplayName = (day) => {
     const dayNames = {
       sunday: "SUNDAY",
@@ -85,8 +85,8 @@ function Schedule() {
                 <div className={styles.scheduleTable}>
                   {/* Header */}
                   <div className={styles.tableHeader}>
-                    <div className={styles.activityHeader}>ACTIVITY</div>
-                    <div className={styles.timeHeader}>TIME</div>
+                    <h3 className={styles.activityHeader}>ACTIVITY</h3>
+                    <h3 className={styles.timeHeader}>TIME</h3>
                   </div>
                   <div>
                     {selectedDayData.activities.map((activity, index) => (
@@ -94,11 +94,11 @@ function Schedule() {
                       <div key={index} className={styles.tableRow}>
                         {/* Activity */}
                         <div className={styles.activityCell}>
-                          <span className={styles.activityType}>{activity.type}</span>
+                          <p className={styles.activityType}>{activity.type}</p>
                         </div>
                         {/* Time */}
                         <div className={styles.timeCell}>
-                          <span className={styles.timeText}>{activity.time}</span>
+                          <p className={styles.timeText}>{activity.time}</p>
                         </div>
                       </div>
                     ))}
