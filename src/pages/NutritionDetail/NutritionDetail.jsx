@@ -2,18 +2,19 @@ import { useEffect, useState } from "react";
 import styles from "./NutritionDetail.module.css";
 import Banner from "../../components/Banner/Banner";
 import nutritionData from "../../data/nutrition.json";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function NutritionDetail() {
+  // * Refs for navigation and menu item
   const navigate = useNavigate();
   const { itemId } = useParams();
   const [menuItem, setMenuItem] = useState(null);
 
-  // Find the menu item by ID
+  // * Find the menu item by ID
   const item = nutritionData.menuItems.find((item) => item.id === itemId);
 
+  // * Set page title
   useEffect(() => {
-    // Set page title
     if (item) {
       setMenuItem(item);
       document.title = `Kingdom Movement | ${item.name}`;
@@ -22,7 +23,6 @@ function NutritionDetail() {
       navigate("/nutrition");
     }
   }, [itemId, navigate, item]);
-
   // If no menu item is found, show a loading message
   if (!menuItem) {
     return <div>Loading...</div>;
@@ -33,7 +33,7 @@ function NutritionDetail() {
       {/* Banner */}
       <Banner imageSrc={menuItem.imagePath} text={menuItem.name} secondaryText={menuItem.description} />
 
-      <div className={styles.menuItemContainer}>
+      <main className={styles.nutritionDetailContainer}>
         {/* Add-ons section */}
         {menuItem["add-ons"] && menuItem["add-ons"].length > 0 && (
           <section className={styles.optionsSection}>
@@ -94,9 +94,9 @@ function NutritionDetail() {
 
         {/* Back button */}
         <button onClick={() => navigate("/nutrition")} className={styles.backButton}>
-          Back to Menu
+          BACK TO MENU
         </button>
-      </div>
+      </main>
     </>
   );
 }

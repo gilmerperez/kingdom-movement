@@ -1,45 +1,41 @@
-.menuItemContainer {
+.nutritionDetailContainer {
   width: 100%;
-  padding: 2rem;
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  transition: 0.3s ease-in;
 }
 
 /* Options sections */
 .optionsSection {
   width: 100%;
   padding: 2rem;
-  margin: 0 auto;
   text-align: center;
-  border-radius: 6px;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
   background-color: var(--header-bg-color);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-.optionsSection:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
+/* Title */
 .sectionTitle {
-  font-weight: 700;
-  font-size: 2.75rem;
-  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
+/* Description */
 .sectionDescription {
-  font-size: 1.75rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--text-secondary);
 }
 
+/* Options list */
 .optionsList {
-  gap: 1rem;
+  gap: 0.75rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -48,44 +44,42 @@
   display: flex;
   padding: 0.75rem;
   font-size: 1.25rem;
-  border-radius: 4px;
   align-items: center;
   transition: 0.3s ease;
+  border-radius: 0.25rem;
   justify-content: center;
-  background-color: var(--bg-color);
   border: 1px solid var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .optionItem:hover {
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-small);
   border: 1px solid var(--primary);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Back button */
 .backButton {
+  font-size: 2rem;
   font-weight: 500;
-  font-size: 1.75rem;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 0.3s ease-in;
+  font-style: italic;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
   color: hsl(0, 0%, 100%);
+  box-shadow: var(--shadow-small);
+  text-shadow: var(--shadow-small);
   background-color: var(--primary);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .backButton:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-large);
+  text-shadow: var(--shadow-large);
 }
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .menuItemContainer {
-    padding: 1.75rem;
-  }
-
-  /* Options sections */
   .optionsSection {
     padding: 1.75rem;
   }
@@ -110,7 +104,6 @@
     font-size: 1.2rem;
   }
 
-  /* Back button */
   .backButton {
     font-size: 1.5rem;
   }
@@ -118,11 +111,6 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .menuItemContainer {
-    padding: 1.5rem;
-  }
-
-  /* Options sections */
   .optionsSection {
     padding: 1.5rem;
   }
@@ -147,7 +135,6 @@
     font-size: 1.15rem;
   }
 
-  /* Back button */
   .backButton {
     font-size: 1.25rem;
   }
