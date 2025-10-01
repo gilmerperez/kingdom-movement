@@ -10,7 +10,6 @@
 
 /* Introduction */
 .membershipIntroduction {
-  margin-top: 2rem;
   text-align: center;
   margin-bottom: 2rem;
   transition: 0.3s ease;
@@ -271,10 +270,6 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .membershipIntroduction {
-    margin-top: 1.75rem;
-  }
-
   .membershipTitle {
     font-size: 2.5rem;
   }
@@ -306,10 +301,6 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .membershipIntroduction {
-    margin-top: 1.5rem;
-  }
-
   .membershipTitle {
     font-size: 2rem;
     border-bottom: 2px solid var(--primary);

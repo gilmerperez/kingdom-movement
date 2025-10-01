@@ -10,7 +10,6 @@
 
 /* Introduction */
 .nutritionIntroduction {
-  margin-top: 2rem;
   text-align: center;
   margin-bottom: 1rem;
   transition: 0.3s ease;
@@ -164,10 +163,6 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .nutritionIntroduction {
-    margin-top: 1.75rem;
-  }
-
   .nutritionTitle {
     font-size: 2.5rem;
   }
@@ -214,10 +209,6 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .nutritionIntroduction {
-    margin-top: 1.5rem;
-  }
-
   .nutritionTitle {
     font-size: 2rem;
     border-bottom: 2px solid var(--primary);

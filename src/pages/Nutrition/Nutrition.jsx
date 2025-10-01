@@ -57,15 +57,15 @@ function Nutrition() {
 
   return (
     <>
+      {/* Banner */}
+      <Banner
+        imageSrc="/images/gym.jpg"
+        text="STRENGTH. SPIRIT. KINGDOM"
+        secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
+      />
+
       <main>
         <div className={styles.nutritionContainer}>
-          {/* Banner */}
-          <Banner
-            imageSrc="/images/gym.jpg"
-            text="STRENGTH. SPIRIT. KINGDOM"
-            secondaryText="BODIES, MINDS, AND LIVES. WE CHANGE LIVES THROUGH CHALLENGE AND CONSISTENCY"
-          />
-
           {/* Introduction */}
           <section className={styles.nutritionIntroduction}>
             {/* Title */}

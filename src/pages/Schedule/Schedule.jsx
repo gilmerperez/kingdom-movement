@@ -36,15 +36,15 @@ function Schedule() {
 
   return (
     <>
+      {/* Banner */}
+      <Banner
+        imageSrc="/images/group3.jpg"
+        text="MORE THAN FITNESS — IT'S A MOVEMENT"
+        secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
+      />
+
       <main>
         <div className={styles.scheduleContainer}>
-          {/* Banner */}
-          <Banner
-            imageSrc="/images/group3.jpg"
-            text="MORE THAN FITNESS — IT'S A MOVEMENT"
-            secondaryText="WE BELIEVE MOVEMENT UNLOCKS POTENTIAL AND PURPOSE"
-          />
-
           {/* Introduction */}
           <section className={styles.scheduleIntroduction}>
             {/* Title */}
