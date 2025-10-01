@@ -175,6 +175,11 @@
   box-shadow: var(--shadow-large);
 }
 
+/* Individual styles for free class card */
+.membershipCard.freeclass .price {
+  display: none;
+}
+
 /* Additional Info */
 .additionalInfoContainer {
   width: 100vw;

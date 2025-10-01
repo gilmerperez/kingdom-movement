@@ -95,6 +95,22 @@
       "isPopular": true,
       "ctaText": "BECOME DIAMOND",
       "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=ReviewPurchase%7COnlineMembershipId%3D252558%26LocationId%3D10458%26OnlineMembershipPaymentOptionId%3D1318554"
+    },
+    {
+      "id": "freeclass",
+      "name": "FREE CLASS",
+      "price": null,
+      "description": "Try our classes risk-free and experience the Kingdom Movement experience",
+      "customFeaturesTitle": "WHAT'S INCLUDED?",
+      "features": [
+        "No Commitment Required",
+        "Meet Our Certified Coaches",
+        "Full Equipment & Gear Access",
+        "Preview Our Scheduling System"
+      ],
+      "isPopular": false,
+      "ctaText": "JOIN THE TEAM",
+      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
     }
   ]
 }

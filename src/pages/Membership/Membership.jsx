@@ -21,7 +21,8 @@ function Membership() {
     const bronze = memberships.find((m) => m.id === "bronze");
     const hyrox = memberships.find((m) => m.id === "hyrox");
     const openbox = memberships.find((m) => m.id === "openbox");
-    return [diamond, gold, silver, bronze, hyrox, openbox].filter(Boolean);
+    const freeclass = memberships.find((m) => m.id === "freeclass");
+    return [diamond, gold, silver, bronze, hyrox, openbox, freeclass].filter(Boolean);
   };
 
   // * Ref for additional info section
@@ -90,19 +91,23 @@ function Membership() {
                   membership.id === "bronze" ? styles.bronze : ""
                 }  ${membership.id === "hyrox" ? styles.hyrox : ""} ${
                   membership.id === "openbox" ? styles.openbox : ""
-                }`}
+                } ${membership.id === "freeclass" ? styles.freeclass : ""}`}
               >
                 {membership.isPopular && <div className={styles.popularBadge}>MOST POPULAR</div>}
                 {/* Membership name */}
                 <h3 className={styles.membershipName}>{membership.name}</h3>
                 <div className={styles.priceContainer}>
                   {/* Monthly price */}
-                  <p className={styles.price}>${membership.price}/month</p>
+                  {membership.price !== null ? (
+                    <p className={styles.price}>${membership.price}/month</p>
+                  ) : (
+                    <p className={styles.price}>FREE</p>
+                  )}
                 </div>
                 {/* Seperator */}
                 <div className={styles.separator}></div>
                 {/* Membership benefits */}
-                <p className={styles.featuresTitle}>MEMBERSHIP BENEFITS</p>
+                <p className={styles.featuresTitle}>{membership.customFeaturesTitle || "MEMBERSHIP BENEFITS"}</p>
                 <ul className={styles.featuresList}>
                   {membership.features.map((feature, index) => (
                     <li key={index} className={styles.featureItem}>
