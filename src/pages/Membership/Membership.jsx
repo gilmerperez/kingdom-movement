@@ -94,15 +94,15 @@ function Membership() {
               >
                 {membership.isPopular && <div className={styles.popularBadge}>MOST POPULAR</div>}
                 {/* Membership name */}
-                <h2 className={styles.membershipName}>{membership.name}</h2>
-                {/* Price / month */}
+                <h3 className={styles.membershipName}>{membership.name}</h3>
                 <div className={styles.priceContainer}>
-                  <span className={styles.price}>${membership.price}/month</span>
+                  {/* Monthly price */}
+                  <p className={styles.price}>${membership.price}/month</p>
                 </div>
                 {/* Seperator */}
                 <div className={styles.separator}></div>
                 {/* Membership benefits */}
-                <span className={styles.featuresTitle}>MEMBERSHIP BENEFITS</span>
+                <p className={styles.featuresTitle}>MEMBERSHIP BENEFITS</p>
                 <ul className={styles.featuresList}>
                   {membership.features.map((feature, index) => (
                     <li key={index} className={styles.featureItem}>
