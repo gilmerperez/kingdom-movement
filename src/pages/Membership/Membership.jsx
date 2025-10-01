@@ -59,15 +59,15 @@ function Membership() {
 
   return (
     <>
+      {/* Banner */}
+      <Banner
+        imageSrc="/images/home2.jpg"
+        text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
+        secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
+      />
+
       <main>
         <div className={styles.membershipContainer}>
-          {/* Banner */}
-          <Banner
-            imageSrc="/images/home2.jpg"
-            text="TRAIN HARD. LIVE BOLD. MOVE WITH PURPOSE"
-            secondaryText="EVERY MOVEMENT HAS MEANING. WE TRAIN WITH DEEPER PURPOSE, FOR MORE THAN JUST PHYSICAL GAINS"
-          />
-
           {/* Introduction */}
           <section className={styles.membershipIntroduction}>
             {/* Title */}

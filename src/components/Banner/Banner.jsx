@@ -3,16 +3,16 @@ import styles from "./Banner.module.css";
 function Banner({ imageSrc, text, secondaryText }) {
   return (
     <>
-      <div className={styles.bannerContainer}>
+      <section className={styles.bannerContainer}>
         <div className={styles.bannerImageContainer}>
           <img src={imageSrc} alt="Banner image" />
           <div className={styles.gradientOverlay}></div>
         </div>
         <div className={styles.bannerContent}>
-          <h2 className={styles.bannerText}>{text}</h2>
-          {secondaryText && <p className={styles.bannerSecondaryText}>{secondaryText}</p>}
+          <h1 className={styles.bannerText}>{text}</h1>
+          {secondaryText && <h2 className={styles.bannerSecondaryText}>{secondaryText}</h2>}
         </div>
-      </div>
+      </section>
     </>
   );
 }

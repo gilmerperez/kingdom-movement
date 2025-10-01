@@ -2,11 +2,10 @@
   width: 100vw;
   height: 450px;
   display: flex;
-  margin-top: -2rem;
   position: relative;
   align-items: center;
+  transition: 0.3s ease;
   justify-content: center;
-  transition: 0.3s ease-in;
 }
 
 .bannerImageContainer {
@@ -32,49 +31,42 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(to top, hsla(0, 0%, 5%), hsl(0, 0%, 0%, 0));
+  background: linear-gradient(to top, hsl(0, 0%, 5%), hsl(0, 0%, 0%, 0));
 }
 
 .bannerContent {
   z-index: 3;
   width: 100%;
   padding: 2rem;
-  max-width: 1200px;
   position: relative;
   text-align: center;
 }
 
 .bannerText {
-  font-size: 3.5rem;
-  transition: 0.3s ease-in;
+  font-size: 4rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
   color: hsl(0, 0%, 100%);
-  text-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.75);
+  text-shadow: var(--shadow-small);
 }
 
 .bannerSecondaryText {
   font-size: 2rem;
-  transition: 0.3s ease-in;
-  color: hsl(0, 0%, 100%);
-  text-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.75);
+  font-weight: 400;
+  transition: 0.3s ease;
+  color: hsl(0, 0%, 80%);
+  text-shadow: var(--shadow-small);
 }
 
-/* Responsive aspect ratios */
-@media (max-width: 768px) {
-  .bannerContainer {
-    height: 350px;
-  }
-}
-
-@media (max-width: 480px) {
-  .bannerContainer {
-    height: 300px;
-  }
-}
-
-/* Responsive text sizing */
+/* Desktop responsiveness */
 @media (max-width: 1200px) {
+  .bannerContainer {
+    height: 400px;
+  }
+
   .bannerText {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .bannerSecondaryText {
@@ -82,9 +74,14 @@
   }
 }
 
-@media (max-width: 900px) {
+/* Desktop responsiveness */
+@media (max-width: 925px) {
+  .bannerContainer {
+    height: 375px;
+  }
+
   .bannerText {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
   .bannerSecondaryText {
@@ -92,7 +89,16 @@
   }
 }
 
+/* Tablet responsiveness */
 @media (max-width: 768px) {
+  .bannerContainer {
+    height: 350px;
+  }
+
+  .bannerContent {
+    padding: 1.75rem;
+  }
+
   .bannerText {
     font-size: 2.5rem;
   }
@@ -102,16 +108,21 @@
   }
 }
 
+/* Mobile responsiveness */
 @media (max-width: 480px) {
+  .bannerContainer {
+    height: 300px;
+  }
+
+  .bannerContent {
+    padding: 1.5rem;
+  }
+
   .bannerText {
     font-size: 2rem;
   }
 
   .bannerSecondaryText {
     font-size: 1.15rem;
-  }
-
-  .bannerContent {
-    padding: 1rem;
   }
 }
