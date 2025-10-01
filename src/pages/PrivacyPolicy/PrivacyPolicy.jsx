@@ -47,26 +47,26 @@ function PrivacyPolicy() {
           {/* Privacy policy */}
           <section className={styles.policy}>
             {/* Policy updates */}
-            <p className={styles.policyHeading}>POLICY UPDATES</p>
+            <h3 className={styles.policyHeading}>POLICY UPDATES</h3>
             <p className={styles.policyText}>
               We may revise this policy occasionally. Updates will always appear on this page. Last updated: {month}{" "}
               {year}.
             </p>
             {/* Purpose of the site */}
-            <p className={styles.policyHeading}>PURPOSE OF THE SITE</p>
+            <h3 className={styles.policyHeading}>PURPOSE OF THE SITE</h3>
             <p className={styles.policyText}>
               This website serves as an informational platform for our CrossFit studio. It includes details about our
               nutrition menu, class schedule, and membership tiers. No purchases or account logins are required to
               browse.
             </p>
             {/* Personal information */}
-            <p className={styles.policyHeading}>PERSONAL INFORMATION</p>
+            <h3 className={styles.policyHeading}>PERSONAL INFORMATION</h3>
             <p className={styles.policyText}>
               We do not collect any personal data directly through this website. You can navigate our content without
               providing your name, email, or other personal details.
             </p>
             {/* Cookies and analytics */}
-            <p className={styles.policyHeading}>COOKIES AND ANALYTICS</p>
+            <h3 className={styles.policyHeading}>COOKIES AND ANALYTICS</h3>
             <p className={styles.policyText}>
               This website does not use cookies, tracking pixels, or third-party analytics tools. We do not track your
               browsing behavior or device usage.

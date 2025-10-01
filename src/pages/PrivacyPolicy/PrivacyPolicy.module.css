@@ -41,7 +41,6 @@
 .policyHeading {
   font-weight: 500;
   font-size: 1.5rem;
-  font-style: italic;
   display: inline-block;
   margin-bottom: 0.15rem;
   border-bottom: 3px solid var(--primary);

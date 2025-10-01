@@ -46,25 +46,25 @@ function TermsOfService() {
           {/* Terms of service */}
           <section className={styles.terms}>
             {/* Site usage */}
-            <p className={styles.termsHeading}>SITE USAGE</p>
+            <h3 className={styles.termsHeading}>SITE USAGE</h3>
             <p className={styles.termsText}>
               This website is intended for general informational purposes related to our CrossFit studio. All content is
               subject to change without notice. Unauthorized use of this site may give rise to a claim for damages.
             </p>
             {/* No liability */}
-            <p className={styles.termsHeading}>NO LIABILITY</p>
+            <h3 className={styles.termsHeading}>NO LIABILITY</h3>
             <p className={styles.termsText}>
               We are not responsible for any loss or damage that may occur from using this website. All information is
               provided “as is,” without any warranties of any kind.
             </p>
             {/* Modifications */}
-            <p className={styles.termsHeading}>MODIFICATIONS</p>
+            <h3 className={styles.termsHeading}>MODIFICATIONS</h3>
             <p className={styles.termsText}>
               We may revise these terms at any time. By using this website, you agree to be bound by the current version
               of these terms. Last updated: {month} {year}.
             </p>
             {/* Membership and scheduling disclaimer */}
-            <p className={styles.termsHeading}>MEMBERSHIP AND SCHEDULING DISCLAIMER</p>
+            <h3 className={styles.termsHeading}>MEMBERSHIP AND SCHEDULING DISCLAIMER</h3>
             <p className={styles.termsText}>
               Membership tiers, class schedules, and food menu offerings are subject to change without prior notice.
               While we strive to keep all information up-to-date, availability and tiers may vary. Please contact our
