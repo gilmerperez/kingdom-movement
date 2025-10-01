@@ -151,19 +151,15 @@ function Header() {
               {/* Sidebar site navigation */}
               <nav className={styles.sidebarNavItems}>
                 <NavLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                  <i className="fa-solid fa-house"></i>
                   HOME
                 </NavLink>
                 <NavLink to="/nutrition" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                  <i className="fa-solid fa-apple-alt"></i>
                   NUTRITION
                 </NavLink>
                 <NavLink to="/schedule" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                  <i className="fa-solid fa-calendar"></i>
                   SCHEDULE
                 </NavLink>
                 <NavLink to="/membership" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                  <i className="fa-solid fa-id-card"></i>
                   MEMBERSHIP
                 </NavLink>
                 {/* Seperator */}
