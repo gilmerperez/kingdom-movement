@@ -1,4 +1,4 @@
-.whoWeAreSection {
+.whoWeAreContainer {
   gap: 3rem;
   width: 100%;
   display: flex;
@@ -8,21 +8,23 @@
   justify-content: center;
 }
 
+/* Title */
 .title {
   opacity: 0;
   font-size: 5rem;
-  font-style: italic;
-  transition: 0.3s ease-in;
-  animation: slideInFromLeft 0.8s ease-out forwards;
+  transition: 0.3s ease;
+  animation: slideInFromLeft 0.8s ease-out 0.3s forwards;
 }
 
+/* Seperator */
 .seperator {
-  width: 3px;
+  width: 5px;
   height: 120px;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   background-color: var(--primary);
 }
 
+/* Text */
 .textContainer {
   flex: 1;
 }
@@ -30,75 +32,11 @@
 .text {
   opacity: 0;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.25;
   font-size: 1.25rem;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   color: var(--text-secondary);
   animation: slideInFromRight 0.8s ease-out 0.3s forwards;
-}
-
-@media (max-width: 1200px) {
-  .title {
-    font-size: 4.5rem;
-  }
-
-  .text {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .text {
-    font-size: 1.15rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .whoWeAreSection {
-    gap: 2rem;
-  }
-}
-
-/* Tablet responsiveness */
-@media (max-width: 768px) {
-  .whoWeAreSection {
-    gap: 0.75rem;
-    flex-direction: column;
-  }
-
-  .title {
-    margin-right: auto;
-  }
-
-  .seperator {
-    width: 50%;
-    height: 3px;
-    margin-right: auto;
-  }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 480px) {
-  .whoWeAreSection {
-    gap: 0.5rem;
-  }
-
-  .title {
-    font-size: 2.25rem;
-  }
-
-  .seperator {
-    width: 75%;
-    height: 2px;
-  }
-
-  .text {
-    font-size: 1.15rem;
-  }
 }
 
 /* Animations */
@@ -121,5 +59,60 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Desktop responsiveness */
+@media (max-width: 1200px) {
+  .whoWeAreContainer {
+    gap: 2.5rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .whoWeAreContainer {
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .text {
+    font-size: 1.15rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .whoWeAreContainer {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-right: auto;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid var(--primary);
+  }
+
+  .seperator {
+    display: none;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .text {
+    font-size: 1rem;
   }
 }

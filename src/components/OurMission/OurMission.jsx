@@ -3,7 +3,7 @@ import styles from "./OurMission.module.css";
 function OurMission() {
   return (
     <>
-      <section className={styles.ourMissionSection}>
+      <section className={styles.ourMissionContainer}>
         {/* Text */}
         <div className={styles.textContainer}>
           <p className={styles.text}>
@@ -11,10 +11,8 @@ function OurMission() {
             purpose-driven transformation in every life we touch.
           </p>
         </div>
-
         {/* Seperator */}
         <div className={styles.seperator}></div>
-
         {/* Title */}
         <h2 className={styles.title}>OUR MISSION</h2>
       </section>
