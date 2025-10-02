@@ -71,7 +71,6 @@
   animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
-/* Staggered animation delays for text elements */
 .text:nth-of-type(1).fadeInElement {
   animation-delay: 0.4s;
 }
@@ -92,7 +91,6 @@
   animation: fadeInUp 0.8s ease-out 1.2s forwards;
 }
 
-/* Fade in and up animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
