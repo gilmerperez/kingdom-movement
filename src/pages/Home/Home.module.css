@@ -17,8 +17,4 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 480px) {
-  .homeContainer {
-    gap: 1rem;
-  }
-}
+@media (max-width: 480px) {}

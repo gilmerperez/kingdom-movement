@@ -115,7 +115,7 @@ html[data-theme="dark"] .benefitCard:hover {
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .whyUsTitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .whyUsDescription {
@@ -134,7 +134,7 @@ html[data-theme="dark"] .benefitCard:hover {
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .whyUsTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: 2px solid var(--primary);
   }
 
