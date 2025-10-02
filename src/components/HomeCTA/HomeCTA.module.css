@@ -1,4 +1,4 @@
-.ctaComponent {
+.homeCTAContainer {
   width: 100vw;
   display: flex;
   padding: 2rem;
@@ -105,7 +105,7 @@
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .ctaComponent {
+  .homeCTAContainer {
     padding: 1.75rem;
   }
 
@@ -124,7 +124,7 @@
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .ctaComponent {
+  .homeCTAContainer {
     padding: 1.5rem;
   }
 

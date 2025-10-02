@@ -36,7 +36,7 @@ const HomeCTA = () => {
 
   return (
     <>
-      <section ref={componentRef} className={styles.ctaComponent}>
+      <section ref={componentRef} className={styles.homeCTAContainer}>
         {/* Logo */}
         <div className={`${styles.logoContainer} ${isVisible ? styles.fadeInElement : ""}`}>
           <img src="/logo-white.png" alt="Kingdom Movement Logo" />

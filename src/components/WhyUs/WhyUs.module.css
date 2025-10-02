@@ -1,14 +1,8 @@
-.whyUsSection {
+.whyUsContainer {
   width: 100%;
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
-  align-items: center;
-  justify-content: center;
-}
-
-.whyUsContainer {
-  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
