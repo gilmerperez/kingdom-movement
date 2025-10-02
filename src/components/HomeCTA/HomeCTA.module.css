@@ -31,7 +31,7 @@
 /* Text */
 .text {
   opacity: 0;
-  max-width: 1200px;
+  max-width: 800px;
   line-height: 1.35;
   font-size: 1.35rem;
   transition: 0.3s ease;
