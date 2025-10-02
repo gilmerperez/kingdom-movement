@@ -41,15 +41,15 @@
   transition: 0.3s ease;
   border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
+  box-shadow: var(--shadow-small);
+  text-shadow: var(--shadow-small);
   background-color: var(--primary);
-  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
-  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 .backButton:hover {
   transform: scale(1.1);
-  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
-  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
+  box-shadow: var(--shadow-large);
+  text-shadow: var(--shadow-large);
 }
 
 /* Tablet responsiveness */
