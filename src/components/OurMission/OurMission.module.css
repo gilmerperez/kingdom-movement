@@ -16,7 +16,7 @@
 .text {
   opacity: 0;
   text-align: right;
-  line-height: 1.25;
+  line-height: 1.35;
   font-size: 1.25rem;
   transition: 0.3s ease;
   color: var(--text-secondary);
