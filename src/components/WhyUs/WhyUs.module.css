@@ -1,56 +1,53 @@
 .whyUsSection {
   width: 100%;
+  display: flex;
   margin: 0 auto;
   max-width: 1200px;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
+.whyUsContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Introduction */
+.whyUsIntroduction {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 /* Title */
-.title {
+.whyUsTitle {
   opacity: 0;
   font-size: 3.5rem;
   filter: blur(10px);
-  font-style: italic;
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  transition: 0.5s ease;
+  margin-bottom: 0.75rem;
   transform: translateY(30px);
-  transition: all 1s ease-out;
   border-bottom: 3px solid var(--primary);
 }
 
-.title.animateTitle {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
-
 /* Description */
-.description {
+.whyUsDescription {
   opacity: 0;
+  max-width: 800px;
+  line-height: 1.25;
   filter: blur(10px);
-  max-width: 1000px;
-  font-size: 1.35rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  transition: 0.5s ease;
   transform: translateY(30px);
-  transition: all 1s ease-out;
   color: var(--text-secondary);
-}
-
-.description.animateDescription {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
 }
 
 /* Benefits grid */
 .benefitsGrid {
+  gap: 1rem;
   width: 100%;
-  gap: 1.25rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -64,16 +61,48 @@
   padding: 1rem;
   min-width: 500px;
   max-width: 400px;
-  border-radius: 8px;
-  transition: 0.3s ease-in;
+  text-align: center;
+  transition: 0.5s ease;
+  border-radius: 0.25rem;
   transform: translateX(-100px);
+  box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
   background: linear-gradient(to top, var(--header-bg-color), var(--bg-color));
 }
 
-/* Alternate card animations */
+/* Dark mode hover */
+html[data-theme="dark"] .benefitCard:hover {
+  background: linear-gradient(to top, var(--primary), var(--header-bg-color));
+}
+
+/* Card title */
+.cardTitle {
+  font-size: 1.75rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+}
+
+/* Card text */
+.cardText {
+  line-height: 1.25;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  color: var(--text-secondary);
+}
+
+/* Animations */
+.whyUsTitle.animateTitle {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.whyUsDescription.animateDescription {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
 .benefitCard:nth-child(even) {
   transform: translateX(100px);
 }
@@ -83,53 +112,18 @@
   transform: translateX(0);
 }
 
-.benefitCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Dark mode hover */
-html[data-theme="dark"] .benefitCard:hover {
-  background: linear-gradient(to top, var(--primary), var(--bg-color));
-}
-
-/* Card title */
-.cardTitle {
-  font-size: 1.75rem;
-  display: inline-block;
-  margin-bottom: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-/* Card text */
-.cardText {
-  line-height: 1.35;
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-}
-
 /* Tablet responsiveness */
 @media (max-width: 768px) {
-  .title {
-    font-size: 3rem;
+  .whyUsTitle {
+    font-size: 2.5rem;
   }
 
-  .description {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .benefitsGrid {
-    gap: 1rem;
-  }
-
-  .benefitCard {
-    border-radius: 6px;
+  .whyUsDescription {
+    font-size: 1.15rem;
   }
 
   .cardTitle {
     font-size: 1.5rem;
-    margin-bottom: 0.25rem;
   }
 
   .cardText {
@@ -139,21 +133,21 @@ html[data-theme="dark"] .benefitCard:hover {
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
-  .title {
-    font-size: 2.5rem;
+  .whyUsTitle {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary);
   }
 
-  .description {
-    font-size: 1.15rem;
+  .whyUsDescription {
+    font-size: 1rem;
   }
 
   .benefitCard {
     min-width: 100%;
-    border-radius: 4px;
   }
 
   .cardTitle {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .cardText {

@@ -1,13 +1,14 @@
 import styles from "./WhyUs.module.css";
-import { useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 
 function WhyUs() {
-  // Scroll animation
-  const sectionRef = useRef(null);
+  // * Scroll animation refs
   const titleRef = useRef(null);
   const descriptionRef = useRef(null);
   const cardRefs = useRef([]);
+  const sectionRef = useRef(null);
 
+  // * Scroll animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -37,22 +38,20 @@ function WhyUs() {
         rootMargin: "0px 0px -50px 0px",
       }
     );
-
     // Observe title and description
     if (titleRef.current) observer.observe(titleRef.current);
     if (descriptionRef.current) observer.observe(descriptionRef.current);
-
     // Observe all cards
     cardRefs.current.forEach((card) => {
       if (card) observer.observe(card);
     });
-
+    // Cleanup
     return () => {
       observer.disconnect();
     };
   }, []);
 
-  // Function to add card refs
+  // * Function to add card refs
   const addCardRef = (el) => {
     if (el && !cardRefs.current.includes(el)) {
       cardRefs.current.push(el);
@@ -62,20 +61,22 @@ function WhyUs() {
   return (
     <>
       <section ref={sectionRef} className={styles.whyUsSection}>
-        <div className={styles.container}>
-          {/* Title */}
-          <h2 ref={titleRef} className={styles.title}>
-            WHY WE STAND OUT
-          </h2>
-
-          {/* Description */}
-          <p ref={descriptionRef} className={styles.description}>
-            We strive for greatness, we never settle for less. Every aspect of our facility, training programs, and
-            community is designed to push you beyond your limits and help you achieve extraordinary results.
-          </p>
+        <div className={styles.whyUsContainer}>
+          {/* Introduction */}
+          <section className={styles.whyUsIntroduction}>
+            {/* Title */}
+            <h2 ref={titleRef} className={styles.whyUsTitle}>
+              WHY WE STAND OUT
+            </h2>
+            {/* Description */}
+            <p ref={descriptionRef} className={styles.whyUsDescription}>
+              We strive for greatness, we never settle for less. Every aspect of our facility, training programs, and
+              community is designed to push you beyond your limits and help you achieve extraordinary results.
+            </p>
+          </section>
 
           {/* Benefits grid */}
-          <div className={styles.benefitsGrid}>
+          <section className={styles.benefitsGrid}>
             {/* Nutrition & wellness coaching */}
             <div ref={addCardRef} className={styles.benefitCard}>
               <h3 className={styles.cardTitle}>Nutrition & Wellness Coaching</h3>
@@ -85,7 +86,6 @@ function WhyUs() {
                 personalized plans that complement your fitness journey.
               </p>
             </div>
-
             {/* Intense classes & open gym */}
             <div ref={addCardRef} className={styles.benefitCard}>
               <h3 className={styles.cardTitle}>Intense Classes & Open Gym</h3>
@@ -95,7 +95,6 @@ function WhyUs() {
                 athletes complete everyday.
               </p>
             </div>
-
             {/* Special events & community */}
             <div ref={addCardRef} className={styles.benefitCard}>
               <h3 className={styles.cardTitle}>Special Events & Community</h3>
@@ -105,7 +104,6 @@ function WhyUs() {
                 occasion. Build lasting friendships while achieving your fitness goals.
               </p>
             </div>
-
             {/* Expert level equipment */}
             <div ref={addCardRef} className={styles.benefitCard}>
               <h3 className={styles.cardTitle}>Expert Level Equipment</h3>
@@ -115,7 +113,6 @@ function WhyUs() {
                 technology and equipment used by professional athletes.
               </p>
             </div>
-
             {/* Personalized training programs*/}
             <div ref={addCardRef} className={styles.benefitCard}>
               <h3 className={styles.cardTitle}>Personalized Training Programs</h3>
@@ -125,7 +122,7 @@ function WhyUs() {
                 plan to help you achieve optimum results.
               </p>
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </>
