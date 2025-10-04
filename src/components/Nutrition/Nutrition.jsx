@@ -17,14 +17,13 @@ function Nutrition() {
         {/* Content */}
         <div className={styles.contentContainer}>
           {/* Title */}
-          <h2 className={styles.title}>FUEL YOUR JOURNEY</h2>
+          <h2 className={styles.nutritionComponentTitle}>FUEL YOUR JOURNEY</h2>
           {/* Description */}
-          <div className={styles.description}>
+          <div className={styles.nutritionComponentDescription}>
             <p>
               We believe in ongoing support and regular check-ins to monitor your progress, identify areas for
               improvement, and celebrate your achievements. Your success is our commitment.
             </p>
-
             <p>
               Discover our extensive menu featuring over 30+ carefully crafted nutrition options designed to support
               your fitness goals. From protein-rich shakes to wholesome meals, every item is crafted with premium
