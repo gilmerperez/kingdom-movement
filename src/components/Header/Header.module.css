@@ -358,15 +358,16 @@ header {
 
 /* Sidebar site navigation */
 .sidebarNavItems {
-  gap: 0.75rem;
   display: flex;
-  font-size: 1.25rem;
   margin-top: 2.5rem;
   flex-direction: column;
 }
 
 .sidebarNavItems a {
+  font-size: 1.25rem;
   transition: 0.3s ease;
+  margin-left: -1.75rem;
+  padding: 0.75rem 1.75rem;
 }
 
 /* Prevent hover effect on active link */
@@ -380,7 +381,7 @@ header {
   position: relative;
   margin-left: -1.75rem;
   border-radius: 0.25rem;
-  padding: 0.65rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
@@ -391,13 +392,13 @@ header {
 .sidebarSeperator {
   height: 2px;
   border: none;
+  margin: 1rem 0rem;
   background-color: var(--primary);
 }
 
 /* Free class button */
 .sidebarFreeClassButton {
   display: flex;
-  padding: 0.5rem;
   font-weight: 500;
   font-size: 1.5rem;
   font-style: italic;
