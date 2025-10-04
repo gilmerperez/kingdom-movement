@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "./NotFound.module.css";
+import styles from "./PageNotFound.module.css";
 
-function NotFound() {
+function PageNotFound() {
   // * Set page title
   useEffect(() => {
     document.title = "Kingdom Movement | Page Not Found";
@@ -28,4 +28,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default PageNotFound;
