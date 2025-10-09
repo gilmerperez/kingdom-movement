@@ -31,7 +31,7 @@
   color: var(--text-secondary);
 }
 
-/* Email form */
+/* Contact form */
 .formContainer {
   width: 100%;
   padding: 1.25rem;
@@ -54,7 +54,7 @@ form {
   flex-direction: column;
 }
 
-/* Subject and text area */
+/* Subject and message fields */
 .formControl {
   width: 100%;
   font-size: 1.25rem;

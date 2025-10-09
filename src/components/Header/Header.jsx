@@ -71,9 +71,9 @@ function Header() {
     }, 300);
   };
 
-  // * Phone call handler
+  // * WhatsApp handler
   const handlePhoneClick = () => {
-    window.location.href = "tel:(321) 337-5193";
+    window.open("https://wa.me/13213375193", "_blank");
   };
 
   return (
@@ -125,7 +125,7 @@ function Header() {
           <div className={styles.mobileHeader}>
             {/* Phone button */}
             <button className={styles.phoneButton} onClick={handlePhoneClick}>
-              <i className="fa-solid fa-phone-volume"></i>
+              <i className="fa-brands fa-whatsapp"></i>
             </button>
             {/* Logo */}
             <NavLink to="/" className={styles.mobileLogoContainer}>

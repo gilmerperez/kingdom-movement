@@ -7,6 +7,7 @@ function Contact() {
     document.title = "Kingdom Movement | Contact";
   }, []);
 
+  // * Subject and message state
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
@@ -34,7 +35,7 @@ function Contact() {
             </p>
           </section>
 
-          {/* Email form */}
+          {/* Contact form */}
           <section className={styles.formContainer}>
             <form onSubmit={handleSubmit}>
               {/* Subject field */}
