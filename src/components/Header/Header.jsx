@@ -73,7 +73,7 @@ function Header() {
 
   // * WhatsApp handler
   const handlePhoneClick = () => {
-    window.open("https://wa.me/13213375193", "_blank");
+    window.open("https://wa.me/4072169833", "_blank");
   };
 
   return (
