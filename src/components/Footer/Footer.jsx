@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -28,7 +28,7 @@ function Footer() {
           <section className={styles.bottomContainer}>
             {/* Site navigation */}
             <section className={styles.siteNavigation}>
-              <h5 className={styles.navHeader}>PAGES</h5>
+              <h6 className={styles.navHeader}>PAGES</h6>
               <nav className={styles.navItems}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/nutrition">Nutrition</NavLink>
@@ -38,33 +38,33 @@ function Footer() {
             </section>
             {/* Social links */}
             <section className={styles.socialLinks}>
-              <h5 className={styles.navHeader}>CONNECT</h5>
+              <h6 className={styles.navHeader}>CONNECT</h6>
               <nav className={styles.navItems}>
                 {/* Facebook */}
-                <a
-                  href="https://www.facebook.com/profile.php?id=61554804519847&ref=_ig_profile_ac"
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
+                  to="https://www.facebook.com/profile.php?id=61554804519847&ref=_ig_profile_ac"
                 >
                   Facebook
-                </a>
+                </Link>
                 {/* Instagram */}
-                <a href="https://www.instagram.com/kngdm.mvmnt/" target="_blank" rel="noopener noreferrer">
+                <Link target="_blank" rel="noopener noreferrer" to="https://www.instagram.com/kngdm.mvmnt/">
                   Instagram
-                </a>
+                </Link>
                 {/* Google page */}
-                <a
-                  href="https://www.google.com/search?q=KINGDOM+MVMNT+LLC&rlz=1C1RXQR_enUS1087US1087&oq=KINGDOM+MVMNT+LLC&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMgcIAxAAGO8FMgoIBBAAGIAEGKIEMgcIBRAAGO8FMgYIBhBFGDwyBggHEEUYPNIBBzQ2M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
+                  to="https://www.google.com/search?sca_esv=0683e8ae5cdf4a07&rlz=1C1RXQR_enUS1087US1087&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0ONNIBIqWCZYLnuJvqSSmbXspMabhiR6X7KrMQA8duDmzcltBxTBgPzXl5-XVa2OQN424Lz9glh6mQVQbDR6H8Y-KJeUYTCveXfwPcCVpwFYHgF-Q%3D%3D&q=KINGDOM+MOVEMENT+LLC+Reviews&sa=X&ved=2ahUKEwjfw-vrmaCQAxXBQTABHdAUJYEQ0bkNegQIMRAE&biw=1745&bih=828&dpr=1.1"
                 >
                   Google Page
-                </a>
+                </Link>
               </nav>
             </section>
             {/* Legal pages */}
             <section className={styles.legalPages}>
-              <h5 className={styles.navHeader}>LEGAL</h5>
+              <h6 className={styles.navHeader}>LEGAL</h6>
               <nav className={styles.navItems}>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/privacy-policy">Privacy Policy</NavLink>
@@ -73,21 +73,20 @@ function Footer() {
             </section>
             {/* Contact info */}
             <section className={styles.contactInfo}>
-              <h5 className={styles.navHeader}>CONTACT</h5>
+              <h6 className={styles.navHeader}>CONTACT</h6>
               <nav className={styles.navItems}>
                 {/* Phone number */}
                 <a href="tel:3213520639">(321) 352-0639</a>
-
                 {/* Email */}
                 <a href="mailto:kngdm.mvmnt.llc@gmail.com">kngdm.mvmnt.llc@gmail.com</a>
                 {/* Address */}
-                <a
-                  href="https://www.google.com/maps/dir//6881+Kingspointe+Pkwy+Suit+%234,+Orlando,+FL+32819/@28.4598497,-81.5201714,27790m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x88dd87daa64f54c7:0xb0e764b4072e95b9!2m2!1d-81.43777!2d28.4598745?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D"
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
+                  to="https://www.google.com/maps/place/6881+Kingspointe+Pkwy+STE+4,+Orlando,+FL+32819/@28.459962,-81.4402133,868m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88e77e856aefbcb5:0x6a0399fabce84714!8m2!3d28.459962!4d-81.437633!16s%2Fg%2F11gg6dhpwy?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
                 >
                   6881 Kingspointe Parkway Suite #4 Orlando, FL 32819
-                </a>
+                </Link>
               </nav>
             </section>
           </section>
