@@ -156,6 +156,7 @@
   margin-bottom: 0.5rem;
   padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--primary);
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 /* Coach description */

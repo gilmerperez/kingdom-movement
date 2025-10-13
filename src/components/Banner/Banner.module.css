@@ -45,7 +45,6 @@
 .bannerText {
   opacity: 0;
   font-size: 4rem;
-  font-weight: 700;
   filter: blur(10px);
   transition: 0.3s ease;
   margin-bottom: 0.5rem;
@@ -58,12 +57,13 @@
 .bannerSecondaryText {
   opacity: 0;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   filter: blur(10px);
   transition: 0.3s ease;
   color: hsl(0, 0%, 80%);
   transform: translateX(50px);
   text-shadow: var(--shadow-small);
+  font-family: "Roboto Condensed", Arial, sans-serif;
   animation: fadeInFromRight 1.2s ease-out 0.3s forwards;
 }
 

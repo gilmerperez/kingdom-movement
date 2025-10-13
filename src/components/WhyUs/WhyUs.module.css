@@ -22,6 +22,7 @@
   display: inline-block;
   transition: 0.5s ease;
   margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
   transform: translateY(30px);
   border-bottom: 3px solid var(--primary);
 }
@@ -75,6 +76,7 @@ html[data-theme="dark"] .benefitCard:hover {
   font-style: normal;
   transition: 0.3s ease;
   margin-bottom: 0.25rem;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 /* Card text */

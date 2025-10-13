@@ -20,6 +20,7 @@
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -45,7 +46,6 @@
 .filterButton {
   padding: 0.75rem;
   min-width: 200px;
-  font-weight: 500;
   font-size: 1.25rem;
   font-style: italic;
   transition: 0.3s ease;
@@ -53,6 +53,7 @@
   text-transform: uppercase;
   box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
+  font-family: "Anton", sans-serif;
   background-color: var(--header-bg-color);
 }
 
@@ -139,6 +140,7 @@
   font-style: normal;
   transition: 0.3s ease;
   margin-bottom: 0.25rem;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .foodDescription {
