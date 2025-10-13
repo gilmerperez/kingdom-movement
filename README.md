@@ -20,29 +20,13 @@ The following images show the web application's appearance and functionality:
 
 ![Home Page](./src/assets/screenshots/homePage.png)
 
----
-
-![Light Theme](./src/assets/screenshots/lightTheme.png)
-
----
-
 ![Nutrition Page](./src/assets/screenshots/nutritionPage.png)
-
----
 
 ![Schedule Page](./src/assets/screenshots/schedulePage.png)
 
----
-
 ![Membership Page](./src/assets/screenshots/membershipPage.png)
 
----
-
-![Contact Page](./src/assets/screenshots/contactPage.png)
-
----
-
-![Footer](./src/assets/screenshots/footer.png)
+![Light Theme](./src/assets/screenshots/lightTheme.png)
 
 ## Key Features
 
