@@ -7,10 +7,6 @@ function Footer() {
       <footer>
         <div className={styles.footerContainer}>
           <section className={styles.topContainer}>
-            {/* Logo */}
-            <div className={styles.logoContainer}>
-              <img src="/logo-white.png" alt="Kingdom Movement Logo" />
-            </div>
             {/* Legal text */}
             <p className={styles.legalDisclaimer}>
               Kingdom Movement offers fitness training and wellness guidance for educational and informational purposes
