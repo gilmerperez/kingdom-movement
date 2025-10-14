@@ -17,13 +17,17 @@
 /* Title */
 .whyUsTitle {
   opacity: 0;
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
   filter: blur(10px);
+  font-style: italic;
   display: inline-block;
   transition: 0.5s ease;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
   transform: translateY(30px);
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -112,7 +116,7 @@ html[data-theme="dark"] .benefitCard:hover {
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .whyUsTitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .whyUsDescription {

@@ -16,11 +16,15 @@
 
 /* Title */
 .contactTitle {
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -112,15 +116,16 @@ textarea:-webkit-autofill {
 .submitBtn {
   gap: 1.5rem;
   display: flex;
-  font-size: 2rem;
-  font-weight: 500;
-  font-style: italic;
+  line-height: 1;
+  padding: 1.25rem;
+  font-weight: 400;
+  font-size: 2.25rem;
   align-items: center;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   justify-content: center;
-  padding: 0.75rem 1.25rem;
   color: hsl(0, 0%, 100%);
+  font-family: "Anton", sans-serif;
   background-color: var(--primary);
   text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
@@ -132,7 +137,7 @@ textarea:-webkit-autofill {
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .contactTitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .contactDescription {
@@ -167,7 +172,7 @@ textarea:-webkit-autofill {
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .contactTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: 2px solid var(--primary);
   }
 
@@ -202,7 +207,7 @@ textarea:-webkit-autofill {
 
   .submitBtn {
     gap: 1rem;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   .submitBtn:hover {

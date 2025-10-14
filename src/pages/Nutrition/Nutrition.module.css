@@ -16,11 +16,15 @@
 
 /* Title */
 .nutritionTitle {
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -165,7 +169,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .nutritionTitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .nutritionDescription {
@@ -211,7 +215,7 @@
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .nutritionTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: 2px solid var(--primary);
   }
 

@@ -53,13 +53,13 @@ header {
 .navItems {
   gap: 1rem;
   display: flex;
-  font-size: 1.5rem;
   align-items: center;
   transition: 0.3s ease;
   justify-content: center;
 }
 
 .navItems a {
+  font-size: 1.5rem;
   position: relative;
   transition: 0.3s ease;
 }
@@ -115,15 +115,15 @@ header {
 
 /* Free class button */
 .freeClassButton {
-  font-weight: 500;
+  line-height: 1;
+  padding: 0.5rem;
   font-size: 1.5rem;
-  font-style: italic;
   transition: 0.3s ease;
   border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
+  font-family: "Anton", sans-serif;
   background-color: var(--primary);
 }
 
@@ -140,6 +140,9 @@ header {
 
   .navItems {
     gap: 0.9rem;
+  }
+
+  .navItems a {
     font-size: 1.25rem;
   }
 
@@ -167,6 +170,9 @@ header {
 
   .navItems {
     gap: 0.8rem;
+  }
+
+  .navItems a {
     font-size: 1.15rem;
   }
 
@@ -198,6 +204,9 @@ header {
 
   .navItems {
     gap: 0.7rem;
+  }
+
+  .navItems a {
     font-size: 1rem;
   }
 
@@ -227,7 +236,7 @@ header {
     width: 150px;
   }
 
-  .navItems {
+  .navItems a {
     font-size: 1.15rem;
   }
 
@@ -399,9 +408,6 @@ header {
 /* Free class button */
 .sidebarFreeClassButton {
   display: flex;
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-style: italic;
   align-items: center;
   transition: 0.3s ease;
   border-radius: 0.25rem;
@@ -410,6 +416,13 @@ header {
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
   background-color: var(--primary);
+}
+
+.sidebarFreeClassButton a {
+  line-height: 1;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  font-family: "Anton", sans-serif;
 }
 
 .sidebarFreeClassButton:hover {

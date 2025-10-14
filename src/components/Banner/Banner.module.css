@@ -44,18 +44,21 @@
 
 .bannerText {
   opacity: 0;
-  font-size: 4rem;
+  line-height: 1;
+  font-size: 4.5rem;
   filter: blur(10px);
   transition: 0.3s ease;
   margin-bottom: 0.5rem;
   color: hsl(0, 0%, 100%);
   transform: translateX(-50px);
   text-shadow: var(--shadow-small);
+  font-family: "Anton", sans-serif;
   animation: fadeInFromLeft 1.2s ease-out forwards;
 }
 
 .bannerSecondaryText {
   opacity: 0;
+  line-height: 1;
   font-size: 2rem;
   font-weight: 500;
   filter: blur(10px);
@@ -63,7 +66,6 @@
   color: hsl(0, 0%, 80%);
   transform: translateX(50px);
   text-shadow: var(--shadow-small);
-  font-family: "Roboto Condensed", Arial, sans-serif;
   animation: fadeInFromRight 1.2s ease-out 0.3s forwards;
 }
 
@@ -101,7 +103,7 @@
   }
 
   .bannerText {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .bannerSecondaryText {
@@ -115,7 +117,7 @@
   }
 
   .bannerText {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .bannerSecondaryText {
@@ -134,11 +136,11 @@
   }
 
   .bannerText {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .bannerSecondaryText {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -157,6 +159,6 @@
   }
 
   .bannerSecondaryText {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 }

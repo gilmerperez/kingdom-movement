@@ -16,11 +16,15 @@
 
 /* Title */
 .membershipTitle {
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -61,8 +65,13 @@
 
 /* Membership name */
 .membershipName {
+  line-height: 1;
   font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
   transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
 }
 
 .priceContainer {
@@ -109,8 +118,8 @@
 /* Sign up button */
 .signUpButton {
   width: 100%;
-  padding: 0.75rem;
-  font-weight: 500;
+  padding: 0.5rem;
+  font-weight: 400;
   font-size: 1.75rem;
   font-style: italic;
   transition: 0.3s ease;
@@ -118,6 +127,7 @@
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
+  font-family: "Anton", sans-serif;
   background-color: var(--primary);
 }
 
@@ -202,12 +212,16 @@
 
 .additionalInfoTitle {
   opacity: 0;
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
   transform: translateY(30px);
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid hsl(0, 0%, 100%);
 }
 
@@ -272,7 +286,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .membershipTitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .membershipDescription {
@@ -292,7 +306,7 @@
   }
 
   .additionalInfoTitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .additionalInfoList li {
@@ -303,7 +317,7 @@
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .membershipTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: 2px solid var(--primary);
   }
 
@@ -344,7 +358,7 @@
   }
 
   .additionalInfoTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: 2px solid hsl(0, 0%, 100%);
   }
 

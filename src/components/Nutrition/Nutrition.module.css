@@ -39,10 +39,14 @@
 }
 
 .nutritionComponentTitle {
-  font-size: 3.5rem;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
   transition: 0.3s ease;
   margin-bottom: 0.5rem;
   padding-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
 }
 
@@ -63,15 +67,16 @@
 }
 
 .ctaButton {
-  font-weight: 500;
-  font-size: 1.75rem;
-  font-style: italic;
-  padding: 0.5rem 1rem;
+  line-height: 1;
+  font-size: 2rem;
+  padding: 0.75rem;
+  font-weight: 400;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
+  font-family: "Anton", sans-serif;
   text-shadow: var(--shadow-small);
   background-color: var(--primary);
 }
@@ -95,7 +100,7 @@
   }
 
   .nutritionComponentTitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .nutritionComponentDescription p {
@@ -103,7 +108,7 @@
   }
 
   .ctaButton {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
