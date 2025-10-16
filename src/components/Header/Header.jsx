@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import { createPortal } from "react-dom";
-import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
   // * Sticky header logic
@@ -110,13 +110,13 @@ function Header() {
               </button>
               {/* Free class button */}
               <button className={styles.freeClassButton}>
-                <a
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
+                  to="https://kngdmmvmnt.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
                 >
                   FREE CLASS
-                </a>
+                </Link>
               </button>
             </div>
           </div>
@@ -166,13 +166,13 @@ function Header() {
                 <hr className={styles.sidebarSeperator} />
                 {/* Free class button */}
                 <button className={styles.sidebarFreeClassButton}>
-                  <a
+                  <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://rangerschamps.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
+                    to="https://kngdmmvmnt.wodify.com/OnlineSalesPage/Main?q=Classes%7COnlineMembershipId%3D236922%26LocationId%3D10458"
                   >
                     FREE CLASS
-                  </a>
+                  </Link>
                 </button>
               </nav>
               {/* Sidebar footer */}
