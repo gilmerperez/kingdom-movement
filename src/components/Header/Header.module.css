@@ -23,6 +23,7 @@ header {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
 }
@@ -192,7 +193,7 @@ header {
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   header {
-    padding: 1.15rem 1.75rem;
+    padding: 1rem 1.75rem;
   }
 
   .logoContainer img {
