@@ -1,22 +1,6 @@
 {
   "memberships": [
     {
-      "id": "openbox",
-      "name": "OPEN BOX",
-      "price": 100,
-      "description": "Perfect for self-directed training with full access to our facilities",
-      "features": [
-        "All Day Open Box",
-        "Special Events Benefits",
-        "4 Guest Passes Per Month",
-        "1 Wellness Profile Per Month",
-        "Full Equipment & Gear Access"
-      ],
-      "isPopular": false,
-      "ctaText": "JOIN OPEN BOX",
-      "signupLink": "https://rangerschamps.wodify.com/OnlineSalesPage/Main"
-    },
-    {
       "id": "hyrox",
       "name": "HYROX",
       "price": 100,
