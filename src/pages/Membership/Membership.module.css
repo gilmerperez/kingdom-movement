@@ -184,12 +184,6 @@
   box-shadow: var(--shadow-large);
 }
 
-/* Individual styles for drop-in card */
-.membershipCard.dropin .price {
-  color: var(--primary);
-  font-weight: 600;
-}
-
 /* Individual styles for free class card */
 .membershipCard.freeclass .price {
   display: none;

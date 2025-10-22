@@ -84,6 +84,7 @@
       "id": "dropin",
       "name": "DROP-IN",
       "price": 20,
+      "priceUnit": "class",
       "description": "Perfect for visitors or those wanting to try a class without commitment. One-time purchase for any single class.",
       "customFeaturesTitle": "WHAT'S INCLUDED?",
       "features": [

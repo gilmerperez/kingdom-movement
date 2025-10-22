@@ -99,7 +99,9 @@ function Membership() {
                 <div className={styles.priceContainer}>
                   {/* Monthly price */}
                   {membership.price !== null ? (
-                    <p className={styles.price}>${membership.price}/month</p>
+                    <p className={styles.price}>
+                      ${membership.price}/{membership.priceUnit || "month"}
+                    </p>
                   ) : (
                     <p className={styles.price}>FREE</p>
                   )}
