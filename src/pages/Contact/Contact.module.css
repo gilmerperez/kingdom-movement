@@ -19,7 +19,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -114,30 +113,21 @@ textarea:-webkit-autofill {
 
 /* Submit button */
 .submitBtn {
-  gap: 1.5rem;
-  display: flex;
-  line-height: 1;
-  padding: 1.25rem;
+  padding: 1rem;
   font-weight: 400;
-  font-size: 2.25rem;
-  align-items: center;
+  font-size: 2.75rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
-  justify-content: center;
   color: hsl(0, 0%, 100%);
-  font-family: "Anton", sans-serif;
+  text-shadow: var(--shadow-small);
   background-color: var(--primary);
-  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
-}
-
-.submitBtn:hover {
-  gap: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .contactTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .contactDescription {
@@ -165,7 +155,7 @@ textarea:-webkit-autofill {
   }
 
   .submitBtn {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -206,8 +196,7 @@ textarea:-webkit-autofill {
   }
 
   .submitBtn {
-    gap: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .submitBtn:hover {

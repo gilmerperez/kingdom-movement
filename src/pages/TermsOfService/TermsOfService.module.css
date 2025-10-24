@@ -20,7 +20,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -49,8 +48,8 @@
   font-size: 1.5rem;
   display: inline-block;
   margin-bottom: 0.15rem;
-  padding-bottom: 0.25rem;
-  font-family: "Anton", sans-serif;
+  padding-bottom: 0.05rem;
+  font-family: "Bebas Neue", sans-serif;
   border-bottom: 2px solid var(--primary);
 }
 
@@ -68,7 +67,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .termsOfServiceTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .termsOfServiceDescription {
