@@ -60,16 +60,15 @@
 
 /* Back button */
 .backButton {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.5rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   padding: 0.75rem 1.25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
-  font-family: "Anton", sans-serif;
   background-color: var(--primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .backButton:hover {
@@ -105,7 +104,7 @@
   }
 
   .backButton {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -136,6 +135,6 @@
   }
 
   .backButton {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
