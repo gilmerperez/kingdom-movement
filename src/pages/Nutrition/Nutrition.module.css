@@ -19,7 +19,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -50,14 +49,13 @@
 .filterButton {
   padding: 0.75rem;
   min-width: 200px;
-  font-size: 1.25rem;
-  font-style: italic;
+  font-size: 1.5rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   text-transform: uppercase;
   box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
-  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background-color: var(--header-bg-color);
 }
 
@@ -139,12 +137,10 @@
 }
 
 .foodName {
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
   transition: 0.3s ease;
-  margin-bottom: 0.25rem;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .foodDescription {
@@ -169,7 +165,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .nutritionTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .nutritionDescription {
@@ -182,7 +178,7 @@
 
   .filterButton {
     min-width: 175px;
-    font-size: 1.15rem;
+    font-size: 1.375rem;
   }
 
   .menuGrid {
@@ -199,7 +195,7 @@
   }
 
   .foodName {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .foodDescription {
@@ -224,11 +220,15 @@
   }
 
   .filterButton {
-    font-size: 1rem;
     min-width: 150px;
+    font-size: 1.25rem;
   }
 
   .imageContainer {
     height: 150px;
+  }
+
+  .foodName {
+    font-size: 1.375rem;
   }
 }
