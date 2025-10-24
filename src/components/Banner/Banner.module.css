@@ -45,8 +45,10 @@
 .bannerText {
   opacity: 0;
   line-height: 1;
+  font-weight: 500;
   font-size: 4.5rem;
   filter: blur(10px);
+  font-style: italic;
   transition: 0.3s ease;
   margin-bottom: 0.5rem;
   color: hsl(0, 0%, 100%);
@@ -60,12 +62,13 @@
   opacity: 0;
   line-height: 1;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   filter: blur(10px);
   transition: 0.3s ease;
   color: hsl(0, 0%, 80%);
   transform: translateX(50px);
   text-shadow: var(--shadow-small);
+  font-family: "Bebas Neue", sans-serif;
   animation: fadeInFromRight 1.2s ease-out 0.3s forwards;
 }
 
@@ -155,10 +158,10 @@
   }
 
   .bannerText {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .bannerSecondaryText {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
