@@ -20,7 +20,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -39,16 +38,15 @@
 
 /* Back home button */
 .backButton {
-  font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 2rem;
   padding: 0.75rem 1rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
-  font-family: "Anton", sans-serif;
   background-color: var(--primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .backButton:hover {
@@ -60,7 +58,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .pageNotFoundTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .pageNotFoundDescription {
@@ -68,7 +66,7 @@
   }
 
   .backButton {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -84,6 +82,6 @@
   }
 
   .backButton {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
 }

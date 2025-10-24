@@ -19,7 +19,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -98,9 +97,9 @@
 
 /* Membership benefits */
 .featuresTitle {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: 0.3s ease;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .featuresList {
@@ -119,16 +118,14 @@
 .signUpButton {
   width: 100%;
   padding: 0.5rem;
-  font-weight: 400;
-  font-size: 1.75rem;
-  font-style: italic;
+  font-size: 2rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
-  font-family: "Anton", sans-serif;
   background-color: var(--primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .signUpButton:hover {
@@ -174,14 +171,12 @@
 
 .membershipCard.popular .signUpButton {
   text-shadow: none;
-  color: var(--text-primary);
-  box-shadow: var(--shadow-small);
-  background-color: var(--header-bg-color);
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .membershipCard.popular .signUpButton:hover {
   transform: scale(1.05);
-  box-shadow: var(--shadow-large);
 }
 
 /* Individual styles for free class card */
@@ -215,7 +210,6 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
   display: inline-block;
   transition: 0.3s ease;
   margin-bottom: 0.75rem;
@@ -286,7 +280,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .membershipTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .membershipDescription {
@@ -306,7 +300,7 @@
   }
 
   .additionalInfoTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .additionalInfoList li {
@@ -338,7 +332,7 @@
   }
 
   .featuresTitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .featureItem {
