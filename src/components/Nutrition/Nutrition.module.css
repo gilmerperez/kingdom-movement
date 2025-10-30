@@ -42,9 +42,9 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: 400;
-  font-style: italic;
+  display: inline-block;
   transition: 0.3s ease;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
   font-family: "Anton", sans-serif;
   border-bottom: 3px solid var(--primary);
@@ -67,18 +67,17 @@
 }
 
 .ctaButton {
-  line-height: 1;
-  font-size: 2rem;
-  padding: 0.75rem;
   font-weight: 400;
+  font-size: 2.25rem;
+  padding: 0.75rem 1rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   border: 2px solid var(--primary);
-  font-family: "Anton", sans-serif;
   text-shadow: var(--shadow-small);
   background-color: var(--primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .ctaButton:hover {
@@ -100,7 +99,7 @@
   }
 
   .nutritionComponentTitle {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .nutritionComponentDescription p {
@@ -108,7 +107,7 @@
   }
 
   .ctaButton {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -124,6 +123,7 @@
 
   .nutritionComponentTitle {
     font-size: 2.5rem;
+    border-bottom: 2px solid var(--primary);
   }
 
   .nutritionComponentDescription p {
@@ -131,6 +131,6 @@
   }
 
   .ctaButton {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 }

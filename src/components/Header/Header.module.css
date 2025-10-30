@@ -117,11 +117,10 @@ header {
 
 /* Free class button */
 .freeClassButton {
-  line-height: 1;
-  padding: 0.5rem;
   font-size: 2rem;
   transition: 0.3s ease;
   border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
   color: hsl(0, 0%, 100%);
   box-shadow: var(--shadow-small);
   text-shadow: var(--shadow-small);
